@@ -191,8 +191,7 @@ paths:
             Authorization: dd466b708fbf04545827481c7c1ffaf5c76f574128cf1bf41f4b190f1c0999e85b88d18b2d5bd1d6
           body: >-
             {
-              "email" : "{{email}}",
-              "token": "e2b1612d59167df27c18f682d453f7639dd123831547eaf656dfa5982178c1c6",
+              "token": "d3a054c6cc54c3f0b16777fec00a533a0e4f92e30aa28e3bacddd4596afb2a9c",
               "password": "pocketto",
               "password_confirmation": "pocketto"
             }
@@ -3680,7 +3679,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/accounts/code:renascer:
+  /vdash/accounts/code:pocketto:
     get:
       description: 'TODO: Add Description'
       summary: Account - View (Code)
@@ -3697,7 +3696,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /vdash/accounts/code:renascer
+          uri: /vdash/accounts/code:pocketto
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -3810,9 +3809,6 @@ definitions:
     title: Login - ResetRequest
     type: object
     properties:
-      email:
-        description: ''
-        type: string
       token:
         description: ''
         type: string
@@ -3823,7 +3819,6 @@ definitions:
         description: ''
         type: string
     required:
-    - email
     - token
     - password
     - password_confirmation

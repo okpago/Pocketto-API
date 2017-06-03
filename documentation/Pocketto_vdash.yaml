@@ -804,11 +804,11 @@ paths:
             Authorization: dd466b708fbf04545827481c7c1ffaf5c76f574128cf1bf41f4b190f1c0999e85b88d18b2d5bd1d6
           body: >-
             {
-            	"name" : "Campanha 1",
+              "name" : "Vini Campanha agora vai",
                 "description": "Camp desc camp desc",
                 "image_bg_file_id": 1,
                 "target_total": 10,
-                "target_total_users": 1,
+                "target_total_users": 5,
                 "payment_amount": 100,
                 "recurring": true,
                 "recurring_max_times": 10,

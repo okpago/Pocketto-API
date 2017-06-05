@@ -492,6 +492,69 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
+    post:
+      description: 'TODO: Add Description'
+      summary: Payments - Create
+      tags:
+      - Payments
+      operationId: Payments - Create
+      produces:
+      - application/json
+      parameters:
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/Payments  createrequest'
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Content-Type
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        200:
+          description: ''
+      security: []
+      x-unitTests:
+      - request:
+          method: POST
+          uri: /vdash/payments
+          headers:
+            Content-Type: application/json
+            Account: pocketto
+            Authorization: dd466b708fbf04545827481c7c1ffaf5c76f574128cf1bf41f4b190f1c0999e85b88d18b2d5bd1d6
+          body: >-
+            {
+              "amount": 100,
+              "user_id": 30
+            }
+        expectedResponse:
+          x-allowExtraHeaders: true
+          x-bodyMatchMode: NONE
+          x-arrayOrderedMatching: false
+          x-arrayCheckCount: false
+          x-matchResponseSchema: true
+          headers: {}
+        x-testShouldPass: true
+        x-testEnabled: true
+        x-testName: Payments - Create
+        x-testDescription: 'TODO: Add Description'
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
   /vdash/payments/1:
     get:
       description: 'TODO: Add Description'
@@ -599,68 +662,6 @@ paths:
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
   /vdash/payments/103:
-    put:
-      description: 'TODO: Add Description'
-      summary: Payments - Update
-      tags:
-      - Payments
-      operationId: Payments - Update
-      produces:
-      - application/json
-      parameters:
-      - name: Body
-        in: body
-        required: true
-        description: ''
-        schema:
-          $ref: '#/definitions/Payments  updaterequest'
-      - name: Account
-        in: header
-        required: true
-        type: string
-        description: ''
-      - name: Authorization
-        in: header
-        required: true
-        type: string
-        description: ''
-      - name: Content-Type
-        in: header
-        required: true
-        type: string
-        description: ''
-      responses:
-        200:
-          description: ''
-      security: []
-      x-unitTests:
-      - request:
-          method: PUT
-          uri: /vdash/payments/103
-          headers:
-            Content-Type: application/json
-            Account: pocketto
-            Authorization: dd466b708fbf04545827481c7c1ffaf5c76f574128cf1bf41f4b190f1c0999e85b88d18b2d5bd1d6
-          body: >-
-            {
-            	"amount": 100
-            }
-        expectedResponse:
-          x-allowExtraHeaders: true
-          x-bodyMatchMode: NONE
-          x-arrayOrderedMatching: false
-          x-arrayCheckCount: false
-          x-matchResponseSchema: true
-          headers: {}
-        x-testShouldPass: true
-        x-testEnabled: true
-        x-testName: Payments - Update
-        x-testDescription: 'TODO: Add Description'
-      x-operation-settings:
-        CollectParameters: false
-        AllowDynamicQueryParameters: false
-        AllowDynamicFormParameters: false
-        IsMultiContentStreaming: false
     delete:
       description: 'TODO: Add Description'
       summary: Payments - Delete
@@ -701,6 +702,69 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Payments - Delete
+        x-testDescription: 'TODO: Add Description'
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /vdash/payments/107:
+    put:
+      description: 'TODO: Add Description'
+      summary: Payments - Update
+      tags:
+      - Payments
+      operationId: Payments - Update
+      produces:
+      - application/json
+      parameters:
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/Payments  updaterequest'
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Content-Type
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        200:
+          description: ''
+      security: []
+      x-unitTests:
+      - request:
+          method: PUT
+          uri: /vdash/payments/107
+          headers:
+            Content-Type: application/json
+            Account: pocketto
+            Authorization: dd466b708fbf04545827481c7c1ffaf5c76f574128cf1bf41f4b190f1c0999e85b88d18b2d5bd1d6
+          body: >-
+            {
+            	"amount": 100
+            }
+        expectedResponse:
+          x-allowExtraHeaders: true
+          x-bodyMatchMode: NONE
+          x-arrayOrderedMatching: false
+          x-arrayCheckCount: false
+          x-matchResponseSchema: true
+          headers: {}
+        x-testShouldPass: true
+        x-testEnabled: true
+        x-testName: Payments - Update
         x-testDescription: 'TODO: Add Description'
       x-operation-settings:
         CollectParameters: false
@@ -1933,7 +1997,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/user_categories/1:
+  /vdash/user_categories/3:
     put:
       description: 'TODO: Add Description'
       summary: User Categories - Update
@@ -1971,7 +2035,7 @@ paths:
       x-unitTests:
       - request:
           method: PUT
-          uri: /vdash/user_categories/1
+          uri: /vdash/user_categories/3
           headers:
             Content-Type: application/json
             Account: pocketto
@@ -1996,6 +2060,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
+  /vdash/user_categories/1:
     delete:
       description: 'TODO: Add Description'
       summary: User Categories - Delete
@@ -3380,7 +3445,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/admin_users/8:
+  /vdash/admin_users/5:
     put:
       description: 'TODO: Add Description'
       summary: Admin Users - Update
@@ -3418,7 +3483,7 @@ paths:
       x-unitTests:
       - request:
           method: PUT
-          uri: /vdash/admin_users/8
+          uri: /vdash/admin_users/5
           headers:
             Content-Type: application/json
             Account: pocketto
@@ -3447,6 +3512,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
+  /vdash/admin_users/8:
     delete:
       description: 'TODO: Add Description'
       summary: Admin Users - Delete
@@ -3832,6 +3898,21 @@ definitions:
         format: int32
     required:
     - amount
+  Payments  createrequest:
+    title: Payments - CreateRequest
+    type: object
+    properties:
+      amount:
+        description: ''
+        type: integer
+        format: int32
+      user_id:
+        description: ''
+        type: integer
+        format: int32
+    required:
+    - amount
+    - user_id
   Campaigns  createrequest:
     title: Campaigns - CreateRequest
     type: object

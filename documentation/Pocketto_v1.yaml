@@ -73,6 +73,53 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
+  /v1/bank_accounts:
+    get:
+      description: 'TODO: Add Description'
+      summary: Bank Accounts - List
+      tags:
+      - Misc
+      operationId: Bank Accounts - List
+      produces:
+      - application/json
+      parameters:
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        200:
+          description: ''
+      security: []
+      x-unitTests:
+      - request:
+          method: GET
+          uri: /v1/bank_accounts
+          headers:
+            Account: pocketto
+            Authorization: 2b3e36c2db23c8e2590b3a8aa0da06298e780a3baec6e80e860031c2430dcb0d721809c113e8a7f1
+        expectedResponse:
+          x-allowExtraHeaders: true
+          x-bodyMatchMode: NONE
+          x-arrayOrderedMatching: false
+          x-arrayCheckCount: false
+          x-matchResponseSchema: true
+          headers: {}
+        x-testShouldPass: true
+        x-testEnabled: true
+        x-testName: Bank Accounts - List
+        x-testDescription: 'TODO: Add Description'
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
   /v1/profile:
     get:
       description: 'TODO: Add Description'
@@ -803,7 +850,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /v1/payments/1:
+  /v1/payments/3623:
     get:
       description: 'TODO: Add Description'
       summary: Payments - View
@@ -830,7 +877,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /v1/payments/1
+          uri: /v1/payments/3623
           headers:
             Account: pocketto
             Authorization: 2b3e36c2db23c8e2590b3a8aa0da06298e780a3baec6e80e860031c2430dcb0d721809c113e8a7f1

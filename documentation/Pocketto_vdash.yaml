@@ -895,7 +895,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/campaigns/3:
+  /vdash/campaigns/35:
     get:
       description: 'TODO: Add Description'
       summary: Campaigns - View
@@ -927,7 +927,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /vdash/campaigns/3
+          uri: /vdash/campaigns/35
           headers:
             Account: pocketto
             Authorization: dd466b708fbf04545827481c7c1ffaf5c76f574128cf1bf41f4b190f1c0999e85b88d18b2d5bd1d6
@@ -948,6 +948,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
+  /vdash/campaigns/3:
     put:
       description: 'TODO: Add Description'
       summary: Campaigns - Update
@@ -3260,8 +3261,10 @@ paths:
             Authorization: dd466b708fbf04545827481c7c1ffaf5c76f574128cf1bf41f4b190f1c0999e85b88d18b2d5bd1d6
           body: >-
             {
-            	"name": "invite_sms",
-            	"value": "new_value"
+              "name": "invite_sms_name",
+              "value": "new_value",
+              "public": 0,
+              "advanced": 0
             }
         expectedResponse:
           x-allowExtraHeaders: true
@@ -4195,9 +4198,19 @@ definitions:
       value:
         description: ''
         type: string
+      public:
+        description: ''
+        type: integer
+        format: int32
+      advanced:
+        description: ''
+        type: integer
+        format: int32
     required:
     - name
     - value
+    - public
+    - advanced
   Settings  update allrequest:
     title: Settings - Update AllRequest
     type: object

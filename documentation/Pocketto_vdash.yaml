@@ -1371,11 +1371,14 @@ paths:
             Authorization: dd466b708fbf04545827481c7c1ffaf5c76f574128cf1bf41f4b190f1c0999e85b88d18b2d5bd1d6
           body: >-
             {
-            	"message_type_id": 41,
-            	"title" : "Meu titulo",
-            	"description": "Minha descrição",
-            	"dispatch": "now",
-            	"dont_repeat": false
+              "message_type_id": 41,
+              "title" : "Meu titulo",
+              "description": "Minha descrição",
+              "dispatch": "now",
+              "dont_repeat": false,
+              "events": [
+              	{ "event": "user_created" }
+              ]
             }
         expectedResponse:
           x-allowExtraHeaders: true
@@ -2398,6 +2401,41 @@ paths:
         x-testEnabled: true
         x-testName: Bank Accounts - Delete
         x-testDescription: 'TODO: Add Description'
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /vdash/bank_accounts/1/transactions:
+    post:
+      description: 'TODO: Add Description'
+      summary: Bank Accounts - Transactions
+      tags:
+      - Bank Accounts
+      operationId: Bank Accounts - Transactions
+      produces:
+      - application/json
+      parameters:
+      - name: input_data
+        in: formData
+        required: true
+        type: string
+        description: ''
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        200:
+          description: ''
+      security: []
+      x-unitTests: []
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -3757,7 +3795,12 @@ paths:
       operationId: Account - View (Code)
       produces:
       - application/json
-      parameters: []
+      parameters:
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
       responses:
         200:
           description: ''
@@ -3766,6 +3809,8 @@ paths:
       - request:
           method: GET
           uri: /vdash/accounts/code:pocketto
+          headers:
+            Account: pocketto
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -4038,12 +4083,27 @@ definitions:
       dont_repeat:
         description: ''
         type: boolean
+      events:
+        description: ''
+        type: array
+        items:
+          $ref: '#/definitions/Event'
     required:
     - message_type_id
     - title
     - description
     - dispatch
     - dont_repeat
+    - events
+  Event:
+    title: Event
+    type: object
+    properties:
+      event:
+        description: ''
+        type: string
+    required:
+    - event
   Messages  cancelrequest:
     title: Messages - CancelRequest
     type: object

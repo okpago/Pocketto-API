@@ -773,8 +773,8 @@ paths:
             Authorization: 2b3e36c2db23c8e2590b3a8aa0da06298e780a3baec6e80e860031c2430dcb0d721809c113e8a7f1
           body: >-
             {
-            	"campaign_id": 60,
-                "amount": 15
+              "campaign_id": 60,
+              "amount": 15
             }
         expectedResponse:
           x-allowExtraHeaders: true
@@ -944,7 +944,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /v1/payments/55/claim:
+  /v1/payments/3623/claim:
     put:
       description: 'TODO: Add Description'
       summary: Payments - Update Claim
@@ -977,14 +977,16 @@ paths:
       x-unitTests:
       - request:
           method: PUT
-          uri: /v1/payments/55/claim
+          uri: /v1/payments/3623/claim
           headers:
             Content-Type: application/json
             Account: pocketto
             Authorization: 2b3e36c2db23c8e2590b3a8aa0da06298e780a3baec6e80e860031c2430dcb0d721809c113e8a7f1
           body: >-
             {
-              "photo_file_id": 214
+              "photo_file_id": 3538,
+              "bank_account_id": 99,
+              "claim_date": "2017-06-09"
             }
         expectedResponse:
           x-allowExtraHeaders: true
@@ -1163,10 +1165,10 @@ paths:
   /v1/user_recurs:
     get:
       description: 'TODO: Add Description'
-      summary: User Recurrences - View
+      summary: User Recurrences - List
       tags:
       - Misc
-      operationId: User Recurrences - View
+      operationId: User Recurrences - List
       produces:
       - application/json
       parameters:
@@ -1200,6 +1202,53 @@ paths:
           headers: {}
         x-testShouldPass: true
         x-testEnabled: true
+        x-testName: User Recurrences - List
+        x-testDescription: 'TODO: Add Description'
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /v1/user_recurs/1:
+    get:
+      description: 'TODO: Add Description'
+      summary: User Recurrences - View
+      tags:
+      - Misc
+      operationId: User Recurrences - View
+      produces:
+      - application/json
+      parameters:
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        200:
+          description: ''
+      security: []
+      x-unitTests:
+      - request:
+          method: GET
+          uri: /v1/user_recurs/1
+          headers:
+            Account: pocketto
+            Authorization: 2b3e36c2db23c8e2590b3a8aa0da06298e780a3baec6e80e860031c2430dcb0d721809c113e8a7f1
+        expectedResponse:
+          x-allowExtraHeaders: true
+          x-bodyMatchMode: NONE
+          x-arrayOrderedMatching: false
+          x-arrayCheckCount: false
+          x-matchResponseSchema: true
+          headers: {}
+        x-testShouldPass: true
+        x-testEnabled: true
         x-testName: User Recurrences - View
         x-testDescription: 'TODO: Add Description'
       x-operation-settings:
@@ -1208,7 +1257,7 @@ paths:
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
   /v1/user_recurs/1/cancel:
-    get:
+    put:
       description: 'TODO: Add Description'
       summary: User Recurrences - Cancel
       tags:
@@ -1233,7 +1282,7 @@ paths:
       security: []
       x-unitTests:
       - request:
-          method: GET
+          method: PUT
           uri: /v1/user_recurs/1/cancel
           headers:
             Account: pocketto
@@ -1488,8 +1537,17 @@ definitions:
         description: ''
         type: integer
         format: int32
+      bank_account_id:
+        description: ''
+        type: integer
+        format: int32
+      claim_date:
+        description: ''
+        type: string
     required:
     - photo_file_id
+    - bank_account_id
+    - claim_date
   InviteSmsrequest:
     title: Invite SMSRequest
     type: object

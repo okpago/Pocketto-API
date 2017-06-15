@@ -2406,7 +2406,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/bank_accounts/1/transactions:
+  /vdash/bank_accounts/2/transactions:
     post:
       description: 'TODO: Add Description'
       summary: Bank Accounts - Transactions
@@ -2444,10 +2444,10 @@ paths:
   /vdash/bank_accounts/1/dates/2017-05-06/close:
     post:
       description: 'TODO: Add Description'
-      summary: Bank Accounts - dates | close
+      summary: Bank Accounts - Date Close
       tags:
       - Bank Accounts
-      operationId: Bank Accounts - dates | close
+      operationId: Bank Accounts - Date Close
       produces:
       - application/json
       parameters:
@@ -2487,7 +2487,125 @@ paths:
           headers: {}
         x-testShouldPass: true
         x-testEnabled: true
-        x-testName: Bank Accounts - dates | close
+        x-testName: Bank Accounts - Date Close
+        x-testDescription: 'TODO: Add Description'
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /vdash/bank_accounts/1/dates/2017-10-10:
+    get:
+      description: 'TODO: Add Description'
+      summary: Bank Accounts - Date View
+      tags:
+      - Bank Accounts
+      operationId: Bank Accounts - Date View
+      produces:
+      - application/json
+      parameters:
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Content-Type
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        200:
+          description: ''
+      security: []
+      x-unitTests:
+      - request:
+          method: GET
+          uri: /vdash/bank_accounts/1/dates/2017-10-10
+          headers:
+            Account: pocketto
+            Authorization: dd466b708fbf04545827481c7c1ffaf5c76f574128cf1bf41f4b190f1c0999e85b88d18b2d5bd1d6
+            Content-Type: application/json
+        expectedResponse:
+          x-allowExtraHeaders: true
+          x-bodyMatchMode: NONE
+          x-arrayOrderedMatching: false
+          x-arrayCheckCount: false
+          x-matchResponseSchema: true
+          headers: {}
+        x-testShouldPass: true
+        x-testEnabled: true
+        x-testName: Bank Accounts - Date View
+        x-testDescription: 'TODO: Add Description'
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  //api.pocketto.com.br/vdash/bank_accounts/1/dates:
+    get:
+      description: 'TODO: Add Description'
+      summary: Bank Accounts - Dates List
+      tags:
+      - Bank Accounts
+      operationId: Bank Accounts - Dates List
+      produces:
+      - application/json
+      parameters:
+      - name: from
+        in: query
+        required: true
+        type: string
+        format: date-time
+        description: ''
+      - name: to
+        in: query
+        required: true
+        type: string
+        format: date-time
+        description: ''
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Content-Type
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        200:
+          description: ''
+      security: []
+      x-unitTests:
+      - request:
+          method: GET
+          uri: //api.pocketto.com.br/vdash/bank_accounts/1/dates?from=2017-10-01&to=2017-10-10
+          headers:
+            Account: pocketto
+            Authorization: dd466b708fbf04545827481c7c1ffaf5c76f574128cf1bf41f4b190f1c0999e85b88d18b2d5bd1d6
+            Content-Type: application/json
+        expectedResponse:
+          x-allowExtraHeaders: true
+          x-bodyMatchMode: NONE
+          x-arrayOrderedMatching: false
+          x-arrayCheckCount: false
+          x-matchResponseSchema: true
+          headers: {}
+        x-testShouldPass: true
+        x-testEnabled: true
+        x-testName: Bank Accounts - Dates List
         x-testDescription: 'TODO: Add Description'
       x-operation-settings:
         CollectParameters: false

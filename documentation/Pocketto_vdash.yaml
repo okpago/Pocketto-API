@@ -2406,7 +2406,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/bank_accounts/2/transactions:
+  /vdash/bank_accounts/5/transactions:
     post:
       description: 'TODO: Add Description'
       summary: Bank Accounts - Transactions
@@ -2591,7 +2591,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: //api.pocketto.com.br/vdash/bank_accounts/1/dates?from=2017-10-01&to=2017-10-10
+          uri: //api.pocketto.com.br/vdash/bank_accounts/1/dates?from=2017-01-01&to=2017-10-10
           headers:
             Account: pocketto
             Authorization: dd466b708fbf04545827481c7c1ffaf5c76f574128cf1bf41f4b190f1c0999e85b88d18b2d5bd1d6

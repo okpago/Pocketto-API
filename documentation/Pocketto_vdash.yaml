@@ -2441,7 +2441,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/bank_accounts/1/dates/2017-05-06/close:
+  /vdash/bank_accounts/5/dates/2017-09-30/close:
     post:
       description: 'TODO: Add Description'
       summary: Bank Accounts - Date Close
@@ -2473,7 +2473,7 @@ paths:
       x-unitTests:
       - request:
           method: POST
-          uri: /vdash/bank_accounts/1/dates/2017-05-06/close
+          uri: /vdash/bank_accounts/5/dates/2017-09-30/close
           headers:
             Account: pocketto
             Authorization: dd466b708fbf04545827481c7c1ffaf5c76f574128cf1bf41f4b190f1c0999e85b88d18b2d5bd1d6
@@ -2494,7 +2494,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/bank_accounts/1/dates/2017-10-10:
+  /vdash/bank_accounts/5/dates/2017-10-10:
     get:
       description: 'TODO: Add Description'
       summary: Bank Accounts - Date View
@@ -2526,7 +2526,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /vdash/bank_accounts/1/dates/2017-10-10
+          uri: /vdash/bank_accounts/5/dates/2017-10-10
           headers:
             Account: pocketto
             Authorization: dd466b708fbf04545827481c7c1ffaf5c76f574128cf1bf41f4b190f1c0999e85b88d18b2d5bd1d6
@@ -2547,7 +2547,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  //api.pocketto.com.br/vdash/bank_accounts/1/dates:
+  //api.pocketto.com.br/vdash/bank_accounts/5/dates:
     get:
       description: 'TODO: Add Description'
       summary: Bank Accounts - Dates List
@@ -2591,7 +2591,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: //api.pocketto.com.br/vdash/bank_accounts/1/dates?from=2017-01-01&to=2017-10-10
+          uri: //api.pocketto.com.br/vdash/bank_accounts/5/dates?from=2017-09-01&to=2017-09-30
           headers:
             Account: pocketto
             Authorization: dd466b708fbf04545827481c7c1ffaf5c76f574128cf1bf41f4b190f1c0999e85b88d18b2d5bd1d6

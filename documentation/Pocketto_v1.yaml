@@ -944,7 +944,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /v1/payments/3623/claim:
+  /v1/payments/3759/claim:
     put:
       description: 'TODO: Add Description'
       summary: Payments - Update Claim
@@ -970,6 +970,11 @@ paths:
         required: true
         type: string
         description: ''
+      - name: Content-Type
+        in: header
+        required: true
+        type: string
+        description: ''
       responses:
         200:
           description: ''
@@ -977,7 +982,7 @@ paths:
       x-unitTests:
       - request:
           method: PUT
-          uri: /v1/payments/3623/claim
+          uri: /v1/payments/3759/claim
           headers:
             Content-Type: application/json
             Account: pocketto
@@ -985,8 +990,8 @@ paths:
           body: >-
             {
               "photo_file_id": 3538,
-              "bank_account_id": 99,
-              "claim_date": "2017-06-09"
+              "claim_bank_account_id": 5,
+              "claim_date": "2017-06-20"
             }
         expectedResponse:
           x-allowExtraHeaders: true
@@ -1537,7 +1542,7 @@ definitions:
         description: ''
         type: integer
         format: int32
-      bank_account_id:
+      claim_bank_account_id:
         description: ''
         type: integer
         format: int32
@@ -1546,7 +1551,7 @@ definitions:
         type: string
     required:
     - photo_file_id
-    - bank_account_id
+    - claim_bank_account_id
     - claim_date
   InviteSmsrequest:
     title: Invite SMSRequest

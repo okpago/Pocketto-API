@@ -2441,16 +2441,28 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/bank_accounts/5/dates/2017-09-30/close:
-    post:
+  //api.pocketto.com.br/vdash/bank_accounts/2/dates:
+    get:
       description: 'TODO: Add Description'
-      summary: Bank Accounts - Date Close
+      summary: Bank Accounts - Dates List
       tags:
       - Bank Accounts
-      operationId: Bank Accounts - Date Close
+      operationId: Bank Accounts - Dates List
       produces:
       - application/json
       parameters:
+      - name: from
+        in: query
+        required: true
+        type: string
+        format: date-time
+        description: ''
+      - name: to
+        in: query
+        required: true
+        type: string
+        format: date-time
+        description: ''
       - name: Account
         in: header
         required: true
@@ -2472,8 +2484,8 @@ paths:
       security: []
       x-unitTests:
       - request:
-          method: POST
-          uri: /vdash/bank_accounts/5/dates/2017-09-30/close
+          method: GET
+          uri: //api.pocketto.com.br/vdash/bank_accounts/2/dates?from=2017-06-01&to=2017-06-30
           headers:
             Account: pocketto
             Authorization: dd466b708fbf04545827481c7c1ffaf5c76f574128cf1bf41f4b190f1c0999e85b88d18b2d5bd1d6
@@ -2487,7 +2499,7 @@ paths:
           headers: {}
         x-testShouldPass: true
         x-testEnabled: true
-        x-testName: Bank Accounts - Date Close
+        x-testName: Bank Accounts - Dates List
         x-testDescription: 'TODO: Add Description'
       x-operation-settings:
         CollectParameters: false
@@ -2547,28 +2559,16 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  //api.pocketto.com.br/vdash/bank_accounts/5/dates:
-    get:
+  /vdash/bank_accounts/5/dates/2017-09-30/close:
+    post:
       description: 'TODO: Add Description'
-      summary: Bank Accounts - Dates List
+      summary: Bank Accounts - Date Close
       tags:
       - Bank Accounts
-      operationId: Bank Accounts - Dates List
+      operationId: Bank Accounts - Date Close
       produces:
       - application/json
       parameters:
-      - name: from
-        in: query
-        required: true
-        type: string
-        format: date-time
-        description: ''
-      - name: to
-        in: query
-        required: true
-        type: string
-        format: date-time
-        description: ''
       - name: Account
         in: header
         required: true
@@ -2590,8 +2590,8 @@ paths:
       security: []
       x-unitTests:
       - request:
-          method: GET
-          uri: //api.pocketto.com.br/vdash/bank_accounts/5/dates?from=2017-09-01&to=2017-09-30
+          method: POST
+          uri: /vdash/bank_accounts/5/dates/2017-09-30/close
           headers:
             Account: pocketto
             Authorization: dd466b708fbf04545827481c7c1ffaf5c76f574128cf1bf41f4b190f1c0999e85b88d18b2d5bd1d6
@@ -2605,7 +2605,7 @@ paths:
           headers: {}
         x-testShouldPass: true
         x-testEnabled: true
-        x-testName: Bank Accounts - Dates List
+        x-testName: Bank Accounts - Date Close
         x-testDescription: 'TODO: Add Description'
       x-operation-settings:
         CollectParameters: false

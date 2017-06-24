@@ -3994,11 +3994,10 @@ paths:
             Authorization: dd466b708fbf04545827481c7c1ffaf5c76f574128cf1bf41f4b190f1c0999e85b88d18b2d5bd1d6
           body: >-
             {
-              "quantity": 1,
+              "quantity": 2,
               "amount": 150.00,
               "due_date": "2017-06-10",
-              "sheets": 5,
-              "sheets_per_page": 4
+              "sheets": 3
             }
         expectedResponse:
           x-allowExtraHeaders: true
@@ -4622,13 +4621,8 @@ definitions:
         description: ''
         type: integer
         format: int32
-      sheets_per_page:
-        description: ''
-        type: integer
-        format: int32
     required:
     - quantity
     - amount
     - due_date
     - sheets
-    - sheets_per_page

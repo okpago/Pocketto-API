@@ -773,8 +773,7 @@ paths:
             Authorization: d2a2dd65ebc823cac9a6d40f1b1729e4f345b2439bc4b1db8c5669cdcf3e314e2e3c47f0512b7345
           body: >-
             {
-              "campaign_id": 60,
-              "amount": 15
+              "amount": 10
             }
         expectedResponse:
           x-allowExtraHeaders: true
@@ -1513,16 +1512,11 @@ definitions:
     title: Payments - CreateRequest
     type: object
     properties:
-      campaign_id:
-        description: ''
-        type: integer
-        format: int32
       amount:
         description: ''
         type: integer
         format: int32
     required:
-    - campaign_id
     - amount
   Payments  updaterequest:
     title: Payments - UpdateRequest

@@ -1442,6 +1442,59 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
+  /v1/payments/code:XXXXX/take:
+    put:
+      description: 'TODO: Add Description'
+      summary: Payments - Take
+      tags:
+      - Misc
+      operationId: Payments - Take
+      produces:
+      - application/json
+      parameters:
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Content-Type
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        200:
+          description: ''
+      security: []
+      x-unitTests:
+      - request:
+          method: PUT
+          uri: /v1/payments/code:XXXXX/take
+          headers:
+            Account: pocketto
+            Authorization: d2a2dd65ebc823cac9a6d40f1b1729e4f345b2439bc4b1db8c5669cdcf3e314e2e3c47f0512b7345
+            Content-Type: application/json
+        expectedResponse:
+          x-allowExtraHeaders: true
+          x-bodyMatchMode: NONE
+          x-arrayOrderedMatching: false
+          x-arrayCheckCount: false
+          x-matchResponseSchema: true
+          headers: {}
+        x-testShouldPass: true
+        x-testEnabled: true
+        x-testName: Payments - Take
+        x-testDescription: 'TODO: Add Description'
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
 definitions:
   LoginRequest:
     title: LoginRequest

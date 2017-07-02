@@ -192,6 +192,11 @@ paths:
         required: true
         type: string
         description: ''
+      - name: Content-Type
+        in: header
+        required: true
+        type: string
+        description: ''
       responses:
         200:
           description: ''
@@ -206,7 +211,8 @@ paths:
             Authorization: d2a2dd65ebc823cac9a6d40f1b1729e4f345b2439bc4b1db8c5669cdcf3e314e2e3c47f0512b7345
           body: >-
             {
-              "name": "Wagner da Silva"
+              "name": "Wagner da Silva",
+              "cpf": "02777284288"
             }
         expectedResponse:
           x-allowExtraHeaders: true
@@ -1525,8 +1531,12 @@ definitions:
       name:
         description: ''
         type: string
+      cpf:
+        description: ''
+        type: string
     required:
     - name
+    - cpf
   Profile props  create/updaterequest:
     title: Profile Props - Create/UpdateRequest
     type: object

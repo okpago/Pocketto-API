@@ -1023,6 +1023,8 @@ paths:
       operationId: File - Create (Base64)
       produces:
       - application/json
+      consumes:
+      - application/x-www-form-urlencoded
       parameters:
       - name: input_type
         in: formData

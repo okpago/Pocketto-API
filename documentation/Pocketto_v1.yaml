@@ -1506,6 +1506,8 @@ paths:
 definitions:
   LoginRequest:
     title: LoginRequest
+    example:
+      mobile: 51992794210
     type: object
     properties:
       mobile:
@@ -1515,6 +1517,9 @@ definitions:
     - mobile
   Login(authcode)request:
     title: Login (Authcode)Request
+    example:
+      mobile: 51992794210
+      authcode: 388940
     type: object
     properties:
       mobile:
@@ -1528,6 +1533,9 @@ definitions:
     - authcode
   Profile  updaterequest:
     title: Profile - UpdateRequest
+    example:
+      name: Wagner da Silva
+      cpf: 02777284288
     type: object
     properties:
       name:
@@ -1541,6 +1549,8 @@ definitions:
     - cpf
   Profile props  create/updaterequest:
     title: Profile Props - Create/UpdateRequest
+    example:
+      push_notif_enabled: true
     type: object
     properties:
       push_notif_enabled:
@@ -1550,6 +1560,12 @@ definitions:
     - push_notif_enabled
   Device  create/updaterequest:
     title: Device - Create/UpdateRequest
+    example:
+      type: iphone
+      model: 5s
+      push_service: firebase
+      push_token: abc123
+      device_id: minhaukey
     type: object
     properties:
       type:
@@ -1575,6 +1591,8 @@ definitions:
     - device_id
   Payments  createrequest:
     title: Payments - CreateRequest
+    example:
+      amount: 10
     type: object
     properties:
       amount:
@@ -1585,6 +1603,8 @@ definitions:
     - amount
   Payments  updaterequest:
     title: Payments - UpdateRequest
+    example:
+      amount: 99
     type: object
     properties:
       amount:
@@ -1595,6 +1615,10 @@ definitions:
     - amount
   Payments  update claimrequest:
     title: Payments - Update ClaimRequest
+    example:
+      photo_file_id: 1
+      claim_bank_account_id: 1
+      claim_date: 2010-01-02
     type: object
     properties:
       photo_file_id:
@@ -1614,6 +1638,9 @@ definitions:
     - claim_date
   InviteSmsrequest:
     title: Invite SMSRequest
+    example:
+      name: Vinicius
+      mobile: 51992794210
     type: object
     properties:
       name:

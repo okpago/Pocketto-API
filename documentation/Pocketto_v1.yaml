@@ -779,7 +779,8 @@ paths:
             Authorization: d2a2dd65ebc823cac9a6d40f1b1729e4f345b2439bc4b1db8c5669cdcf3e314e2e3c47f0512b7345
           body: >-
             {
-              "amount": 10
+              "amount": 10,
+              "description": ""
             }
         expectedResponse:
           x-allowExtraHeaders: true
@@ -1593,14 +1594,19 @@ definitions:
     title: Payments - CreateRequest
     example:
       amount: 10
+      description: ''
     type: object
     properties:
       amount:
         description: ''
         type: integer
         format: int32
+      description:
+        description: ''
+        type: string
     required:
     - amount
+    - description
   Payments  updaterequest:
     title: Payments - UpdateRequest
     example:

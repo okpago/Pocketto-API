@@ -4247,6 +4247,12 @@ paths:
 definitions:
   LoginRequest:
     title: LoginRequest
+    example:
+      username: admin@pocketto.com.br
+      password: pocketto
+      client_id: 2
+      grant_type: password
+      client_secret: kVWanD9RpWKrPEULJpabzmyVZr3MMzS6USIY9e6b
     type: object
     properties:
       username:
@@ -4273,6 +4279,9 @@ definitions:
     - client_secret
   Login  recoveryrequest:
     title: Login - RecoveryRequest
+    example:
+      email: '{{email}}'
+      redirect_url: http://pocketto.com.br
     type: object
     properties:
       email:
@@ -4286,6 +4295,10 @@ definitions:
     - redirect_url
   Login  resetrequest:
     title: Login - ResetRequest
+    example:
+      token: d3a054c6cc54c3f0b16777fec00a533a0e4f92e30aa28e3bacddd4596afb2a9c
+      password: pocketto
+      password_confirmation: pocketto
     type: object
     properties:
       token:
@@ -4303,6 +4316,8 @@ definitions:
     - password_confirmation
   Payments  updaterequest:
     title: Payments - UpdateRequest
+    example:
+      amount: 100
     type: object
     properties:
       amount:
@@ -4313,6 +4328,9 @@ definitions:
     - amount
   Payments  createrequest:
     title: Payments - CreateRequest
+    example:
+      amount: 100
+      user_id: 30
     type: object
     properties:
       amount:
@@ -4328,6 +4346,17 @@ definitions:
     - user_id
   Campaigns  createrequest:
     title: Campaigns - CreateRequest
+    example:
+      name: Vini Campanha agora vai
+      description: Camp desc camp desc
+      image_bg_file_id: 1
+      target_total: 10
+      target_total_users: 5
+      payment_amount: 100
+      recurring: true
+      recurring_max_times: 10
+      end_date: 2017-05-30
+      status: 1
     type: object
     properties:
       name:
@@ -4379,6 +4408,17 @@ definitions:
     - status
   Campaigns  updaterequest:
     title: Campaigns - UpdateRequest
+    example:
+      name: Campanha 1
+      description: Camp desc camp desc
+      image_bg_file_id: 1
+      target_total: 10
+      target_total_users: 1
+      payment_amount: 100
+      recurring: true
+      recurring_max_times: 10
+      end_date: 
+      status: 1
     type: object
     properties:
       name:
@@ -4430,6 +4470,14 @@ definitions:
     - status
   Messages  createrequest:
     title: Messages - CreateRequest
+    example:
+      message_type_id: 41
+      title: Meu titulo
+      description: Minha descrição
+      dispatch: now
+      dont_repeat: false
+      events:
+      - event: user_created
     type: object
     properties:
       message_type_id:
@@ -4471,6 +4519,8 @@ definitions:
     - event
   Messages  cancelrequest:
     title: Messages - CancelRequest
+    example:
+      title: Obrigado pela sua doacao!
     type: object
     properties:
       title:
@@ -4480,6 +4530,9 @@ definitions:
     - title
   Messages  deleterequest:
     title: Messages - DeleteRequest
+    example:
+      username: rk.fadini@gmail.com
+      password: 123123
     type: object
     properties:
       username:
@@ -4493,6 +4546,8 @@ definitions:
     - password
   User categories  createrequest:
     title: User Categories - CreateRequest
+    example:
+      name: Igreja A
     type: object
     properties:
       name:
@@ -4502,6 +4557,8 @@ definitions:
     - name
   User categories  updaterequest:
     title: User Categories - UpdateRequest
+    example:
+      name: Igreja B
     type: object
     properties:
       name:
@@ -4511,6 +4568,11 @@ definitions:
     - name
   Bank accounts  createrequest:
     title: Bank Accounts - CreateRequest
+    example:
+      bank: banrisul
+      name: Banrisul
+      agency: 0123
+      number: 0123
     type: object
     properties:
       bank:
@@ -4532,6 +4594,11 @@ definitions:
     - number
   Bank accounts  updaterequest:
     title: Bank Accounts - UpdateRequest
+    example:
+      bank: banrisul
+      name: Banrisul
+      agency: 0123
+      number: 0123
     type: object
     properties:
       bank:
@@ -4553,6 +4620,8 @@ definitions:
     - number
   Api keys  createrequest:
     title: API Keys - CreateRequest
+    example:
+      name: My Api Key
     type: object
     properties:
       name:
@@ -4562,6 +4631,8 @@ definitions:
     - name
   Api keys  updaterequest:
     title: API Keys - UpdateRequest
+    example:
+      name: My Api Key
     type: object
     properties:
       name:
@@ -4571,6 +4642,11 @@ definitions:
     - name
   Message types  createrequest:
     title: Message Types - CreateRequest
+    example:
+      icon: heart
+      name: oi
+      color: '#ffffff'
+      status: 1
     type: object
     properties:
       icon:
@@ -4593,6 +4669,11 @@ definitions:
     - status
   Message types  updaterequest:
     title: Message Types - UpdateRequest
+    example:
+      icon: heart
+      name: oi
+      color: '#ffffff'
+      status: 1
     type: object
     properties:
       icon:
@@ -4615,6 +4696,11 @@ definitions:
     - status
   Settings  updaterequest:
     title: Settings - UpdateRequest
+    example:
+      name: invite_sms_name
+      value: new_value
+      public: 0
+      advanced: 0
     type: object
     properties:
       name:
@@ -4638,6 +4724,10 @@ definitions:
     - advanced
   Settings  update allrequest:
     title: Settings - Update AllRequest
+    example:
+      settings:
+      - name: invite_sms
+        value: new_value
     type: object
     properties:
       settings:
@@ -4662,6 +4752,12 @@ definitions:
     - value
   Admin users  createrequest:
     title: Admin Users - CreateRequest
+    example:
+      name: Henrique Haas
+      email: henrique@haax.com.br
+      password: haas007
+      role: a
+      status: 1
     type: object
     properties:
       name:
@@ -4688,6 +4784,12 @@ definitions:
     - status
   Admin users  updaterequest:
     title: Admin Users - UpdateRequest
+    example:
+      name: Henrique Haas
+      email: henrique@haax.com.br
+      password: haas007
+      role: a
+      status: 1
     type: object
     properties:
       name:
@@ -4714,6 +4816,12 @@ definitions:
     - status
   Me  updaterequest:
     title: Me - UpdateRequest
+    example:
+      name: Henrique Haas
+      email: henrique@haax.com.br
+      password: haas007
+      role: a
+      status: 1
     type: object
     properties:
       name:
@@ -4740,6 +4848,13 @@ definitions:
     - status
   PaymentDocGeneraterequest:
     title: Payment Doc GenerateRequest
+    example:
+      quantity: 3
+      amount: 150
+      due_date: 2017-06-10
+      sheets: 9
+      sheets_per_page: 3
+      continuous: 0
     type: object
     properties:
       quantity:

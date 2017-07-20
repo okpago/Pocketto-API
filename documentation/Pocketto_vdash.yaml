@@ -4408,17 +4408,6 @@ definitions:
     - status
   Campaigns  updaterequest:
     title: Campaigns - UpdateRequest
-    example:
-      name: Campanha 1
-      description: Camp desc camp desc
-      image_bg_file_id: 1
-      target_total: 10
-      target_total_users: 1
-      payment_amount: 100
-      recurring: true
-      recurring_max_times: 10
-      end_date: 
-      status: 1
     type: object
     properties:
       name:

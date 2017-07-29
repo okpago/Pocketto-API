@@ -12,7 +12,8 @@ securityDefinitions:
   auth:
     type: oauth2
     flow: implicit
-    authorizationUrl: ''
+    authorizationUrl: http://example.com
+    scopes: {}
 schemes:
 - http
 consumes:

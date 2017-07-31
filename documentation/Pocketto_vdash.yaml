@@ -2792,14 +2792,25 @@ paths:
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
           body: >-
             {
-              "message_type_id": 41,
+              "message_type_id": 1,
               "title" : "Meu titulo",
               "description": "Minha descrição",
               "dispatch": "now",
               "dont_repeat": false,
               "events": [
-              	{ "event": "user_created" }
-              ]
+                { "event": "user_created" }
+              ],
+              "deliver_by": {
+                "push": true,
+                "email": true,
+                "sms": true,
+                "sms_only_if_no_app": true
+              },
+              "action_data" : {
+              	"url":"https://www.youtube.com/embed/WCDgnh-swBU",
+              	"file_url":"https://s3-sa-east-1.amazonaws.com/pockettobucket/renascer/files/3l/3lHL/3lHL8NDuGTjsOPVxJPighkKga4joykkqKOio0AJMXfdV6LamxZ.mp3",
+              	"file_format":"mp3"
+              }
             }
         expectedResponse:
           x-allowExtraHeaders: true
@@ -4655,13 +4666,22 @@ definitions:
   Messages  createrequest:
     title: Messages - CreateRequest
     example:
-      message_type_id: 41
+      message_type_id: 1
       title: Meu titulo
       description: Minha descrição
       dispatch: now
       dont_repeat: false
       events:
       - event: user_created
+      deliver_by:
+        push: true
+        email: true
+        sms: true
+        sms_only_if_no_app: true
+      action_data:
+        url: https://www.youtube.com/embed/WCDgnh-swBU
+        file_url: https://s3-sa-east-1.amazonaws.com/pockettobucket/renascer/files/3l/3lHL/3lHL8NDuGTjsOPVxJPighkKga4joykkqKOio0AJMXfdV6LamxZ.mp3
+        file_format: mp3
     type: object
     properties:
       message_type_id:
@@ -4685,6 +4705,10 @@ definitions:
         type: array
         items:
           $ref: '#/definitions/Event'
+      deliver_by:
+        $ref: '#/definitions/DeliverBy'
+      action_data:
+        $ref: '#/definitions/ActionData'
     required:
     - message_type_id
     - title
@@ -4692,6 +4716,8 @@ definitions:
     - dispatch
     - dont_repeat
     - events
+    - deliver_by
+    - action_data
   Event:
     title: Event
     type: object
@@ -4701,6 +4727,44 @@ definitions:
         type: string
     required:
     - event
+  DeliverBy:
+    title: DeliverBy
+    type: object
+    properties:
+      push:
+        description: ''
+        type: boolean
+      email:
+        description: ''
+        type: boolean
+      sms:
+        description: ''
+        type: boolean
+      sms_only_if_no_app:
+        description: ''
+        type: boolean
+    required:
+    - push
+    - email
+    - sms
+    - sms_only_if_no_app
+  ActionData:
+    title: ActionData
+    type: object
+    properties:
+      url:
+        description: ''
+        type: string
+      file_url:
+        description: ''
+        type: string
+      file_format:
+        description: ''
+        type: string
+    required:
+    - url
+    - file_url
+    - file_format
   Messages  cancelrequest:
     title: Messages - CancelRequest
     example:

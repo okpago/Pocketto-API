@@ -6,16 +6,16 @@ info:
   license:
     name: MIT
     url: http://github.com/gruntjs/grunt/blob/master/LICENSE-MIT
-host: example.com
-basePath: /
+host: api.pocketto.com.br
+basePath: /v1
 schemes:
-- http
+- https
 consumes:
 - application/json
 produces:
 - application/json
 paths:
-  /v1/login:
+  /login:
     post:
       description: 'TODO: Add Description'
       summary: Login (Authcode)
@@ -48,7 +48,7 @@ paths:
       x-unitTests:
       - request:
           method: POST
-          uri: /v1/login
+          uri: /login
           headers:
             Content-Type: application/json
             Account: pocketto
@@ -73,7 +73,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /v1/bank_accounts:
+  /bank_accounts:
     get:
       description: 'TODO: Add Description'
       summary: Bank Accounts - List
@@ -100,7 +100,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /v1/bank_accounts
+          uri: /bank_accounts
           headers:
             Account: pocketto
             Authorization: '{{token}}'
@@ -120,7 +120,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /v1/profile:
+  /profile:
     get:
       description: 'TODO: Add Description'
       summary: Profile - View
@@ -147,7 +147,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /v1/profile
+          uri: /profile
           headers:
             Account: pocketto
             Authorization: '{{token}}'
@@ -204,7 +204,7 @@ paths:
       x-unitTests:
       - request:
           method: PUT
-          uri: /v1/profile
+          uri: /profile
           headers:
             Content-Type: application/json
             Account: pocketto
@@ -230,7 +230,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /v1/profile/props:
+  /profile/props:
     get:
       description: 'TODO: Add Description'
       summary: Profile Props - List
@@ -257,7 +257,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /v1/profile/props
+          uri: /profile/props
           headers:
             Account: pocketto
             Authorization: '{{token}}'
@@ -309,7 +309,7 @@ paths:
       x-unitTests:
       - request:
           method: PUT
-          uri: /v1/profile/props
+          uri: /profile/props
           headers:
             Content-Type: application/json
             Account: pocketto
@@ -334,7 +334,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /v1/profile/props/push_notif_enabled:
+  /profile/props/push_notif_enabled:
     get:
       description: 'TODO: Add Description'
       summary: Profile Props - View
@@ -361,7 +361,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /v1/profile/props/push_notif_enabled
+          uri: /profile/props/push_notif_enabled
           headers:
             Account: pocketto
             Authorization: '{{token}}'
@@ -381,7 +381,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /v1/device:
+  /device:
     put:
       description: 'TODO: Add Description'
       summary: Device - Create/Update
@@ -419,7 +419,7 @@ paths:
       x-unitTests:
       - request:
           method: PUT
-          uri: /v1/device
+          uri: /device
           headers:
             Content-Type: application/json
             Account: pocketto
@@ -448,7 +448,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /v1/campaigns:
+  /campaigns:
     get:
       description: 'TODO: Add Description'
       summary: Campaigns - List
@@ -475,7 +475,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /v1/campaigns
+          uri: /campaigns
           headers:
             Account: pocketto
             Authorization: '{{token}}'
@@ -495,7 +495,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /v1/campaigns/4:
+  /campaigns/4:
     get:
       description: 'TODO: Add Description'
       summary: Campaigns - View
@@ -522,7 +522,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /v1/campaigns/4
+          uri: /campaigns/4
           headers:
             Account: pocketto
             Authorization: '{{token}}'
@@ -542,7 +542,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /v1/user_categories:
+  /user_categories:
     get:
       description: 'TODO: Add Description'
       summary: User Categories - List1
@@ -569,7 +569,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /v1/user_categories
+          uri: /user_categories
           headers:
             Account: pocketto
             Authorization: '{{token}}'
@@ -589,7 +589,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  //api.pocketto.com.br/v1/settings:
+  /settings:
     get:
       description: 'TODO: Add Description'
       summary: Settings - List
@@ -621,7 +621,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: //api.pocketto.com.br/v1/settings?filters=advanced::eq(0)
+          uri: /settings?filters=advanced::eq(0)
           headers:
             Account: pocketto
             Authorization: '{{token}}'
@@ -641,7 +641,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /v1/timelines:
+  /timelines:
     get:
       description: 'TODO: Add Description'
       summary: Timelines
@@ -668,7 +668,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /v1/timelines
+          uri: /timelines
           headers:
             Account: pocketto
             Authorization: '{{token}}'
@@ -688,7 +688,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /v1/payments:
+  /payments:
     get:
       description: 'TODO: Add Description'
       summary: Payments - List
@@ -715,7 +715,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /v1/payments
+          uri: /payments
           headers:
             Account: pocketto
             Authorization: '{{token}}'
@@ -772,7 +772,7 @@ paths:
       x-unitTests:
       - request:
           method: POST
-          uri: /v1/payments
+          uri: /payments
           headers:
             Content-Type: application/json
             Account: pocketto
@@ -798,7 +798,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /v1/payments/56:
+  /payments/56:
     put:
       description: 'TODO: Add Description'
       summary: Payments - Update
@@ -831,7 +831,7 @@ paths:
       x-unitTests:
       - request:
           method: PUT
-          uri: /v1/payments/56
+          uri: /payments/56
           headers:
             Content-Type: application/json
             Account: pocketto
@@ -856,7 +856,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /v1/payments/3623:
+  /payments/3623:
     get:
       description: 'TODO: Add Description'
       summary: Payments - View
@@ -883,7 +883,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /v1/payments/3623
+          uri: /payments/3623
           headers:
             Account: pocketto
             Authorization: '{{token}}'
@@ -903,7 +903,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /v1/payments/3624:
+  /payments/3624:
     delete:
       description: 'TODO: Add Description'
       summary: Payments - Delete
@@ -930,7 +930,7 @@ paths:
       x-unitTests:
       - request:
           method: DELETE
-          uri: /v1/payments/3624
+          uri: /payments/3624
           headers:
             Account: pocketto
             Authorization: '{{token}}'
@@ -950,7 +950,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /v1/payments/1076/claim:
+  /payments/1076/claim:
     put:
       description: 'TODO: Add Description'
       summary: Payments - Update Claim
@@ -988,7 +988,7 @@ paths:
       x-unitTests:
       - request:
           method: PUT
-          uri: /v1/payments/1076/claim
+          uri: /payments/1076/claim
           headers:
             Content-Type: application/json
             Account: pocketto
@@ -1015,7 +1015,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /v1/file:
+  /file:
     post:
       description: 'TODO: Add Description'
       summary: File - Create (Base64)
@@ -1059,7 +1059,7 @@ paths:
       x-unitTests:
       - request:
           method: POST
-          uri: /v1/file
+          uri: /file
           headers:
             Content-Type: application/x-www-form-urlencoded
             Account: pocketto
@@ -1081,7 +1081,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /v1/files/1:
+  /files/1:
     get:
       description: 'TODO: Add Description'
       summary: File - View
@@ -1113,7 +1113,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /v1/files/1
+          uri: /files/1
           headers:
             Account: pocketto
             Authorization: '{{token}}'
@@ -1134,7 +1134,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /v1/invite:
+  /invite:
     post:
       description: 'TODO: Add Description'
       summary: Invite SMS
@@ -1175,7 +1175,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /v1/user_recurs:
+  /user_recurs:
     get:
       description: 'TODO: Add Description'
       summary: User Recurrences - List
@@ -1202,7 +1202,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /v1/user_recurs
+          uri: /user_recurs
           headers:
             Account: pocketto
             Authorization: '{{token}}'
@@ -1222,7 +1222,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /v1/user_recurs/1:
+  /user_recurs/1:
     get:
       description: 'TODO: Add Description'
       summary: User Recurrences - View
@@ -1249,7 +1249,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /v1/user_recurs/1
+          uri: /user_recurs/1
           headers:
             Account: pocketto
             Authorization: '{{token}}'
@@ -1269,7 +1269,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /v1/user_recurs/1/cancel:
+  /user_recurs/1/cancel:
     put:
       description: 'TODO: Add Description'
       summary: User Recurrences - Cancel
@@ -1296,7 +1296,7 @@ paths:
       x-unitTests:
       - request:
           method: PUT
-          uri: /v1/user_recurs/1/cancel
+          uri: /user_recurs/1/cancel
           headers:
             Account: pocketto
             Authorization: '{{token}}'
@@ -1316,7 +1316,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /v1/address/98590000:
+  /address/98590000:
     get:
       description: 'TODO: Add Description'
       summary: Address
@@ -1343,7 +1343,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /v1/address/98590000
+          uri: /address/98590000
           headers:
             Account: pocketto
             Authorization: '{{token}}'
@@ -1363,7 +1363,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /v1/logout:
+  /logout:
     post:
       description: 'TODO: Add Description'
       summary: Logout
@@ -1390,7 +1390,7 @@ paths:
       x-unitTests:
       - request:
           method: POST
-          uri: /v1/logout
+          uri: /logout
           headers:
             Account: pocketto
             Authorization: '{{token}}'
@@ -1410,7 +1410,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /v1/accounts/code:pocketto:
+  /accounts/code:pocketto:
     get:
       description: 'TODO: Add Description'
       summary: Account - View (Code)
@@ -1432,7 +1432,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /v1/accounts/code:pocketto
+          uri: /accounts/code:pocketto
           headers:
             Account: pocketto
         expectedResponse:
@@ -1451,7 +1451,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /v1/payments/code:XXXXX/take:
+  /payments/code:XXXXX/take:
     put:
       description: 'TODO: Add Description'
       summary: Payments - Take
@@ -1483,7 +1483,7 @@ paths:
       x-unitTests:
       - request:
           method: PUT
-          uri: /v1/payments/code:XXXXX/take
+          uri: /payments/code:XXXXX/take
           headers:
             Account: pocketto
             Authorization: '{{token}}'

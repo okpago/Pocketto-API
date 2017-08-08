@@ -6,22 +6,22 @@ info:
   license:
     name: MIT
     url: http://github.com/gruntjs/grunt/blob/master/LICENSE-MIT
-host: example.com
-basePath: /
+host: api.pocketto.com.br
+basePath: /vdash
 securityDefinitions:
   auth:
     type: oauth2
     flow: implicit
-    authorizationUrl: http://example.com
+    authorizationUrl: https://api.pocketto.com.br/vdash
     scopes: {}
 schemes:
-- http
+- https
 consumes:
 - application/json
 produces:
 - application/json
 paths:
-  /vdash/api_keys:
+  /api_keys:
     get:
       description: 'TODO: Add Description'
       summary: API Keys - List
@@ -49,7 +49,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /vdash/api_keys
+          uri: /api_keys
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
@@ -107,7 +107,7 @@ paths:
       x-unitTests:
       - request:
           method: POST
-          uri: /vdash/api_keys
+          uri: /api_keys
           headers:
             Content-Type: application/json
             Account: pocketto
@@ -132,7 +132,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/api_keys/0cb476ab3aa6820ab36ba27e04226d338f4cd201c714ef1c662bc4c1b5c5a0cfb40b2140f37ce276:
+  /api_keys/0cb476ab3aa6820ab36ba27e04226d338f4cd201c714ef1c662bc4c1b5c5a0cfb40b2140f37ce276:
     get:
       description: 'TODO: Add Description'
       summary: API Keys - View
@@ -165,7 +165,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /vdash/api_keys/0cb476ab3aa6820ab36ba27e04226d338f4cd201c714ef1c662bc4c1b5c5a0cfb40b2140f37ce276
+          uri: /api_keys/0cb476ab3aa6820ab36ba27e04226d338f4cd201c714ef1c662bc4c1b5c5a0cfb40b2140f37ce276
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
@@ -224,7 +224,7 @@ paths:
       x-unitTests:
       - request:
           method: PUT
-          uri: /vdash/api_keys/0cb476ab3aa6820ab36ba27e04226d338f4cd201c714ef1c662bc4c1b5c5a0cfb40b2140f37ce276
+          uri: /api_keys/0cb476ab3aa6820ab36ba27e04226d338f4cd201c714ef1c662bc4c1b5c5a0cfb40b2140f37ce276
           headers:
             Content-Type: application/json
             Account: pocketto
@@ -281,7 +281,7 @@ paths:
       x-unitTests:
       - request:
           method: DELETE
-          uri: /vdash/api_keys/0cb476ab3aa6820ab36ba27e04226d338f4cd201c714ef1c662bc4c1b5c5a0cfb40b2140f37ce276
+          uri: /api_keys/0cb476ab3aa6820ab36ba27e04226d338f4cd201c714ef1c662bc4c1b5c5a0cfb40b2140f37ce276
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
@@ -302,7 +302,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/admin_users:
+  /admin_users:
     get:
       description: 'TODO: Add Description'
       summary: Admin Users - List
@@ -335,7 +335,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /vdash/admin_users
+          uri: /admin_users
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
@@ -394,7 +394,7 @@ paths:
       x-unitTests:
       - request:
           method: POST
-          uri: /vdash/admin_users
+          uri: /admin_users
           headers:
             Content-Type: application/json
             Account: pocketto
@@ -423,7 +423,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/admin_users/1:
+  /admin_users/1:
     get:
       description: 'TODO: Add Description'
       summary: Admin Users - Show
@@ -451,7 +451,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /vdash/admin_users/1
+          uri: /admin_users/1
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
@@ -471,7 +471,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/admin_users/5:
+  /admin_users/5:
     put:
       description: 'TODO: Add Description'
       summary: Admin Users - Update
@@ -510,7 +510,7 @@ paths:
       x-unitTests:
       - request:
           method: PUT
-          uri: /vdash/admin_users/5
+          uri: /admin_users/5
           headers:
             Content-Type: application/json
             Account: pocketto
@@ -539,7 +539,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/admin_users/8:
+  /admin_users/8:
     delete:
       description: 'TODO: Add Description'
       summary: Admin Users - Delete
@@ -572,7 +572,7 @@ paths:
       x-unitTests:
       - request:
           method: DELETE
-          uri: /vdash/admin_users/8
+          uri: /admin_users/8
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
@@ -593,7 +593,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/bank_accounts:
+  /bank_accounts:
     get:
       description: 'TODO: Add Description'
       summary: Bank Accounts - List
@@ -626,7 +626,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /vdash/bank_accounts
+          uri: /bank_accounts
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
@@ -685,7 +685,7 @@ paths:
       x-unitTests:
       - request:
           method: POST
-          uri: /vdash/bank_accounts
+          uri: /bank_accounts
           headers:
             Content-Type: application/json
             Account: pocketto
@@ -713,7 +713,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/bank_accounts/2:
+  /bank_accounts/2:
     get:
       description: 'TODO: Add Description'
       summary: Bank Accounts - View
@@ -746,7 +746,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /vdash/bank_accounts/2
+          uri: /bank_accounts/2
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
@@ -767,7 +767,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/bank_accounts/4:
+  /bank_accounts/4:
     put:
       description: 'TODO: Add Description'
       summary: Bank Accounts - Update
@@ -806,7 +806,7 @@ paths:
       x-unitTests:
       - request:
           method: PUT
-          uri: /vdash/bank_accounts/4
+          uri: /bank_accounts/4
           headers:
             Content-Type: application/json
             Account: pocketto
@@ -866,7 +866,7 @@ paths:
       x-unitTests:
       - request:
           method: DELETE
-          uri: /vdash/bank_accounts/4
+          uri: /bank_accounts/4
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
@@ -887,7 +887,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/bank_accounts/5/transactions:
+  /bank_accounts/5/transactions:
     post:
       description: 'TODO: Add Description'
       summary: Bank Accounts - Transactions
@@ -925,7 +925,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  //api.pocketto.com.br/vdash/bank_accounts/2/dates:
+  /bank_accounts/2/dates:
     get:
       description: 'TODO: Add Description'
       summary: Bank Accounts - Dates List
@@ -970,7 +970,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: //api.pocketto.com.br/vdash/bank_accounts/2/dates?from=2017-06-01&to=2017-06-30
+          uri: /bank_accounts/2/dates?from=2017-06-01&to=2017-06-30
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
@@ -991,7 +991,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/bank_accounts/5/dates/2017-10-10:
+  /bank_accounts/5/dates/2017-10-10:
     get:
       description: 'TODO: Add Description'
       summary: Bank Accounts - Date View
@@ -1024,7 +1024,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /vdash/bank_accounts/5/dates/2017-10-10
+          uri: /bank_accounts/5/dates/2017-10-10
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
@@ -1045,61 +1045,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/bank_accounts/5/dates/2017-09-30/close:
-    post:
-      description: 'TODO: Add Description'
-      summary: Bank Accounts - Date Close
-      tags:
-      - Bank Accounts
-      operationId: Bank Accounts - Date Close
-      produces:
-      - application/json
-      parameters:
-      - name: Account
-        in: header
-        required: true
-        type: string
-        description: ''
-      - name: Authorization
-        in: header
-        required: true
-        type: string
-        description: ''
-      - name: Content-Type
-        in: header
-        required: true
-        type: string
-        description: ''
-      responses:
-        200:
-          description: ''
-      security:
-      - auth: []
-      x-unitTests:
-      - request:
-          method: POST
-          uri: /vdash/bank_accounts/5/dates/2017-09-30/close
-          headers:
-            Account: pocketto
-            Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
-            Content-Type: application/json
-        expectedResponse:
-          x-allowExtraHeaders: true
-          x-bodyMatchMode: NONE
-          x-arrayOrderedMatching: false
-          x-arrayCheckCount: false
-          x-matchResponseSchema: true
-          headers: {}
-        x-testShouldPass: true
-        x-testEnabled: true
-        x-testName: Bank Accounts - Date Close
-        x-testDescription: 'TODO: Add Description'
-      x-operation-settings:
-        CollectParameters: false
-        AllowDynamicQueryParameters: false
-        AllowDynamicFormParameters: false
-        IsMultiContentStreaming: false
-  //api.pocketto.com.br/vdash/bank_accounts/5/dates/2017-09-30/close:
+  /bank_accounts/5/dates/2017-09-30/close:
     post:
       description: 'TODO: Add Description'
       summary: Bank Accounts - Date Close (Force)
@@ -1138,7 +1084,7 @@ paths:
       x-unitTests:
       - request:
           method: POST
-          uri: //api.pocketto.com.br/vdash/bank_accounts/5/dates/2017-09-30/close?force=1
+          uri: /bank_accounts/5/dates/2017-09-30/close?force=1
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
@@ -1159,7 +1105,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/banks:
+  /banks:
     get:
       description: 'TODO: Add Description'
       summary: Banks - List
@@ -1192,7 +1138,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /vdash/banks
+          uri: /banks
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
@@ -1213,7 +1159,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/banks/caixa:
+  /banks/caixa:
     get:
       description: 'TODO: Add Description'
       summary: Banks - View
@@ -1246,7 +1192,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /vdash/banks/caixa
+          uri: /banks/caixa
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
@@ -1267,7 +1213,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/campaigns:
+  /campaigns:
     get:
       description: 'TODO: Add Description'
       summary: Campaigns - List
@@ -1300,7 +1246,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /vdash/campaigns
+          uri: /campaigns
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
@@ -1359,7 +1305,7 @@ paths:
       x-unitTests:
       - request:
           method: POST
-          uri: /vdash/campaigns
+          uri: /campaigns
           headers:
             Content-Type: application/json
             Account: pocketto
@@ -1393,7 +1339,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/campaigns/35:
+  /campaigns/35:
     get:
       description: 'TODO: Add Description'
       summary: Campaigns - View
@@ -1426,7 +1372,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /vdash/campaigns/35
+          uri: /campaigns/35
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
@@ -1447,7 +1393,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/campaigns/3:
+  /campaigns/3:
     put:
       description: 'TODO: Add Description'
       summary: Campaigns - Update
@@ -1489,7 +1435,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/campaigns/38/activate:
+  /campaigns/38/activate:
     put:
       description: 'TODO: Add Description'
       summary: Campaigns - Activate
@@ -1522,7 +1468,7 @@ paths:
       x-unitTests:
       - request:
           method: PUT
-          uri: /vdash/campaigns/38/activate
+          uri: /campaigns/38/activate
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
@@ -1543,7 +1489,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/campaigns/14/desactivate:
+  /campaigns/14/desactivate:
     put:
       description: 'TODO: Add Description'
       summary: Campaigns - Desactivate
@@ -1576,7 +1522,7 @@ paths:
       x-unitTests:
       - request:
           method: PUT
-          uri: /vdash/campaigns/14/desactivate
+          uri: /campaigns/14/desactivate
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
@@ -1597,7 +1543,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/campaigns/66/duplicate:
+  /campaigns/66/duplicate:
     post:
       description: 'TODO: Add Description'
       summary: Campaigns - Duplicate
@@ -1630,7 +1576,7 @@ paths:
       x-unitTests:
       - request:
           method: POST
-          uri: /vdash/campaigns/66/duplicate
+          uri: /campaigns/66/duplicate
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
@@ -1651,7 +1597,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/downloads:
+  /downloads:
     get:
       description: 'TODO: Add Description'
       summary: Downloads - List
@@ -1684,7 +1630,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /vdash/downloads
+          uri: /downloads
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
@@ -1705,7 +1651,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/downloads/3:
+  /downloads/3:
     get:
       description: 'TODO: Add Description'
       summary: Downloads - View
@@ -1738,7 +1684,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /vdash/downloads/3
+          uri: /downloads/3
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
@@ -1791,7 +1737,7 @@ paths:
       x-unitTests:
       - request:
           method: DELETE
-          uri: /vdash/downloads/3
+          uri: /downloads/3
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
@@ -1812,7 +1758,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/events:
+  /events:
     get:
       description: 'TODO: Add Description'
       summary: Events - List
@@ -1840,7 +1786,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /vdash/events
+          uri: /events
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
@@ -1860,7 +1806,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/events/user_profile_updated:
+  /events/user_profile_updated:
     get:
       description: 'TODO: Add Description'
       summary: Events - View
@@ -1888,7 +1834,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /vdash/events/user_profile_updated
+          uri: /events/user_profile_updated
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
@@ -1908,7 +1854,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/files:
+  /files:
     post:
       description: 'TODO: Add Description'
       summary: Files - Create (Base64)
@@ -1953,7 +1899,7 @@ paths:
       x-unitTests:
       - request:
           method: POST
-          uri: /vdash/files
+          uri: /files
           headers:
             Content-Type: application/x-www-form-urlencoded
             Account: pocketto
@@ -1975,7 +1921,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/files/803:
+  /files/803:
     get:
       description: 'TODO: Add Description'
       summary: Files - View
@@ -2008,7 +1954,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /vdash/files/803
+          uri: /files/803
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
@@ -2029,7 +1975,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/login:
+  /login:
     post:
       description: 'TODO: Add Description'
       summary: Login
@@ -2068,7 +2014,7 @@ paths:
       x-unitTests:
       - request:
           method: POST
-          uri: /vdash/login
+          uri: /login
           headers:
             Content-Type: application/json
             Account: pocketto
@@ -2097,7 +2043,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/login/recovery:
+  /login/recovery:
     post:
       description: 'TODO: Add Description'
       summary: Login - Recovery
@@ -2136,7 +2082,7 @@ paths:
       x-unitTests:
       - request:
           method: POST
-          uri: /vdash/login/recovery
+          uri: /login/recovery
           headers:
             Content-Type: application/json
             Account: pocketto
@@ -2162,7 +2108,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/login/reset:
+  /login/reset:
     put:
       description: 'TODO: Add Description'
       summary: Login - Reset
@@ -2201,7 +2147,7 @@ paths:
       x-unitTests:
       - request:
           method: PUT
-          uri: /vdash/login/reset
+          uri: /login/reset
           headers:
             Content-Type: application/json
             Account: pocketto
@@ -2228,7 +2174,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/logout:
+  /logout:
     post:
       description: 'TODO: Add Description'
       summary: Logout
@@ -2261,7 +2207,7 @@ paths:
       x-unitTests:
       - request:
           method: POST
-          uri: /vdash/logout
+          uri: /logout
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
@@ -2282,7 +2228,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/me:
+  /me:
     get:
       description: 'TODO: Add Description'
       summary: Me - Show
@@ -2310,7 +2256,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /vdash/me
+          uri: /me
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
@@ -2368,7 +2314,7 @@ paths:
       x-unitTests:
       - request:
           method: PUT
-          uri: /vdash/me
+          uri: /me
           headers:
             Content-Type: application/json
             Account: pocketto
@@ -2397,7 +2343,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/message_types:
+  /message_types:
     get:
       description: 'TODO: Add Description'
       summary: Message Types - List
@@ -2425,7 +2371,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /vdash/message_types
+          uri: /message_types
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
@@ -2483,7 +2429,7 @@ paths:
       x-unitTests:
       - request:
           method: POST
-          uri: /vdash/message_types
+          uri: /message_types
           headers:
             Content-Type: application/json
             Account: pocketto
@@ -2511,7 +2457,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/message_types/41:
+  /message_types/41:
     get:
       description: 'TODO: Add Description'
       summary: Message Types - View
@@ -2544,7 +2490,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /vdash/message_types/41
+          uri: /message_types/41
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
@@ -2603,7 +2549,7 @@ paths:
       x-unitTests:
       - request:
           method: PUT
-          uri: /vdash/message_types/41
+          uri: /message_types/41
           headers:
             Content-Type: application/json
             Account: pocketto
@@ -2663,7 +2609,7 @@ paths:
       x-unitTests:
       - request:
           method: DELETE
-          uri: /vdash/message_types/41
+          uri: /message_types/41
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
@@ -2684,7 +2630,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/messages:
+  /messages:
     get:
       description: 'TODO: Add Description'
       summary: Messages - List
@@ -2785,7 +2731,7 @@ paths:
       x-unitTests:
       - request:
           method: POST
-          uri: /vdash/messages
+          uri: /messages
           headers:
             Content-Type: application/json
             Account: pocketto
@@ -2834,7 +2780,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/messages/2:
+  /messages/2:
     get:
       description: 'TODO: Add Description'
       summary: Messages - View
@@ -2867,7 +2813,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /vdash/messages/2
+          uri: /messages/2
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
@@ -2926,7 +2872,7 @@ paths:
       x-unitTests:
       - request:
           method: DELETE
-          uri: /vdash/messages/2
+          uri: /messages/2
           headers:
             Content-Type: application/json
             Account: pocketto
@@ -2952,7 +2898,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/messages/181/cancel:
+  /messages/181/cancel:
     put:
       description: 'TODO: Add Description'
       summary: Messages - Cancel
@@ -2991,7 +2937,7 @@ paths:
       x-unitTests:
       - request:
           method: PUT
-          uri: /vdash/messages/181/cancel
+          uri: /messages/181/cancel
           headers:
             Content-Type: application/json
             Account: pocketto
@@ -3016,7 +2962,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/payments:
+  /payments:
     get:
       description: 'TODO: Add Description'
       summary: Payments - List
@@ -3049,7 +2995,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /vdash/payments
+          uri: /payments
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
@@ -3108,7 +3054,7 @@ paths:
       x-unitTests:
       - request:
           method: POST
-          uri: /vdash/payments
+          uri: /payments
           headers:
             Content-Type: application/json
             Account: pocketto
@@ -3134,7 +3080,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/payments/1:
+  /payments/1:
     get:
       description: 'TODO: Add Description'
       summary: Payments - View
@@ -3167,7 +3113,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /vdash/payments/1
+          uri: /payments/1
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
@@ -3188,7 +3134,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/payments/103/status/refused:
+  /payments/103/status/refused:
     put:
       description: 'TODO: Add Description'
       summary: Payments - Update Status
@@ -3221,7 +3167,7 @@ paths:
       x-unitTests:
       - request:
           method: PUT
-          uri: /vdash/payments/103/status/refused
+          uri: /payments/103/status/refused
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
@@ -3242,7 +3188,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/payments/103:
+  /payments/103:
     delete:
       description: 'TODO: Add Description'
       summary: Payments - Delete
@@ -3270,7 +3216,7 @@ paths:
       x-unitTests:
       - request:
           method: DELETE
-          uri: /vdash/payments/103
+          uri: /payments/103
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
@@ -3290,7 +3236,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/payments/107:
+  /payments/107:
     put:
       description: 'TODO: Add Description'
       summary: Payments - Update
@@ -3329,7 +3275,7 @@ paths:
       x-unitTests:
       - request:
           method: PUT
-          uri: /vdash/payments/107
+          uri: /payments/107
           headers:
             Content-Type: application/json
             Account: pocketto
@@ -3354,7 +3300,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/settings:
+  /settings:
     get:
       description: 'TODO: Add Description'
       summary: Settings - List
@@ -3382,7 +3328,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /vdash/settings
+          uri: /settings
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
@@ -3440,7 +3386,7 @@ paths:
       x-unitTests:
       - request:
           method: PATCH
-          uri: /vdash/settings
+          uri: /settings
           headers:
             Content-Type: application/json
             Account: pocketto
@@ -3470,7 +3416,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/settings/user_card_model_front:
+  /settings/user_card_model_front:
     get:
       description: 'TODO: Add Description'
       summary: Settings - Show
@@ -3498,7 +3444,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /vdash/settings/user_card_model_front
+          uri: /settings/user_card_model_front
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
@@ -3518,7 +3464,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/settings/invite_sms:
+  /settings/invite_sms:
     put:
       description: 'TODO: Add Description'
       summary: Settings - Update
@@ -3557,7 +3503,7 @@ paths:
       x-unitTests:
       - request:
           method: PUT
-          uri: /vdash/settings/invite_sms
+          uri: /settings/invite_sms
           headers:
             Content-Type: application/json
             Account: pocketto
@@ -3585,7 +3531,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/settings/test:
+  /settings/test:
     delete:
       description: 'TODO: Add Description'
       summary: Settings - Delete
@@ -3613,7 +3559,7 @@ paths:
       x-unitTests:
       - request:
           method: DELETE
-          uri: /vdash/settings/test
+          uri: /settings/test
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
@@ -3633,7 +3579,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/user_categories:
+  /user_categories:
     get:
       description: 'TODO: Add Description'
       summary: User Categories - List
@@ -3661,7 +3607,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /vdash/user_categories
+          uri: /user_categories
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
@@ -3719,7 +3665,7 @@ paths:
       x-unitTests:
       - request:
           method: POST
-          uri: /vdash/user_categories
+          uri: /user_categories
           headers:
             Content-Type: application/json
             Account: pocketto
@@ -3744,7 +3690,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/user_categories/2:
+  /user_categories/2:
     get:
       description: 'TODO: Add Description'
       summary: User Categories - View
@@ -3777,7 +3723,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /vdash/user_categories/2
+          uri: /user_categories/2
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
@@ -3798,7 +3744,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/user_categories/3:
+  /user_categories/3:
     put:
       description: 'TODO: Add Description'
       summary: User Categories - Update
@@ -3837,7 +3783,7 @@ paths:
       x-unitTests:
       - request:
           method: PUT
-          uri: /vdash/user_categories/3
+          uri: /user_categories/3
           headers:
             Content-Type: application/json
             Account: pocketto
@@ -3862,7 +3808,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/user_categories/1:
+  /user_categories/1:
     delete:
       description: 'TODO: Add Description'
       summary: User Categories - Delete
@@ -3895,7 +3841,7 @@ paths:
       x-unitTests:
       - request:
           method: DELETE
-          uri: /vdash/user_categories/1
+          uri: /user_categories/1
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
@@ -3916,7 +3862,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/users:
+  /users:
     get:
       description: 'TODO: Add Description'
       summary: Users - List
@@ -3966,7 +3912,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /vdash/users?limit=10&offset=0&filter=name::in('Vini')
+          uri: /users?limit=10&offset=0&filter=name::in('Vini')
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
@@ -3987,7 +3933,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/users/18:
+  /users/18:
     get:
       description: 'TODO: Add Description'
       summary: Users - Update
@@ -4020,7 +3966,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /vdash/users/18
+          uri: /users/18
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
@@ -4073,7 +4019,7 @@ paths:
       x-unitTests:
       - request:
           method: DELETE
-          uri: /vdash/users/18
+          uri: /users/18
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
@@ -4094,7 +4040,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/payment_doc_generate:
+  /payment_doc_generate:
     post:
       description: 'TODO: Add Description'
       summary: Payment Doc Generate
@@ -4133,7 +4079,7 @@ paths:
       x-unitTests:
       - request:
           method: POST
-          uri: /vdash/payment_doc_generate
+          uri: /payment_doc_generate
           headers:
             Content-Type: application/json
             Account: pocketto
@@ -4163,7 +4109,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/accounts/code:pocketto:
+  /accounts/code:pocketto:
     get:
       description: 'TODO: Add Description'
       summary: Account - View (Code)
@@ -4185,7 +4131,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /vdash/accounts/code:pocketto
+          uri: /accounts/code:pocketto
           headers:
             Account: pocketto
         expectedResponse:
@@ -4204,7 +4150,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  //api.pocketto.com.br/vdash/analytics/payments:
+  /analytics/payments:
     get:
       description: 'TODO: Add Description'
       summary: Analytics - Show
@@ -4242,7 +4188,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: //api.pocketto.com.br/vdash/analytics/payments?operation=count(id)&groupby=created_at::date,status
+          uri: /analytics/payments?operation=count(id)&groupby=created_at::date,status
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk

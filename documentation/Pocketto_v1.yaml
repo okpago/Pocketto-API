@@ -1101,11 +1101,6 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Content-Type
-        in: header
-        required: true
-        type: string
-        description: ''
       responses:
         200:
           description: ''
@@ -1117,7 +1112,6 @@ paths:
           headers:
             Account: pocketto
             Authorization: '{{token}}'
-            Content-Type: application/json
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -1155,11 +1149,6 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Authorization
-        in: header
-        required: true
-        type: string
-        description: ''
       - name: Content-Type
         in: header
         required: true
@@ -1169,7 +1158,29 @@ paths:
         200:
           description: ''
       security: []
-      x-unitTests: []
+      x-unitTests:
+      - request:
+          method: POST
+          uri: /invite
+          headers:
+            Content-Type: application/json
+            Account: pocketto
+          body: >-
+            {
+              "name": "Vinicius",
+              "mobile": "51992794210"
+            }
+        expectedResponse:
+          x-allowExtraHeaders: true
+          x-bodyMatchMode: NONE
+          x-arrayOrderedMatching: false
+          x-arrayCheckCount: false
+          x-matchResponseSchema: true
+          headers: {}
+        x-testShouldPass: true
+        x-testEnabled: true
+        x-testName: Invite SMS
+        x-testDescription: 'TODO: Add Description'
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false

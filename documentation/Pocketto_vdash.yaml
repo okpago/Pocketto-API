@@ -322,11 +322,6 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Content-Type
-        in: header
-        required: true
-        type: string
-        description: ''
       responses:
         200:
           description: ''
@@ -339,7 +334,6 @@ paths:
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
-            Content-Type: application/json
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -613,11 +607,6 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Content-Type
-        in: header
-        required: true
-        type: string
-        description: ''
       responses:
         200:
           description: ''
@@ -630,7 +619,6 @@ paths:
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
-            Content-Type: application/json
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -733,11 +721,6 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Content-Type
-        in: header
-        required: true
-        type: string
-        description: ''
       responses:
         200:
           description: ''
@@ -750,7 +733,6 @@ paths:
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
-            Content-Type: application/json
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -1125,11 +1107,6 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Content-Type
-        in: header
-        required: true
-        type: string
-        description: ''
       responses:
         200:
           description: ''
@@ -1142,7 +1119,6 @@ paths:
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
-            Content-Type: application/json
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -1179,11 +1155,6 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Content-Type
-        in: header
-        required: true
-        type: string
-        description: ''
       responses:
         200:
           description: ''
@@ -1196,7 +1167,6 @@ paths:
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
-            Content-Type: application/json
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -1233,11 +1203,6 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Content-Type
-        in: header
-        required: true
-        type: string
-        description: ''
       responses:
         200:
           description: ''
@@ -1250,7 +1215,6 @@ paths:
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
-            Content-Type: application/json
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -1288,11 +1252,6 @@ paths:
         type: string
         description: ''
       - name: Authorization
-        in: header
-        required: true
-        type: string
-        description: ''
-      - name: Content-Type
         in: header
         required: true
         type: string
@@ -1359,11 +1318,6 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Content-Type
-        in: header
-        required: true
-        type: string
-        description: ''
       responses:
         200:
           description: ''
@@ -1376,7 +1330,6 @@ paths:
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
-            Content-Type: application/json
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -1419,11 +1372,6 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Content-Type
-        in: header
-        required: true
-        type: string
-        description: ''
       responses:
         200:
           description: ''
@@ -1455,11 +1403,6 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Content-Type
-        in: header
-        required: true
-        type: string
-        description: ''
       responses:
         200:
           description: ''
@@ -1472,7 +1415,6 @@ paths:
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
-            Content-Type: application/json
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -1509,11 +1451,6 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Content-Type
-        in: header
-        required: true
-        type: string
-        description: ''
       responses:
         200:
           description: ''
@@ -1526,7 +1463,6 @@ paths:
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
-            Content-Type: application/json
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -1563,11 +1499,6 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Content-Type
-        in: header
-        required: true
-        type: string
-        description: ''
       responses:
         200:
           description: ''
@@ -1580,7 +1511,6 @@ paths:
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
-            Content-Type: application/json
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -1617,11 +1547,6 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Content-Type
-        in: header
-        required: true
-        type: string
-        description: ''
       responses:
         200:
           description: ''
@@ -1634,7 +1559,6 @@ paths:
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
-            Content-Type: application/json
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -1671,11 +1595,6 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Content-Type
-        in: header
-        required: true
-        type: string
-        description: ''
       responses:
         200:
           description: ''
@@ -1688,7 +1607,6 @@ paths:
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
-            Content-Type: application/json
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -1886,11 +1804,6 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Content-Type
-        in: header
-        required: true
-        type: string
-        description: ''
       responses:
         200:
           description: ''
@@ -1941,11 +1854,6 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Content-Type
-        in: header
-        required: true
-        type: string
-        description: ''
       responses:
         200:
           description: ''
@@ -1958,7 +1866,6 @@ paths:
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
-            Content-Type: application/json
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -1996,11 +1903,6 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Authorization
-        in: header
-        required: true
-        type: string
-        description: ''
       - name: Content-Type
         in: header
         required: true
@@ -2009,8 +1911,7 @@ paths:
       responses:
         200:
           description: ''
-      security:
-      - auth: []
+      security: []
       x-unitTests:
       - request:
           method: POST
@@ -2018,7 +1919,6 @@ paths:
           headers:
             Content-Type: application/json
             Account: pocketto
-            Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
           body: >-
             {
               "username": "admin@pocketto.com.br",
@@ -2064,11 +1964,6 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Authorization
-        in: header
-        required: true
-        type: string
-        description: ''
       - name: Content-Type
         in: header
         required: true
@@ -2077,8 +1972,7 @@ paths:
       responses:
         200:
           description: ''
-      security:
-      - auth: []
+      security: []
       x-unitTests:
       - request:
           method: POST
@@ -2086,7 +1980,6 @@ paths:
           headers:
             Content-Type: application/json
             Account: pocketto
-            Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
           body: >-
             {
               "email" : "{{email}}",
@@ -2129,11 +2022,6 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Authorization
-        in: header
-        required: true
-        type: string
-        description: ''
       - name: Content-Type
         in: header
         required: true
@@ -2142,8 +2030,7 @@ paths:
       responses:
         200:
           description: ''
-      security:
-      - auth: []
+      security: []
       x-unitTests:
       - request:
           method: PUT
@@ -2151,7 +2038,6 @@ paths:
           headers:
             Content-Type: application/json
             Account: pocketto
-            Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
           body: >-
             {
               "token": "d3a054c6cc54c3f0b16777fec00a533a0e4f92e30aa28e3bacddd4596afb2a9c",
@@ -2677,11 +2563,6 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Content-Type
-        in: header
-        required: true
-        type: string
-        description: ''
       responses:
         200:
           description: ''
@@ -2714,11 +2595,6 @@ paths:
         type: string
         description: ''
       - name: Authorization
-        in: header
-        required: true
-        type: string
-        description: ''
-      - name: Content-Type
         in: header
         required: true
         type: string
@@ -2800,11 +2676,6 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Content-Type
-        in: header
-        required: true
-        type: string
-        description: ''
       responses:
         200:
           description: ''
@@ -2817,7 +2688,6 @@ paths:
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
-            Content-Type: application/json
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -2855,11 +2725,6 @@ paths:
         type: string
         description: ''
       - name: Authorization
-        in: header
-        required: true
-        type: string
-        description: ''
-      - name: Content-Type
         in: header
         required: true
         type: string
@@ -2924,11 +2789,6 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Content-Type
-        in: header
-        required: true
-        type: string
-        description: ''
       responses:
         200:
           description: ''
@@ -2982,11 +2842,6 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Content-Type
-        in: header
-        required: true
-        type: string
-        description: ''
       responses:
         200:
           description: ''
@@ -2999,7 +2854,6 @@ paths:
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
-            Content-Type: application/json
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -3037,11 +2891,6 @@ paths:
         type: string
         description: ''
       - name: Authorization
-        in: header
-        required: true
-        type: string
-        description: ''
-      - name: Content-Type
         in: header
         required: true
         type: string
@@ -3100,11 +2949,6 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Content-Type
-        in: header
-        required: true
-        type: string
-        description: ''
       responses:
         200:
           description: ''
@@ -3117,7 +2961,6 @@ paths:
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
-            Content-Type: application/json
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -3154,11 +2997,6 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Content-Type
-        in: header
-        required: true
-        type: string
-        description: ''
       responses:
         200:
           description: ''
@@ -3171,7 +3009,6 @@ paths:
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
-            Content-Type: application/json
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -3258,11 +3095,6 @@ paths:
         type: string
         description: ''
       - name: Authorization
-        in: header
-        required: true
-        type: string
-        description: ''
-      - name: Content-Type
         in: header
         required: true
         type: string
@@ -3899,11 +3731,6 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Content-Type
-        in: header
-        required: true
-        type: string
-        description: ''
       responses:
         200:
           description: ''
@@ -3916,7 +3743,6 @@ paths:
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
-            Content-Type: application/json
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -3953,11 +3779,6 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Content-Type
-        in: header
-        required: true
-        type: string
-        description: ''
       responses:
         200:
           description: ''
@@ -3970,7 +3791,6 @@ paths:
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
-            Content-Type: application/json
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -4006,11 +3826,6 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Content-Type
-        in: header
-        required: true
-        type: string
-        description: ''
       responses:
         200:
           description: ''
@@ -4023,7 +3838,6 @@ paths:
           headers:
             Account: pocketto
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
-            Content-Type: application/json
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -4062,11 +3876,6 @@ paths:
         type: string
         description: ''
       - name: Authorization
-        in: header
-        required: true
-        type: string
-        description: ''
-      - name: Content-Type
         in: header
         required: true
         type: string

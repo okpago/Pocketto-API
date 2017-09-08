@@ -24,13 +24,19 @@ paths:
       operationId: Login (Authcode)
       produces:
       - application/json
+      consumes:
+      - application/x-www-form-urlencoded
       parameters:
-      - name: Body
-        in: body
+      - name: mobile
+        in: formData
         required: true
+        type: string
         description: ''
-        schema:
-          $ref: '#/definitions/Login(authcode)request'
+      - name: authcode
+        in: formData
+        required: true
+        type: string
+        description: ''
       - name: Account
         in: header
         required: true
@@ -50,13 +56,9 @@ paths:
           method: POST
           uri: /login
           headers:
-            Content-Type: application/json
+            Content-Type: application/x-www-form-urlencoded
             Account: pocketto
-          body: >-
-            {
-              "mobile": "99999999999",
-              "authcode": "999999"
-            }
+          body: mobile=51992794210&authcode={{authcode}}
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -1527,22 +1529,6 @@ definitions:
         type: string
     required:
     - mobile
-  Login(authcode)request:
-    title: Login (Authcode)Request
-    example:
-      mobile: 99999999999
-      authcode: 999999
-    type: object
-    properties:
-      mobile:
-        description: ''
-        type: string
-      authcode:
-        description: ''
-        type: string
-    required:
-    - mobile
-    - authcode
   Profile  updaterequest:
     title: Profile - UpdateRequest
     example:

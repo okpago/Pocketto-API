@@ -3694,6 +3694,291 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
+  /webhooks:
+    get:
+      description: 'TODO: Add Description'
+      summary: Webhooks - List
+      tags:
+      - Webhooks
+      operationId: Webhooks - List
+      produces:
+      - application/json
+      parameters:
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        200:
+          description: ''
+      security:
+      - auth: []
+      x-unitTests:
+      - request:
+          method: GET
+          uri: /webhooks
+          headers:
+            Account: pocketto
+            Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
+        expectedResponse:
+          x-allowExtraHeaders: true
+          x-bodyMatchMode: NONE
+          x-arrayOrderedMatching: false
+          x-arrayCheckCount: false
+          x-matchResponseSchema: true
+          headers: {}
+        x-testShouldPass: true
+        x-testEnabled: true
+        x-testName: Webhooks - List
+        x-testDescription: 'TODO: Add Description'
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+    post:
+      description: 'TODO: Add Description'
+      summary: Webhooks - Create
+      tags:
+      - Webhooks
+      operationId: Webhooks - Create
+      produces:
+      - application/json
+      parameters:
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/Webhooks  createrequest'
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Content-Type
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        200:
+          description: ''
+      security:
+      - auth: []
+      x-unitTests:
+      - request:
+          method: POST
+          uri: /webhooks
+          headers:
+            Content-Type: application/json
+            Account: pocketto
+            Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
+          body: >-
+            {
+              "url": "http://google.com",
+              "event": "payment_cancelled"
+            }
+        expectedResponse:
+          x-allowExtraHeaders: true
+          x-bodyMatchMode: NONE
+          x-arrayOrderedMatching: false
+          x-arrayCheckCount: false
+          x-matchResponseSchema: true
+          headers: {}
+        x-testShouldPass: true
+        x-testEnabled: true
+        x-testName: Webhooks - Create
+        x-testDescription: 'TODO: Add Description'
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /webhooks/1:
+    get:
+      description: 'TODO: Add Description'
+      summary: Webhooks - View
+      tags:
+      - Webhooks
+      operationId: Webhooks - View
+      produces:
+      - application/json
+      parameters:
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Content-Type
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        200:
+          description: ''
+      security:
+      - auth: []
+      x-unitTests:
+      - request:
+          method: GET
+          uri: /webhooks/1
+          headers:
+            Account: pocketto
+            Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
+            Content-Type: application/json
+        expectedResponse:
+          x-allowExtraHeaders: true
+          x-bodyMatchMode: NONE
+          x-arrayOrderedMatching: false
+          x-arrayCheckCount: false
+          x-matchResponseSchema: true
+          headers: {}
+        x-testShouldPass: true
+        x-testEnabled: true
+        x-testName: Webhooks - View
+        x-testDescription: 'TODO: Add Description'
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /webhooks/4:
+    put:
+      description: 'TODO: Add Description'
+      summary: Webhooks - Update
+      tags:
+      - Webhooks
+      operationId: Webhooks - Update
+      produces:
+      - application/json
+      parameters:
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/Webhooks  updaterequest'
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Content-Type
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        200:
+          description: ''
+      security:
+      - auth: []
+      x-unitTests:
+      - request:
+          method: PUT
+          uri: /webhooks/4
+          headers:
+            Content-Type: application/json
+            Account: pocketto
+            Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
+          body: >-
+            {
+              "url": "http://google.com.br",
+              "event": "payment_paid"
+            }
+        expectedResponse:
+          x-allowExtraHeaders: true
+          x-bodyMatchMode: NONE
+          x-arrayOrderedMatching: false
+          x-arrayCheckCount: false
+          x-matchResponseSchema: true
+          headers: {}
+        x-testShouldPass: true
+        x-testEnabled: true
+        x-testName: Webhooks - Update
+        x-testDescription: 'TODO: Add Description'
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /webhooks/2:
+    delete:
+      description: 'TODO: Add Description'
+      summary: Webhooks - Delete
+      tags:
+      - Webhooks
+      operationId: Webhooks - Delete
+      produces:
+      - application/json
+      parameters:
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Content-Type
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        200:
+          description: ''
+      security:
+      - auth: []
+      x-unitTests:
+      - request:
+          method: DELETE
+          uri: /webhooks/2
+          headers:
+            Account: pocketto
+            Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
+            Content-Type: application/json
+        expectedResponse:
+          x-allowExtraHeaders: true
+          x-bodyMatchMode: NONE
+          x-arrayOrderedMatching: false
+          x-arrayCheckCount: false
+          x-matchResponseSchema: true
+          headers: {}
+        x-testShouldPass: true
+        x-testEnabled: true
+        x-testName: Webhooks - Delete
+        x-testDescription: 'TODO: Add Description'
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
   /users:
     get:
       description: 'TODO: Add Description'
@@ -4747,6 +5032,38 @@ definitions:
         type: string
     required:
     - name
+  Webhooks  createrequest:
+    title: Webhooks - CreateRequest
+    example:
+      url: http://google.com
+      event: payment_cancelled
+    type: object
+    properties:
+      url:
+        description: ''
+        type: string
+      event:
+        description: ''
+        type: string
+    required:
+    - url
+    - event
+  Webhooks  updaterequest:
+    title: Webhooks - UpdateRequest
+    example:
+      url: http://google.com.br
+      event: payment_paid
+    type: object
+    properties:
+      url:
+        description: ''
+        type: string
+      event:
+        description: ''
+        type: string
+    required:
+    - url
+    - event
   PaymentDocGeneraterequest:
     title: Payment Doc GenerateRequest
     example:

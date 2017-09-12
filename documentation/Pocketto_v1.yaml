@@ -1634,7 +1634,7 @@ paths:
           body: >-
             {
               "photo_file_id": 10,
-              "claim_bank_account_id": 1,
+              "claim_bank_account_id": 99,
               "claim_date": "2017-09-11"
             }
         expectedResponse:
@@ -1836,7 +1836,7 @@ definitions:
     title: Public Payments - Update ClaimRequest
     example:
       photo_file_id: 10
-      claim_bank_account_id: 1
+      claim_bank_account_id: 99
       claim_date: 2017-09-11
     type: object
     properties:

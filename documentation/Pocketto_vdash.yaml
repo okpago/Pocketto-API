@@ -1923,9 +1923,9 @@ paths:
             {
               "username": "admin@pocketto.com.br",
               "password": "pocketto",
-              "client_id": 2,
+              "client_id": 3,
               "grant_type": "password",
-              "client_secret": "kVWanD9RpWKrPEULJpabzmyVZr3MMzS6USIY9e6b"
+              "client_secret": "G2VqKP7a4dQHbDjXQNg1sTJskkpAl08qj3bRkpOJ"
             }
         expectedResponse:
           x-allowExtraHeaders: true
@@ -4611,9 +4611,9 @@ definitions:
     example:
       username: admin@pocketto.com.br
       password: pocketto
-      client_id: 2
+      client_id: 3
       grant_type: password
-      client_secret: kVWanD9RpWKrPEULJpabzmyVZr3MMzS6USIY9e6b
+      client_secret: G2VqKP7a4dQHbDjXQNg1sTJskkpAl08qj3bRkpOJ
     type: object
     properties:
       username:

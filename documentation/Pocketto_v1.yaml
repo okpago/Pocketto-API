@@ -1599,7 +1599,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /public/payment/12/claim:
+  /public/payment/14/claim:
     put:
       description: 'TODO: Add Description'
       summary: Public Payments - Update Claim
@@ -1627,13 +1627,13 @@ paths:
       x-unitTests:
       - request:
           method: PUT
-          uri: /public/payment/12/claim
+          uri: /public/payment/14/claim
           headers:
             Content-Type: application/json
             Account: pocketto
           body: >-
             {
-              "photo_file_id": 10,
+              "photo_file_id": 16,
               "claim_bank_account_id": 1,
               "claim_date": "2017-09-11"
             }
@@ -1835,7 +1835,7 @@ definitions:
   Public payments  update claimrequest:
     title: Public Payments - Update ClaimRequest
     example:
-      photo_file_id: 10
+      photo_file_id: 16
       claim_bank_account_id: 1
       claim_date: 2017-09-11
     type: object

@@ -1892,12 +1892,6 @@ paths:
       produces:
       - application/json
       parameters:
-      - name: Body
-        in: body
-        required: true
-        description: ''
-        schema:
-          $ref: '#/definitions/LoginRequest'
       - name: Account
         in: header
         required: true
@@ -1917,16 +1911,8 @@ paths:
           method: POST
           uri: /login
           headers:
-            Content-Type: application/json
             Account: pocketto
-          body: >-
-            {
-              "username": "admin@pocketto.com.br",
-              "password": "pocketto",
-              "client_id": 3,
-              "grant_type": "password",
-              "client_secret": "G2VqKP7a4dQHbDjXQNg1sTJskkpAl08qj3bRkpOJ"
-            }
+            Content-Type: application/json
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -4606,38 +4592,6 @@ definitions:
     - recurring_max_times
     - end_date
     - status
-  LoginRequest:
-    title: LoginRequest
-    example:
-      username: admin@pocketto.com.br
-      password: pocketto
-      client_id: 3
-      grant_type: password
-      client_secret: G2VqKP7a4dQHbDjXQNg1sTJskkpAl08qj3bRkpOJ
-    type: object
-    properties:
-      username:
-        description: ''
-        type: string
-      password:
-        description: ''
-        type: string
-      client_id:
-        description: ''
-        type: integer
-        format: int32
-      grant_type:
-        description: ''
-        type: string
-      client_secret:
-        description: ''
-        type: string
-    required:
-    - username
-    - password
-    - client_id
-    - grant_type
-    - client_secret
   Login  recoveryrequest:
     title: Login - RecoveryRequest
     example:

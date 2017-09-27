@@ -2893,15 +2893,8 @@ paths:
           headers:
             Content-Type: application/json
             Account: pocketto
-            Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjY0ZDEwYjg5YmFjMzdhNjljNzk5ZmViNGIwNGFhZDAyY2M4MDdlMTdiNDRmZGE5MmIwOTVjMDRkZDBhOTQ3OTMwZmEwNGI2NTc4MWNkZmM4In0.eyJhdWQiOiIyIiwianRpIjoiNjRkMTBiODliYWMzN2E2OWM3OTlmZWI0YjA0YWFkMDJjYzgwN2UxN2I0NGZkYTkyYjA5NWMwNGRkMGE5NDc5MzBmYTA0YjY1NzgxY2RmYzgiLCJpYXQiOjE1MDYxMTQyMTIsIm5iZiI6MTUwNjExNDIxMiwiZXhwIjoxNTM3NjUwMjEyLCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.fQkmyFigbdLf_P8wLJjOkia6yV6TB44dn1FXkPsMZhEFG9-_kbsNQUv6CP3RNAfG77HzoF0zBa8fZgohty1nCetBPQ50MTNk6ILf3fUS4_vTBF9NZr3tSqzPA1dnLsUot097EvSlsZh3M-aTIG9jNYpNDmkjeNROqh1z1GmFtwZoT2OdMJ38BlCmGfgjl_zXRczh9K23oSc0iwJUDmLr0AKWOT9RS5UnVy4i-mdU_IAq-TVyvW2k7PdHEBoXijy5uWEBGvBCoM9b8yUJnzjmUdGZ29STTM3nOar5kpw5NAwKyxPHfQayK53wp9nmm7Be787ztIM-q7z723wchrFECyWnNTtz50nxig1VxLcGyD5EiDKetjCgwWpTnEgKcODeBs53m5n6VMVuUCF8rGPGrO1xPynA2DsjU03rGhE9zTgPXngkQ19-Y5E1pKIx4DFQx-J6FkLJDAMLqES4xNtsmUlsSDXLiq2vtwCOIIJu3vGuG0uFp3bBQeIH8XBClQYHZpLFu_YL3UraXqnhvP8gbXE7K-qHijWiE6unNwdN0jXJhXJtHie8mXqPXQElfYHymvPxQEEgmgklLvlSTXDx9ckXB9_2tYxMhzqOLlZ-gj_ktnTsXRIbWjJbH6gwr1d0DT47pFqOHq20nPbmx1QVl2MEPzVRMDy4DQv5VYBbE44
-          body: >-
-            {
-              "campaign_id": 100,
-              "user": {
-              	"name": "joao teste",
-              	"cpf": "01688757058"
-              }
-            }
+            Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjUwNTBhNzM1ZjM1ZjJmZjhiZGJiNjZhNmMwMTYwMDhkMTMxODg2YzM4ODY0NjQ0ZTgzMzY1Y2Q2Y2QxZDI3NTc3MDQ0NmM2YjhlZDgxOTQwIn0.eyJhdWQiOiIyIiwianRpIjoiNTA1MGE3MzVmMzVmMmZmOGJkYmI2NmE2YzAxNjAwOGQxMzE4ODZjMzg4NjQ2NDRlODMzNjVjZDZjZDFkMjc1NzcwNDQ2YzZiOGVkODE5NDAiLCJpYXQiOjE0OTg4NDg1ODUsIm5iZiI6MTQ5ODg0ODU4NSwiZXhwIjoxNTMwMzg0NTg1LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.HmESRwGz7MT3sW_KYI51vR11qWfO_piKc07uRcuyl9EtoiAEvwei7uucE3kzst7v9JJLzRmA15A3WbxBX3lTZWReqXJkZB_hwvkF7fggotRz0ez3GWRy8bKmSxWmuQdfojHSacFOqkk0F9dAFdiVMDOQezCTueAmBiatCHir-cUJy-PMefg7aXg-7OJCYmRnDw-ZUYikaQuwhikvWCZOLwUyWtHSY4aONAwa4-5LGb9wH7Q96zwCdpqn3RIvthGkXJISPcTSLADzDLgy-iOUsxuy6FZruLcsnzTLTfbguRXuhfrdGOLPVdSGPppYJDsBp3CleyzQdoWLbdWVYv22oIEEVx8_2igU4Nuo_tj5lP5-8BeOqN3PcEP3iJHQPEubac7FefrejmIGU53z7SftTpCmx6yWFKolptTzX1Uj69B_dgmIwxL2CkJLCi05gHgakRw8nXA9XFg3MfxcYbYrkIDI13ZO1zIRZwzUo4j46CDAejRyMyMB6MFNYhlCA1Ozp7jWSeGD8VYv8XhL7JwvbtEZwB6dBMjs2if2md0V5W0lQIoyjxcejR8h401LEzTwLEPUYlCZMs8QUb2FSROjsuue1VaXYCTPwDjZvBPahz-3Lw1MDsBYUCYfouSaGtyAJG2RtJKSNSE1vtlB_KN1A3auQyFyDoUNuYmG3b45EUk
+          body: "{\n  \"amount\": 100,\n  \"user\": {\n  	\"name\": \"Teste\",\n  	\"email\": \"vmatteus@gmail.com\",\n  	\"cpf\" : \"18124646570\",\n  	\"phone\" : \"51981332395\" \n  }\n}"
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -4894,20 +4887,22 @@ definitions:
   Payments  createrequest:
     title: Payments - CreateRequest
     example:
-      campaign_id: 100
+      amount: 100
       user:
-        name: joao teste
-        cpf: 01688757058
+        name: Teste
+        email: vmatteus@gmail.com
+        cpf: 18124646570
+        phone: 51981332395
     type: object
     properties:
-      campaign_id:
+      amount:
         description: ''
         type: integer
         format: int32
       user:
         $ref: '#/definitions/User'
     required:
-    - campaign_id
+    - amount
     - user
   User:
     title: User
@@ -4916,12 +4911,20 @@ definitions:
       name:
         description: ''
         type: string
+      email:
+        description: ''
+        type: string
       cpf:
+        description: ''
+        type: string
+      phone:
         description: ''
         type: string
     required:
     - name
+    - email
     - cpf
+    - phone
   Settings  updaterequest:
     title: Settings - UpdateRequest
     example:

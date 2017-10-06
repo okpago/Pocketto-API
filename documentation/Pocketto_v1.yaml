@@ -710,6 +710,11 @@ paths:
         required: true
         type: string
         description: ''
+      - name: Content-Type
+        in: header
+        required: true
+        type: string
+        description: ''
       responses:
         200:
           description: ''
@@ -721,6 +726,7 @@ paths:
           headers:
             Account: pocketto
             Authorization: b7bf6eab4b9d08fd4547126a3499ef841472f0387b1443efce7fb44cf7a86ef9c50e28d40883443d
+            Content-Type: application/json
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -781,8 +787,7 @@ paths:
             Authorization: b7bf6eab4b9d08fd4547126a3499ef841472f0387b1443efce7fb44cf7a86ef9c50e28d40883443d
           body: >-
             {
-              "amount": 10,
-              "description": ""
+              "amount": 10
             }
         expectedResponse:
           x-allowExtraHeaders: true
@@ -1768,19 +1773,14 @@ definitions:
     title: Payments - CreateRequest
     example:
       amount: 10
-      description: ''
     type: object
     properties:
       amount:
         description: ''
         type: integer
         format: int32
-      description:
-        description: ''
-        type: string
     required:
     - amount
-    - description
   Payments  updaterequest:
     title: Payments - UpdateRequest
     example:

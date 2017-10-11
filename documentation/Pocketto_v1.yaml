@@ -957,7 +957,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /payments/1076/claim:
+  /payments/4653/claim:
     put:
       description: 'TODO: Add Description'
       summary: Payments - Update Claim
@@ -995,15 +995,15 @@ paths:
       x-unitTests:
       - request:
           method: PUT
-          uri: /payments/1076/claim
+          uri: /payments/4653/claim
           headers:
             Content-Type: application/json
             Account: pocketto
             Authorization: b7bf6eab4b9d08fd4547126a3499ef841472f0387b1443efce7fb44cf7a86ef9c50e28d40883443d
           body: >-
             {
-              "photo_file_id": 1,
-              "claim_bank_account_id": 1,
+              "photo_file_id": 4596,
+              "claim_bank_account_id": 2,
               "claim_date": "2010-01-02"
             }
         expectedResponse:
@@ -1796,8 +1796,8 @@ definitions:
   Payments  update claimrequest:
     title: Payments - Update ClaimRequest
     example:
-      photo_file_id: 1
-      claim_bank_account_id: 1
+      photo_file_id: 4596
+      claim_bank_account_id: 2
       claim_date: 2010-01-02
     type: object
     properties:

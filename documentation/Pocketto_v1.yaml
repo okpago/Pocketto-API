@@ -1623,7 +1623,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /public/payment/14/claim:
+  /public/payment/4675/claim:
     put:
       description: 'TODO: Add Description'
       summary: Public Payments - Update Claim
@@ -1651,7 +1651,7 @@ paths:
       x-unitTests:
       - request:
           method: PUT
-          uri: /public/payment/14/claim
+          uri: /public/payment/4675/claim
           headers:
             Content-Type: application/json
             Account: pocketto

@@ -2935,8 +2935,8 @@ paths:
             Authorization: Bearer undefined
           body: >-
             {
-              "amount": 1000,
-              "uid": 198267,
+              "amount": 25,
+              "uid": 9999,
               "user": {
                 "name": "Teste Payment CPF",
                 "email": "testepaymentcpf@gmail.com",
@@ -4923,8 +4923,8 @@ definitions:
   Payments  createrequest:
     title: Payments - CreateRequest
     example:
-      amount: 1000
-      uid: 198267
+      amount: 25
+      uid: 9999
       user:
         name: Teste Payment CPF
         email: testepaymentcpf@gmail.com

@@ -1032,19 +1032,13 @@ paths:
   /bank_accounts/5/dates/2017-09-30/close:
     post:
       description: 'TODO: Add Description'
-      summary: Bank Accounts - Date Close (Force)
+      summary: Bank Accounts - Date Close
       tags:
       - Bank Accounts
-      operationId: Bank Accounts - Date Close (Force)
+      operationId: Bank Accounts - Date Close
       produces:
       - application/json
       parameters:
-      - name: force
-        in: query
-        required: true
-        type: integer
-        format: int32
-        description: ''
       - name: Account
         in: header
         required: true
@@ -1067,7 +1061,60 @@ paths:
       x-unitTests:
       - request:
           method: POST
-          uri: /bank_accounts/5/dates/2017-09-30/close?force=1
+          uri: /bank_accounts/5/dates/2017-09-30/close
+          headers:
+            Account: pocketto
+            Authorization: Bearer undefined
+            Content-Type: application/json
+        expectedResponse:
+          x-allowExtraHeaders: true
+          x-bodyMatchMode: NONE
+          x-arrayOrderedMatching: false
+          x-arrayCheckCount: false
+          x-matchResponseSchema: true
+          headers: {}
+        x-testShouldPass: true
+        x-testEnabled: true
+        x-testName: Bank Accounts - Date Close
+        x-testDescription: 'TODO: Add Description'
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /bank_accounts/2/dates/2017-11-08/close:
+    post:
+      description: 'TODO: Add Description'
+      summary: Bank Accounts - Date Close (Force)
+      tags:
+      - Bank Accounts
+      operationId: Bank Accounts - Date Close (Force)
+      produces:
+      - application/json
+      parameters:
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Content-Type
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        200:
+          description: ''
+      security: []
+      x-unitTests:
+      - request:
+          method: POST
+          uri: /bank_accounts/2/dates/2017-11-08/close
           headers:
             Account: pocketto
             Authorization: Bearer undefined
@@ -2936,12 +2983,12 @@ paths:
           body: >-
             {
               "amount": 25,
-              "uid": 9999,
+              "uid": 9875,
               "user": {
                 "name": "Teste Payment CPF",
                 "email": "testepaymentcpf@gmail.com",
-                "cpf" : "28372474990",
-                "mobile" : "51998833220"
+                "cpf" : "91470416417",
+                "mobile" : "51998855220"
               }
             }
         expectedResponse:
@@ -4924,12 +4971,12 @@ definitions:
     title: Payments - CreateRequest
     example:
       amount: 25
-      uid: 9999
+      uid: 9875
       user:
         name: Teste Payment CPF
         email: testepaymentcpf@gmail.com
-        cpf: 28372474990
-        mobile: 51998833220
+        cpf: 91470416417
+        mobile: 51998855220
     type: object
     properties:
       amount:

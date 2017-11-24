@@ -23,7 +23,7 @@ produces:
 paths:
   /api_keys:
     get:
-      description: 'TODO: Add Description'
+      description: ''
       summary: API Keys - List
       tags:
       - API Keys
@@ -63,14 +63,14 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: API Keys - List
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
     post:
-      description: 'TODO: Add Description'
+      description: ''
       summary: API Keys - Create
       tags:
       - API Keys
@@ -125,7 +125,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: API Keys - Create
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -133,7 +133,7 @@ paths:
         IsMultiContentStreaming: false
   /api_keys/0cb476ab3aa6820ab36ba27e04226d338f4cd201c714ef1c662bc4c1b5c5a0cfb40b2140f37ce276:
     get:
-      description: 'TODO: Add Description'
+      description: ''
       summary: API Keys - View
       tags:
       - API Keys
@@ -178,14 +178,14 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: API Keys - View
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
     put:
-      description: 'TODO: Add Description'
+      description: ''
       summary: API Keys - Update
       tags:
       - API Keys
@@ -240,14 +240,14 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: API Keys - Update
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
     delete:
-      description: 'TODO: Add Description'
+      description: ''
       summary: API Keys  - Delete
       tags:
       - API Keys
@@ -292,7 +292,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: API Keys  - Delete
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -300,7 +300,7 @@ paths:
         IsMultiContentStreaming: false
   /admin_users:
     get:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Admin Users - List
       tags:
       - Admin Users
@@ -339,14 +339,14 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Admin Users - List
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
     post:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Admin Users - Create
       tags:
       - Admin Users
@@ -405,7 +405,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Admin Users - Create
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -413,7 +413,7 @@ paths:
         IsMultiContentStreaming: false
   /admin_users/1:
     get:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Admin Users - Show
       tags:
       - Admin Users
@@ -452,7 +452,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Admin Users - Show
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -460,7 +460,7 @@ paths:
         IsMultiContentStreaming: false
   /admin_users/5:
     put:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Admin Users - Update
       tags:
       - Admin Users
@@ -519,7 +519,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Admin Users - Update
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -527,7 +527,7 @@ paths:
         IsMultiContentStreaming: false
   /admin_users/8:
     delete:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Admin Users - Delete
       tags:
       - Admin Users
@@ -572,7 +572,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Admin Users - Delete
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -580,7 +580,7 @@ paths:
         IsMultiContentStreaming: false
   /bank_accounts:
     get:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Bank Accounts - List
       tags:
       - Bank Accounts
@@ -619,14 +619,14 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Bank Accounts - List
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
     post:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Bank Accounts - Create
       tags:
       - Bank Accounts
@@ -684,7 +684,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Bank Accounts - Create
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -692,7 +692,7 @@ paths:
         IsMultiContentStreaming: false
   /bank_accounts/2:
     get:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Bank Accounts - View
       tags:
       - Bank Accounts
@@ -731,7 +731,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Bank Accounts - View
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -739,7 +739,7 @@ paths:
         IsMultiContentStreaming: false
   /bank_accounts/4:
     put:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Bank Accounts - Update
       tags:
       - Bank Accounts
@@ -797,14 +797,14 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Bank Accounts - Update
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
     delete:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Bank Accounts - Delete
       tags:
       - Bank Accounts
@@ -849,7 +849,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Bank Accounts - Delete
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -857,7 +857,7 @@ paths:
         IsMultiContentStreaming: false
   /bank_accounts/2/transactions:
     post:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Bank Accounts - Transactions
       tags:
       - Bank Accounts
@@ -905,7 +905,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Bank Accounts - Transactions
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -913,7 +913,7 @@ paths:
         IsMultiContentStreaming: false
   /bank_accounts/2/dates:
     get:
-      description: 'TODO: Add Description'
+      description: /vdash/bank_accounts/{id}/dates?from={date1}&to={date2}
       summary: Bank Accounts - Dates List
       tags:
       - Bank Accounts
@@ -970,7 +970,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Bank Accounts - Dates List
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: /vdash/bank_accounts/{id}/dates?from={date1}&to={date2}
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -978,7 +978,7 @@ paths:
         IsMultiContentStreaming: false
   /bank_accounts/5/dates/2017-10-10:
     get:
-      description: 'TODO: Add Description'
+      description: /vdash/bank_accounts/{id}/dates/{date}
       summary: Bank Accounts - Date View
       tags:
       - Bank Accounts
@@ -1023,7 +1023,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Bank Accounts - Date View
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: /vdash/bank_accounts/{id}/dates/{date}
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -1031,7 +1031,7 @@ paths:
         IsMultiContentStreaming: false
   /bank_accounts/5/dates/2017-09-30/close:
     post:
-      description: 'TODO: Add Description'
+      description: /vdash/bank_accounts/{id}/dates/{date}/close
       summary: Bank Accounts - Date Close
       tags:
       - Bank Accounts
@@ -1076,7 +1076,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Bank Accounts - Date Close
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: /vdash/bank_accounts/{id}/dates/{date}/close
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -1084,7 +1084,7 @@ paths:
         IsMultiContentStreaming: false
   /bank_accounts/2/dates/2017-11-08/close:
     post:
-      description: 'TODO: Add Description'
+      description: /vdash/bank_accounts/{id}/dates/{date}/close
       summary: Bank Accounts - Date Close (Force)
       tags:
       - Bank Accounts
@@ -1129,7 +1129,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Bank Accounts - Date Close (Force)
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: /vdash/bank_accounts/{id}/dates/{date}/close
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -1137,7 +1137,7 @@ paths:
         IsMultiContentStreaming: false
   /banks:
     get:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Banks - List
       tags:
       - Banks
@@ -1176,7 +1176,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Banks - List
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -1184,7 +1184,7 @@ paths:
         IsMultiContentStreaming: false
   /banks/caixa:
     get:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Banks - View
       tags:
       - Banks
@@ -1223,7 +1223,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Banks - View
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -1231,7 +1231,7 @@ paths:
         IsMultiContentStreaming: false
   /campaigns:
     get:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Campaigns - List
       tags:
       - Campaigns
@@ -1270,14 +1270,14 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Campaigns - List
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
     post:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Campaigns - Create
       tags:
       - Campaigns
@@ -1336,7 +1336,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Campaigns - Create
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -1344,7 +1344,7 @@ paths:
         IsMultiContentStreaming: false
   /campaigns/35:
     get:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Campaigns - View
       tags:
       - Campaigns
@@ -1383,7 +1383,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Campaigns - View
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -1391,7 +1391,7 @@ paths:
         IsMultiContentStreaming: false
   /campaigns/3:
     put:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Campaigns - Update
       tags:
       - Campaigns
@@ -1438,7 +1438,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Campaigns - Update
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -1446,7 +1446,7 @@ paths:
         IsMultiContentStreaming: false
   /campaigns/38/activate:
     put:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Campaigns - Activate
       tags:
       - Campaigns
@@ -1485,7 +1485,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Campaigns - Activate
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -1493,7 +1493,7 @@ paths:
         IsMultiContentStreaming: false
   /campaigns/14/desactivate:
     put:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Campaigns - Desactivate
       tags:
       - Campaigns
@@ -1532,7 +1532,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Campaigns - Desactivate
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -1540,7 +1540,7 @@ paths:
         IsMultiContentStreaming: false
   /campaigns/66/duplicate:
     post:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Campaigns - Duplicate
       tags:
       - Campaigns
@@ -1579,7 +1579,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Campaigns - Duplicate
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -1587,7 +1587,7 @@ paths:
         IsMultiContentStreaming: false
   /downloads:
     get:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Downloads - List
       tags:
       - Downloads
@@ -1626,7 +1626,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Downloads - List
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -1634,7 +1634,7 @@ paths:
         IsMultiContentStreaming: false
   /downloads/3:
     get:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Downloads - View
       tags:
       - Downloads
@@ -1673,14 +1673,14 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Downloads - View
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
     delete:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Downloads - Delete
       tags:
       - Downloads
@@ -1725,7 +1725,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Downloads - Delete
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -1733,7 +1733,7 @@ paths:
         IsMultiContentStreaming: false
   /events:
     get:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Events - List
       tags:
       - Events
@@ -1772,7 +1772,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Events - List
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -1780,7 +1780,7 @@ paths:
         IsMultiContentStreaming: false
   /events/user_profile_updated:
     get:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Events - View
       tags:
       - Events
@@ -1819,7 +1819,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Events - View
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -1827,7 +1827,7 @@ paths:
         IsMultiContentStreaming: false
   /files:
     post:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Files - Create (Base64)
       tags:
       - Files
@@ -1880,7 +1880,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Files - Create (Base64)
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -1888,7 +1888,7 @@ paths:
         IsMultiContentStreaming: false
   /files/803:
     get:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Files - View
       tags:
       - Files
@@ -1927,7 +1927,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Files - View
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -1935,7 +1935,7 @@ paths:
         IsMultiContentStreaming: false
   /login:
     post:
-      description: 'TODO: Add Description'
+      description: This endpoint call logs in admin user, and set the "authorization" environment variable, to next requests.
       summary: Login
       tags:
       - Login
@@ -2002,7 +2002,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Login
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: This endpoint call logs in admin user, and set the "authorization" environment variable, to next requests.
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -2010,7 +2010,7 @@ paths:
         IsMultiContentStreaming: false
   /login/recovery:
     post:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Login - Recovery
       tags:
       - Login
@@ -2060,7 +2060,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Login - Recovery
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -2068,7 +2068,7 @@ paths:
         IsMultiContentStreaming: false
   /login/reset:
     put:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Login - Reset
       tags:
       - Login
@@ -2119,7 +2119,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Login - Reset
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -2127,7 +2127,7 @@ paths:
         IsMultiContentStreaming: false
   /logout:
     post:
-      description: 'TODO: Add Description'
+      description: This endpoint call logs in admin user, and set the "authorization" environment variable, to next requests.
       summary: Logout
       tags:
       - Login
@@ -2172,7 +2172,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Logout
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: This endpoint call logs in admin user, and set the "authorization" environment variable, to next requests.
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -2180,7 +2180,7 @@ paths:
         IsMultiContentStreaming: false
   /me:
     get:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Me - Show
       tags:
       - Me
@@ -2219,14 +2219,14 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Me - Show
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
     put:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Me - Update
       tags:
       - Me
@@ -2285,7 +2285,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Me - Update
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -2293,7 +2293,7 @@ paths:
         IsMultiContentStreaming: false
   /message_types:
     get:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Message Types - List
       tags:
       - Message Types
@@ -2332,14 +2332,14 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Message Types - List
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
     post:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Message Types - Create
       tags:
       - Message Types
@@ -2397,7 +2397,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Message Types - Create
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -2405,7 +2405,7 @@ paths:
         IsMultiContentStreaming: false
   /message_types/41:
     get:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Message Types - View
       tags:
       - Message Types
@@ -2450,14 +2450,14 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Message Types - View
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
     put:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Message Types - Update
       tags:
       - Message Types
@@ -2515,14 +2515,14 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Message Types - Update
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
     delete:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Message Types - Delete
       tags:
       - Message Types
@@ -2567,7 +2567,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Message Types - Delete
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -2575,7 +2575,7 @@ paths:
         IsMultiContentStreaming: false
   /messages:
     get:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Messages - List
       tags:
       - Messages
@@ -2641,14 +2641,14 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Messages - List
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
     post:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Messages - Create
       tags:
       - Messages
@@ -2722,7 +2722,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Messages - Create
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -2730,7 +2730,7 @@ paths:
         IsMultiContentStreaming: false
   /messages/2:
     get:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Messages - View
       tags:
       - Messages
@@ -2769,14 +2769,14 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Messages - View
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
     delete:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Messages - Delete
       tags:
       - Messages
@@ -2827,7 +2827,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Messages - Delete
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -2835,7 +2835,7 @@ paths:
         IsMultiContentStreaming: false
   /messages/181/cancel:
     put:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Messages - Cancel
       tags:
       - Messages
@@ -2885,7 +2885,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Messages - Cancel
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -2893,7 +2893,7 @@ paths:
         IsMultiContentStreaming: false
   /payments:
     get:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Payments - List
       tags:
       - Payments
@@ -2932,14 +2932,14 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Payments - List
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
     post:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Payments - Create
       tags:
       - Payments
@@ -3001,7 +3001,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Payments - Create
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -3009,7 +3009,7 @@ paths:
         IsMultiContentStreaming: false
   /payments/4656:
     get:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Payments - View
       tags:
       - Payments
@@ -3048,7 +3048,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Payments - View
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -3056,7 +3056,7 @@ paths:
         IsMultiContentStreaming: false
   /payments/103/status/refused:
     put:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Payments - Update Status
       tags:
       - Payments
@@ -3095,7 +3095,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Payments - Update Status
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -3103,7 +3103,7 @@ paths:
         IsMultiContentStreaming: false
   /payments/103:
     delete:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Payments - Delete
       tags:
       - Payments
@@ -3142,7 +3142,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Payments - Delete
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -3150,7 +3150,7 @@ paths:
         IsMultiContentStreaming: false
   /payments/107:
     put:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Payments - Update
       tags:
       - Payments
@@ -3200,7 +3200,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Payments - Update
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -3208,7 +3208,7 @@ paths:
         IsMultiContentStreaming: false
   /settings/default_payment_values:
     get:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Settings - List
       tags:
       - Settings
@@ -3247,7 +3247,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Settings - List
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -3255,7 +3255,7 @@ paths:
         IsMultiContentStreaming: false
   /settings/user_card_model_front:
     get:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Settings - Show
       tags:
       - Settings
@@ -3294,7 +3294,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Settings - Show
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -3302,7 +3302,7 @@ paths:
         IsMultiContentStreaming: false
   /settings/invite_sms:
     put:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Settings - Update
       tags:
       - Settings
@@ -3360,7 +3360,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Settings - Update
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -3368,7 +3368,7 @@ paths:
         IsMultiContentStreaming: false
   /settings:
     patch:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Settings - Update All
       tags:
       - Settings
@@ -3428,7 +3428,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Settings - Update All
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -3436,7 +3436,7 @@ paths:
         IsMultiContentStreaming: false
   /settings/test:
     delete:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Settings - Delete
       tags:
       - Settings
@@ -3475,7 +3475,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Settings - Delete
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -3483,7 +3483,7 @@ paths:
         IsMultiContentStreaming: false
   /user_categories:
     get:
-      description: 'TODO: Add Description'
+      description: ''
       summary: User Categories - List
       tags:
       - User Categories
@@ -3522,14 +3522,14 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: User Categories - List
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
     post:
-      description: 'TODO: Add Description'
+      description: ''
       summary: User Categories - Create
       tags:
       - User Categories
@@ -3584,7 +3584,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: User Categories - Create
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -3592,7 +3592,7 @@ paths:
         IsMultiContentStreaming: false
   /user_categories/2:
     get:
-      description: 'TODO: Add Description'
+      description: ''
       summary: User Categories - View
       tags:
       - User Categories
@@ -3637,7 +3637,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: User Categories - View
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -3645,7 +3645,7 @@ paths:
         IsMultiContentStreaming: false
   /user_categories/3:
     put:
-      description: 'TODO: Add Description'
+      description: ''
       summary: User Categories - Update
       tags:
       - User Categories
@@ -3700,7 +3700,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: User Categories - Update
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -3708,7 +3708,7 @@ paths:
         IsMultiContentStreaming: false
   /user_categories/1:
     delete:
-      description: 'TODO: Add Description'
+      description: ''
       summary: User Categories - Delete
       tags:
       - User Categories
@@ -3753,7 +3753,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: User Categories - Delete
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -3761,7 +3761,7 @@ paths:
         IsMultiContentStreaming: false
   /webhooks:
     get:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Webhooks - List
       tags:
       - Webhooks
@@ -3800,14 +3800,14 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Webhooks - List
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
     post:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Webhooks - Create
       tags:
       - Webhooks
@@ -3863,7 +3863,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Webhooks - Create
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -3871,7 +3871,7 @@ paths:
         IsMultiContentStreaming: false
   /webhooks/2:
     get:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Webhooks - View
       tags:
       - Webhooks
@@ -3916,14 +3916,14 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Webhooks - View
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
     put:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Webhooks - Update
       tags:
       - Webhooks
@@ -3979,14 +3979,14 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Webhooks - Update
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
     delete:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Webhooks - Delete
       tags:
       - Webhooks
@@ -4031,7 +4031,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Webhooks - Delete
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -4039,7 +4039,7 @@ paths:
         IsMultiContentStreaming: false
   /users:
     get:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Users - List
       tags:
       - Users
@@ -4095,7 +4095,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Users - List
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -4103,7 +4103,7 @@ paths:
         IsMultiContentStreaming: false
   /users/18:
     get:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Users - Update
       tags:
       - Users
@@ -4142,14 +4142,14 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Users - Update
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
     delete:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Users - Delete
       tags:
       - Users
@@ -4188,7 +4188,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Users - Delete
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -4196,7 +4196,7 @@ paths:
         IsMultiContentStreaming: false
   /users/import:
     post:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Users - Import
       tags:
       - Users
@@ -4241,7 +4241,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Users - Import
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -4249,7 +4249,7 @@ paths:
         IsMultiContentStreaming: false
   /payment_doc_generate:
     post:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Payment Doc Generate
       tags:
       - Misc
@@ -4304,7 +4304,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Payment Doc Generate
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -4312,7 +4312,7 @@ paths:
         IsMultiContentStreaming: false
   /accounts/code:pocketto:
     get:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Account - View (Code)
       tags:
       - Misc
@@ -4345,7 +4345,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Account - View (Code)
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -4353,7 +4353,7 @@ paths:
         IsMultiContentStreaming: false
   /analytics/payments:
     get:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Analytics - Show
       tags:
       - Misc
@@ -4402,7 +4402,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Analytics - Show
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false

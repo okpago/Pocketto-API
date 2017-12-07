@@ -28,7 +28,7 @@ paths:
       summary: API Keys - List
       tags:
       - API Keys
-      operationId: API Keys - List
+      operationId: ApiKeysGet
       produces:
       - application/json
       parameters:
@@ -75,7 +75,7 @@ paths:
       summary: API Keys - Create
       tags:
       - API Keys
-      operationId: API Keys - Create
+      operationId: ApiKeysPost
       produces:
       - application/json
       parameters:
@@ -138,7 +138,7 @@ paths:
       summary: API Keys - View
       tags:
       - API Keys
-      operationId: API Keys - View
+      operationId: ApiKeys0cb476ab3aa6820ab36ba27e04226d338f4cd201c714ef1c662bc4c1b5c5a0cfb40b2140f37ce276Get
       produces:
       - application/json
       parameters:
@@ -190,7 +190,7 @@ paths:
       summary: API Keys - Update
       tags:
       - API Keys
-      operationId: API Keys - Update
+      operationId: ApiKeys0cb476ab3aa6820ab36ba27e04226d338f4cd201c714ef1c662bc4c1b5c5a0cfb40b2140f37ce276Put
       produces:
       - application/json
       parameters:
@@ -252,7 +252,7 @@ paths:
       summary: API Keys  - Delete
       tags:
       - API Keys
-      operationId: API Keys  - Delete
+      operationId: ApiKeys0cb476ab3aa6820ab36ba27e04226d338f4cd201c714ef1c662bc4c1b5c5a0cfb40b2140f37ce276Delete
       produces:
       - application/json
       parameters:
@@ -305,7 +305,7 @@ paths:
       summary: Admin Users - List
       tags:
       - Admin Users
-      operationId: Admin Users - List
+      operationId: AdminUsersGet
       produces:
       - application/json
       parameters:
@@ -351,7 +351,7 @@ paths:
       summary: Admin Users - Create
       tags:
       - Admin Users
-      operationId: Admin Users - Create
+      operationId: AdminUsersPost
       produces:
       - application/json
       parameters:
@@ -418,7 +418,7 @@ paths:
       summary: Admin Users - Show
       tags:
       - Admin Users
-      operationId: Admin Users - Show
+      operationId: AdminUsers1Get
       produces:
       - application/json
       parameters:
@@ -465,7 +465,7 @@ paths:
       summary: Admin Users - Update
       tags:
       - Admin Users
-      operationId: Admin Users - Update
+      operationId: AdminUsers5Put
       produces:
       - application/json
       parameters:
@@ -532,7 +532,7 @@ paths:
       summary: Admin Users - Delete
       tags:
       - Admin Users
-      operationId: Admin Users - Delete
+      operationId: AdminUsers8Delete
       produces:
       - application/json
       parameters:
@@ -585,7 +585,7 @@ paths:
       summary: Bank Accounts - List
       tags:
       - Bank Accounts
-      operationId: Bank Accounts - List
+      operationId: BankAccountsGet
       produces:
       - application/json
       parameters:
@@ -631,7 +631,7 @@ paths:
       summary: Bank Accounts - Create
       tags:
       - Bank Accounts
-      operationId: Bank Accounts - Create
+      operationId: BankAccountsPost
       produces:
       - application/json
       parameters:
@@ -697,7 +697,7 @@ paths:
       summary: Bank Accounts - View
       tags:
       - Bank Accounts
-      operationId: Bank Accounts - View
+      operationId: BankAccounts2Get
       produces:
       - application/json
       parameters:
@@ -744,7 +744,7 @@ paths:
       summary: Bank Accounts - Update
       tags:
       - Bank Accounts
-      operationId: Bank Accounts - Update
+      operationId: BankAccounts4Put
       produces:
       - application/json
       parameters:
@@ -809,7 +809,7 @@ paths:
       summary: Bank Accounts - Delete
       tags:
       - Bank Accounts
-      operationId: Bank Accounts - Delete
+      operationId: BankAccounts4Delete
       produces:
       - application/json
       parameters:
@@ -862,7 +862,7 @@ paths:
       summary: Bank Accounts - Transactions
       tags:
       - Bank Accounts
-      operationId: Bank Accounts - Transactions
+      operationId: BankAccounts2TransactionsPost
       produces:
       - application/json
       consumes:
@@ -918,7 +918,7 @@ paths:
       summary: Bank Accounts - Dates List
       tags:
       - Bank Accounts
-      operationId: Bank Accounts - Dates List
+      operationId: BankAccounts2DatesGet
       produces:
       - application/json
       parameters:
@@ -983,7 +983,7 @@ paths:
       summary: Bank Accounts - Date View
       tags:
       - Bank Accounts
-      operationId: Bank Accounts - Date View
+      operationId: BankAccounts5Dates20171010Get
       produces:
       - application/json
       parameters:
@@ -1036,7 +1036,7 @@ paths:
       summary: Bank Accounts - Date Close
       tags:
       - Bank Accounts
-      operationId: Bank Accounts - Date Close
+      operationId: BankAccounts5Dates20170930ClosePost
       produces:
       - application/json
       parameters:
@@ -1089,7 +1089,7 @@ paths:
       summary: Bank Accounts - Date Close (Force)
       tags:
       - Bank Accounts
-      operationId: Bank Accounts - Date Close (Force)
+      operationId: BankAccounts2Dates20171108ClosePost
       produces:
       - application/json
       parameters:
@@ -1142,7 +1142,7 @@ paths:
       summary: Banks - List
       tags:
       - Banks
-      operationId: Banks - List
+      operationId: BanksGet
       produces:
       - application/json
       parameters:
@@ -1189,7 +1189,7 @@ paths:
       summary: Banks - View
       tags:
       - Banks
-      operationId: Banks - View
+      operationId: BanksCaixaGet
       produces:
       - application/json
       parameters:
@@ -1236,7 +1236,7 @@ paths:
       summary: Campaigns - List
       tags:
       - Campaigns
-      operationId: Campaigns - List
+      operationId: CampaignsGet
       produces:
       - application/json
       parameters:
@@ -1282,7 +1282,7 @@ paths:
       summary: Campaigns - Create
       tags:
       - Campaigns
-      operationId: Campaigns - Create
+      operationId: CampaignsPost
       produces:
       - application/json
       parameters:
@@ -1349,7 +1349,7 @@ paths:
       summary: Campaigns - View
       tags:
       - Campaigns
-      operationId: Campaigns - View
+      operationId: Campaigns35Get
       produces:
       - application/json
       parameters:
@@ -1396,7 +1396,7 @@ paths:
       summary: Campaigns - Update
       tags:
       - Campaigns
-      operationId: Campaigns - Update
+      operationId: Campaigns3Put
       produces:
       - application/json
       parameters:
@@ -1451,7 +1451,7 @@ paths:
       summary: Campaigns - Activate
       tags:
       - Campaigns
-      operationId: Campaigns - Activate
+      operationId: Campaigns38ActivatePut
       produces:
       - application/json
       parameters:
@@ -1498,7 +1498,7 @@ paths:
       summary: Campaigns - Desactivate
       tags:
       - Campaigns
-      operationId: Campaigns - Desactivate
+      operationId: Campaigns14DesactivatePut
       produces:
       - application/json
       parameters:
@@ -1545,7 +1545,7 @@ paths:
       summary: Campaigns - Duplicate
       tags:
       - Campaigns
-      operationId: Campaigns - Duplicate
+      operationId: Campaigns66DuplicatePost
       produces:
       - application/json
       parameters:
@@ -1592,7 +1592,7 @@ paths:
       summary: Downloads - List
       tags:
       - Downloads
-      operationId: Downloads - List
+      operationId: DownloadsGet
       produces:
       - application/json
       parameters:
@@ -1639,7 +1639,7 @@ paths:
       summary: Downloads - View
       tags:
       - Downloads
-      operationId: Downloads - View
+      operationId: Downloads3Get
       produces:
       - application/json
       parameters:
@@ -1685,7 +1685,7 @@ paths:
       summary: Downloads - Delete
       tags:
       - Downloads
-      operationId: Downloads - Delete
+      operationId: Downloads3Delete
       produces:
       - application/json
       parameters:
@@ -1738,7 +1738,7 @@ paths:
       summary: Events - List
       tags:
       - Events
-      operationId: Events - List
+      operationId: EventsGet
       produces:
       - application/json
       parameters:
@@ -1785,7 +1785,7 @@ paths:
       summary: Events - View
       tags:
       - Events
-      operationId: Events - View
+      operationId: EventsUserProfileUpdatedGet
       produces:
       - application/json
       parameters:
@@ -1832,7 +1832,7 @@ paths:
       summary: Files - Create (Base64)
       tags:
       - Files
-      operationId: Files - Create (Base64)
+      operationId: FilesPost2
       produces:
       - application/json
       consumes:
@@ -1893,7 +1893,7 @@ paths:
       summary: Files - View
       tags:
       - Files
-      operationId: Files - View
+      operationId: Files803Get
       produces:
       - application/json
       parameters:
@@ -1940,7 +1940,7 @@ paths:
       summary: Login
       tags:
       - Login
-      operationId: Login
+      operationId: LoginPost
       produces:
       - application/json
       consumes:
@@ -2015,7 +2015,7 @@ paths:
       summary: Login - Recovery
       tags:
       - Login
-      operationId: Login - Recovery
+      operationId: LoginRecoveryPost
       produces:
       - application/json
       parameters:
@@ -2073,7 +2073,7 @@ paths:
       summary: Login - Reset
       tags:
       - Login
-      operationId: Login - Reset
+      operationId: LoginResetPut
       produces:
       - application/json
       parameters:
@@ -2132,7 +2132,7 @@ paths:
       summary: Logout
       tags:
       - Login
-      operationId: Logout
+      operationId: LogoutPost
       produces:
       - application/json
       parameters:
@@ -2185,7 +2185,7 @@ paths:
       summary: Me - Show
       tags:
       - Me
-      operationId: Me - Show
+      operationId: MeGet
       produces:
       - application/json
       parameters:
@@ -2231,7 +2231,7 @@ paths:
       summary: Me - Update
       tags:
       - Me
-      operationId: Me - Update
+      operationId: MePut
       produces:
       - application/json
       parameters:
@@ -2298,7 +2298,7 @@ paths:
       summary: Message Types - List
       tags:
       - Message Types
-      operationId: Message Types - List
+      operationId: MessageTypesGet
       produces:
       - application/json
       parameters:
@@ -2344,7 +2344,7 @@ paths:
       summary: Message Types - Create
       tags:
       - Message Types
-      operationId: Message Types - Create
+      operationId: MessageTypesPost
       produces:
       - application/json
       parameters:
@@ -2410,7 +2410,7 @@ paths:
       summary: Message Types - View
       tags:
       - Message Types
-      operationId: Message Types - View
+      operationId: MessageTypes41Get
       produces:
       - application/json
       parameters:
@@ -2462,7 +2462,7 @@ paths:
       summary: Message Types - Update
       tags:
       - Message Types
-      operationId: Message Types - Update
+      operationId: MessageTypes41Put
       produces:
       - application/json
       parameters:
@@ -2527,7 +2527,7 @@ paths:
       summary: Message Types - Delete
       tags:
       - Message Types
-      operationId: Message Types - Delete
+      operationId: MessageTypes41Delete
       produces:
       - application/json
       parameters:
@@ -2580,7 +2580,7 @@ paths:
       summary: Messages - List
       tags:
       - Messages
-      operationId: Messages - List
+      operationId: MessagesGet
       produces:
       - application/json
       parameters:
@@ -2653,7 +2653,7 @@ paths:
       summary: Messages - Create
       tags:
       - Messages
-      operationId: Messages - Create
+      operationId: MessagesPost
       produces:
       - application/json
       parameters:
@@ -2735,7 +2735,7 @@ paths:
       summary: Messages - View
       tags:
       - Messages
-      operationId: Messages - View
+      operationId: Messages2Get
       produces:
       - application/json
       parameters:
@@ -2781,7 +2781,7 @@ paths:
       summary: Messages - Delete
       tags:
       - Messages
-      operationId: Messages - Delete
+      operationId: Messages2Delete
       produces:
       - application/json
       parameters:
@@ -2840,7 +2840,7 @@ paths:
       summary: Messages - Cancel
       tags:
       - Messages
-      operationId: Messages - Cancel
+      operationId: Messages181CancelPut
       produces:
       - application/json
       parameters:
@@ -2898,7 +2898,7 @@ paths:
       summary: Payments - List
       tags:
       - Payments
-      operationId: Payments - List
+      operationId: PaymentsGet
       produces:
       - application/json
       parameters:
@@ -2944,7 +2944,7 @@ paths:
       summary: Payments - Create
       tags:
       - Payments
-      operationId: Payments - Create
+      operationId: PaymentsPost
       produces:
       - application/json
       parameters:
@@ -3014,7 +3014,7 @@ paths:
       summary: Payments - View
       tags:
       - Payments
-      operationId: Payments - View
+      operationId: Payments4656Get
       produces:
       - application/json
       parameters:
@@ -3061,7 +3061,7 @@ paths:
       summary: Payments - Update Status
       tags:
       - Payments
-      operationId: Payments - Update Status
+      operationId: Payments103StatusRefusedPut
       produces:
       - application/json
       parameters:
@@ -3108,7 +3108,7 @@ paths:
       summary: Payments - Delete
       tags:
       - Payments
-      operationId: Payments - Delete
+      operationId: Payments103Delete
       produces:
       - application/json
       parameters:
@@ -3155,7 +3155,7 @@ paths:
       summary: Payments - Update
       tags:
       - Payments
-      operationId: Payments - Update
+      operationId: Payments107Put
       produces:
       - application/json
       parameters:
@@ -3213,7 +3213,7 @@ paths:
       summary: Settings - List
       tags:
       - Settings
-      operationId: Settings - List
+      operationId: SettingsDefaultPaymentValuesGet
       produces:
       - application/json
       parameters:
@@ -3260,7 +3260,7 @@ paths:
       summary: Settings - Show
       tags:
       - Settings
-      operationId: Settings - Show
+      operationId: SettingsUserCardModelFrontGet
       produces:
       - application/json
       parameters:
@@ -3307,7 +3307,7 @@ paths:
       summary: Settings - Update
       tags:
       - Settings
-      operationId: Settings - Update
+      operationId: SettingsInviteSmsPut
       produces:
       - application/json
       parameters:
@@ -3373,7 +3373,7 @@ paths:
       summary: Settings - Update All
       tags:
       - Settings
-      operationId: Settings - Update All
+      operationId: SettingsPatch
       produces:
       - application/json
       parameters:
@@ -3441,7 +3441,7 @@ paths:
       summary: Settings - Delete
       tags:
       - Settings
-      operationId: Settings - Delete
+      operationId: SettingsTestDelete
       produces:
       - application/json
       parameters:
@@ -3488,7 +3488,7 @@ paths:
       summary: User Categories - List
       tags:
       - User Categories
-      operationId: User Categories - List
+      operationId: UserCategoriesGet
       produces:
       - application/json
       parameters:
@@ -3534,7 +3534,7 @@ paths:
       summary: User Categories - Create
       tags:
       - User Categories
-      operationId: User Categories - Create
+      operationId: UserCategoriesPost
       produces:
       - application/json
       parameters:
@@ -3597,7 +3597,7 @@ paths:
       summary: User Categories - View
       tags:
       - User Categories
-      operationId: User Categories - View
+      operationId: UserCategories2Get
       produces:
       - application/json
       parameters:
@@ -3650,7 +3650,7 @@ paths:
       summary: User Categories - Update
       tags:
       - User Categories
-      operationId: User Categories - Update
+      operationId: UserCategories3Put
       produces:
       - application/json
       parameters:
@@ -3713,7 +3713,7 @@ paths:
       summary: User Categories - Delete
       tags:
       - User Categories
-      operationId: User Categories - Delete
+      operationId: UserCategories1Delete
       produces:
       - application/json
       parameters:
@@ -3766,7 +3766,7 @@ paths:
       summary: Webhooks - List
       tags:
       - Webhooks
-      operationId: Webhooks - List
+      operationId: WebhooksGet
       produces:
       - application/json
       parameters:
@@ -3812,7 +3812,7 @@ paths:
       summary: Webhooks - Create
       tags:
       - Webhooks
-      operationId: Webhooks - Create
+      operationId: WebhooksPost
       produces:
       - application/json
       parameters:
@@ -3876,7 +3876,7 @@ paths:
       summary: Webhooks - View
       tags:
       - Webhooks
-      operationId: Webhooks - View
+      operationId: Webhooks2Get
       produces:
       - application/json
       parameters:
@@ -3928,7 +3928,7 @@ paths:
       summary: Webhooks - Update
       tags:
       - Webhooks
-      operationId: Webhooks - Update
+      operationId: Webhooks2Put
       produces:
       - application/json
       parameters:
@@ -3991,7 +3991,7 @@ paths:
       summary: Webhooks - Delete
       tags:
       - Webhooks
-      operationId: Webhooks - Delete
+      operationId: Webhooks2Delete
       produces:
       - application/json
       parameters:
@@ -4044,7 +4044,7 @@ paths:
       summary: Users - List
       tags:
       - Users
-      operationId: Users - List
+      operationId: UsersGet
       produces:
       - application/json
       parameters:
@@ -4108,7 +4108,7 @@ paths:
       summary: Users - Update
       tags:
       - Users
-      operationId: Users - Update
+      operationId: Users18Get2
       produces:
       - application/json
       parameters:
@@ -4154,7 +4154,7 @@ paths:
       summary: Users - Delete
       tags:
       - Users
-      operationId: Users - Delete
+      operationId: Users18Delete
       produces:
       - application/json
       parameters:
@@ -4201,7 +4201,7 @@ paths:
       summary: Users - Import
       tags:
       - Users
-      operationId: Users - Import
+      operationId: UsersImportPost
       produces:
       - application/json
       parameters:
@@ -4254,7 +4254,7 @@ paths:
       summary: Payment Doc Generate
       tags:
       - Misc
-      operationId: Payment Doc Generate
+      operationId: PaymentDocGeneratePost
       produces:
       - application/json
       parameters:
@@ -4317,7 +4317,7 @@ paths:
       summary: Account - View (Code)
       tags:
       - Misc
-      operationId: Account - View (Code)
+      operationId: AccountsCodePockettoGet
       produces:
       - application/json
       parameters:
@@ -4358,7 +4358,7 @@ paths:
       summary: Analytics - Show
       tags:
       - Misc
-      operationId: Analytics - Show
+      operationId: AnalyticsPaymentsGet
       produces:
       - application/json
       parameters:

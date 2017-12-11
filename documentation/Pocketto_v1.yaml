@@ -9,7 +9,7 @@ info:
 host: api.pocketto.com.br
 basePath: /v1
 schemes:
-- https
+- http
 consumes:
 - application/json
 produces:

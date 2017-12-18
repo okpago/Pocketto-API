@@ -1725,6 +1725,7 @@ definitions:
     properties:
       mobile:
         description: ''
+        example: 51992794210
         type: string
     required:
     - mobile
@@ -1737,9 +1738,11 @@ definitions:
     properties:
       name:
         description: ''
+        example: Wagner da Silva
         type: string
       cpf:
         description: ''
+        example: 02777284288
         type: string
     required:
     - name
@@ -1752,6 +1755,7 @@ definitions:
     properties:
       push_notif_enabled:
         description: ''
+        example: true
         type: boolean
     required:
     - push_notif_enabled
@@ -1767,18 +1771,23 @@ definitions:
     properties:
       type:
         description: ''
+        example: iphone
         type: string
       model:
         description: ''
+        example: 5s
         type: string
       push_service:
         description: ''
+        example: firebase
         type: string
       push_token:
         description: ''
+        example: abc123
         type: string
       device_id:
         description: ''
+        example: minhaukey
         type: string
     required:
     - type
@@ -1794,6 +1803,7 @@ definitions:
     properties:
       amount:
         description: ''
+        example: 10
         type: integer
         format: int32
     required:
@@ -1806,6 +1816,7 @@ definitions:
     properties:
       amount:
         description: ''
+        example: 99
         type: number
         format: double
     required:
@@ -1818,6 +1829,7 @@ definitions:
     properties:
       photo_file_id:
         description: ''
+        example: 4627
         type: integer
         format: int32
     required:
@@ -1831,9 +1843,11 @@ definitions:
     properties:
       name:
         description: ''
+        example: Vinicius
         type: string
       mobile:
         description: ''
+        example: 51992794210
         type: string
     required:
     - name
@@ -1848,14 +1862,17 @@ definitions:
     properties:
       photo_file_id:
         description: ''
+        example: 16
         type: integer
         format: int32
       claim_bank_account_id:
         description: ''
+        example: 1
         type: integer
         format: int32
       claim_date:
         description: ''
+        example: 2017-09-11
         type: string
     required:
     - photo_file_id

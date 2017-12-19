@@ -4408,6 +4408,7 @@ definitions:
     properties:
       name:
         description: ''
+        example: My Api Key
         type: string
     required:
     - name
@@ -4419,6 +4420,7 @@ definitions:
     properties:
       name:
         description: ''
+        example: My Api Key
         type: string
     required:
     - name
@@ -4434,18 +4436,23 @@ definitions:
     properties:
       name:
         description: ''
+        example: Henrique Haas
         type: string
       email:
         description: ''
+        example: henrique@haax.com.br
         type: string
       password:
         description: ''
+        example: haas007
         type: string
       role:
         description: ''
+        example: a
         type: string
       status:
         description: ''
+        example: 1
         type: integer
         format: int32
     required:
@@ -4466,18 +4473,23 @@ definitions:
     properties:
       name:
         description: ''
+        example: Henrique Haas
         type: string
       email:
         description: ''
+        example: henrique@haax.com.br
         type: string
       password:
         description: ''
+        example: haas007
         type: string
       role:
         description: ''
+        example: a
         type: string
       status:
         description: ''
+        example: 1
         type: integer
         format: int32
     required:
@@ -4497,15 +4509,19 @@ definitions:
     properties:
       bank:
         description: ''
+        example: banrisul
         type: string
       name:
         description: ''
+        example: Banrisul
         type: string
       agency:
         description: ''
+        example: 0123
         type: string
       number:
         description: ''
+        example: 0123
         type: string
     required:
     - bank
@@ -4523,15 +4539,19 @@ definitions:
     properties:
       bank:
         description: ''
+        example: banrisul
         type: string
       name:
         description: ''
+        example: Banrisul
         type: string
       agency:
         description: ''
+        example: 0123
         type: string
       number:
         description: ''
+        example: 0123
         type: string
     required:
     - bank
@@ -4555,38 +4575,48 @@ definitions:
     properties:
       name:
         description: ''
+        example: Vini Campanha agora vai
         type: string
       description:
         description: ''
+        example: Camp desc camp desc
         type: string
       image_bg_file_id:
         description: ''
+        example: 1
         type: integer
         format: int32
       target_total:
         description: ''
+        example: 10
         type: integer
         format: int32
       target_total_users:
         description: ''
+        example: 5
         type: integer
         format: int32
       payment_amount:
         description: ''
+        example: 100
         type: integer
         format: int32
       recurring:
         description: ''
+        example: true
         type: boolean
       recurring_max_times:
         description: ''
+        example: 10
         type: integer
         format: int32
       end_date:
         description: ''
+        example: 2017-05-30
         type: string
       status:
         description: ''
+        example: 1
         type: integer
         format: int32
     required:
@@ -4617,31 +4647,39 @@ definitions:
     properties:
       name:
         description: ''
+        example: Campanha 1
         type: string
       description:
         description: ''
+        example: Camp desc camp desc
         type: string
       image_bg_file_id:
         description: ''
+        example: 1
         type: integer
         format: int32
       target_total:
         description: ''
+        example: 10
         type: integer
         format: int32
       target_total_users:
         description: ''
+        example: 1
         type: integer
         format: int32
       payment_amount:
         description: ''
+        example: 100
         type: integer
         format: int32
       recurring:
         description: ''
+        example: true
         type: boolean
       recurring_max_times:
         description: ''
+        example: 10
         type: integer
         format: int32
       end_date:
@@ -4649,6 +4687,7 @@ definitions:
         type: string
       status:
         description: ''
+        example: 1
         type: integer
         format: int32
     required:
@@ -4671,9 +4710,11 @@ definitions:
     properties:
       email:
         description: ''
+        example: '{{email}}'
         type: string
       redirect_url:
         description: ''
+        example: http://pocketto.com.br
         type: string
     required:
     - email
@@ -4688,12 +4729,15 @@ definitions:
     properties:
       token:
         description: ''
+        example: d3a054c6cc54c3f0b16777fec00a533a0e4f92e30aa28e3bacddd4596afb2a9c
         type: string
       password:
         description: ''
+        example: pocketto
         type: string
       password_confirmation:
         description: ''
+        example: pocketto
         type: string
     required:
     - token
@@ -4711,18 +4755,23 @@ definitions:
     properties:
       name:
         description: ''
+        example: Henrique Haas
         type: string
       email:
         description: ''
+        example: henrique@haax.com.br
         type: string
       password:
         description: ''
+        example: haas007
         type: string
       role:
         description: ''
+        example: a
         type: string
       status:
         description: ''
+        example: 1
         type: integer
         format: int32
     required:
@@ -4742,15 +4791,19 @@ definitions:
     properties:
       icon:
         description: ''
+        example: heart
         type: string
       name:
         description: ''
+        example: oi
         type: string
       color:
         description: ''
+        example: '#ffffff'
         type: string
       status:
         description: ''
+        example: 1
         type: integer
         format: int32
     required:
@@ -4769,15 +4822,19 @@ definitions:
     properties:
       icon:
         description: ''
+        example: heart
         type: string
       name:
         description: ''
+        example: oi
         type: string
       color:
         description: ''
+        example: '#ffffff'
         type: string
       status:
         description: ''
+        example: 1
         type: integer
         format: int32
     required:
@@ -4813,34 +4870,55 @@ definitions:
     properties:
       message_type_id:
         description: ''
+        example: 1
         type: integer
         format: int32
       title:
         description: ''
+        example: Título | Teste
         type: string
       description:
         description: ''
+        example: Descrição | Teste
         type: string
       dispatch:
         description: ''
+        example: now
         type: string
       dont_repeat:
         description: ''
+        example: false
         type: boolean
       events:
         description: ''
+        example:
+        - event: user_created
         type: array
         items:
           $ref: '#/definitions/Event'
       targets:
         description: ''
+        example:
+        - filter: user.id
+          operator: eq
+          modifier: ''
+          value: 103
         type: array
         items:
           $ref: '#/definitions/Target'
       deliver_by:
         $ref: '#/definitions/DeliverBy'
+        example:
+          push: true
+          email: true
+          sms: false
+          sms_only_if_no_app: false
       action_data:
         $ref: '#/definitions/ActionData'
+        example:
+          url: http://youtu.be/259itAV0x_k
+          file_url: https://s3-sa-east-1.amazonaws.com/pockettobucket/renascer/files/3l/3lHL/3lHL8NDuGTjsOPVxJPighkKga4joykkqKOio0AJMXfdV6LamxZ.mp3
+          file_format: mp3
     required:
     - message_type_id
     - title
@@ -4853,28 +4931,39 @@ definitions:
     - action_data
   Event:
     title: Event
+    example:
+      event: user_created
     type: object
     properties:
       event:
         description: ''
+        example: user_created
         type: string
     required:
     - event
   Target:
     title: Target
+    example:
+      filter: user.id
+      operator: eq
+      modifier: ''
+      value: 103
     type: object
     properties:
       filter:
         description: ''
+        example: user.id
         type: string
       operator:
         description: ''
+        example: eq
         type: string
       modifier:
         description: ''
         type: string
       value:
         description: ''
+        example: 103
         type: string
     required:
     - filter
@@ -4883,19 +4972,28 @@ definitions:
     - value
   DeliverBy:
     title: DeliverBy
+    example:
+      push: true
+      email: true
+      sms: false
+      sms_only_if_no_app: false
     type: object
     properties:
       push:
         description: ''
+        example: true
         type: boolean
       email:
         description: ''
+        example: true
         type: boolean
       sms:
         description: ''
+        example: false
         type: boolean
       sms_only_if_no_app:
         description: ''
+        example: false
         type: boolean
     required:
     - push
@@ -4904,16 +5002,23 @@ definitions:
     - sms_only_if_no_app
   ActionData:
     title: ActionData
+    example:
+      url: http://youtu.be/259itAV0x_k
+      file_url: https://s3-sa-east-1.amazonaws.com/pockettobucket/renascer/files/3l/3lHL/3lHL8NDuGTjsOPVxJPighkKga4joykkqKOio0AJMXfdV6LamxZ.mp3
+      file_format: mp3
     type: object
     properties:
       url:
         description: ''
+        example: http://youtu.be/259itAV0x_k
         type: string
       file_url:
         description: ''
+        example: https://s3-sa-east-1.amazonaws.com/pockettobucket/renascer/files/3l/3lHL/3lHL8NDuGTjsOPVxJPighkKga4joykkqKOio0AJMXfdV6LamxZ.mp3
         type: string
       file_format:
         description: ''
+        example: mp3
         type: string
     required:
     - url
@@ -4927,6 +5032,7 @@ definitions:
     properties:
       title:
         description: ''
+        example: Obrigado pela sua doacao!
         type: string
     required:
     - title
@@ -4939,9 +5045,11 @@ definitions:
     properties:
       username:
         description: ''
+        example: rk.fadini@gmail.com
         type: string
       password:
         description: ''
+        example: 123123
         type: string
     required:
     - username
@@ -4954,6 +5062,7 @@ definitions:
     properties:
       amount:
         description: ''
+        example: 100
         type: integer
         format: int32
     required:
@@ -4972,6 +5081,7 @@ definitions:
     properties:
       amount:
         description: ''
+        example: 25
         type: integer
         format: int32
       uid:
@@ -4979,25 +5089,39 @@ definitions:
         type: string
       user:
         $ref: '#/definitions/User'
+        example:
+          name: Teste Payment CPF
+          email: testepaymentcpf@gmail.com
+          cpf: 91470416417
+          mobile: 51998855220
     required:
     - amount
     - uid
     - user
   User:
     title: User
+    example:
+      name: Teste Payment CPF
+      email: testepaymentcpf@gmail.com
+      cpf: 91470416417
+      mobile: 51998855220
     type: object
     properties:
       name:
         description: ''
+        example: Teste Payment CPF
         type: string
       email:
         description: ''
+        example: testepaymentcpf@gmail.com
         type: string
       cpf:
         description: ''
+        example: 91470416417
         type: string
       mobile:
         description: ''
+        example: 51998855220
         type: string
     required:
     - name
@@ -5015,16 +5139,20 @@ definitions:
     properties:
       name:
         description: ''
+        example: invite_sms_name
         type: string
       value:
         description: ''
+        example: new_value
         type: string
       public:
         description: ''
+        example: 0
         type: integer
         format: int32
       advanced:
         description: ''
+        example: 0
         type: integer
         format: int32
     required:
@@ -5042,6 +5170,9 @@ definitions:
     properties:
       settings:
         description: ''
+        example:
+        - name: invite_sms
+          value: new_value
         type: array
         items:
           $ref: '#/definitions/Setting'
@@ -5049,13 +5180,18 @@ definitions:
     - settings
   Setting:
     title: Setting
+    example:
+      name: invite_sms
+      value: new_value
     type: object
     properties:
       name:
         description: ''
+        example: invite_sms
         type: string
       value:
         description: ''
+        example: new_value
         type: string
     required:
     - name
@@ -5068,6 +5204,7 @@ definitions:
     properties:
       name:
         description: ''
+        example: Igreja A
         type: string
     required:
     - name
@@ -5079,6 +5216,7 @@ definitions:
     properties:
       name:
         description: ''
+        example: Igreja B
         type: string
     required:
     - name
@@ -5091,9 +5229,11 @@ definitions:
     properties:
       url:
         description: ''
+        example: http://google.com
         type: string
       event:
         description: ''
+        example: payment_cancelled
         type: string
     required:
     - url
@@ -5107,9 +5247,11 @@ definitions:
     properties:
       url:
         description: ''
+        example: http://google.com.br
         type: string
       event:
         description: ''
+        example: payment_paid
         type: string
     required:
     - url
@@ -5127,25 +5269,31 @@ definitions:
     properties:
       quantity:
         description: ''
+        example: 3
         type: integer
         format: int32
       amount:
         description: ''
+        example: 150
         type: number
         format: double
       due_date:
         description: ''
+        example: 2017-06-10
         type: string
       sheets:
         description: ''
+        example: 9
         type: integer
         format: int32
       sheets_per_page:
         description: ''
+        example: 3
         type: integer
         format: int32
       continuous:
         description: ''
+        example: 0
         type: integer
         format: int32
     required:

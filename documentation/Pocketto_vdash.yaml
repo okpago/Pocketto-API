@@ -4961,17 +4961,8 @@ definitions:
           $ref: '#/definitions/Target'
       deliver_by:
         $ref: '#/definitions/DeliverBy'
-        example:
-          push: true
-          email: true
-          sms: false
-          sms_only_if_no_app: false
       action_data:
         $ref: '#/definitions/ActionData'
-        example:
-          url: http://youtu.be/259itAV0x_k
-          file_url: https://s3-sa-east-1.amazonaws.com/pockettobucket/renascer/files/3l/3lHL/3lHL8NDuGTjsOPVxJPighkKga4joykkqKOio0AJMXfdV6LamxZ.mp3
-          file_format: mp3
     required:
     - message_type_id
     - title
@@ -5142,11 +5133,6 @@ definitions:
         type: string
       user:
         $ref: '#/definitions/User'
-        example:
-          name: Vinicius Matteus
-          email: vmatteus@gmail.com
-          cpf: 01286800080
-          mobile: 51981332395
     required:
     - amount
     - uid

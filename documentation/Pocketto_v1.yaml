@@ -7,7 +7,7 @@ info:
     name: MIT
     url: http://github.com/gruntjs/grunt/blob/master/LICENSE-MIT
 host: api.pocketto.com.br
-basePath: /v1
+basePath: /
 schemes:
 - http
 consumes:
@@ -15,13 +15,95 @@ consumes:
 produces:
 - application/json
 paths:
-  /login:
+  /vdash/emails/payment.created:
+    get:
+      description: 'TODO: Add Description'
+      summary: Pagamento Criado
+      tags:
+      - Emails Views
+      operationId: VdashEmailsPaymentCreatedGet
+      produces:
+      - application/json
+      parameters:
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        200:
+          description: ''
+      security: []
+      x-unitTests:
+      - request:
+          method: GET
+          uri: /vdash/emails/payment.created
+          headers:
+            Account: pocketto
+        expectedResponse:
+          x-allowExtraHeaders: true
+          x-bodyMatchMode: NONE
+          x-arrayOrderedMatching: false
+          x-arrayCheckCount: false
+          x-matchResponseSchema: true
+          headers: {}
+        x-testShouldPass: true
+        x-testEnabled: true
+        x-testName: Pagamento Criado
+        x-testDescription: 'TODO: Add Description'
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /vdash/emails/payment.refused:
+    get:
+      description: 'TODO: Add Description'
+      summary: Pagamento Criado copy
+      tags:
+      - Emails Views
+      operationId: VdashEmailsPaymentRefusedGet
+      produces:
+      - application/json
+      parameters:
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        200:
+          description: ''
+      security: []
+      x-unitTests:
+      - request:
+          method: GET
+          uri: /vdash/emails/payment.refused
+          headers:
+            Account: pocketto
+        expectedResponse:
+          x-allowExtraHeaders: true
+          x-bodyMatchMode: NONE
+          x-arrayOrderedMatching: false
+          x-arrayCheckCount: false
+          x-matchResponseSchema: true
+          headers: {}
+        x-testShouldPass: true
+        x-testEnabled: true
+        x-testName: Pagamento Criado copy
+        x-testDescription: 'TODO: Add Description'
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /v1/login:
     post:
       description: ''
       summary: Login (Authcode)
       tags:
       - Misc
-      operationId: LoginPost2
+      operationId: V1LoginPost2
       produces:
       - application/json
       consumes:
@@ -54,7 +136,7 @@ paths:
       x-unitTests:
       - request:
           method: POST
-          uri: /login
+          uri: /v1/login
           headers:
             Content-Type: application/x-www-form-urlencoded
             Account: pocketto
@@ -75,13 +157,13 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /bank_accounts:
+  /v1/bank_accounts:
     get:
       description: ''
       summary: Bank Accounts - List
       tags:
       - Misc
-      operationId: BankAccountsGet
+      operationId: V1BankAccountsGet
       produces:
       - application/json
       parameters:
@@ -102,7 +184,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /bank_accounts
+          uri: /v1/bank_accounts
           headers:
             Account: pocketto
             Authorization: b7bf6eab4b9d08fd4547126a3499ef841472f0387b1443efce7fb44cf7a86ef9c50e28d40883443d
@@ -122,13 +204,13 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /profile:
+  /v1/profile:
     get:
       description: ''
       summary: Profile - View
       tags:
       - Misc
-      operationId: ProfileGet
+      operationId: V1ProfileGet
       produces:
       - application/json
       parameters:
@@ -149,7 +231,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /profile
+          uri: /v1/profile
           headers:
             Account: pocketto
             Authorization: b7bf6eab4b9d08fd4547126a3499ef841472f0387b1443efce7fb44cf7a86ef9c50e28d40883443d
@@ -174,7 +256,7 @@ paths:
       summary: Profile - Update
       tags:
       - Misc
-      operationId: ProfilePut
+      operationId: V1ProfilePut
       produces:
       - application/json
       parameters:
@@ -206,7 +288,7 @@ paths:
       x-unitTests:
       - request:
           method: PUT
-          uri: /profile
+          uri: /v1/profile
           headers:
             Content-Type: application/json
             Account: pocketto
@@ -232,13 +314,13 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /profile/props:
+  /v1/profile/props:
     get:
       description: ''
       summary: Profile Props - List
       tags:
       - Misc
-      operationId: ProfilePropsGet
+      operationId: V1ProfilePropsGet
       produces:
       - application/json
       parameters:
@@ -259,7 +341,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /profile/props
+          uri: /v1/profile/props
           headers:
             Account: pocketto
             Authorization: b7bf6eab4b9d08fd4547126a3499ef841472f0387b1443efce7fb44cf7a86ef9c50e28d40883443d
@@ -284,7 +366,7 @@ paths:
       summary: Profile Props - Create/Update
       tags:
       - Misc
-      operationId: ProfilePropsPut
+      operationId: V1ProfilePropsPut
       produces:
       - application/json
       parameters:
@@ -311,7 +393,7 @@ paths:
       x-unitTests:
       - request:
           method: PUT
-          uri: /profile/props
+          uri: /v1/profile/props
           headers:
             Content-Type: application/json
             Account: pocketto
@@ -336,13 +418,13 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /profile/props/push_notif_enabled:
+  /v1/profile/props/push_notif_enabled:
     get:
       description: ''
       summary: Profile Props - View
       tags:
       - Misc
-      operationId: ProfilePropsPushNotifEnabledGet
+      operationId: V1ProfilePropsPushNotifEnabledGet
       produces:
       - application/json
       parameters:
@@ -363,7 +445,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /profile/props/push_notif_enabled
+          uri: /v1/profile/props/push_notif_enabled
           headers:
             Account: pocketto
             Authorization: b7bf6eab4b9d08fd4547126a3499ef841472f0387b1443efce7fb44cf7a86ef9c50e28d40883443d
@@ -383,13 +465,13 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /device:
+  /v1/device:
     put:
       description: ''
       summary: Device - Create/Update
       tags:
       - Misc
-      operationId: DevicePut
+      operationId: V1DevicePut
       produces:
       - application/json
       parameters:
@@ -421,7 +503,7 @@ paths:
       x-unitTests:
       - request:
           method: PUT
-          uri: /device
+          uri: /v1/device
           headers:
             Content-Type: application/json
             Account: pocketto
@@ -450,13 +532,13 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /campaigns:
+  /v1/campaigns:
     get:
       description: ''
       summary: Campaigns - List
       tags:
       - Misc
-      operationId: CampaignsGet
+      operationId: V1CampaignsGet
       produces:
       - application/json
       parameters:
@@ -477,7 +559,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /campaigns
+          uri: /v1/campaigns
           headers:
             Account: pocketto
             Authorization: b7bf6eab4b9d08fd4547126a3499ef841472f0387b1443efce7fb44cf7a86ef9c50e28d40883443d
@@ -497,13 +579,13 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /campaigns/4:
+  /v1/campaigns/4:
     get:
       description: ''
       summary: Campaigns - View
       tags:
       - Misc
-      operationId: Campaigns4Get
+      operationId: V1Campaigns4Get
       produces:
       - application/json
       parameters:
@@ -524,7 +606,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /campaigns/4
+          uri: /v1/campaigns/4
           headers:
             Account: pocketto
             Authorization: b7bf6eab4b9d08fd4547126a3499ef841472f0387b1443efce7fb44cf7a86ef9c50e28d40883443d
@@ -544,13 +626,13 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /user_categories:
+  /v1/user_categories:
     get:
       description: ''
       summary: User Categories - List1
       tags:
       - Misc
-      operationId: UserCategoriesGet2
+      operationId: V1UserCategoriesGet2
       produces:
       - application/json
       parameters:
@@ -571,7 +653,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /user_categories
+          uri: /v1/user_categories
           headers:
             Account: pocketto
             Authorization: b7bf6eab4b9d08fd4547126a3499ef841472f0387b1443efce7fb44cf7a86ef9c50e28d40883443d
@@ -643,13 +725,13 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /timelines:
+  /v1/timelines:
     get:
       description: ''
       summary: Timelines
       tags:
       - Misc
-      operationId: TimelinesGet
+      operationId: V1TimelinesGet
       produces:
       - application/json
       parameters:
@@ -670,7 +752,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /timelines
+          uri: /v1/timelines
           headers:
             Account: pocketto
             Authorization: b7bf6eab4b9d08fd4547126a3499ef841472f0387b1443efce7fb44cf7a86ef9c50e28d40883443d
@@ -690,13 +772,13 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /payments:
+  /v1/payments:
     get:
       description: ''
       summary: Payments - List
       tags:
       - Misc
-      operationId: PaymentsGet
+      operationId: V1PaymentsGet
       produces:
       - application/json
       parameters:
@@ -722,7 +804,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /payments
+          uri: /v1/payments
           headers:
             Account: pocketto
             Authorization: b7bf6eab4b9d08fd4547126a3499ef841472f0387b1443efce7fb44cf7a86ef9c50e28d40883443d
@@ -748,7 +830,7 @@ paths:
       summary: Payments - Create
       tags:
       - Misc
-      operationId: PaymentsPost
+      operationId: V1PaymentsPost
       produces:
       - application/json
       parameters:
@@ -780,7 +862,7 @@ paths:
       x-unitTests:
       - request:
           method: POST
-          uri: /payments
+          uri: /v1/payments
           headers:
             Content-Type: application/json
             Account: pocketto
@@ -805,13 +887,13 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /payments/56:
+  /v1/payments/56:
     put:
       description: ''
       summary: Payments - Update
       tags:
       - Misc
-      operationId: Payments56Put
+      operationId: V1Payments56Put
       produces:
       - application/json
       parameters:
@@ -838,7 +920,7 @@ paths:
       x-unitTests:
       - request:
           method: PUT
-          uri: /payments/56
+          uri: /v1/payments/56
           headers:
             Content-Type: application/json
             Account: pocketto
@@ -863,13 +945,13 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /payments/4656:
+  /v1/payments/4656:
     get:
       description: ''
       summary: Payments - View
       tags:
       - Misc
-      operationId: Payments4656Get
+      operationId: V1Payments4656Get
       produces:
       - application/json
       parameters:
@@ -890,7 +972,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /payments/4656
+          uri: /v1/payments/4656
           headers:
             Account: pocketto
             Authorization: b7bf6eab4b9d08fd4547126a3499ef841472f0387b1443efce7fb44cf7a86ef9c50e28d40883443d
@@ -910,13 +992,13 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /payments/3624:
+  /v1/payments/3624:
     delete:
       description: ''
       summary: Payments - Delete
       tags:
       - Misc
-      operationId: Payments3624Delete
+      operationId: V1Payments3624Delete
       produces:
       - application/json
       parameters:
@@ -937,7 +1019,7 @@ paths:
       x-unitTests:
       - request:
           method: DELETE
-          uri: /payments/3624
+          uri: /v1/payments/3624
           headers:
             Account: pocketto
             Authorization: b7bf6eab4b9d08fd4547126a3499ef841472f0387b1443efce7fb44cf7a86ef9c50e28d40883443d
@@ -957,13 +1039,13 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /payments/4682/claim:
+  /v1/payments/4682/claim:
     put:
       description: ''
       summary: Payments - Update Claim
       tags:
       - Misc
-      operationId: Payments4682ClaimPut
+      operationId: V1Payments4682ClaimPut
       produces:
       - application/json
       parameters:
@@ -995,7 +1077,7 @@ paths:
       x-unitTests:
       - request:
           method: PUT
-          uri: /payments/4682/claim
+          uri: /v1/payments/4682/claim
           headers:
             Content-Type: application/json
             Account: pocketto
@@ -1020,13 +1102,13 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /files/1:
+  /v1/files/1:
     get:
       description: ''
       summary: File - View
       tags:
       - Misc
-      operationId: Files1Get
+      operationId: V1Files1Get
       produces:
       - application/json
       parameters:
@@ -1047,7 +1129,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /files/1
+          uri: /v1/files/1
           headers:
             Account: pocketto
             Authorization: b7bf6eab4b9d08fd4547126a3499ef841472f0387b1443efce7fb44cf7a86ef9c50e28d40883443d
@@ -1067,13 +1149,13 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /file:
+  /v1/file:
     post:
       description: ''
       summary: File - Create (Binary)
       tags:
       - Misc
-      operationId: FilePost2
+      operationId: V1FilePost2
       produces:
       - application/json
       consumes:
@@ -1114,13 +1196,13 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /invite:
+  /v1/invite:
     post:
       description: ''
       summary: Invite SMS
       tags:
       - Misc
-      operationId: InvitePost
+      operationId: V1InvitePost
       produces:
       - application/json
       parameters:
@@ -1147,7 +1229,7 @@ paths:
       x-unitTests:
       - request:
           method: POST
-          uri: /invite
+          uri: /v1/invite
           headers:
             Content-Type: application/json
             Account: pocketto
@@ -1172,13 +1254,13 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /user_recurs:
+  /v1/user_recurs:
     get:
       description: ''
       summary: User Recurrences - List
       tags:
       - Misc
-      operationId: UserRecursGet
+      operationId: V1UserRecursGet
       produces:
       - application/json
       parameters:
@@ -1199,7 +1281,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /user_recurs
+          uri: /v1/user_recurs
           headers:
             Account: pocketto
             Authorization: b7bf6eab4b9d08fd4547126a3499ef841472f0387b1443efce7fb44cf7a86ef9c50e28d40883443d
@@ -1219,13 +1301,13 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /user_recurs/1:
+  /v1/user_recurs/1:
     get:
       description: ''
       summary: User Recurrences - View
       tags:
       - Misc
-      operationId: UserRecurs1Get
+      operationId: V1UserRecurs1Get
       produces:
       - application/json
       parameters:
@@ -1246,7 +1328,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /user_recurs/1
+          uri: /v1/user_recurs/1
           headers:
             Account: pocketto
             Authorization: b7bf6eab4b9d08fd4547126a3499ef841472f0387b1443efce7fb44cf7a86ef9c50e28d40883443d
@@ -1266,13 +1348,13 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /user_recurs/1/cancel:
+  /v1/user_recurs/1/cancel:
     put:
       description: ''
       summary: User Recurrences - Cancel
       tags:
       - Misc
-      operationId: UserRecurs1CancelPut
+      operationId: V1UserRecurs1CancelPut
       produces:
       - application/json
       parameters:
@@ -1293,7 +1375,7 @@ paths:
       x-unitTests:
       - request:
           method: PUT
-          uri: /user_recurs/1/cancel
+          uri: /v1/user_recurs/1/cancel
           headers:
             Account: pocketto
             Authorization: b7bf6eab4b9d08fd4547126a3499ef841472f0387b1443efce7fb44cf7a86ef9c50e28d40883443d
@@ -1313,13 +1395,13 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /address/98590000:
+  /v1/address/98590000:
     get:
       description: ''
       summary: Address
       tags:
       - Misc
-      operationId: Address98590000Get
+      operationId: V1Address98590000Get
       produces:
       - application/json
       parameters:
@@ -1340,7 +1422,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /address/98590000
+          uri: /v1/address/98590000
           headers:
             Account: pocketto
             Authorization: b7bf6eab4b9d08fd4547126a3499ef841472f0387b1443efce7fb44cf7a86ef9c50e28d40883443d
@@ -1360,13 +1442,13 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /logout:
+  /v1/logout:
     post:
       description: ''
       summary: Logout
       tags:
       - Misc
-      operationId: LogoutPost
+      operationId: V1LogoutPost
       produces:
       - application/json
       parameters:
@@ -1387,7 +1469,7 @@ paths:
       x-unitTests:
       - request:
           method: POST
-          uri: /logout
+          uri: /v1/logout
           headers:
             Account: pocketto
             Authorization: b7bf6eab4b9d08fd4547126a3499ef841472f0387b1443efce7fb44cf7a86ef9c50e28d40883443d
@@ -1407,13 +1489,13 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /accounts/code:pocketto:
+  /v1/accounts/code:pocketto:
     get:
       description: ''
       summary: Account - View (Code)
       tags:
       - Misc
-      operationId: AccountsCodePockettoGet
+      operationId: V1AccountsCodePockettoGet
       produces:
       - application/json
       parameters:
@@ -1429,7 +1511,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /accounts/code:pocketto
+          uri: /v1/accounts/code:pocketto
           headers:
             Account: pocketto
         expectedResponse:
@@ -1448,13 +1530,13 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /payments/code:XXXXX/take:
+  /v1/payments/code:XXXXX/take:
     put:
       description: ''
       summary: Payments - Take
       tags:
       - Misc
-      operationId: PaymentsCodeXXXXXTakePut
+      operationId: V1PaymentsCodeXXXXXTakePut
       produces:
       - application/json
       parameters:
@@ -1480,7 +1562,7 @@ paths:
       x-unitTests:
       - request:
           method: PUT
-          uri: /payments/code:XXXXX/take
+          uri: /v1/payments/code:XXXXX/take
           headers:
             Account: pocketto
             Authorization: b7bf6eab4b9d08fd4547126a3499ef841472f0387b1443efce7fb44cf7a86ef9c50e28d40883443d
@@ -1501,13 +1583,13 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /public/payment/rpr3r1a:
+  /v1/public/payment/rpr3r1a:
     get:
       description: ''
       summary: Public Payment
       tags:
       - Misc
-      operationId: PublicPaymentRpr3r1aGet
+      operationId: V1PublicPaymentRpr3r1aGet
       produces:
       - application/json
       parameters:
@@ -1523,7 +1605,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /public/payment/rpr3r1a
+          uri: /v1/public/payment/rpr3r1a
           headers:
             Account: pocketto
         expectedResponse:
@@ -1542,13 +1624,13 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /public/file:
+  /v1/public/file:
     post:
       description: ''
       summary: Public File - Create (Base64)
       tags:
       - Misc
-      operationId: PublicFilePost
+      operationId: V1PublicFilePost
       produces:
       - application/json
       consumes:
@@ -1581,7 +1663,7 @@ paths:
       x-unitTests:
       - request:
           method: POST
-          uri: /public/file
+          uri: /v1/public/file
           headers:
             Content-Type: application/x-www-form-urlencoded
             Account: pocketto
@@ -1602,13 +1684,13 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /public/payment/4675/claim:
+  /v1/public/payment/4675/claim:
     put:
       description: ''
       summary: Public Payments - Update Claim
       tags:
       - Misc
-      operationId: PublicPayment4675ClaimPut
+      operationId: V1PublicPayment4675ClaimPut
       produces:
       - application/json
       parameters:
@@ -1630,7 +1712,7 @@ paths:
       x-unitTests:
       - request:
           method: PUT
-          uri: /public/payment/4675/claim
+          uri: /v1/public/payment/4675/claim
           headers:
             Content-Type: application/json
             Account: pocketto
@@ -1656,13 +1738,13 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /public/bank_accounts:
+  /v1/public/bank_accounts:
     get:
       description: ''
       summary: Public Bank Accounts
       tags:
       - Misc
-      operationId: PublicBankAccountsGet
+      operationId: V1PublicBankAccountsGet
       produces:
       - application/json
       parameters:
@@ -1678,7 +1760,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /public/bank_accounts
+          uri: /v1/public/bank_accounts
           headers:
             Account: pocketto
         expectedResponse:

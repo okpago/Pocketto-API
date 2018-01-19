@@ -2964,7 +2964,7 @@ paths:
               "user": {
                 "name": "Vinicius Matteus",
                 "email": "vmatteus@gmail.com",
-                "cpf" : "01286800080",
+                "cnpj" : "27433043000117",
                 "mobile" : "51981332395"
               }
             }
@@ -5104,7 +5104,7 @@ definitions:
       user:
         name: Vinicius Matteus
         email: vmatteus@gmail.com
-        cpf: 01286800080
+        cnpj: 27433043000117
         mobile: 51981332395
     type: object
     properties:
@@ -5126,7 +5126,7 @@ definitions:
     example:
       name: Vinicius Matteus
       email: vmatteus@gmail.com
-      cpf: 01286800080
+      cnpj: 27433043000117
       mobile: 51981332395
     type: object
     properties:
@@ -5138,9 +5138,9 @@ definitions:
         description: ''
         example: vmatteus@gmail.com
         type: string
-      cpf:
+      cnpj:
         description: ''
-        example: 01286800080
+        example: 27433043000117
         type: string
       mobile:
         description: ''
@@ -5149,7 +5149,7 @@ definitions:
     required:
     - name
     - email
-    - cpf
+    - cnpj
     - mobile
   Settings  updaterequest:
     title: Settings - UpdateRequest

@@ -1867,13 +1867,13 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /v1/public/payment/4675/claim:
+  /v1/public/payment/7654/claim:
     put:
       description: ''
       summary: Public Payments - Update Claim
       tags:
       - Misc
-      operationId: V1PublicPayment4675ClaimPut
+      operationId: V1PublicPayment7654ClaimPut
       produces:
       - application/json
       parameters:
@@ -1895,15 +1895,13 @@ paths:
       x-unitTests:
       - request:
           method: PUT
-          uri: /v1/public/payment/4675/claim
+          uri: /v1/public/payment/7654/claim
           headers:
             Content-Type: application/json
             Account: pocketto
           body: >-
             {
-              "photo_file_id": 16,
-              "claim_bank_account_id": 1,
-              "claim_date": "2017-09-11"
+              "photo_file_id": 5072
             }
         expectedResponse:
           x-allowExtraHeaders: true
@@ -2101,26 +2099,13 @@ definitions:
   Public payments  update claimrequest:
     title: Public Payments - Update ClaimRequest
     example:
-      photo_file_id: 16
-      claim_bank_account_id: 1
-      claim_date: 2017-09-11
+      photo_file_id: 5072
     type: object
     properties:
       photo_file_id:
         description: ''
-        example: 16
+        example: 5072
         type: integer
         format: int32
-      claim_bank_account_id:
-        description: ''
-        example: 1
-        type: integer
-        format: int32
-      claim_date:
-        description: ''
-        example: 2017-09-11
-        type: string
     required:
     - photo_file_id
-    - claim_bank_account_id
-    - claim_date

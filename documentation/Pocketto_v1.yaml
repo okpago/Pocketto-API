@@ -1033,7 +1033,8 @@ paths:
             Authorization: b7bf6eab4b9d08fd4547126a3499ef841472f0387b1443efce7fb44cf7a86ef9c50e28d40883443d
           body: >-
             {
-              "amount": 10
+              "amount": 10,
+              "external_campaign_title" : "Campanha Tal"
             }
         expectedResponse:
           x-allowExtraHeaders: true
@@ -1901,7 +1902,7 @@ paths:
             Account: pocketto
           body: >-
             {
-              "photo_file_id": 5072
+              "photo_file_id": 5082
             }
         expectedResponse:
           x-allowExtraHeaders: true
@@ -2043,6 +2044,7 @@ definitions:
     title: Payments - CreateRequest
     example:
       amount: 10
+      external_campaign_title: Campanha Tal
     type: object
     properties:
       amount:
@@ -2050,8 +2052,13 @@ definitions:
         example: 10
         type: integer
         format: int32
+      external_campaign_title:
+        description: ''
+        example: Campanha Tal
+        type: string
     required:
     - amount
+    - external_campaign_title
   Payments  updaterequest:
     title: Payments - UpdateRequest
     example:
@@ -2099,12 +2106,12 @@ definitions:
   Public payments  update claimrequest:
     title: Public Payments - Update ClaimRequest
     example:
-      photo_file_id: 5072
+      photo_file_id: 5082
     type: object
     properties:
       photo_file_id:
         description: ''
-        example: 5072
+        example: 5082
         type: integer
         format: int32
     required:

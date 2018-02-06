@@ -17,7 +17,7 @@ produces:
 paths:
   /vdash/emails/payment.created:
     get:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Pagamento Criado
       tags:
       - Emails Views
@@ -50,7 +50,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Pagamento Criado
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -58,8 +58,8 @@ paths:
         IsMultiContentStreaming: false
   /vdash/emails/payment.refused:
     get:
-      description: 'TODO: Add Description'
-      summary: Pagamento Criado copy
+      description: ''
+      summary: Pagamento Recusado
       tags:
       - Emails Views
       operationId: VdashEmailsPaymentRefusedGet
@@ -90,8 +90,8 @@ paths:
           headers: {}
         x-testShouldPass: true
         x-testEnabled: true
-        x-testName: Pagamento Criado copy
-        x-testDescription: 'TODO: Add Description'
+        x-testName: Pagamento Recusado
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -99,7 +99,7 @@ paths:
         IsMultiContentStreaming: false
   /vdash/emails/payment.paid:
     get:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Pagamento Pago(Aceito)
       tags:
       - Emails Views
@@ -132,7 +132,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Pagamento Pago(Aceito)
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -141,10 +141,10 @@ paths:
   /vdash/emails/payment.received_receipt:
     get:
       description: 'TODO: Add Description'
-      summary: Pagamento Recibo Recebido
+      summary: Pagamento Recibo Recebido copy
       tags:
       - Emails Views
-      operationId: VdashEmailsPaymentReceivedReceiptGet
+      operationId: VdashEmailsPaymentReceivedReceiptGet2
       produces:
       - application/json
       parameters:
@@ -172,7 +172,7 @@ paths:
           headers: {}
         x-testShouldPass: true
         x-testEnabled: true
-        x-testName: Pagamento Recibo Recebido
+        x-testName: Pagamento Recibo Recebido copy
         x-testDescription: 'TODO: Add Description'
       x-operation-settings:
         CollectParameters: false
@@ -181,7 +181,7 @@ paths:
         IsMultiContentStreaming: false
   /vdash/emails/user.created:
     get:
-      description: 'TODO: Add Description'
+      description: ''
       summary: Usuário Criado
       tags:
       - Emails Views
@@ -214,7 +214,7 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Usuário Criado
-        x-testDescription: 'TODO: Add Description'
+        x-testDescription: ''
       x-operation-settings:
         CollectParameters: false
         AllowDynamicQueryParameters: false
@@ -223,10 +223,10 @@ paths:
   /vdash/emails/user.changed:
     get:
       description: 'TODO: Add Description'
-      summary: Usuário Modificado
+      summary: Usuário Modificado copy
       tags:
       - Emails Views
-      operationId: VdashEmailsUserChangedGet
+      operationId: VdashEmailsUserChangedGet2
       produces:
       - application/json
       parameters:
@@ -254,7 +254,7 @@ paths:
           headers: {}
         x-testShouldPass: true
         x-testEnabled: true
-        x-testName: Usuário Modificado
+        x-testName: Usuário Modificado copy
         x-testDescription: 'TODO: Add Description'
       x-operation-settings:
         CollectParameters: false

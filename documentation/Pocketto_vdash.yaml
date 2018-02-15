@@ -3,9 +3,6 @@ info:
   version: '1.0'
   title: Pocketto vdash
   description: 'TODO: Add Description'
-  license:
-    name: MIT
-    url: http://github.com/gruntjs/grunt/blob/master/LICENSE-MIT
 host: api.pocketto.com.br
 basePath: /vdash
 securityDefinitions:

@@ -1,7 +1,7 @@
 swagger: '2.0'
 info:
   version: '1.0'
-  title: Pocketto v1
+  title: Deposite v1
   description: 'TODO: Add Description'
 host: api.pocketto.com.br
 basePath: /

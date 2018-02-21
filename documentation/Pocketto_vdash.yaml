@@ -9,11 +9,11 @@ securityDefinitions:
   auth:
     type: oauth2
     flow: implicit
-    authorizationUrl: http://api.pocketto.com.br/vdash
+    authorizationUrl: https://api.pocketto.com.br/vdash
     scopes: {}
     x-skip-client-authentication: false
 schemes:
-- http
+- https
 consumes:
 - application/json
 produces:

@@ -4368,13 +4368,13 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /credit_card/purchase:
+  /credit_card/process:
     post:
       description: 'TODO: Add Description'
-      summary: CreditCard - Purchase
+      summary: CreditCard - Process
       tags:
       - CreditCard
-      operationId: CreditCardPurchasePost
+      operationId: CreditCardProcessPost
       produces:
       - application/json
       parameters:
@@ -4383,7 +4383,7 @@ paths:
         required: true
         description: ''
         schema:
-          $ref: '#/definitions/Creditcard  purchaserequest'
+          $ref: '#/definitions/Creditcard  processrequest'
       - name: Account
         in: header
         required: true
@@ -4406,7 +4406,7 @@ paths:
       x-unitTests:
       - request:
           method: POST
-          uri: /credit_card/purchase
+          uri: /credit_card/process
           headers:
             Content-Type: application/json
             Account: pocketto
@@ -4414,18 +4414,18 @@ paths:
           body: >-
             {
               "amount": "2500",
-              "card" : {
-              	"brand" : "visa",
-              	"number" : "0000000000000000",
-              	"cvc" : "123",
-              	"holder" : "Vinicius M Matteus",
-              	"exp_date" : "10/2019"
-              },
               "user": {
                 "name": "Vinicius Matteus",
                 "email": "vmatteus@gmail.com",
                 "cnpj" : "27433043000117",
                 "mobile" : "51981332395"
+              },
+              "card" : {
+              	"brand" : "visa",
+              	"number" : "0000000000000000ddddddd",
+              	"cvc" : "-",
+              	"holder" : "Vinicius M Matteus",
+              	"exp_date" : "10/2019"
               }
             }
         expectedResponse:
@@ -4437,7 +4437,7 @@ paths:
           headers: {}
         x-testShouldPass: true
         x-testEnabled: true
-        x-testName: CreditCard - Purchase
+        x-testName: CreditCard - Process
         x-testDescription: 'TODO: Add Description'
       x-operation-settings:
         CollectParameters: false
@@ -5511,41 +5511,41 @@ definitions:
         type: string
     required:
     - email
-  Creditcard  purchaserequest:
-    title: CreditCard - PurchaseRequest
+  Creditcard  processrequest:
+    title: CreditCard - ProcessRequest
     example:
       amount: 2500
-      card:
-        brand: visa
-        number: 0000000000000000
-        cvc: 123
-        holder: Vinicius M Matteus
-        exp_date: 10/2019
       user:
         name: Vinicius Matteus
         email: vmatteus@gmail.com
         cnpj: 27433043000117
         mobile: 51981332395
+      card:
+        brand: visa
+        number: 0000000000000000ddddddd
+        cvc: '-'
+        holder: Vinicius M Matteus
+        exp_date: 10/2019
     type: object
     properties:
       amount:
         description: ''
         example: 2500
         type: string
-      card:
-        $ref: '#/definitions/Card'
       user:
         $ref: '#/definitions/User'
+      card:
+        $ref: '#/definitions/Card'
     required:
     - amount
-    - card
     - user
+    - card
   Card:
     title: Card
     example:
       brand: visa
-      number: 0000000000000000
-      cvc: 123
+      number: 0000000000000000ddddddd
+      cvc: '-'
       holder: Vinicius M Matteus
       exp_date: 10/2019
     type: object
@@ -5556,11 +5556,11 @@ definitions:
         type: string
       number:
         description: ''
-        example: 0000000000000000
+        example: 0000000000000000ddddddd
         type: string
       cvc:
         description: ''
-        example: 123
+        example: '-'
         type: string
       holder:
         description: ''

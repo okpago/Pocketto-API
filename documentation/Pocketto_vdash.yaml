@@ -2992,8 +2992,9 @@ paths:
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjNiODgxN2U2MmM5Nzg0NmI1NmJmNjBjYmY5OWVmY2U5Mzk2MTUyYTFmYjRhYTkwNGM4MmE3ZGE4M2QzNzBmYTgyZGFlMDFmMDAwMzA0ZDEyIn0.eyJhdWQiOiIyIiwianRpIjoiM2I4ODE3ZTYyYzk3ODQ2YjU2YmY2MGNiZjk5ZWZjZTkzOTYxNTJhMWZiNGFhOTA0YzgyYTdkYTgzZDM3MGZhODJkYWUwMWYwMDAzMDRkMTIiLCJpYXQiOjE1MTE3OTE0MjksIm5iZiI6MTUxMTc5MTQyOSwiZXhwIjoxNTQzMzI3NDI5LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.hIDEX5jGQy1Nz6dBYzyzxnWop_rgyztNNAwZGM0ZhWgcYFjjE6lqxyxux4WK5jY-vPlLBuesTbOnk7yv5MTqiNkwUlGX4dexMWHpZE6j9Jrl_A8TA8uPmSs8eZy1Znl6e4xxSeMWyXNp7UHxsWiMO2qDIDC3f8kydq4f5bQy4HfYSm_HdDOuHOlnw3bf_t1KSfU9saPq_E9h_N4WtMxEkFmhpGtt2CB902WUJG3xrdwj8pRYN5Ydl6VS-lYD2EmnsB-AFYo3uxcw2LiW9o4zOe3TnfKC_1um4pWA91anqqoM4cn0VDUuduZbPu9GUDi782tlmdwZyCD6mbmq25ziHS3VqHI-UfW1Mtm6m7IzZlTYEeaSdm-fRa-b4g_Hc60XGTx9go6xNqoF-lA0ukcrJ0_srH7VZE6MT_XVPdkfww4H2189yjFghn4tgQFXkPxEeocryDJM4FWOZ1VcqwcjdyoTFs3xSJoDAMsnYaHxwgq6r0L89IyGmge0uefWyYfDYcCA7mkKLhgiBQAlgjoY-Y-IJYc6fshUzBmFhupn63KHvxjmry0z_ORwDjoR5nQmHzDYArn6v1CWTsDaastp501NSinMXaL2C3s5wMXgmIqmrOTbGBYPUkm9_bFhZ25kCZHPV9u0qNjSlS3uOho8oEjflVg_pjKoYSON7CYT_Go
           body: >-
             {
-              "amount": 25,
+              "amount": 100,
               "uid": null,
+              "method_id" : 2,
               "user": {
                 "name": "Vinicius Matteus",
                 "email": "vmatteus@gmail.com",
@@ -4413,17 +4414,11 @@ paths:
             Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjNiODgxN2U2MmM5Nzg0NmI1NmJmNjBjYmY5OWVmY2U5Mzk2MTUyYTFmYjRhYTkwNGM4MmE3ZGE4M2QzNzBmYTgyZGFlMDFmMDAwMzA0ZDEyIn0.eyJhdWQiOiIyIiwianRpIjoiM2I4ODE3ZTYyYzk3ODQ2YjU2YmY2MGNiZjk5ZWZjZTkzOTYxNTJhMWZiNGFhOTA0YzgyYTdkYTgzZDM3MGZhODJkYWUwMWYwMDAzMDRkMTIiLCJpYXQiOjE1MTE3OTE0MjksIm5iZiI6MTUxMTc5MTQyOSwiZXhwIjoxNTQzMzI3NDI5LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.hIDEX5jGQy1Nz6dBYzyzxnWop_rgyztNNAwZGM0ZhWgcYFjjE6lqxyxux4WK5jY-vPlLBuesTbOnk7yv5MTqiNkwUlGX4dexMWHpZE6j9Jrl_A8TA8uPmSs8eZy1Znl6e4xxSeMWyXNp7UHxsWiMO2qDIDC3f8kydq4f5bQy4HfYSm_HdDOuHOlnw3bf_t1KSfU9saPq_E9h_N4WtMxEkFmhpGtt2CB902WUJG3xrdwj8pRYN5Ydl6VS-lYD2EmnsB-AFYo3uxcw2LiW9o4zOe3TnfKC_1um4pWA91anqqoM4cn0VDUuduZbPu9GUDi782tlmdwZyCD6mbmq25ziHS3VqHI-UfW1Mtm6m7IzZlTYEeaSdm-fRa-b4g_Hc60XGTx9go6xNqoF-lA0ukcrJ0_srH7VZE6MT_XVPdkfww4H2189yjFghn4tgQFXkPxEeocryDJM4FWOZ1VcqwcjdyoTFs3xSJoDAMsnYaHxwgq6r0L89IyGmge0uefWyYfDYcCA7mkKLhgiBQAlgjoY-Y-IJYc6fshUzBmFhupn63KHvxjmry0z_ORwDjoR5nQmHzDYArn6v1CWTsDaastp501NSinMXaL2C3s5wMXgmIqmrOTbGBYPUkm9_bFhZ25kCZHPV9u0qNjSlS3uOho8oEjflVg_pjKoYSON7CYT_Go
           body: >-
             {
-              "amount": "2500",
-              "user": {
-                "name": "Vinicius Matteus",
-                "email": "vmatteus@gmail.com",
-                "cnpj" : "27433043000117",
-                "mobile" : "51981332395"
-              },
+              "payment_id": 7675,
               "card" : {
               	"brand" : "visa",
-              	"number" : "0000000000000000ddddddd",
-              	"cvc" : "-",
+              	"number" : "0000000000000000",
+              	"cvc" : "--",
               	"holder" : "Vinicius M Matteus",
               	"exp_date" : "10/2019"
               }
@@ -5319,8 +5314,9 @@ definitions:
   Payments  createrequest:
     title: Payments - CreateRequest
     example:
-      amount: 25
+      amount: 100
       uid: 
+      method_id: 2
       user:
         name: Vinicius Matteus
         email: vmatteus@gmail.com
@@ -5330,16 +5326,22 @@ definitions:
     properties:
       amount:
         description: ''
-        example: 25
+        example: 100
         type: integer
         format: int32
       uid:
         description: ''
+      method_id:
+        description: ''
+        example: 2
+        type: integer
+        format: int32
       user:
         $ref: '#/definitions/User'
     required:
     - amount
     - uid
+    - method_id
     - user
   User:
     title: User
@@ -5514,38 +5516,31 @@ definitions:
   Creditcard  processrequest:
     title: CreditCard - ProcessRequest
     example:
-      amount: 2500
-      user:
-        name: Vinicius Matteus
-        email: vmatteus@gmail.com
-        cnpj: 27433043000117
-        mobile: 51981332395
+      payment_id: 7675
       card:
         brand: visa
-        number: 0000000000000000ddddddd
-        cvc: '-'
+        number: 0000000000000000
+        cvc: --
         holder: Vinicius M Matteus
         exp_date: 10/2019
     type: object
     properties:
-      amount:
+      payment_id:
         description: ''
-        example: 2500
-        type: string
-      user:
-        $ref: '#/definitions/User'
+        example: 7675
+        type: integer
+        format: int32
       card:
         $ref: '#/definitions/Card'
     required:
-    - amount
-    - user
+    - payment_id
     - card
   Card:
     title: Card
     example:
       brand: visa
-      number: 0000000000000000ddddddd
-      cvc: '-'
+      number: 0000000000000000
+      cvc: --
       holder: Vinicius M Matteus
       exp_date: 10/2019
     type: object
@@ -5556,11 +5551,11 @@ definitions:
         type: string
       number:
         description: ''
-        example: 0000000000000000ddddddd
+        example: 0000000000000000
         type: string
       cvc:
         description: ''
-        example: '-'
+        example: --
         type: string
       holder:
         description: ''

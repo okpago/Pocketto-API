@@ -495,11 +495,7 @@ paths:
             Content-Type: application/json
             Account: pocketto
             Authorization: b7bf6eab4b9d08fd4547126a3499ef841472f0387b1443efce7fb44cf7a86ef9c50e28d40883443d
-          body: >-
-            {
-              "name": "Wagner da Silva",
-              "cpf": "02777284288"
-            }
+          body: '{"name":"Wagner da Silva","cpf":"02777284288"}'
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -600,10 +596,7 @@ paths:
             Content-Type: application/json
             Account: pocketto
             Authorization: b7bf6eab4b9d08fd4547126a3499ef841472f0387b1443efce7fb44cf7a86ef9c50e28d40883443d
-          body: >-
-            {
-              "push_notif_enabled": true
-            }
+          body: '{"push_notif_enabled":true}'
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -710,14 +703,7 @@ paths:
             Content-Type: application/json
             Account: pocketto
             Authorization: b7bf6eab4b9d08fd4547126a3499ef841472f0387b1443efce7fb44cf7a86ef9c50e28d40883443d
-          body: >-
-            {
-              "type": "iphone",
-              "model": "5s",
-              "push_service": "firebase",
-              "push_token": "abc123",
-              "device_id": "minhaukey"
-            }
+          body: '{"type":"iphone","model":"5s","push_service":"firebase","push_token":"abc123","device_id":"minhaukey"}'
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -1069,11 +1055,7 @@ paths:
             Content-Type: application/json
             Account: pocketto
             Authorization: b7bf6eab4b9d08fd4547126a3499ef841472f0387b1443efce7fb44cf7a86ef9c50e28d40883443d
-          body: >-
-            {
-              "amount": 10,
-              "external_campaign_title" : "Campanha Tal"
-            }
+          body: '{"amount":10,"external_campaign_title":"Campanha Tal"}'
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -1128,10 +1110,7 @@ paths:
             Content-Type: application/json
             Account: pocketto
             Authorization: b7bf6eab4b9d08fd4547126a3499ef841472f0387b1443efce7fb44cf7a86ef9c50e28d40883443d
-          body: >-
-            {
-              "amount": 99.00
-            }
+          body: '{"amount":99.0}'
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -1285,10 +1264,7 @@ paths:
             Content-Type: application/json
             Account: pocketto
             Authorization: b7bf6eab4b9d08fd4547126a3499ef841472f0387b1443efce7fb44cf7a86ef9c50e28d40883443d
-          body: >-
-            {
-              "photo_file_id": 4647
-            }
+          body: '{"photo_file_id":4647}'
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -1455,11 +1431,7 @@ paths:
           headers:
             Content-Type: application/json
             Account: pocketto
-          body: >-
-            {
-              "name": "Vinicius",
-              "mobile": "51992794210"
-            }
+          body: '{"name":"Vinicius","mobile":"51992794210"}'
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -1938,10 +1910,7 @@ paths:
           headers:
             Content-Type: application/json
             Account: pocketto
-          body: >-
-            {
-              "photo_file_id": 5082
-            }
+          body: '{"photo_file_id":5082}'
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE

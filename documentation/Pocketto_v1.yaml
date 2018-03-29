@@ -15,7 +15,7 @@ paths:
   /vdash/emails/payment.created:
     get:
       description: 'TODO: Add Description'
-      summary: Pagamento Criado
+      summary: Deposite - Pagamento Criado
       tags:
       - Emails Views
       operationId: VdashEmailsPaymentCreatedGet
@@ -46,7 +46,7 @@ paths:
           headers: {}
         x-testShouldPass: true
         x-testEnabled: true
-        x-testName: Pagamento Criado
+        x-testName: Deposite - Pagamento Criado
         x-testDescription: 'TODO: Add Description'
       x-operation-settings:
         CollectParameters: false

@@ -56,7 +56,7 @@ paths:
   /vdash/emails/payment.refused:
     get:
       description: 'TODO: Add Description'
-      summary: Pagamento Recusado
+      summary: Deposite - Pagamento Recusado
       tags:
       - Emails Views
       operationId: VdashEmailsPaymentRefusedGet
@@ -87,7 +87,7 @@ paths:
           headers: {}
         x-testShouldPass: true
         x-testEnabled: true
-        x-testName: Pagamento Recusado
+        x-testName: Deposite - Pagamento Recusado
         x-testDescription: 'TODO: Add Description'
       x-operation-settings:
         CollectParameters: false
@@ -97,7 +97,7 @@ paths:
   /vdash/emails/payment.paid:
     get:
       description: 'TODO: Add Description'
-      summary: Pagamento Pago(Aceito)
+      summary: Deposite - Pagamento Pago(Aceito)
       tags:
       - Emails Views
       operationId: VdashEmailsPaymentPaidGet
@@ -128,7 +128,294 @@ paths:
           headers: {}
         x-testShouldPass: true
         x-testEnabled: true
-        x-testName: Pagamento Pago(Aceito)
+        x-testName: Deposite - Pagamento Pago(Aceito)
+        x-testDescription: 'TODO: Add Description'
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /vdash/emails/boleto.created:
+    get:
+      description: 'TODO: Add Description'
+      summary: Boleto - Pagamento Criado
+      tags:
+      - Emails Views
+      operationId: VdashEmailsBoletoCreatedGet
+      produces:
+      - application/json
+      parameters:
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        200:
+          description: ''
+      security: []
+      x-unitTests:
+      - request:
+          method: GET
+          uri: /vdash/emails/boleto.created
+          headers:
+            Account: pocketto
+        expectedResponse:
+          x-allowExtraHeaders: true
+          x-bodyMatchMode: NONE
+          x-arrayOrderedMatching: false
+          x-arrayCheckCount: false
+          x-matchResponseSchema: true
+          headers: {}
+        x-testShouldPass: true
+        x-testEnabled: true
+        x-testName: Boleto - Pagamento Criado
+        x-testDescription: 'TODO: Add Description'
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /vdash/emails/boleto.paid:
+    get:
+      description: 'TODO: Add Description'
+      summary: Boleto - Pagamento Pago(Aceito)
+      tags:
+      - Emails Views
+      operationId: VdashEmailsBoletoPaidGet
+      produces:
+      - application/json
+      parameters:
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        200:
+          description: ''
+      security: []
+      x-unitTests:
+      - request:
+          method: GET
+          uri: /vdash/emails/boleto.paid
+          headers:
+            Account: pocketto
+        expectedResponse:
+          x-allowExtraHeaders: true
+          x-bodyMatchMode: NONE
+          x-arrayOrderedMatching: false
+          x-arrayCheckCount: false
+          x-matchResponseSchema: true
+          headers: {}
+        x-testShouldPass: true
+        x-testEnabled: true
+        x-testName: Boleto - Pagamento Pago(Aceito)
+        x-testDescription: 'TODO: Add Description'
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /vdash/emails/debit.created:
+    get:
+      description: 'TODO: Add Description'
+      summary: Debito - Pagamento Criado
+      tags:
+      - Emails Views
+      operationId: VdashEmailsDebitCreatedGet
+      produces:
+      - application/json
+      parameters:
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        200:
+          description: ''
+      security: []
+      x-unitTests:
+      - request:
+          method: GET
+          uri: /vdash/emails/debit.created
+          headers:
+            Account: pocketto
+        expectedResponse:
+          x-allowExtraHeaders: true
+          x-bodyMatchMode: NONE
+          x-arrayOrderedMatching: false
+          x-arrayCheckCount: false
+          x-matchResponseSchema: true
+          headers: {}
+        x-testShouldPass: true
+        x-testEnabled: true
+        x-testName: Debito - Pagamento Criado
+        x-testDescription: 'TODO: Add Description'
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /vdash/emails/debit.paid:
+    get:
+      description: 'TODO: Add Description'
+      summary: Debito - Pagamento Pago(Aceito)
+      tags:
+      - Emails Views
+      operationId: VdashEmailsDebitPaidGet
+      produces:
+      - application/json
+      parameters:
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        200:
+          description: ''
+      security: []
+      x-unitTests:
+      - request:
+          method: GET
+          uri: /vdash/emails/debit.paid
+          headers:
+            Account: pocketto
+        expectedResponse:
+          x-allowExtraHeaders: true
+          x-bodyMatchMode: NONE
+          x-arrayOrderedMatching: false
+          x-arrayCheckCount: false
+          x-matchResponseSchema: true
+          headers: {}
+        x-testShouldPass: true
+        x-testEnabled: true
+        x-testName: Debito - Pagamento Pago(Aceito)
+        x-testDescription: 'TODO: Add Description'
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /vdash/emails/credit.created:
+    get:
+      description: 'TODO: Add Description'
+      summary: Credito - Pagamento Criado
+      tags:
+      - Emails Views
+      operationId: VdashEmailsCreditCreatedGet
+      produces:
+      - application/json
+      parameters:
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        200:
+          description: ''
+      security: []
+      x-unitTests:
+      - request:
+          method: GET
+          uri: /vdash/emails/credit.created
+          headers:
+            Account: pocketto
+        expectedResponse:
+          x-allowExtraHeaders: true
+          x-bodyMatchMode: NONE
+          x-arrayOrderedMatching: false
+          x-arrayCheckCount: false
+          x-matchResponseSchema: true
+          headers: {}
+        x-testShouldPass: true
+        x-testEnabled: true
+        x-testName: Credito - Pagamento Criado
+        x-testDescription: 'TODO: Add Description'
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /vdash/emails/credit.paid:
+    get:
+      description: 'TODO: Add Description'
+      summary: Credito - Pagamento Pago(Aceito)
+      tags:
+      - Emails Views
+      operationId: VdashEmailsCreditPaidGet
+      produces:
+      - application/json
+      parameters:
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        200:
+          description: ''
+      security: []
+      x-unitTests:
+      - request:
+          method: GET
+          uri: /vdash/emails/credit.paid
+          headers:
+            Account: pocketto
+        expectedResponse:
+          x-allowExtraHeaders: true
+          x-bodyMatchMode: NONE
+          x-arrayOrderedMatching: false
+          x-arrayCheckCount: false
+          x-matchResponseSchema: true
+          headers: {}
+        x-testShouldPass: true
+        x-testEnabled: true
+        x-testName: Credito - Pagamento Pago(Aceito)
+        x-testDescription: 'TODO: Add Description'
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /vdash/emails/credit.refused:
+    get:
+      description: 'TODO: Add Description'
+      summary: Credito - Pagamento Recusado
+      tags:
+      - Emails Views
+      operationId: VdashEmailsCreditRefusedGet
+      produces:
+      - application/json
+      parameters:
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        200:
+          description: ''
+      security: []
+      x-unitTests:
+      - request:
+          method: GET
+          uri: /vdash/emails/credit.refused
+          headers:
+            Account: pocketto
+        expectedResponse:
+          x-allowExtraHeaders: true
+          x-bodyMatchMode: NONE
+          x-arrayOrderedMatching: false
+          x-arrayCheckCount: false
+          x-matchResponseSchema: true
+          headers: {}
+        x-testShouldPass: true
+        x-testEnabled: true
+        x-testName: Credito - Pagamento Recusado
         x-testDescription: 'TODO: Add Description'
       x-operation-settings:
         CollectParameters: false
@@ -170,6 +457,47 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Pagamento Recibo Recebido
+        x-testDescription: 'TODO: Add Description'
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /vdash/emails/payment.duedate:
+    get:
+      description: 'TODO: Add Description'
+      summary: Pagamento Recibo Recebido copy
+      tags:
+      - Emails Views
+      operationId: VdashEmailsPaymentDuedateGet
+      produces:
+      - application/json
+      parameters:
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        200:
+          description: ''
+      security: []
+      x-unitTests:
+      - request:
+          method: GET
+          uri: /vdash/emails/payment.duedate
+          headers:
+            Account: pocketto
+        expectedResponse:
+          x-allowExtraHeaders: true
+          x-bodyMatchMode: NONE
+          x-arrayOrderedMatching: false
+          x-arrayCheckCount: false
+          x-matchResponseSchema: true
+          headers: {}
+        x-testShouldPass: true
+        x-testEnabled: true
+        x-testName: Pagamento Recibo Recebido copy
         x-testDescription: 'TODO: Add Description'
       x-operation-settings:
         CollectParameters: false
@@ -220,10 +548,10 @@ paths:
   /vdash/emails/user.changed:
     get:
       description: 'TODO: Add Description'
-      summary: Usuário Modificado copy
+      summary: Usuário Modificado
       tags:
       - Emails Views
-      operationId: VdashEmailsUserChangedGet2
+      operationId: VdashEmailsUserChangedGet
       produces:
       - application/json
       parameters:
@@ -251,48 +579,7 @@ paths:
           headers: {}
         x-testShouldPass: true
         x-testEnabled: true
-        x-testName: Usuário Modificado copy
-        x-testDescription: 'TODO: Add Description'
-      x-operation-settings:
-        CollectParameters: false
-        AllowDynamicQueryParameters: false
-        AllowDynamicFormParameters: false
-        IsMultiContentStreaming: false
-  /vdash/emails/payment.duedate:
-    get:
-      description: 'TODO: Add Description'
-      summary: Pagamento Recibo Recebido copy
-      tags:
-      - Emails Views
-      operationId: VdashEmailsPaymentDuedateGet
-      produces:
-      - application/json
-      parameters:
-      - name: Account
-        in: header
-        required: true
-        type: string
-        description: ''
-      responses:
-        200:
-          description: ''
-      security: []
-      x-unitTests:
-      - request:
-          method: GET
-          uri: /vdash/emails/payment.duedate
-          headers:
-            Account: pocketto
-        expectedResponse:
-          x-allowExtraHeaders: true
-          x-bodyMatchMode: NONE
-          x-arrayOrderedMatching: false
-          x-arrayCheckCount: false
-          x-matchResponseSchema: true
-          headers: {}
-        x-testShouldPass: true
-        x-testEnabled: true
-        x-testName: Pagamento Recibo Recebido copy
+        x-testName: Usuário Modificado
         x-testDescription: 'TODO: Add Description'
       x-operation-settings:
         CollectParameters: false
@@ -389,7 +676,7 @@ paths:
           uri: /v1/bank_accounts
           headers:
             Account: pocketto
-            Authorization: b7bf6eab4b9d08fd4547126a3499ef841472f0387b1443efce7fb44cf7a86ef9c50e28d40883443d
+            Authorization: ce853e18faaf891bcc1afaafae37fc9797639d4619324635043a07aed51a422787f4e29ebfe7903f
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -436,7 +723,7 @@ paths:
           uri: /v1/profile
           headers:
             Account: pocketto
-            Authorization: b7bf6eab4b9d08fd4547126a3499ef841472f0387b1443efce7fb44cf7a86ef9c50e28d40883443d
+            Authorization: ce853e18faaf891bcc1afaafae37fc9797639d4619324635043a07aed51a422787f4e29ebfe7903f
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -494,7 +781,7 @@ paths:
           headers:
             Content-Type: application/json
             Account: pocketto
-            Authorization: b7bf6eab4b9d08fd4547126a3499ef841472f0387b1443efce7fb44cf7a86ef9c50e28d40883443d
+            Authorization: ce853e18faaf891bcc1afaafae37fc9797639d4619324635043a07aed51a422787f4e29ebfe7903f
           body: '{"name":"Wagner da Silva","cpf":"02777284288"}'
         expectedResponse:
           x-allowExtraHeaders: true
@@ -542,7 +829,7 @@ paths:
           uri: /v1/profile/props
           headers:
             Account: pocketto
-            Authorization: b7bf6eab4b9d08fd4547126a3499ef841472f0387b1443efce7fb44cf7a86ef9c50e28d40883443d
+            Authorization: ce853e18faaf891bcc1afaafae37fc9797639d4619324635043a07aed51a422787f4e29ebfe7903f
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -595,7 +882,7 @@ paths:
           headers:
             Content-Type: application/json
             Account: pocketto
-            Authorization: b7bf6eab4b9d08fd4547126a3499ef841472f0387b1443efce7fb44cf7a86ef9c50e28d40883443d
+            Authorization: ce853e18faaf891bcc1afaafae37fc9797639d4619324635043a07aed51a422787f4e29ebfe7903f
           body: '{"push_notif_enabled":true}'
         expectedResponse:
           x-allowExtraHeaders: true
@@ -643,7 +930,7 @@ paths:
           uri: /v1/profile/props/push_notif_enabled
           headers:
             Account: pocketto
-            Authorization: b7bf6eab4b9d08fd4547126a3499ef841472f0387b1443efce7fb44cf7a86ef9c50e28d40883443d
+            Authorization: ce853e18faaf891bcc1afaafae37fc9797639d4619324635043a07aed51a422787f4e29ebfe7903f
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -702,7 +989,7 @@ paths:
           headers:
             Content-Type: application/json
             Account: pocketto
-            Authorization: b7bf6eab4b9d08fd4547126a3499ef841472f0387b1443efce7fb44cf7a86ef9c50e28d40883443d
+            Authorization: ce853e18faaf891bcc1afaafae37fc9797639d4619324635043a07aed51a422787f4e29ebfe7903f
           body: '{"type":"iphone","model":"5s","push_service":"firebase","push_token":"abc123","device_id":"minhaukey"}'
         expectedResponse:
           x-allowExtraHeaders: true
@@ -750,7 +1037,7 @@ paths:
           uri: /v1/campaigns
           headers:
             Account: pocketto
-            Authorization: b7bf6eab4b9d08fd4547126a3499ef841472f0387b1443efce7fb44cf7a86ef9c50e28d40883443d
+            Authorization: ce853e18faaf891bcc1afaafae37fc9797639d4619324635043a07aed51a422787f4e29ebfe7903f
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -797,7 +1084,7 @@ paths:
           uri: /v1/campaigns/4
           headers:
             Account: pocketto
-            Authorization: b7bf6eab4b9d08fd4547126a3499ef841472f0387b1443efce7fb44cf7a86ef9c50e28d40883443d
+            Authorization: ce853e18faaf891bcc1afaafae37fc9797639d4619324635043a07aed51a422787f4e29ebfe7903f
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -844,7 +1131,7 @@ paths:
           uri: /v1/user_categories
           headers:
             Account: pocketto
-            Authorization: b7bf6eab4b9d08fd4547126a3499ef841472f0387b1443efce7fb44cf7a86ef9c50e28d40883443d
+            Authorization: ce853e18faaf891bcc1afaafae37fc9797639d4619324635043a07aed51a422787f4e29ebfe7903f
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -896,7 +1183,7 @@ paths:
           uri: /settings?filters=advanced::eq(0)
           headers:
             Account: pocketto
-            Authorization: b7bf6eab4b9d08fd4547126a3499ef841472f0387b1443efce7fb44cf7a86ef9c50e28d40883443d
+            Authorization: ce853e18faaf891bcc1afaafae37fc9797639d4619324635043a07aed51a422787f4e29ebfe7903f
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -943,7 +1230,7 @@ paths:
           uri: /v1/timelines
           headers:
             Account: pocketto
-            Authorization: b7bf6eab4b9d08fd4547126a3499ef841472f0387b1443efce7fb44cf7a86ef9c50e28d40883443d
+            Authorization: ce853e18faaf891bcc1afaafae37fc9797639d4619324635043a07aed51a422787f4e29ebfe7903f
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -995,7 +1282,7 @@ paths:
           uri: /v1/payments
           headers:
             Account: pocketto
-            Authorization: b7bf6eab4b9d08fd4547126a3499ef841472f0387b1443efce7fb44cf7a86ef9c50e28d40883443d
+            Authorization: ce853e18faaf891bcc1afaafae37fc9797639d4619324635043a07aed51a422787f4e29ebfe7903f
             Content-Type: application/json
         expectedResponse:
           x-allowExtraHeaders: true
@@ -1054,7 +1341,7 @@ paths:
           headers:
             Content-Type: application/json
             Account: pocketto
-            Authorization: b7bf6eab4b9d08fd4547126a3499ef841472f0387b1443efce7fb44cf7a86ef9c50e28d40883443d
+            Authorization: ce853e18faaf891bcc1afaafae37fc9797639d4619324635043a07aed51a422787f4e29ebfe7903f
           body: '{"amount":10,"external_campaign_title":"Campanha Tal"}'
         expectedResponse:
           x-allowExtraHeaders: true
@@ -1109,7 +1396,7 @@ paths:
           headers:
             Content-Type: application/json
             Account: pocketto
-            Authorization: b7bf6eab4b9d08fd4547126a3499ef841472f0387b1443efce7fb44cf7a86ef9c50e28d40883443d
+            Authorization: ce853e18faaf891bcc1afaafae37fc9797639d4619324635043a07aed51a422787f4e29ebfe7903f
           body: '{"amount":99.0}'
         expectedResponse:
           x-allowExtraHeaders: true
@@ -1157,7 +1444,7 @@ paths:
           uri: /v1/payments/4656
           headers:
             Account: pocketto
-            Authorization: b7bf6eab4b9d08fd4547126a3499ef841472f0387b1443efce7fb44cf7a86ef9c50e28d40883443d
+            Authorization: ce853e18faaf891bcc1afaafae37fc9797639d4619324635043a07aed51a422787f4e29ebfe7903f
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -1204,7 +1491,7 @@ paths:
           uri: /v1/payments/3624
           headers:
             Account: pocketto
-            Authorization: b7bf6eab4b9d08fd4547126a3499ef841472f0387b1443efce7fb44cf7a86ef9c50e28d40883443d
+            Authorization: ce853e18faaf891bcc1afaafae37fc9797639d4619324635043a07aed51a422787f4e29ebfe7903f
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -1263,7 +1550,7 @@ paths:
           headers:
             Content-Type: application/json
             Account: pocketto
-            Authorization: b7bf6eab4b9d08fd4547126a3499ef841472f0387b1443efce7fb44cf7a86ef9c50e28d40883443d
+            Authorization: ce853e18faaf891bcc1afaafae37fc9797639d4619324635043a07aed51a422787f4e29ebfe7903f
           body: '{"photo_file_id":4647}'
         expectedResponse:
           x-allowExtraHeaders: true
@@ -1311,7 +1598,7 @@ paths:
           uri: /v1/files/1
           headers:
             Account: pocketto
-            Authorization: b7bf6eab4b9d08fd4547126a3499ef841472f0387b1443efce7fb44cf7a86ef9c50e28d40883443d
+            Authorization: ce853e18faaf891bcc1afaafae37fc9797639d4619324635043a07aed51a422787f4e29ebfe7903f
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -1376,7 +1663,7 @@ paths:
           headers:
             Content-Type: application/x-www-form-urlencoded
             Account: pocketto
-            Authorization: b7bf6eab4b9d08fd4547126a3499ef841472f0387b1443efce7fb44cf7a86ef9c50e28d40883443d
+            Authorization: ce853e18faaf891bcc1afaafae37fc9797639d4619324635043a07aed51a422787f4e29ebfe7903f
           body: input_type=binary&input_data=&format=image
         expectedResponse:
           x-allowExtraHeaders: true
@@ -1478,7 +1765,7 @@ paths:
           uri: /v1/user_recurs
           headers:
             Account: pocketto
-            Authorization: b7bf6eab4b9d08fd4547126a3499ef841472f0387b1443efce7fb44cf7a86ef9c50e28d40883443d
+            Authorization: ce853e18faaf891bcc1afaafae37fc9797639d4619324635043a07aed51a422787f4e29ebfe7903f
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -1525,7 +1812,7 @@ paths:
           uri: /v1/user_recurs/1
           headers:
             Account: pocketto
-            Authorization: b7bf6eab4b9d08fd4547126a3499ef841472f0387b1443efce7fb44cf7a86ef9c50e28d40883443d
+            Authorization: ce853e18faaf891bcc1afaafae37fc9797639d4619324635043a07aed51a422787f4e29ebfe7903f
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -1572,7 +1859,7 @@ paths:
           uri: /v1/user_recurs/1/cancel
           headers:
             Account: pocketto
-            Authorization: b7bf6eab4b9d08fd4547126a3499ef841472f0387b1443efce7fb44cf7a86ef9c50e28d40883443d
+            Authorization: ce853e18faaf891bcc1afaafae37fc9797639d4619324635043a07aed51a422787f4e29ebfe7903f
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -1619,7 +1906,7 @@ paths:
           uri: /v1/address/98590000
           headers:
             Account: pocketto
-            Authorization: b7bf6eab4b9d08fd4547126a3499ef841472f0387b1443efce7fb44cf7a86ef9c50e28d40883443d
+            Authorization: ce853e18faaf891bcc1afaafae37fc9797639d4619324635043a07aed51a422787f4e29ebfe7903f
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -1666,7 +1953,7 @@ paths:
           uri: /v1/logout
           headers:
             Account: pocketto
-            Authorization: b7bf6eab4b9d08fd4547126a3499ef841472f0387b1443efce7fb44cf7a86ef9c50e28d40883443d
+            Authorization: ce853e18faaf891bcc1afaafae37fc9797639d4619324635043a07aed51a422787f4e29ebfe7903f
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -1759,7 +2046,7 @@ paths:
           uri: /v1/payments/code:XXXXX/take
           headers:
             Account: pocketto
-            Authorization: b7bf6eab4b9d08fd4547126a3499ef841472f0387b1443efce7fb44cf7a86ef9c50e28d40883443d
+            Authorization: ce853e18faaf891bcc1afaafae37fc9797639d4619324635043a07aed51a422787f4e29ebfe7903f
             Content-Type: application/json
         expectedResponse:
           x-allowExtraHeaders: true

@@ -5,13 +5,6 @@ info:
   description: 'TODO: Add Description'
 host: api.pocketto.com.br
 basePath: /
-securityDefinitions:
-  auth:
-    type: oauth2
-    flow: implicit
-    authorizationUrl: https://api.pocketto.com.br
-    scopes: {}
-    x-skip-client-authentication: false
 schemes:
 - https
 consumes:
@@ -1349,7 +1342,7 @@ paths:
             Content-Type: application/json
             Account: pocketto
             Authorization: 5350fa043eeec59a628f4a3d494351e008b118071d104fef75f2431e83667ae1acc3ca1447145a4d
-          body: '{"amount":10,"external_campaign_title":"Campanha Tal"}'
+          body: '{"amount":10,"external_campaign_title":"Campanha Tal","method_id":4}'
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -2262,13 +2255,13 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /vdash/credit_card/process:
+  /v1/credit_card/process:
     post:
       description: 'TODO: Add Description'
-      summary: CreditCard - Process Copy
+      summary: CreditCard - Process
       tags:
       - Misc
-      operationId: VdashCreditCardProcessPost
+      operationId: V1CreditCardProcessPost
       produces:
       - application/json
       parameters:
@@ -2277,7 +2270,7 @@ paths:
         required: true
         description: ''
         schema:
-          $ref: '#/definitions/Creditcard  process copyrequest'
+          $ref: '#/definitions/Creditcard  processrequest'
       - name: Account
         in: header
         required: true
@@ -2296,17 +2289,16 @@ paths:
       responses:
         200:
           description: ''
-      security:
-      - auth: []
+      security: []
       x-unitTests:
       - request:
           method: POST
-          uri: /vdash/credit_card/process
+          uri: /v1/credit_card/process
           headers:
             Content-Type: application/json
             Account: pocketto
-            Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjNiODgxN2U2MmM5Nzg0NmI1NmJmNjBjYmY5OWVmY2U5Mzk2MTUyYTFmYjRhYTkwNGM4MmE3ZGE4M2QzNzBmYTgyZGFlMDFmMDAwMzA0ZDEyIn0.eyJhdWQiOiIyIiwianRpIjoiM2I4ODE3ZTYyYzk3ODQ2YjU2YmY2MGNiZjk5ZWZjZTkzOTYxNTJhMWZiNGFhOTA0YzgyYTdkYTgzZDM3MGZhODJkYWUwMWYwMDAzMDRkMTIiLCJpYXQiOjE1MTE3OTE0MjksIm5iZiI6MTUxMTc5MTQyOSwiZXhwIjoxNTQzMzI3NDI5LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.hIDEX5jGQy1Nz6dBYzyzxnWop_rgyztNNAwZGM0ZhWgcYFjjE6lqxyxux4WK5jY-vPlLBuesTbOnk7yv5MTqiNkwUlGX4dexMWHpZE6j9Jrl_A8TA8uPmSs8eZy1Znl6e4xxSeMWyXNp7UHxsWiMO2qDIDC3f8kydq4f5bQy4HfYSm_HdDOuHOlnw3bf_t1KSfU9saPq_E9h_N4WtMxEkFmhpGtt2CB902WUJG3xrdwj8pRYN5Ydl6VS-lYD2EmnsB-AFYo3uxcw2LiW9o4zOe3TnfKC_1um4pWA91anqqoM4cn0VDUuduZbPu9GUDi782tlmdwZyCD6mbmq25ziHS3VqHI-UfW1Mtm6m7IzZlTYEeaSdm-fRa-b4g_Hc60XGTx9go6xNqoF-lA0ukcrJ0_srH7VZE6MT_XVPdkfww4H2189yjFghn4tgQFXkPxEeocryDJM4FWOZ1VcqwcjdyoTFs3xSJoDAMsnYaHxwgq6r0L89IyGmge0uefWyYfDYcCA7mkKLhgiBQAlgjoY-Y-IJYc6fshUzBmFhupn63KHvxjmry0z_ORwDjoR5nQmHzDYArn6v1CWTsDaastp501NSinMXaL2C3s5wMXgmIqmrOTbGBYPUkm9_bFhZ25kCZHPV9u0qNjSlS3uOho8oEjflVg_pjKoYSON7CYT_Go
-          body: '{"payment_id":4635,"card":{"brand":"Visa","number":"4763329512296114","cvc":"309","holder":"Luciano Medici Antu","exp_date":"06/20"}}'
+            Authorization: 5350fa043eeec59a628f4a3d494351e008b118071d104fef75f2431e83667ae1acc3ca1447145a4d
+          body: '{"payment_id":4661,"card":{"brand":"Visa","number":"4763329512296114","cvc":"309","holder":"Luciano Medici Antu","exp_date":"06/20"}}'
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -2316,7 +2308,7 @@ paths:
           headers: {}
         x-testShouldPass: true
         x-testEnabled: true
-        x-testName: CreditCard - Process Copy
+        x-testName: CreditCard - Process
         x-testDescription: 'TODO: Add Description'
       x-operation-settings:
         CollectParameters: false
@@ -2407,6 +2399,7 @@ definitions:
     example:
       amount: 10
       external_campaign_title: Campanha Tal
+      method_id: 4
     type: object
     properties:
       amount:
@@ -2418,9 +2411,15 @@ definitions:
         description: ''
         example: Campanha Tal
         type: string
+      method_id:
+        description: ''
+        example: 4
+        type: integer
+        format: int32
     required:
     - amount
     - external_campaign_title
+    - method_id
   Payments  updaterequest:
     title: Payments - UpdateRequest
     example:
@@ -2478,10 +2477,10 @@ definitions:
         format: int32
     required:
     - photo_file_id
-  Creditcard  process copyrequest:
-    title: CreditCard - Process CopyRequest
+  Creditcard  processrequest:
+    title: CreditCard - ProcessRequest
     example:
-      payment_id: 4635
+      payment_id: 4661
       card:
         brand: Visa
         number: 4763329512296114
@@ -2492,7 +2491,7 @@ definitions:
     properties:
       payment_id:
         description: ''
-        example: 4635
+        example: 4661
         type: integer
         format: int32
       card:

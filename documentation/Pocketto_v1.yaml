@@ -661,22 +661,15 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Authorization
-        in: header
-        required: true
-        type: string
-        description: ''
       responses:
         200:
           description: ''
-      security: []
       x-unitTests:
       - request:
           method: GET
           uri: /v1/bank_accounts
           headers:
             Account: pocketto
-            Authorization: 4fed0dd7a7d7c766ee7deaa0b05efd36b85bf0c3ae28c79361790086037a5c74def3f7b337e7d7c0
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -708,22 +701,15 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Authorization
-        in: header
-        required: true
-        type: string
-        description: ''
       responses:
         200:
           description: ''
-      security: []
       x-unitTests:
       - request:
           method: GET
           uri: /v1/profile
           headers:
             Account: pocketto
-            Authorization: 4fed0dd7a7d7c766ee7deaa0b05efd36b85bf0c3ae28c79361790086037a5c74def3f7b337e7d7c0
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -760,11 +746,6 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Authorization
-        in: header
-        required: true
-        type: string
-        description: ''
       - name: Content-Type
         in: header
         required: true
@@ -773,7 +754,6 @@ paths:
       responses:
         200:
           description: ''
-      security: []
       x-unitTests:
       - request:
           method: PUT
@@ -781,7 +761,6 @@ paths:
           headers:
             Content-Type: application/json
             Account: pocketto
-            Authorization: 4fed0dd7a7d7c766ee7deaa0b05efd36b85bf0c3ae28c79361790086037a5c74def3f7b337e7d7c0
           body: '{"name":"Wagner da Silva","cpf":"02777284288"}'
         expectedResponse:
           x-allowExtraHeaders: true
@@ -814,22 +793,15 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Authorization
-        in: header
-        required: true
-        type: string
-        description: ''
       responses:
         200:
           description: ''
-      security: []
       x-unitTests:
       - request:
           method: GET
           uri: /v1/profile/props
           headers:
             Account: pocketto
-            Authorization: 4fed0dd7a7d7c766ee7deaa0b05efd36b85bf0c3ae28c79361790086037a5c74def3f7b337e7d7c0
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -866,15 +838,9 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Authorization
-        in: header
-        required: true
-        type: string
-        description: ''
       responses:
         200:
           description: ''
-      security: []
       x-unitTests:
       - request:
           method: PUT
@@ -882,7 +848,6 @@ paths:
           headers:
             Content-Type: application/json
             Account: pocketto
-            Authorization: 4fed0dd7a7d7c766ee7deaa0b05efd36b85bf0c3ae28c79361790086037a5c74def3f7b337e7d7c0
           body: '{"push_notif_enabled":true}'
         expectedResponse:
           x-allowExtraHeaders: true
@@ -915,22 +880,15 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Authorization
-        in: header
-        required: true
-        type: string
-        description: ''
       responses:
         200:
           description: ''
-      security: []
       x-unitTests:
       - request:
           method: GET
           uri: /v1/profile/props/push_notif_enabled
           headers:
             Account: pocketto
-            Authorization: 4fed0dd7a7d7c766ee7deaa0b05efd36b85bf0c3ae28c79361790086037a5c74def3f7b337e7d7c0
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -968,11 +926,6 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Authorization
-        in: header
-        required: true
-        type: string
-        description: ''
       - name: Content-Type
         in: header
         required: true
@@ -981,7 +934,6 @@ paths:
       responses:
         200:
           description: ''
-      security: []
       x-unitTests:
       - request:
           method: PUT
@@ -989,7 +941,6 @@ paths:
           headers:
             Content-Type: application/json
             Account: pocketto
-            Authorization: 4fed0dd7a7d7c766ee7deaa0b05efd36b85bf0c3ae28c79361790086037a5c74def3f7b337e7d7c0
           body: '{"type":"iphone","model":"5s","push_service":"firebase","push_token":"abc123","device_id":"minhaukey"}'
         expectedResponse:
           x-allowExtraHeaders: true
@@ -1022,22 +973,15 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Authorization
-        in: header
-        required: true
-        type: string
-        description: ''
       responses:
         200:
           description: ''
-      security: []
       x-unitTests:
       - request:
           method: GET
           uri: /v1/campaigns
           headers:
             Account: pocketto
-            Authorization: 4fed0dd7a7d7c766ee7deaa0b05efd36b85bf0c3ae28c79361790086037a5c74def3f7b337e7d7c0
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -1069,22 +1013,15 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Authorization
-        in: header
-        required: true
-        type: string
-        description: ''
       responses:
         200:
           description: ''
-      security: []
       x-unitTests:
       - request:
           method: GET
           uri: /v1/campaigns/4
           headers:
             Account: pocketto
-            Authorization: 4fed0dd7a7d7c766ee7deaa0b05efd36b85bf0c3ae28c79361790086037a5c74def3f7b337e7d7c0
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -1116,22 +1053,15 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Authorization
-        in: header
-        required: true
-        type: string
-        description: ''
       responses:
         200:
           description: ''
-      security: []
       x-unitTests:
       - request:
           method: GET
           uri: /v1/user_categories
           headers:
             Account: pocketto
-            Authorization: 4fed0dd7a7d7c766ee7deaa0b05efd36b85bf0c3ae28c79361790086037a5c74def3f7b337e7d7c0
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -1168,22 +1098,15 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Authorization
-        in: header
-        required: true
-        type: string
-        description: ''
       responses:
         200:
           description: ''
-      security: []
       x-unitTests:
       - request:
           method: GET
           uri: /settings?filters=advanced::eq(0)
           headers:
             Account: pocketto
-            Authorization: 4fed0dd7a7d7c766ee7deaa0b05efd36b85bf0c3ae28c79361790086037a5c74def3f7b337e7d7c0
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -1215,22 +1138,15 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Authorization
-        in: header
-        required: true
-        type: string
-        description: ''
       responses:
         200:
           description: ''
-      security: []
       x-unitTests:
       - request:
           method: GET
           uri: /v1/timelines
           headers:
             Account: pocketto
-            Authorization: 4fed0dd7a7d7c766ee7deaa0b05efd36b85bf0c3ae28c79361790086037a5c74def3f7b337e7d7c0
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -1262,11 +1178,6 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Authorization
-        in: header
-        required: true
-        type: string
-        description: ''
       - name: Content-Type
         in: header
         required: true
@@ -1275,14 +1186,12 @@ paths:
       responses:
         200:
           description: ''
-      security: []
       x-unitTests:
       - request:
           method: GET
           uri: /v1/payments
           headers:
             Account: pocketto
-            Authorization: 4fed0dd7a7d7c766ee7deaa0b05efd36b85bf0c3ae28c79361790086037a5c74def3f7b337e7d7c0
             Content-Type: application/json
         expectedResponse:
           x-allowExtraHeaders: true
@@ -1320,11 +1229,6 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Authorization
-        in: header
-        required: true
-        type: string
-        description: ''
       - name: Content-Type
         in: header
         required: true
@@ -1333,7 +1237,6 @@ paths:
       responses:
         200:
           description: ''
-      security: []
       x-unitTests:
       - request:
           method: POST
@@ -1341,7 +1244,6 @@ paths:
           headers:
             Content-Type: application/json
             Account: pocketto
-            Authorization: 4fed0dd7a7d7c766ee7deaa0b05efd36b85bf0c3ae28c79361790086037a5c74def3f7b337e7d7c0
           body: '{"amount":10,"external_campaign_title":"Campanha Tal","method_id":4}'
         expectedResponse:
           x-allowExtraHeaders: true
@@ -1380,15 +1282,9 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Authorization
-        in: header
-        required: true
-        type: string
-        description: ''
       responses:
         200:
           description: ''
-      security: []
       x-unitTests:
       - request:
           method: PUT
@@ -1396,7 +1292,6 @@ paths:
           headers:
             Content-Type: application/json
             Account: pocketto
-            Authorization: 4fed0dd7a7d7c766ee7deaa0b05efd36b85bf0c3ae28c79361790086037a5c74def3f7b337e7d7c0
           body: '{"amount":99.0}'
         expectedResponse:
           x-allowExtraHeaders: true
@@ -1429,22 +1324,15 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Authorization
-        in: header
-        required: true
-        type: string
-        description: ''
       responses:
         200:
           description: ''
-      security: []
       x-unitTests:
       - request:
           method: GET
           uri: /v1/payments/4656
           headers:
             Account: pocketto
-            Authorization: 4fed0dd7a7d7c766ee7deaa0b05efd36b85bf0c3ae28c79361790086037a5c74def3f7b337e7d7c0
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -1476,22 +1364,15 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Authorization
-        in: header
-        required: true
-        type: string
-        description: ''
       responses:
         200:
           description: ''
-      security: []
       x-unitTests:
       - request:
           method: DELETE
           uri: /v1/payments/3624
           headers:
             Account: pocketto
-            Authorization: 4fed0dd7a7d7c766ee7deaa0b05efd36b85bf0c3ae28c79361790086037a5c74def3f7b337e7d7c0
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -1529,11 +1410,6 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Authorization
-        in: header
-        required: true
-        type: string
-        description: ''
       - name: Content-Type
         in: header
         required: true
@@ -1542,7 +1418,6 @@ paths:
       responses:
         200:
           description: ''
-      security: []
       x-unitTests:
       - request:
           method: PUT
@@ -1550,7 +1425,6 @@ paths:
           headers:
             Content-Type: application/json
             Account: pocketto
-            Authorization: 4fed0dd7a7d7c766ee7deaa0b05efd36b85bf0c3ae28c79361790086037a5c74def3f7b337e7d7c0
           body: '{"photo_file_id":4647}'
         expectedResponse:
           x-allowExtraHeaders: true
@@ -1583,22 +1457,15 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Authorization
-        in: header
-        required: true
-        type: string
-        description: ''
       responses:
         200:
           description: ''
-      security: []
       x-unitTests:
       - request:
           method: GET
           uri: /v1/files/1
           headers:
             Account: pocketto
-            Authorization: 4fed0dd7a7d7c766ee7deaa0b05efd36b85bf0c3ae28c79361790086037a5c74def3f7b337e7d7c0
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -1647,15 +1514,9 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Authorization
-        in: header
-        required: true
-        type: string
-        description: ''
       responses:
         200:
           description: ''
-      security: []
       x-unitTests:
       - request:
           method: POST
@@ -1663,7 +1524,6 @@ paths:
           headers:
             Content-Type: application/x-www-form-urlencoded
             Account: pocketto
-            Authorization: 4fed0dd7a7d7c766ee7deaa0b05efd36b85bf0c3ae28c79361790086037a5c74def3f7b337e7d7c0
           body: input_type=binary&input_data=&format=image
         expectedResponse:
           x-allowExtraHeaders: true
@@ -1750,22 +1610,15 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Authorization
-        in: header
-        required: true
-        type: string
-        description: ''
       responses:
         200:
           description: ''
-      security: []
       x-unitTests:
       - request:
           method: GET
           uri: /v1/user_recurs
           headers:
             Account: pocketto
-            Authorization: 4fed0dd7a7d7c766ee7deaa0b05efd36b85bf0c3ae28c79361790086037a5c74def3f7b337e7d7c0
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -1797,22 +1650,15 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Authorization
-        in: header
-        required: true
-        type: string
-        description: ''
       responses:
         200:
           description: ''
-      security: []
       x-unitTests:
       - request:
           method: GET
           uri: /v1/user_recurs/1
           headers:
             Account: pocketto
-            Authorization: 4fed0dd7a7d7c766ee7deaa0b05efd36b85bf0c3ae28c79361790086037a5c74def3f7b337e7d7c0
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -1844,22 +1690,15 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Authorization
-        in: header
-        required: true
-        type: string
-        description: ''
       responses:
         200:
           description: ''
-      security: []
       x-unitTests:
       - request:
           method: PUT
           uri: /v1/user_recurs/1/cancel
           headers:
             Account: pocketto
-            Authorization: 4fed0dd7a7d7c766ee7deaa0b05efd36b85bf0c3ae28c79361790086037a5c74def3f7b337e7d7c0
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -1891,22 +1730,15 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Authorization
-        in: header
-        required: true
-        type: string
-        description: ''
       responses:
         200:
           description: ''
-      security: []
       x-unitTests:
       - request:
           method: GET
           uri: /v1/address/98590000
           headers:
             Account: pocketto
-            Authorization: 4fed0dd7a7d7c766ee7deaa0b05efd36b85bf0c3ae28c79361790086037a5c74def3f7b337e7d7c0
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -1938,22 +1770,15 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Authorization
-        in: header
-        required: true
-        type: string
-        description: ''
       responses:
         200:
           description: ''
-      security: []
       x-unitTests:
       - request:
           method: POST
           uri: /v1/logout
           headers:
             Account: pocketto
-            Authorization: 4fed0dd7a7d7c766ee7deaa0b05efd36b85bf0c3ae28c79361790086037a5c74def3f7b337e7d7c0
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -2026,11 +1851,6 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Authorization
-        in: header
-        required: true
-        type: string
-        description: ''
       - name: Content-Type
         in: header
         required: true
@@ -2039,14 +1859,12 @@ paths:
       responses:
         200:
           description: ''
-      security: []
       x-unitTests:
       - request:
           method: PUT
           uri: /v1/payments/code:XXXXX/take
           headers:
             Account: pocketto
-            Authorization: 4fed0dd7a7d7c766ee7deaa0b05efd36b85bf0c3ae28c79361790086037a5c74def3f7b337e7d7c0
             Content-Type: application/json
         expectedResponse:
           x-allowExtraHeaders: true
@@ -2276,11 +2094,6 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Authorization
-        in: header
-        required: true
-        type: string
-        description: ''
       - name: Content-Type
         in: header
         required: true
@@ -2289,7 +2102,6 @@ paths:
       responses:
         200:
           description: ''
-      security: []
       x-unitTests:
       - request:
           method: POST
@@ -2297,7 +2109,6 @@ paths:
           headers:
             Content-Type: application/json
             Account: pocketto
-            Authorization: 4fed0dd7a7d7c766ee7deaa0b05efd36b85bf0c3ae28c79361790086037a5c74def3f7b337e7d7c0
           body: '{"payment_id":4664,"card":{"brand":"Visa","number":"4763329512296114","cvc":"309","holder":"Luciano Medici Antu","exp_date":"06/20"}}'
         expectedResponse:
           x-allowExtraHeaders: true

@@ -2636,7 +2636,7 @@ paths:
           headers:
             Content-Type: application/json
             Account: pocketto
-          body: '{"amount":"1.0000000000000","due_date":"2018-10-01","method_id":2,"recurring":1,"user":{"name":"Vinicius Matteus","email":"vmatteus@gmail.com","cnpj":"27433043000117","mobile":"51981332395"}}'
+          body: '{"amount":"10","due_date":"2018-10-01","method_id":2,"user":{"name":"Vinicius Matteus","email":"vmatteus@gmail.com","cnpj":"27433043000117","mobile":"51981332395"},"recurring":true,"recurring_amount":100,"recurring_day_month":12}'
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -4466,7 +4466,7 @@ definitions:
         format: int32
       end_date:
         description: ''
-        type: null
+        type: string
       status:
         description: ''
         example: 1
@@ -4775,20 +4775,22 @@ definitions:
   Payments  createrequest:
     title: Payments - CreateRequest
     example:
-      amount: 1.0000000000000
+      amount: 10
       due_date: 2018-10-01
       method_id: 2
-      recurring: 1
       user:
         name: Vinicius Matteus
         email: vmatteus@gmail.com
         cnpj: 27433043000117
         mobile: 51981332395
+      recurring: true
+      recurring_amount: 100
+      recurring_day_month: 12
     type: object
     properties:
       amount:
         description: ''
-        example: 1.0000000000000
+        example: 10
         type: string
       due_date:
         description: ''
@@ -4799,19 +4801,30 @@ definitions:
         example: 2
         type: integer
         format: int32
-      recurring:
-        description: ''
-        example: 1
-        type: integer
-        format: int32
       user:
         $ref: '#/definitions/User'
+      recurring:
+        description: ''
+        example: true
+        type: boolean
+      recurring_amount:
+        description: ''
+        example: 100
+        type: integer
+        format: int32
+      recurring_day_month:
+        description: ''
+        example: 12
+        type: integer
+        format: int32
     required:
     - amount
     - due_date
     - method_id
-    - recurring
     - user
+    - recurring
+    - recurring_amount
+    - recurring_day_month
   User:
     title: User
     example:

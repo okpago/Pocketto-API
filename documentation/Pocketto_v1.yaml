@@ -1882,13 +1882,13 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /v1/public/payment/rpr3r1a:
+  /v1/public/payment/:
     get:
       description: 'TODO: Add Description'
       summary: Public Payment
       tags:
       - Misc
-      operationId: V1PublicPaymentRpr3r1aGet
+      operationId: V1PublicPaymentGet
       produces:
       - application/json
       parameters:
@@ -1904,7 +1904,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /v1/public/payment/rpr3r1a
+          uri: /v1/public/payment/
           headers:
             Account: pocketto
         expectedResponse:

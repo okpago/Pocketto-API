@@ -4139,6 +4139,11 @@ paths:
       produces:
       - application/json
       parameters:
+      - name: filters
+        in: query
+        required: true
+        type: string
+        description: ''
       - name: operation
         in: query
         required: true
@@ -4162,7 +4167,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /analytics/payments?operation=count(id)&groupby=created_at::date,status
+          uri: /analytics/payments?filters=status::eq(refused)&operation=count&groupby=user_id
           headers:
             Account: pocketto
         expectedResponse:

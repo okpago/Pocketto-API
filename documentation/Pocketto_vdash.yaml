@@ -3947,13 +3947,13 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /debit_card/consult/cielo/38b3e301-c479-49cd-9533-2bd8647676ce:
+  /debit_card/consult/cielo/d1a33d83-ef6a-42d4-95e8-3e761e15cbb3:
     get:
       description: 'TODO: Add Description'
       summary: CreditCard - Consult
       tags:
       - CreditCard
-      operationId: DebitCardConsultCielo38b3e301C47949cd95332bd8647676ceGet
+      operationId: DebitCardConsultCieloD1a33d83Ef6a42d495e83e761e15cbb3Get
       produces:
       - application/json
       parameters:
@@ -3975,7 +3975,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /debit_card/consult/cielo/38b3e301-c479-49cd-9533-2bd8647676ce
+          uri: /debit_card/consult/cielo/d1a33d83-ef6a-42d4-95e8-3e761e15cbb3
           headers:
             Account: pocketto
             Content-Type: application/json

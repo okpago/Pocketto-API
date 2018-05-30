@@ -3930,7 +3930,7 @@ paths:
           headers:
             Content-Type: application/json
             Account: pocketto
-          body: '{"payment_id":4635,"card":{"brand":"Visa","number":"4763329512296114","cvc":"309","holder":"Luciano Medici Antu","exp_date":"06/20"}}'
+          body: '{"payment_id":122,"card":{"brand":"AMEX","number":"376411112222331","cvc":"123","holder":"Julio Moreira","exp_date":"12/2020"}}'
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -4983,18 +4983,18 @@ definitions:
   Creditcard  processrequest:
     title: CreditCard - ProcessRequest
     example:
-      payment_id: 4635
+      payment_id: 122
       card:
-        brand: Visa
-        number: 4763329512296114
-        cvc: 309
-        holder: Luciano Medici Antu
-        exp_date: 06/20
+        brand: AMEX
+        number: 376411112222331
+        cvc: 123
+        holder: Julio Moreira
+        exp_date: 12/2020
     type: object
     properties:
       payment_id:
         description: ''
-        example: 4635
+        example: 122
         type: integer
         format: int32
       card:
@@ -5005,32 +5005,32 @@ definitions:
   Card:
     title: Card
     example:
-      brand: Visa
-      number: 4763329512296114
-      cvc: 309
-      holder: Luciano Medici Antu
-      exp_date: 06/20
+      brand: AMEX
+      number: 376411112222331
+      cvc: 123
+      holder: Julio Moreira
+      exp_date: 12/2020
     type: object
     properties:
       brand:
         description: ''
-        example: Visa
+        example: AMEX
         type: string
       number:
         description: ''
-        example: 4763329512296114
+        example: 376411112222331
         type: string
       cvc:
         description: ''
-        example: 309
+        example: 123
         type: string
       holder:
         description: ''
-        example: Luciano Medici Antu
+        example: Julio Moreira
         type: string
       exp_date:
         description: ''
-        example: 06/20
+        example: 12/2020
         type: string
     required:
     - brand

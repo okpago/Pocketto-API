@@ -2636,7 +2636,7 @@ paths:
           headers:
             Content-Type: application/json
             Account: pocketto
-          body: '{"amount":"10","due_date":"2018-10-01","method_id":2,"user":{"name":"Vinicius Matteus","email":"vmatteus@gmail.com","cnpj":"27433043000117","mobile":"51981332395"}}'
+          body: '{"amount":"10","due_date":"2018-10-01","method_id":2,"user":{"name":"Vinicius Matteus","email":"vmatteus@gmail.com","cnpj":"27433043000117","mobile":"51981332395"},"extra_data_1":"Vini","extra_data_2":"Vini 2"}'
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -4788,6 +4788,8 @@ definitions:
         email: vmatteus@gmail.com
         cnpj: 27433043000117
         mobile: 51981332395
+      extra_data_1: Vini
+      extra_data_2: Vini 2
     type: object
     properties:
       amount:
@@ -4805,11 +4807,21 @@ definitions:
         format: int32
       user:
         $ref: '#/definitions/User'
+      extra_data_1:
+        description: ''
+        example: Vini
+        type: string
+      extra_data_2:
+        description: ''
+        example: Vini 2
+        type: string
     required:
     - amount
     - due_date
     - method_id
     - user
+    - extra_data_1
+    - extra_data_2
   User:
     title: User
     example:

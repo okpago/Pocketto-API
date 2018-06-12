@@ -3930,7 +3930,7 @@ paths:
           headers:
             Content-Type: application/json
             Account: pocketto
-          body: '{"payment_id":122,"card":{"brand":"AMEX","number":"376411112222331","cvc":"123","holder":"Julio Moreira","exp_date":"12/2020"}}'
+          body: '{"payment_id":198,"installments":2,"card":{"brand":"Amex","number":"376449047333001","cvc":"123","holder":"Julio Moreira","exp_date":"12/2020"}}'
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -3989,6 +3989,54 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: CreditCard - Consult
+        x-testDescription: 'TODO: Add Description'
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /credit_card/cancel/cielo/a8b687dc-3a15-43c6-8d78-69958e8ba00f:
+    get:
+      description: 'TODO: Add Description'
+      summary: CreditCard - Cancel
+      tags:
+      - CreditCard
+      operationId: CreditCardCancelCieloA8b687dc3a1543c68d7869958e8ba00fGet
+      produces:
+      - application/json
+      parameters:
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Content-Type
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        200:
+          description: ''
+      security:
+      - auth: []
+      x-unitTests:
+      - request:
+          method: GET
+          uri: /credit_card/cancel/cielo/a8b687dc-3a15-43c6-8d78-69958e8ba00f
+          headers:
+            Account: pocketto
+            Content-Type: application/json
+        expectedResponse:
+          x-allowExtraHeaders: true
+          x-bodyMatchMode: NONE
+          x-arrayOrderedMatching: false
+          x-arrayCheckCount: false
+          x-matchResponseSchema: true
+          headers: {}
+        x-testShouldPass: true
+        x-testEnabled: true
+        x-testName: CreditCard - Cancel
         x-testDescription: 'TODO: Add Description'
       x-operation-settings:
         CollectParameters: false
@@ -4995,10 +5043,11 @@ definitions:
   Creditcard  processrequest:
     title: CreditCard - ProcessRequest
     example:
-      payment_id: 122
+      payment_id: 198
+      installments: 2
       card:
-        brand: AMEX
-        number: 376411112222331
+        brand: Amex
+        number: 376449047333001
         cvc: 123
         holder: Julio Moreira
         exp_date: 12/2020
@@ -5006,19 +5055,25 @@ definitions:
     properties:
       payment_id:
         description: ''
-        example: 122
+        example: 198
+        type: integer
+        format: int32
+      installments:
+        description: ''
+        example: 2
         type: integer
         format: int32
       card:
         $ref: '#/definitions/Card'
     required:
     - payment_id
+    - installments
     - card
   Card:
     title: Card
     example:
-      brand: AMEX
-      number: 376411112222331
+      brand: Amex
+      number: 376449047333001
       cvc: 123
       holder: Julio Moreira
       exp_date: 12/2020
@@ -5026,11 +5081,11 @@ definitions:
     properties:
       brand:
         description: ''
-        example: AMEX
+        example: Amex
         type: string
       number:
         description: ''
-        example: 376411112222331
+        example: 376449047333001
         type: string
       cvc:
         description: ''

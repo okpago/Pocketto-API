@@ -2627,6 +2627,124 @@ paths:
       responses:
         200:
           description: ''
+          schema:
+            $ref: '#/definitions/Payments  create'
+          examples:
+            application/json:
+              success: true
+              error: ''
+              current_time: '"2018-06-29T19:19:44+00:00"'
+              payment:
+                id: 5380
+                payment_id: null
+                user_id: 162
+                user:
+                  id: 162
+                  photo_file_id: null
+                  photo_file_url: null
+                  photo: null
+                  card_front_file_id: null
+                  card_front_file_url: null
+                  card_front: null
+                  card_back_file_id: null
+                  card_back_file_url: null
+                  card_back: null
+                  qrcode_file_id: null
+                  qrcode_file_url: null
+                  qrcode: null
+                  category: null
+                  name: Vinicius Matteus
+                  email: vmatteus@gmail.com
+                  code: CNG9S
+                  cpf: null
+                  cnpj: 27433043000117
+                  gender: null
+                  birthdate: null
+                  birthdate_f: null
+                  address_number: null
+                  address_complement: null
+                  address_zipcode: null
+                  address_state: null
+                  address_city: null
+                  address_district: null
+                  address_street: null
+                  address_lat: null
+                  address_lng: null
+                  geolocation: null
+                  recurring: false
+                  recurring_day_month: null
+                  recurring_amount: null
+                  recurring_amount_f: null
+                  require_fill: true
+                  status: true
+                  mobile: +5551981332395
+                  created_at: '"2018-02-26T18:35:37+00:00"'
+                  created_at_f: 26/02/2018
+                  updated_at: '"2018-02-26T18:35:37+00:00"'
+                  updated_at_f: 26/02/2018
+                  deleted_at: null
+                  deleted_at_f: null
+                owner_id: 3
+                owner:
+                  id: 3
+                  name: Pocketto
+                  email: admin@pocketto.com.br
+                  role: S
+                  status: 1
+                  created_at: '"2017-03-21T13:31:15+00:00"'
+                  created_at_f: 21/03/2017
+                  updated_at: '"2017-12-20T17:02:31+00:00"'
+                  updated_at_f: 20/12/2017
+                campaign_id: null
+                campaign: null
+                method_id: 2
+                doc_file_id: null
+                doc_file_url: null
+                doc: null
+                doc_file_vert_id: null
+                doc_file_vert_url: null
+                doc_vert: null
+                doc_file_horiz_id: null
+                doc_file_horiz_url: null
+                doc_horiz: null
+                claim_photo_file_id: null
+                claim_photo_file_url: null
+                claim_photo: null
+                claim_photo_data: null
+                claim_url: https://web.dev.pocketto.com.br/pocketto#!/confirma/eqworxh
+                code: eqworxh
+                amount: 10
+                amount_f: R$ 10,00
+                amount_original: null
+                amount_original_f: R$ 0,00
+                claim_date: null
+                claim_date_f: null
+                due_date: '"2018-10-01T00:00:00+00:00"'
+                due_date_f: 01/10/2018
+                method_data: null
+                description: null
+                transaction_id: null
+                uid: null
+                created_at: '"2018-06-29T19:19:44+00:00"'
+                created_at_f: 29/06/2018
+                updated_at: '"2018-06-29T19:19:44+00:00"'
+                updated_at_f: 29/06/2018
+                deleted_at: null
+                deleted_at_f: null
+                status: pending
+                refused_reason: null
+                external_campaign_title: null
+                error: ''
+                extra_data_1: Vini
+                extra_data_2: Vini 2
+                installments: null
+                debit_card_url: null
+                method:
+                  id: 2
+                  name: Cartão de Crédito
+                  gateway: cielo
+                  type: credit_card
+                  status: 1
       security:
       - auth: []
       x-unitTests:
@@ -2639,11 +2757,12 @@ paths:
           body: '{"amount":"10","due_date":"2018-10-01","method_id":2,"user":{"name":"Vinicius Matteus","email":"vmatteus@gmail.com","cnpj":"27433043000117","mobile":"51981332395"},"extra_data_1":"Vini","extra_data_2":"Vini 2"}'
         expectedResponse:
           x-allowExtraHeaders: true
-          x-bodyMatchMode: NONE
+          x-bodyMatchMode: RAW
           x-arrayOrderedMatching: false
           x-arrayCheckCount: false
           x-matchResponseSchema: true
           headers: {}
+          body: '{"success":true,"error":"","current_time":"\"2018-06-29T19:19:44+00:00\"","payment":{"id":5380,"payment_id":"null","user_id":162,"user":{"id":162,"photo_file_id":"null","photo_file_url":"null","photo":"null","card_front_file_id":"null","card_front_file_url":"null","card_front":"null","card_back_file_id":"null","card_back_file_url":"null","card_back":"null","qrcode_file_id":"null","qrcode_file_url":"null","qrcode":"null","category":"null","name":"Vinicius Matteus","email":"vmatteus@gmail.com","code":"CNG9S","cpf":"null","cnpj":"27433043000117","gender":"null","birthdate":"null","birthdate_f":"null","address_number":"null","address_complement":"null","address_zipcode":"null","address_state":"null","address_city":"null","address_district":"null","address_street":"null","address_lat":"null","address_lng":"null","geolocation":"null","recurring":false,"recurring_day_month":"null","recurring_amount":"null","recurring_amount_f":"null","require_fill":true,"status":true,"mobile":"+5551981332395","created_at":"\"2018-02-26T18:35:37+00:00\"","created_at_f":"26/02/2018","updated_at":"\"2018-02-26T18:35:37+00:00\"","updated_at_f":"26/02/2018","deleted_at":"null","deleted_at_f":"null"},"owner_id":3,"owner":{"id":3,"name":"Pocketto","email":"admin@pocketto.com.br","role":"S","status":1,"created_at":"\"2017-03-21T13:31:15+00:00\"","created_at_f":"21/03/2017","updated_at":"\"2017-12-20T17:02:31+00:00\"","updated_at_f":"20/12/2017"},"campaign_id":"null","campaign":"null","method_id":2,"doc_file_id":"null","doc_file_url":"null","doc":"null","doc_file_vert_id":"null","doc_file_vert_url":"null","doc_vert":"null","doc_file_horiz_id":"null","doc_file_horiz_url":"null","doc_horiz":"null","claim_photo_file_id":"null","claim_photo_file_url":"null","claim_photo":"null","claim_photo_data":"null","claim_url":"https://web.dev.pocketto.com.br/pocketto#!/confirma/eqworxh","code":"eqworxh","amount":10,"amount_f":"R$ 10,00","amount_original":"null","amount_original_f":"R$ 0,00","claim_date":"null","claim_date_f":"null","due_date":"\"2018-10-01T00:00:00+00:00\"","due_date_f":"01/10/2018","method_data":"null","description":"null","transaction_id":"null","uid":"null","created_at":"\"2018-06-29T19:19:44+00:00\"","created_at_f":"29/06/2018","updated_at":"\"2018-06-29T19:19:44+00:00\"","updated_at_f":"29/06/2018","deleted_at":"null","deleted_at_f":"null","status":"pending","refused_reason":"null","external_campaign_title":"null","error":"","extra_data_1":"Vini","extra_data_2":"Vini 2","installments":"null","debit_card_url":"null","method":{"id":2,"name":"Cartão de Crédito","gateway":"cielo","type":"credit_card","status":1}}}'
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: Payments - Create
@@ -4900,6 +5019,828 @@ definitions:
     - email
     - cnpj
     - mobile
+  Payments  create:
+    title: Payments - Create
+    example:
+      success: true
+      error: ''
+      current_time: '"2018-06-29T19:19:44+00:00"'
+      payment:
+        id: 5380
+        payment_id: null
+        user_id: 162
+        user:
+          id: 162
+          photo_file_id: null
+          photo_file_url: null
+          photo: null
+          card_front_file_id: null
+          card_front_file_url: null
+          card_front: null
+          card_back_file_id: null
+          card_back_file_url: null
+          card_back: null
+          qrcode_file_id: null
+          qrcode_file_url: null
+          qrcode: null
+          category: null
+          name: Vinicius Matteus
+          email: vmatteus@gmail.com
+          code: CNG9S
+          cpf: null
+          cnpj: 27433043000117
+          gender: null
+          birthdate: null
+          birthdate_f: null
+          address_number: null
+          address_complement: null
+          address_zipcode: null
+          address_state: null
+          address_city: null
+          address_district: null
+          address_street: null
+          address_lat: null
+          address_lng: null
+          geolocation: null
+          recurring: false
+          recurring_day_month: null
+          recurring_amount: null
+          recurring_amount_f: null
+          require_fill: true
+          status: true
+          mobile: +5551981332395
+          created_at: '"2018-02-26T18:35:37+00:00"'
+          created_at_f: 26/02/2018
+          updated_at: '"2018-02-26T18:35:37+00:00"'
+          updated_at_f: 26/02/2018
+          deleted_at: null
+          deleted_at_f: null
+        owner_id: 3
+        owner:
+          id: 3
+          name: Pocketto
+          email: admin@pocketto.com.br
+          role: S
+          status: 1
+          created_at: '"2017-03-21T13:31:15+00:00"'
+          created_at_f: 21/03/2017
+          updated_at: '"2017-12-20T17:02:31+00:00"'
+          updated_at_f: 20/12/2017
+        campaign_id: null
+        campaign: null
+        method_id: 2
+        doc_file_id: null
+        doc_file_url: null
+        doc: null
+        doc_file_vert_id: null
+        doc_file_vert_url: null
+        doc_vert: null
+        doc_file_horiz_id: null
+        doc_file_horiz_url: null
+        doc_horiz: null
+        claim_photo_file_id: null
+        claim_photo_file_url: null
+        claim_photo: null
+        claim_photo_data: null
+        claim_url: https://web.dev.pocketto.com.br/pocketto#!/confirma/eqworxh
+        code: eqworxh
+        amount: 10
+        amount_f: R$ 10,00
+        amount_original: null
+        amount_original_f: R$ 0,00
+        claim_date: null
+        claim_date_f: null
+        due_date: '"2018-10-01T00:00:00+00:00"'
+        due_date_f: 01/10/2018
+        method_data: null
+        description: null
+        transaction_id: null
+        uid: null
+        created_at: '"2018-06-29T19:19:44+00:00"'
+        created_at_f: 29/06/2018
+        updated_at: '"2018-06-29T19:19:44+00:00"'
+        updated_at_f: 29/06/2018
+        deleted_at: null
+        deleted_at_f: null
+        status: pending
+        refused_reason: null
+        external_campaign_title: null
+        error: ''
+        extra_data_1: Vini
+        extra_data_2: Vini 2
+        installments: null
+        debit_card_url: null
+        method:
+          id: 2
+          name: Cartão de Crédito
+          gateway: cielo
+          type: credit_card
+          status: 1
+    type: object
+    properties:
+      success:
+        description: ''
+        example: true
+        type: boolean
+      error:
+        description: ''
+        type: string
+      current_time:
+        description: ''
+        example: 6/29/2018 7:19:44 PM
+        type: string
+      payment:
+        $ref: '#/definitions/Payment'
+    required:
+    - success
+    - error
+    - current_time
+    - payment
+  Payment:
+    title: Payment
+    example:
+      id: 5380
+      payment_id: null
+      user_id: 162
+      user:
+        id: 162
+        photo_file_id: null
+        photo_file_url: null
+        photo: null
+        card_front_file_id: null
+        card_front_file_url: null
+        card_front: null
+        card_back_file_id: null
+        card_back_file_url: null
+        card_back: null
+        qrcode_file_id: null
+        qrcode_file_url: null
+        qrcode: null
+        category: null
+        name: Vinicius Matteus
+        email: vmatteus@gmail.com
+        code: CNG9S
+        cpf: null
+        cnpj: 27433043000117
+        gender: null
+        birthdate: null
+        birthdate_f: null
+        address_number: null
+        address_complement: null
+        address_zipcode: null
+        address_state: null
+        address_city: null
+        address_district: null
+        address_street: null
+        address_lat: null
+        address_lng: null
+        geolocation: null
+        recurring: false
+        recurring_day_month: null
+        recurring_amount: null
+        recurring_amount_f: null
+        require_fill: true
+        status: true
+        mobile: +5551981332395
+        created_at: '"2018-02-26T18:35:37+00:00"'
+        created_at_f: 26/02/2018
+        updated_at: '"2018-02-26T18:35:37+00:00"'
+        updated_at_f: 26/02/2018
+        deleted_at: null
+        deleted_at_f: null
+      owner_id: 3
+      owner:
+        id: 3
+        name: Pocketto
+        email: admin@pocketto.com.br
+        role: S
+        status: 1
+        created_at: '"2017-03-21T13:31:15+00:00"'
+        created_at_f: 21/03/2017
+        updated_at: '"2017-12-20T17:02:31+00:00"'
+        updated_at_f: 20/12/2017
+      campaign_id: null
+      campaign: null
+      method_id: 2
+      doc_file_id: null
+      doc_file_url: null
+      doc: null
+      doc_file_vert_id: null
+      doc_file_vert_url: null
+      doc_vert: null
+      doc_file_horiz_id: null
+      doc_file_horiz_url: null
+      doc_horiz: null
+      claim_photo_file_id: null
+      claim_photo_file_url: null
+      claim_photo: null
+      claim_photo_data: null
+      claim_url: https://web.dev.pocketto.com.br/pocketto#!/confirma/eqworxh
+      code: eqworxh
+      amount: 10
+      amount_f: R$ 10,00
+      amount_original: null
+      amount_original_f: R$ 0,00
+      claim_date: null
+      claim_date_f: null
+      due_date: '"2018-10-01T00:00:00+00:00"'
+      due_date_f: 01/10/2018
+      method_data: null
+      description: null
+      transaction_id: null
+      uid: null
+      created_at: '"2018-06-29T19:19:44+00:00"'
+      created_at_f: 29/06/2018
+      updated_at: '"2018-06-29T19:19:44+00:00"'
+      updated_at_f: 29/06/2018
+      deleted_at: null
+      deleted_at_f: null
+      status: pending
+      refused_reason: null
+      external_campaign_title: null
+      error: ''
+      extra_data_1: Vini
+      extra_data_2: Vini 2
+      installments: null
+      debit_card_url: null
+      method:
+        id: 2
+        name: Cartão de Crédito
+        gateway: cielo
+        type: credit_card
+        status: 1
+    type: object
+    properties:
+      id:
+        description: ''
+        example: 5380
+        type: integer
+        format: int32
+      payment_id:
+        description: ''
+        type: string
+      user_id:
+        description: ''
+        example: 162
+        type: integer
+        format: int32
+      user:
+        $ref: '#/definitions/User23'
+      owner_id:
+        description: ''
+        example: 3
+        type: integer
+        format: int32
+      owner:
+        $ref: '#/definitions/Owner'
+      campaign_id:
+        description: ''
+        type: string
+      campaign:
+        description: ''
+        type: string
+      method_id:
+        description: ''
+        example: 2
+        type: integer
+        format: int32
+      doc_file_id:
+        description: ''
+        type: string
+      doc_file_url:
+        description: ''
+        type: string
+      doc:
+        description: ''
+        type: string
+      doc_file_vert_id:
+        description: ''
+        type: string
+      doc_file_vert_url:
+        description: ''
+        type: string
+      doc_vert:
+        description: ''
+        type: string
+      doc_file_horiz_id:
+        description: ''
+        type: string
+      doc_file_horiz_url:
+        description: ''
+        type: string
+      doc_horiz:
+        description: ''
+        type: string
+      claim_photo_file_id:
+        description: ''
+        type: string
+      claim_photo_file_url:
+        description: ''
+        type: string
+      claim_photo:
+        description: ''
+        type: string
+      claim_photo_data:
+        description: ''
+        type: string
+      claim_url:
+        description: ''
+        example: https://web.dev.pocketto.com.br/pocketto#!/confirma/eqworxh
+        type: string
+      code:
+        description: ''
+        example: eqworxh
+        type: string
+      amount:
+        description: ''
+        example: 10
+        type: integer
+        format: int32
+      amount_f:
+        description: ''
+        example: R$ 10,00
+        type: string
+      amount_original:
+        description: ''
+        type: string
+      amount_original_f:
+        description: ''
+        example: R$ 0,00
+        type: string
+      claim_date:
+        description: ''
+        type: string
+      claim_date_f:
+        description: ''
+        type: string
+      due_date:
+        description: ''
+        example: 10/1/2018 12:00:00 AM
+        type: string
+      due_date_f:
+        description: ''
+        example: 01/10/2018
+        type: string
+      method_data:
+        description: ''
+        type: string
+      description:
+        description: ''
+        type: string
+      transaction_id:
+        description: ''
+        type: string
+      uid:
+        description: ''
+        type: string
+      created_at:
+        description: ''
+        example: 6/29/2018 7:19:44 PM
+        type: string
+      created_at_f:
+        description: ''
+        example: 29/06/2018
+        type: string
+      updated_at:
+        description: ''
+        example: 6/29/2018 7:19:44 PM
+        type: string
+      updated_at_f:
+        description: ''
+        example: 29/06/2018
+        type: string
+      deleted_at:
+        description: ''
+        type: string
+      deleted_at_f:
+        description: ''
+        type: string
+      status:
+        description: ''
+        example: pending
+        type: string
+      refused_reason:
+        description: ''
+        type: string
+      external_campaign_title:
+        description: ''
+        type: string
+      error:
+        description: ''
+        type: string
+      extra_data_1:
+        description: ''
+        example: Vini
+        type: string
+      extra_data_2:
+        description: ''
+        example: Vini 2
+        type: string
+      installments:
+        description: ''
+        type: string
+      debit_card_url:
+        description: ''
+        type: string
+      method:
+        $ref: '#/definitions/Method'
+    required:
+    - id
+    - payment_id
+    - user_id
+    - user
+    - owner_id
+    - owner
+    - campaign_id
+    - campaign
+    - method_id
+    - doc_file_id
+    - doc_file_url
+    - doc
+    - doc_file_vert_id
+    - doc_file_vert_url
+    - doc_vert
+    - doc_file_horiz_id
+    - doc_file_horiz_url
+    - doc_horiz
+    - claim_photo_file_id
+    - claim_photo_file_url
+    - claim_photo
+    - claim_photo_data
+    - claim_url
+    - code
+    - amount
+    - amount_f
+    - amount_original
+    - amount_original_f
+    - claim_date
+    - claim_date_f
+    - due_date
+    - due_date_f
+    - method_data
+    - description
+    - transaction_id
+    - uid
+    - created_at
+    - created_at_f
+    - updated_at
+    - updated_at_f
+    - deleted_at
+    - deleted_at_f
+    - status
+    - refused_reason
+    - external_campaign_title
+    - error
+    - extra_data_1
+    - extra_data_2
+    - installments
+    - debit_card_url
+    - method
+  User23:
+    title: User23
+    example:
+      id: 162
+      photo_file_id: 
+      photo_file_url: 
+      photo: 
+      card_front_file_id: 
+      card_front_file_url: 
+      card_front: 
+      card_back_file_id: 
+      card_back_file_url: 
+      card_back: 
+      qrcode_file_id: 
+      qrcode_file_url: 
+      qrcode: 
+      category: 
+      name: Vinicius Matteus
+      email: vmatteus@gmail.com
+      code: CNG9S
+      cpf: 
+      cnpj: 27433043000117
+      gender: 
+      birthdate: 
+      birthdate_f: 
+      address_number: 
+      address_complement: 
+      address_zipcode: 
+      address_state: 
+      address_city: 
+      address_district: 
+      address_street: 
+      address_lat: 
+      address_lng: 
+      geolocation: 
+      recurring: false
+      recurring_day_month: 
+      recurring_amount: 
+      recurring_amount_f: 
+      require_fill: true
+      status: true
+      mobile: +5551981332395
+      created_at: 2018-02-26T18:35:37.0000000+00:00
+      created_at_f: 26/02/2018
+      updated_at: 2018-02-26T18:35:37.0000000+00:00
+      updated_at_f: 26/02/2018
+      deleted_at: 
+      deleted_at_f: 
+    type: object
+    properties:
+      id:
+        description: ''
+        example: 162
+        type: integer
+        format: int32
+      photo_file_id:
+        description: ''
+        type: string
+      photo_file_url:
+        description: ''
+        type: string
+      photo:
+        description: ''
+        type: string
+      card_front_file_id:
+        description: ''
+        type: string
+      card_front_file_url:
+        description: ''
+        type: string
+      card_front:
+        description: ''
+        type: string
+      card_back_file_id:
+        description: ''
+        type: string
+      card_back_file_url:
+        description: ''
+        type: string
+      card_back:
+        description: ''
+        type: string
+      qrcode_file_id:
+        description: ''
+        type: string
+      qrcode_file_url:
+        description: ''
+        type: string
+      qrcode:
+        description: ''
+        type: string
+      category:
+        description: ''
+        type: string
+      name:
+        description: ''
+        example: Vinicius Matteus
+        type: string
+      email:
+        description: ''
+        example: vmatteus@gmail.com
+        type: string
+      code:
+        description: ''
+        example: CNG9S
+        type: string
+      cpf:
+        description: ''
+        type: string
+      cnpj:
+        description: ''
+        example: 27433043000117
+        type: string
+      gender:
+        description: ''
+        type: string
+      birthdate:
+        description: ''
+        type: string
+      birthdate_f:
+        description: ''
+        type: string
+      address_number:
+        description: ''
+        type: string
+      address_complement:
+        description: ''
+        type: string
+      address_zipcode:
+        description: ''
+        type: string
+      address_state:
+        description: ''
+        type: string
+      address_city:
+        description: ''
+        type: string
+      address_district:
+        description: ''
+        type: string
+      address_street:
+        description: ''
+        type: string
+      address_lat:
+        description: ''
+        type: string
+      address_lng:
+        description: ''
+        type: string
+      geolocation:
+        description: ''
+        type: string
+      recurring:
+        description: ''
+        example: false
+        type: boolean
+      recurring_day_month:
+        description: ''
+        type: string
+      recurring_amount:
+        description: ''
+        type: string
+      recurring_amount_f:
+        description: ''
+        type: string
+      require_fill:
+        description: ''
+        example: true
+        type: boolean
+      status:
+        description: ''
+        example: true
+        type: boolean
+      mobile:
+        description: ''
+        example: +5551981332395
+        type: string
+      created_at:
+        description: ''
+        example: 2/26/2018 6:35:37 PM
+        type: string
+      created_at_f:
+        description: ''
+        example: 26/02/2018
+        type: string
+      updated_at:
+        description: ''
+        example: 2/26/2018 6:35:37 PM
+        type: string
+      updated_at_f:
+        description: ''
+        example: 26/02/2018
+        type: string
+      deleted_at:
+        description: ''
+        type: string
+      deleted_at_f:
+        description: ''
+        type: string
+    required:
+    - id
+    - photo_file_id
+    - photo_file_url
+    - photo
+    - card_front_file_id
+    - card_front_file_url
+    - card_front
+    - card_back_file_id
+    - card_back_file_url
+    - card_back
+    - qrcode_file_id
+    - qrcode_file_url
+    - qrcode
+    - category
+    - name
+    - email
+    - code
+    - cpf
+    - cnpj
+    - gender
+    - birthdate
+    - birthdate_f
+    - address_number
+    - address_complement
+    - address_zipcode
+    - address_state
+    - address_city
+    - address_district
+    - address_street
+    - address_lat
+    - address_lng
+    - geolocation
+    - recurring
+    - recurring_day_month
+    - recurring_amount
+    - recurring_amount_f
+    - require_fill
+    - status
+    - mobile
+    - created_at
+    - created_at_f
+    - updated_at
+    - updated_at_f
+    - deleted_at
+    - deleted_at_f
+  Owner:
+    title: Owner
+    example:
+      id: 3
+      name: Pocketto
+      email: admin@pocketto.com.br
+      role: S
+      status: 1
+      created_at: 2017-03-21T13:31:15.0000000+00:00
+      created_at_f: 21/03/2017
+      updated_at: 2017-12-20T17:02:31.0000000+00:00
+      updated_at_f: 20/12/2017
+    type: object
+    properties:
+      id:
+        description: ''
+        example: 3
+        type: integer
+        format: int32
+      name:
+        description: ''
+        example: Pocketto
+        type: string
+      email:
+        description: ''
+        example: admin@pocketto.com.br
+        type: string
+      role:
+        description: ''
+        example: S
+        type: string
+      status:
+        description: ''
+        example: 1
+        type: integer
+        format: int32
+      created_at:
+        description: ''
+        example: 3/21/2017 1:31:15 PM
+        type: string
+      created_at_f:
+        description: ''
+        example: 21/03/2017
+        type: string
+      updated_at:
+        description: ''
+        example: 12/20/2017 5:02:31 PM
+        type: string
+      updated_at_f:
+        description: ''
+        example: 20/12/2017
+        type: string
+    required:
+    - id
+    - name
+    - email
+    - role
+    - status
+    - created_at
+    - created_at_f
+    - updated_at
+    - updated_at_f
+  Method:
+    title: Method
+    example:
+      id: 2
+      name: Cartão de Crédito
+      gateway: cielo
+      type: credit_card
+      status: 1
+    type: object
+    properties:
+      id:
+        description: ''
+        example: 2
+        type: integer
+        format: int32
+      name:
+        description: ''
+        example: Cartão de Crédito
+        type: string
+      gateway:
+        description: ''
+        example: cielo
+        type: string
+      type:
+        description: ''
+        example: credit_card
+        type: string
+      status:
+        description: ''
+        example: 1
+        type: integer
+        format: int32
+    required:
+    - id
+    - name
+    - gateway
+    - type
+    - status
   Settings  updaterequest:
     title: Settings - UpdateRequest
     example:

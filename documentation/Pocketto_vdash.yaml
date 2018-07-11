@@ -70,12 +70,6 @@ paths:
       produces:
       - application/json
       parameters:
-      - name: Body
-        in: body
-        required: true
-        description: ''
-        schema:
-          $ref: '#/definitions/Api keys  createrequest'
       - name: Account
         in: header
         required: true
@@ -86,6 +80,12 @@ paths:
         required: true
         type: string
         description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/Api keys  createrequest'
       responses:
         200:
           description: ''
@@ -96,8 +96,8 @@ paths:
           method: POST
           uri: /api_keys
           headers:
-            Content-Type: application/json
             Account: pocketto
+            Content-Type: application/json
           body: '{"name":"teste_100"}'
         expectedResponse:
           x-allowExtraHeaders: true
@@ -172,12 +172,6 @@ paths:
       produces:
       - application/json
       parameters:
-      - name: Body
-        in: body
-        required: true
-        description: ''
-        schema:
-          $ref: '#/definitions/Api keys  updaterequest'
       - name: Account
         in: header
         required: true
@@ -188,6 +182,12 @@ paths:
         required: true
         type: string
         description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/Api keys  updaterequest'
       responses:
         200:
           description: ''
@@ -198,8 +198,8 @@ paths:
           method: PUT
           uri: /api_keys/0cb476ab3aa6820ab36ba27e04226d338f4cd201c714ef1c662bc4c1b5c5a0cfb40b2140f37ce276
           headers:
-            Content-Type: application/json
             Account: pocketto
+            Content-Type: application/json
           body: '{"name":"My Api Key"}'
         expectedResponse:
           x-allowExtraHeaders: true
@@ -315,12 +315,6 @@ paths:
       produces:
       - application/json
       parameters:
-      - name: Body
-        in: body
-        required: true
-        description: ''
-        schema:
-          $ref: '#/definitions/Admin users  createrequest'
       - name: Account
         in: header
         required: true
@@ -331,6 +325,12 @@ paths:
         required: true
         type: string
         description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/Admin users  createrequest'
       responses:
         200:
           description: ''
@@ -341,8 +341,8 @@ paths:
           method: POST
           uri: /admin_users
           headers:
-            Content-Type: application/json
             Account: pocketto
+            Content-Type: application/json
           body: '{"name":"Representante","email":"representante@okpago.com.br","password":"pocketto","role":"r","status":1}'
         expectedResponse:
           x-allowExtraHeaders: true
@@ -412,12 +412,6 @@ paths:
       produces:
       - application/json
       parameters:
-      - name: Body
-        in: body
-        required: true
-        description: ''
-        schema:
-          $ref: '#/definitions/Admin users  updaterequest'
       - name: Account
         in: header
         required: true
@@ -428,6 +422,12 @@ paths:
         required: true
         type: string
         description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/Admin users  updaterequest'
       responses:
         200:
           description: ''
@@ -438,8 +438,8 @@ paths:
           method: PUT
           uri: /admin_users/5
           headers:
-            Content-Type: application/json
             Account: pocketto
+            Content-Type: application/json
           body: '{"name":"Henrique Haas","email":"henrique@haax.com.br","password":"haas007","role":"a","status":1}'
         expectedResponse:
           x-allowExtraHeaders: true
@@ -556,12 +556,6 @@ paths:
       produces:
       - application/json
       parameters:
-      - name: Body
-        in: body
-        required: true
-        description: ''
-        schema:
-          $ref: '#/definitions/Bank accounts  createrequest'
       - name: Account
         in: header
         required: true
@@ -572,6 +566,12 @@ paths:
         required: true
         type: string
         description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/Bank accounts  createrequest'
       responses:
         200:
           description: ''
@@ -582,8 +582,8 @@ paths:
           method: POST
           uri: /bank_accounts
           headers:
-            Content-Type: application/json
             Account: pocketto
+            Content-Type: application/json
           body: '{"bank":"banrisul","name":"Banrisul","agency":"0123","number":"0123"}'
         expectedResponse:
           x-allowExtraHeaders: true
@@ -653,12 +653,6 @@ paths:
       produces:
       - application/json
       parameters:
-      - name: Body
-        in: body
-        required: true
-        description: ''
-        schema:
-          $ref: '#/definitions/Bank accounts  updaterequest'
       - name: Account
         in: header
         required: true
@@ -669,6 +663,12 @@ paths:
         required: true
         type: string
         description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/Bank accounts  updaterequest'
       responses:
         200:
           description: ''
@@ -679,8 +679,8 @@ paths:
           method: PUT
           uri: /bank_accounts/4
           headers:
-            Content-Type: application/json
             Account: pocketto
+            Content-Type: application/json
           body: '{"bank":"banrisul","name":"Banrisul","agency":"0123","number":"0123"}'
         expectedResponse:
           x-allowExtraHeaders: true
@@ -757,13 +757,13 @@ paths:
       consumes:
       - application/x-www-form-urlencoded
       parameters:
-      - name: input_data
-        in: formData
+      - name: Account
+        in: header
         required: true
         type: string
         description: ''
-      - name: Account
-        in: header
+      - name: input_data
+        in: formData
         required: true
         type: string
         description: ''
@@ -777,8 +777,8 @@ paths:
           method: POST
           uri: /bank_accounts/2/transactions
           headers:
-            Content-Type: application/x-www-form-urlencoded
             Account: pocketto
+            Content-Type: application/x-www-form-urlencoded
           body: input_data=
         expectedResponse:
           x-allowExtraHeaders: true
@@ -1135,17 +1135,17 @@ paths:
       produces:
       - application/json
       parameters:
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
       - name: Body
         in: body
         required: true
         description: ''
         schema:
           $ref: '#/definitions/Campaigns  createrequest'
-      - name: Account
-        in: header
-        required: true
-        type: string
-        description: ''
       responses:
         200:
           description: ''
@@ -1156,8 +1156,8 @@ paths:
           method: POST
           uri: /campaigns
           headers:
-            Content-Type: application/json
             Account: pocketto
+            Content-Type: application/json
           body: '{"name":"Vini Campanha agora vai","description":"Camp desc camp desc","image_bg_file_id":1,"target_total":10,"target_total_users":5,"payment_amount":100,"recurring":true,"recurring_max_times":10,"end_date":"2017-05-30","status":1}'
         expectedResponse:
           x-allowExtraHeaders: true
@@ -1227,17 +1227,17 @@ paths:
       produces:
       - application/json
       parameters:
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
       - name: Body
         in: body
         required: true
         description: ''
         schema:
           $ref: '#/definitions/Campaigns  updaterequest'
-      - name: Account
-        in: header
-        required: true
-        type: string
-        description: ''
       responses:
         200:
           description: ''
@@ -1248,8 +1248,8 @@ paths:
           method: PUT
           uri: /campaigns/3
           headers:
-            Content-Type: application/json
             Account: pocketto
+            Content-Type: application/json
           body: '{"name":"Campanha 1","description":"Camp desc camp desc","image_bg_file_id":1,"target_total":10,"target_total_users":1,"payment_amount":100,"recurring":true,"recurring_max_times":10,"end_date":null,"status":1}'
         expectedResponse:
           x-allowExtraHeaders: true
@@ -1620,6 +1620,11 @@ paths:
       consumes:
       - application/x-www-form-urlencoded
       parameters:
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
       - name: input_type
         in: formData
         required: true
@@ -1627,11 +1632,6 @@ paths:
         description: ''
       - name: input_data
         in: formData
-        required: true
-        type: string
-        description: ''
-      - name: Account
-        in: header
         required: true
         type: string
         description: ''
@@ -1645,8 +1645,8 @@ paths:
           method: POST
           uri: /files
           headers:
-            Content-Type: application/x-www-form-urlencoded
             Account: pocketto
+            Content-Type: application/x-www-form-urlencoded
           body: input_type=base64&input_data=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GpnFbauaM6NHenQp4pqdU71G2jWCa24qUTvpv2rxbTfpdM2remvWmO9NFd6cW33pxRX7orzV+a90dTU1au9b9DUWtXvT1p3p1+ytql26N+jxqVucV904tas3rbU6OXfWa9VBip70YrvUXreprbTvW1YjnXxnSKviLdM37aW0271tpvXitq2rPivdb4rvXzTW1eqxgqbV6r3XivqvOnet6vqcVaaxmvVGhW21RXvXbr/qvPnTv0GNC3mvOl5renNfqmi1tWj3Xer+qK308U/6aNGs3q+jVudFI0t/dFNeK7ViJa813r4qL1at68VzanOs12dZtfSanSa7Wqe/RudDtU6M0UaTes+an5qddqKY9aTtW9Z5KKtmnSdOIr3Xor3U1a2hXu9TXerOjVttfNbU6fX4d6+9PNfrXxoVnGvfonS01+63qa9ab1v0TU1tXet9LeKx38VhjRnTattI1PGmb9RY6L/g8ac1vXjpK33o120a7fFb6/dTW+kdDhjTbo+qy99IqdPvRorzV/8AOkUcadqMWry131Ojetuj317aFb7afvXbT9aFfGu2j+DzrvXau2u1bVOk9tPOvjQ9Vtq+en9013q2m1RW2p0bVv3pqeiNN/8ArXtW+m3QfWkfg33r1r3t0TW2m2m1eanpnv0nR9aTpNbaTp5r3rto1NGjOs9LRpvW3Q6HW/Wvmv1W/Tvqab140209136PfVtrPTtTp7o818/g2q9etNur9aXjV026fNduh0M1NRp5am1fqvXR4p6d+japrfOnuo13q/Rvoab6bafr8G2rrv1x0W03p18dG3TFeqnRrau2u3Rtj8HnrnrPwdtffTOk20dZ6Jrat6Pxb6yzr71nXz+SNO2r+Dzp20jTbq302rxo/g+dNtN62oz2rfo3126jSa9fja2przU6bV6qOmOn4rt0b1v0b06GOn76N/wbdM9U679D+Htpv+X30lb06T+DfSdd/wAeGiYkw94qTebiH1NcwZErnJa9SIOOAbeNh7fNS9lmYnHZh3rFFe5Fa2SaQBUHKdG//wBPeob0bcG8crbe4oQlrtl2Ez6PdKuwUW/BdPLVnMnYvfe9XJivOGfipBChLmIY7dioOUSYWE8ExT0RoiUUiIRTKxi90KlCJVopgAQAlgTKc71IhBjYH1avOhXxpt+Xfo3rfGvrTfTtUab1v1bdfbqQ33mt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KEcqBgJxQku390C0okYJv+k1e2EpG5fAz9HNRBZ2PB+PHOQqxkY7BkyzgqQtoSJmBMxtjS03o2qoSsmwBfMmLNJgLbmR2/8AIpzZtr4+J6EjdAF5KAL2jLTpuvnQhPuxHFKF9wLfpOjOWM0DKAXjla3D0A2RelFm2vj4nXe9kOTihpHroleIuePunF08tx+rR6oEyLcCT5oWZKBSkEV6e/7owMKBhF7FyC6+YauGApFEsTEKFuKTtQh3LjMzaTamKbGc/wB6qmAhOZ3UaIbyzyRIu3wWiGMVZBETGx8R9U3h0tM/o6T5WJvv2O2ba2puNBGSW6na1Tn0IBgeA/miARBEy/KaFDI7zZ+6j5WDXYs49UjrK0uZIaswoIgo4j/2lFolRRNogRAqJoRIyEzAgXts4psTLE/74x+MegbJ+lWEW6wjXO4BlveMTUsIOVJAmVjeLlr5u0ciTS1s71ABE2f/ALguYECxea/97QZEtDR0kYLTtr5V/wD4d//aAAwDAQACAAMAAAAQAAAAQAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAMU88sso4Is8s808k088s48888I4o840s888g8w8o8s08cYM08wcs808o8o080scs88888888888888888888888888888888888888888888888888888888888888888888887zmX8888888888848048884888k8887f8APPNfON3PNePPPPO9/NPPPPPPPAAAAPAAAAAAE6gAHqQEQgDkABDh87wAAAAAALQAABwiB/gACihAwgBrwKlemgQAAAAAACQAAFKgEN4wC4kQLgEkAIb5iUAAAAAAAMoQAAFAoADSaAIAPRDQgQM4Y4AAAAAAAAP7QjtkAAEAIAAAEAMMAAAAAAAAAACjBzigjiigjzhhgjjihhigDgByjiwjAFGMGNOMNONNPsMMMeMMOMMJMOOsMPFOQEIACANpAFeKvHQE1xvFAyANKAIVz+IQYPPPCPFHjnPMvJ/H7NeBo0NOvKYFbevPPPPPOfLvPHvNumrIrJLBoeLKvK3VPDY/PPPP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ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA=
         expectedResponse:
           x-allowExtraHeaders: true
@@ -1718,6 +1718,16 @@ paths:
       consumes:
       - application/x-www-form-urlencoded
       parameters:
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Content-Type
+        in: header
+        required: true
+        type: string
+        description: ''
       - name: username
         in: formData
         required: true
@@ -1748,16 +1758,6 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Account
-        in: header
-        required: true
-        type: string
-        description: ''
-      - name: Content-Type
-        in: header
-        required: true
-        type: string
-        description: ''
       responses:
         200:
           description: ''
@@ -1768,8 +1768,8 @@ paths:
           method: POST
           uri: /login
           headers:
-            Content-Type: application/x-www-form-urlencoded
             Account: pocketto
+            Content-Type: application/json
           body: username=admin@pocketto.com.br&password=pocketto&client_id={{client_id}}&grant_type=password&client_secret={{client_secret}}&scope=
         expectedResponse:
           x-allowExtraHeaders: true
@@ -1797,12 +1797,6 @@ paths:
       produces:
       - application/json
       parameters:
-      - name: Body
-        in: body
-        required: true
-        description: ''
-        schema:
-          $ref: '#/definitions/Login  recoveryrequest'
       - name: Account
         in: header
         required: true
@@ -1813,6 +1807,12 @@ paths:
         required: true
         type: string
         description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/Login  recoveryrequest'
       responses:
         200:
           description: ''
@@ -1823,8 +1823,8 @@ paths:
           method: POST
           uri: /login/recovery
           headers:
-            Content-Type: application/json
             Account: pocketto
+            Content-Type: application/json
           body: '{"email":"{{email}}","redirect_url":"http://pocketto.com.br"}'
         expectedResponse:
           x-allowExtraHeaders: true
@@ -1852,12 +1852,6 @@ paths:
       produces:
       - application/json
       parameters:
-      - name: Body
-        in: body
-        required: true
-        description: ''
-        schema:
-          $ref: '#/definitions/Login  resetrequest'
       - name: Account
         in: header
         required: true
@@ -1868,6 +1862,12 @@ paths:
         required: true
         type: string
         description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/Login  resetrequest'
       responses:
         200:
           description: ''
@@ -1878,8 +1878,8 @@ paths:
           method: PUT
           uri: /login/reset
           headers:
-            Content-Type: application/json
             Account: pocketto
+            Content-Type: application/json
           body: '{"token":"d3a054c6cc54c3f0b16777fec00a533a0e4f92e30aa28e3bacddd4596afb2a9c","password":"pocketto","password_confirmation":"pocketto"}'
         expectedResponse:
           x-allowExtraHeaders: true
@@ -1907,12 +1907,6 @@ paths:
       produces:
       - application/json
       parameters:
-      - name: Body
-        in: body
-        required: true
-        description: ''
-        schema:
-          type: object
       - name: Account
         in: header
         required: true
@@ -1923,6 +1917,12 @@ paths:
         required: true
         type: string
         description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          type: object
       responses:
         200:
           description: ''
@@ -1933,8 +1933,8 @@ paths:
           method: POST
           uri: /logout
           headers:
-            Content-Type: application/json
             Account: pocketto
+            Content-Type: application/json
           body: '{}'
         expectedResponse:
           x-allowExtraHeaders: true
@@ -2030,17 +2030,17 @@ paths:
       produces:
       - application/json
       parameters:
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
       - name: Body
         in: body
         required: true
         description: ''
         schema:
           $ref: '#/definitions/Messages  createrequest'
-      - name: Account
-        in: header
-        required: true
-        type: string
-        description: ''
       responses:
         200:
           description: ''
@@ -2051,8 +2051,8 @@ paths:
           method: POST
           uri: /messages
           headers:
-            Content-Type: application/json
             Account: pocketto
+            Content-Type: application/json
           body: '{"message_type_id":1,"title":"Título","description":"Descrição","dispatch":"now","dont_repeat":false,"targets":[{"filter":"user.id","operator":"eq","modifier":"","value":"128"}],"deliver_by":{"email":true}}'
         expectedResponse:
           x-allowExtraHeaders: true
@@ -2121,17 +2121,17 @@ paths:
       produces:
       - application/json
       parameters:
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
       - name: Body
         in: body
         required: true
         description: ''
         schema:
           $ref: '#/definitions/Messages  deleterequest'
-      - name: Account
-        in: header
-        required: true
-        type: string
-        description: ''
       responses:
         200:
           description: ''
@@ -2142,8 +2142,8 @@ paths:
           method: DELETE
           uri: /messages/2
           headers:
-            Content-Type: application/json
             Account: pocketto
+            Content-Type: application/json
           body: '{"username":"rk.fadini@gmail.com","password":"123123"}'
         expectedResponse:
           x-allowExtraHeaders: true
@@ -2171,17 +2171,17 @@ paths:
       produces:
       - application/json
       parameters:
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
       - name: Body
         in: body
         required: true
         description: ''
         schema:
           $ref: '#/definitions/Messages  cancelrequest'
-      - name: Account
-        in: header
-        required: true
-        type: string
-        description: ''
       responses:
         200:
           description: ''
@@ -2192,8 +2192,8 @@ paths:
           method: PUT
           uri: /messages/181/cancel
           headers:
-            Content-Type: application/json
             Account: pocketto
+            Content-Type: application/json
           body: '{"title":"Obrigado pela sua doacao!"}'
         expectedResponse:
           x-allowExtraHeaders: true
@@ -2262,12 +2262,6 @@ paths:
       produces:
       - application/json
       parameters:
-      - name: Body
-        in: body
-        required: true
-        description: ''
-        schema:
-          $ref: '#/definitions/Me  updaterequest'
       - name: Account
         in: header
         required: true
@@ -2278,6 +2272,12 @@ paths:
         required: true
         type: string
         description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/Me  updaterequest'
       responses:
         200:
           description: ''
@@ -2288,8 +2288,8 @@ paths:
           method: PUT
           uri: /me
           headers:
-            Content-Type: application/json
             Account: pocketto
+            Content-Type: application/json
           body: '{"name":"Henrique Haas","email":"henrique@haax.com.br","password":"haas007","role":"a","status":1}'
         expectedResponse:
           x-allowExtraHeaders: true
@@ -2358,12 +2358,6 @@ paths:
       produces:
       - application/json
       parameters:
-      - name: Body
-        in: body
-        required: true
-        description: ''
-        schema:
-          $ref: '#/definitions/Message types  createrequest'
       - name: Account
         in: header
         required: true
@@ -2374,6 +2368,12 @@ paths:
         required: true
         type: string
         description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/Message types  createrequest'
       responses:
         200:
           description: ''
@@ -2384,8 +2384,8 @@ paths:
           method: POST
           uri: /message_types
           headers:
-            Content-Type: application/json
             Account: pocketto
+            Content-Type: application/json
           body: '{"icon":"heart","name":"oi","color":"#ffffff","status":1}'
         expectedResponse:
           x-allowExtraHeaders: true
@@ -2460,12 +2460,6 @@ paths:
       produces:
       - application/json
       parameters:
-      - name: Body
-        in: body
-        required: true
-        description: ''
-        schema:
-          $ref: '#/definitions/Message types  updaterequest'
       - name: Account
         in: header
         required: true
@@ -2476,6 +2470,12 @@ paths:
         required: true
         type: string
         description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/Message types  updaterequest'
       responses:
         200:
           description: ''
@@ -2486,8 +2486,8 @@ paths:
           method: PUT
           uri: /message_types/41
           headers:
-            Content-Type: application/json
             Account: pocketto
+            Content-Type: application/json
           body: '{"icon":"heart","name":"oi","color":"#ffffff","status":1}'
         expectedResponse:
           x-allowExtraHeaders: true
@@ -2608,12 +2608,6 @@ paths:
       produces:
       - application/json
       parameters:
-      - name: Body
-        in: body
-        required: true
-        description: ''
-        schema:
-          $ref: '#/definitions/Payments  createrequest'
       - name: Account
         in: header
         required: true
@@ -2624,6 +2618,12 @@ paths:
         required: true
         type: string
         description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/Payments  createrequest'
       responses:
         200:
           description: ''
@@ -2752,8 +2752,8 @@ paths:
           method: POST
           uri: /payments
           headers:
-            Content-Type: application/json
             Account: pocketto
+            Content-Type: application/json
           body: '{"amount":"10","due_date":"2018-10-01","method_id":2,"user":{"name":"Vinicius Matteus","email":"vmatteus@gmail.com","cnpj":"27433043000117","mobile":"51981332395"},"extra_data_1":"Vini","extra_data_2":"Vini 2"}'
         expectedResponse:
           x-allowExtraHeaders: true
@@ -2908,17 +2908,17 @@ paths:
       produces:
       - application/json
       parameters:
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
       - name: Body
         in: body
         required: true
         description: ''
         schema:
           $ref: '#/definitions/Payments  updaterequest'
-      - name: Account
-        in: header
-        required: true
-        type: string
-        description: ''
       responses:
         200:
           description: ''
@@ -2929,8 +2929,8 @@ paths:
           method: PUT
           uri: /payments/7662,
           headers:
-            Content-Type: application/json
             Account: pocketto
+            Content-Type: application/json
           body: '{"amount":100,"due_date":"2018-02-20"}'
         expectedResponse:
           x-allowExtraHeaders: true
@@ -3090,12 +3090,6 @@ paths:
       produces:
       - application/json
       parameters:
-      - name: Body
-        in: body
-        required: true
-        description: ''
-        schema:
-          $ref: '#/definitions/Settings  updaterequest'
       - name: Account
         in: header
         required: true
@@ -3106,6 +3100,12 @@ paths:
         required: true
         type: string
         description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/Settings  updaterequest'
       responses:
         200:
           description: ''
@@ -3116,8 +3116,8 @@ paths:
           method: PUT
           uri: /settings/invite_sms
           headers:
-            Content-Type: application/json
             Account: pocketto
+            Content-Type: application/json
           body: '{"name":"invite_sms_name","value":"new_value","public":0,"advanced":0}'
         expectedResponse:
           x-allowExtraHeaders: true
@@ -3145,12 +3145,6 @@ paths:
       produces:
       - application/json
       parameters:
-      - name: Body
-        in: body
-        required: true
-        description: ''
-        schema:
-          $ref: '#/definitions/Settings  update allrequest'
       - name: Account
         in: header
         required: true
@@ -3161,6 +3155,12 @@ paths:
         required: true
         type: string
         description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/Settings  update allrequest'
       responses:
         200:
           description: ''
@@ -3171,8 +3171,8 @@ paths:
           method: PATCH
           uri: /settings
           headers:
-            Content-Type: application/json
             Account: pocketto
+            Content-Type: application/json
           body: '{"settings":[{"name":"invite_sms","value":"new_value"}]}'
         expectedResponse:
           x-allowExtraHeaders: true
@@ -3283,12 +3283,6 @@ paths:
       produces:
       - application/json
       parameters:
-      - name: Body
-        in: body
-        required: true
-        description: ''
-        schema:
-          $ref: '#/definitions/User categories  createrequest'
       - name: Account
         in: header
         required: true
@@ -3299,6 +3293,12 @@ paths:
         required: true
         type: string
         description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/User categories  createrequest'
       responses:
         200:
           description: ''
@@ -3309,8 +3309,8 @@ paths:
           method: POST
           uri: /user_categories
           headers:
-            Content-Type: application/json
             Account: pocketto
+            Content-Type: application/json
           body: '{"name":"Igreja A"}'
         expectedResponse:
           x-allowExtraHeaders: true
@@ -3386,12 +3386,6 @@ paths:
       produces:
       - application/json
       parameters:
-      - name: Body
-        in: body
-        required: true
-        description: ''
-        schema:
-          $ref: '#/definitions/User categories  updaterequest'
       - name: Account
         in: header
         required: true
@@ -3402,6 +3396,12 @@ paths:
         required: true
         type: string
         description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/User categories  updaterequest'
       responses:
         200:
           description: ''
@@ -3412,8 +3412,8 @@ paths:
           method: PUT
           uri: /user_categories/3
           headers:
-            Content-Type: application/json
             Account: pocketto
+            Content-Type: application/json
           body: '{"name":"Igreja B"}'
         expectedResponse:
           x-allowExtraHeaders: true
@@ -3530,12 +3530,6 @@ paths:
       produces:
       - application/json
       parameters:
-      - name: Body
-        in: body
-        required: true
-        description: ''
-        schema:
-          $ref: '#/definitions/Webhooks  createrequest'
       - name: Account
         in: header
         required: true
@@ -3546,6 +3540,12 @@ paths:
         required: true
         type: string
         description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/Webhooks  createrequest'
       responses:
         200:
           description: ''
@@ -3556,8 +3556,8 @@ paths:
           method: POST
           uri: /webhooks
           headers:
-            Content-Type: application/json
             Account: pocketto
+            Content-Type: application/json
           body: '{"url":"http://google.com","event":"payment_cancelled"}'
         expectedResponse:
           x-allowExtraHeaders: true
@@ -3680,12 +3680,6 @@ paths:
       produces:
       - application/json
       parameters:
-      - name: Body
-        in: body
-        required: true
-        description: ''
-        schema:
-          $ref: '#/definitions/Webhooks  updaterequest'
       - name: Account
         in: header
         required: true
@@ -3696,6 +3690,12 @@ paths:
         required: true
         type: string
         description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/Webhooks  updaterequest'
       responses:
         200:
           description: ''
@@ -3706,8 +3706,8 @@ paths:
           method: PUT
           uri: /webhooks/2
           headers:
-            Content-Type: application/json
             Account: pocketto
+            Content-Type: application/json
           body: '{"url":"http://google.com.br","event":"payment_paid"}'
         expectedResponse:
           x-allowExtraHeaders: true
@@ -3882,17 +3882,17 @@ paths:
       produces:
       - application/json
       parameters:
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
       - name: Body
         in: body
         required: true
         description: ''
         schema:
           $ref: '#/definitions/Users  updaterequest'
-      - name: Account
-        in: header
-        required: true
-        type: string
-        description: ''
       responses:
         200:
           description: ''
@@ -3903,8 +3903,8 @@ paths:
           method: PUT
           uri: /users/18
           headers:
-            Content-Type: application/json
             Account: pocketto
+            Content-Type: application/json
           body: '{"email":"rk.fadini@gmail.com"}'
         expectedResponse:
           x-allowExtraHeaders: true
@@ -4021,12 +4021,6 @@ paths:
       produces:
       - application/json
       parameters:
-      - name: Body
-        in: body
-        required: true
-        description: ''
-        schema:
-          $ref: '#/definitions/Creditcard  processrequest'
       - name: Account
         in: header
         required: true
@@ -4037,6 +4031,12 @@ paths:
         required: true
         type: string
         description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/Creditcard  processrequest'
       responses:
         200:
           description: ''
@@ -4047,9 +4047,9 @@ paths:
           method: POST
           uri: /credit_card/process
           headers:
-            Content-Type: application/json
             Account: pocketto
-          body: '{"payment_id":198,"installments":2,"card":{"brand":"Amex","number":"376449047333001","cvc":"123","holder":"Julio Moreira","exp_date":"12/2020"}}'
+            Content-Type: application/json
+          body: '{"payment_id":3169,"installments":3,"card":{"brand":"master","number":"00000000000003","cvc":"123","holder":"Julio Moreira","exp_date":"02/22"}}'
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -4172,17 +4172,17 @@ paths:
       produces:
       - application/json
       parameters:
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
       - name: Body
         in: body
         required: true
         description: ''
         schema:
           $ref: '#/definitions/PaymentDocGeneraterequest'
-      - name: Account
-        in: header
-        required: true
-        type: string
-        description: ''
       responses:
         200:
           description: ''
@@ -4193,8 +4193,8 @@ paths:
           method: POST
           uri: /payment_doc_generate
           headers:
-            Content-Type: application/json
             Account: pocketto
+            Content-Type: application/json
           body: '{"quantity":3,"amount":150.0,"due_date":"2017-06-10","sheets":9,"sheets_per_page":3,"continuous":0}'
         expectedResponse:
           x-allowExtraHeaders: true
@@ -5984,24 +5984,24 @@ definitions:
   Creditcard  processrequest:
     title: CreditCard - ProcessRequest
     example:
-      payment_id: 198
-      installments: 2
+      payment_id: 3169
+      installments: 3
       card:
-        brand: Amex
-        number: 376449047333001
+        brand: master
+        number: 00000000000003
         cvc: 123
         holder: Julio Moreira
-        exp_date: 12/2020
+        exp_date: 02/22
     type: object
     properties:
       payment_id:
         description: ''
-        example: 198
+        example: 3169
         type: integer
         format: int32
       installments:
         description: ''
-        example: 2
+        example: 3
         type: integer
         format: int32
       card:
@@ -6013,20 +6013,20 @@ definitions:
   Card:
     title: Card
     example:
-      brand: Amex
-      number: 376449047333001
+      brand: master
+      number: 00000000000003
       cvc: 123
       holder: Julio Moreira
-      exp_date: 12/2020
+      exp_date: 02/22
     type: object
     properties:
       brand:
         description: ''
-        example: Amex
+        example: master
         type: string
       number:
         description: ''
-        example: 376449047333001
+        example: 00000000000003
         type: string
       cvc:
         description: ''
@@ -6038,7 +6038,7 @@ definitions:
         type: string
       exp_date:
         description: ''
-        example: 12/2020
+        example: 02/22
         type: string
     required:
     - brand

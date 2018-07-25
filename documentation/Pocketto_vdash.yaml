@@ -2623,7 +2623,7 @@ paths:
         required: true
         description: ''
         schema:
-          type: string
+          $ref: '#/definitions/Payments  createrequest'
       responses:
         200:
           description: ''
@@ -2754,19 +2754,7 @@ paths:
           headers:
             Account: pocketto
             Content-Type: application/json
-          body: >-
-            {
-              "amount": "10",
-              "due_date": "2018-10-01",
-              "method_id" : 2,
-              "description":"descrição"
-              "user": {
-                "name": "Julio Moreira",
-                "email": "juliodorres@gmail.com",
-                "cpf" : "01688757058",
-                "mobile" : "51989006719"
-              }
-            }
+          body: '{"amount":"10","due_date":"2018-10-01","method_id":2,"description":"descrição","user":{"name":"Julio Moreira","email":"juliodorres@gmail.com","cpf":"01688757058","mobile":"51989006719"}}'
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: RAW
@@ -4956,6 +4944,75 @@ definitions:
     required:
     - amount
     - due_date
+  Payments  createrequest:
+    title: Payments - CreateRequest
+    example:
+      amount: 10
+      due_date: 2018-10-01
+      method_id: 2
+      description: descrição
+      user:
+        name: Julio Moreira
+        email: juliodorres@gmail.com
+        cpf: 01688757058
+        mobile: 51989006719
+    type: object
+    properties:
+      amount:
+        description: ''
+        example: 10
+        type: string
+      due_date:
+        description: ''
+        example: 2018-10-01
+        type: string
+      method_id:
+        description: ''
+        example: 2
+        type: integer
+        format: int32
+      description:
+        description: ''
+        example: descrição
+        type: string
+      user:
+        $ref: '#/definitions/User'
+    required:
+    - amount
+    - due_date
+    - method_id
+    - description
+    - user
+  User:
+    title: User
+    example:
+      name: Julio Moreira
+      email: juliodorres@gmail.com
+      cpf: 01688757058
+      mobile: 51989006719
+    type: object
+    properties:
+      name:
+        description: ''
+        example: Julio Moreira
+        type: string
+      email:
+        description: ''
+        example: juliodorres@gmail.com
+        type: string
+      cpf:
+        description: ''
+        example: 01688757058
+        type: string
+      mobile:
+        description: ''
+        example: 51989006719
+        type: string
+    required:
+    - name
+    - email
+    - cpf
+    - mobile
   Payments  create:
     title: Payments - Create
     example:
@@ -5222,7 +5279,7 @@ definitions:
         type: integer
         format: int32
       user:
-        $ref: '#/definitions/User'
+        $ref: '#/definitions/User23'
       owner_id:
         description: ''
         example: 3
@@ -5433,8 +5490,8 @@ definitions:
     - installments
     - debit_card_url
     - method
-  User:
-    title: User
+  User23:
+    title: User23
     example:
       id: 162
       photo_file_id: 

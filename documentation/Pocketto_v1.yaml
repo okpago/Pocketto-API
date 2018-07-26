@@ -1715,13 +1715,13 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /v1/address/98590000:
+  /v1/address/92130730:
     get:
       description: 'TODO: Add Description'
       summary: Address
       tags:
       - Misc
-      operationId: V1Address98590000Get
+      operationId: V1Address92130730Get
       produces:
       - application/json
       parameters:
@@ -1736,7 +1736,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /v1/address/98590000
+          uri: /v1/address/92130730
           headers:
             Account: pocketto
         expectedResponse:
@@ -1882,13 +1882,13 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /v1/public/payment/:
+  /v1/public/payment/rziljpa:
     get:
       description: 'TODO: Add Description'
       summary: Public Payment
       tags:
       - Misc
-      operationId: V1PublicPaymentGet
+      operationId: V1PublicPaymentRziljpaGet
       produces:
       - application/json
       parameters:
@@ -1904,7 +1904,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /v1/public/payment/
+          uri: /v1/public/payment/rziljpa
           headers:
             Account: pocketto
         expectedResponse:

@@ -2035,6 +2035,11 @@ paths:
         required: true
         type: string
         description: ''
+      - name: Content-Type
+        in: header
+        required: true
+        type: string
+        description: ''
       - name: Body
         in: body
         required: true
@@ -2053,7 +2058,7 @@ paths:
           headers:
             Account: pocketto
             Content-Type: application/json
-          body: '{"message_type_id":1,"title":"Título","description":"Descrição","dispatch":"now","dont_repeat":false,"targets":[{"filter":"user.id","operator":"eq","modifier":"","value":"128"}],"deliver_by":{"email":true}}'
+          body: '{"message_type_id":1,"title":"Teste 5","description":"Descrição","dispatch":"now","dont_repeat":false,"targets":[{"filter":"user.payments.created_at","operator":"bt","modifier":"","value":["2018-07-30 13:00:00","2018-07-30 17:00:00"]}],"deliver_by":{"email":true}}'
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -4049,7 +4054,7 @@ paths:
           headers:
             Account: pocketto
             Content-Type: application/json
-          body: '{"payment_id":3169,"installments":3,"card":{"brand":"master","number":"00000000000003","cvc":"123","holder":"Julio Moreira","exp_date":"02/22"}}'
+          body: '{"payment_id":5547,"installments":3,"card":{"brand":"master","number":"00000000000006","cvc":"123","holder":"Julio Moreira","exp_date":"02/22"}}'
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -4701,15 +4706,17 @@ definitions:
     title: Messages - CreateRequest
     example:
       message_type_id: 1
-      title: Título
+      title: Teste 5
       description: Descrição
       dispatch: now
       dont_repeat: false
       targets:
-      - filter: user.id
-        operator: eq
+      - filter: user.payments.created_at
+        operator: bt
         modifier: ''
-        value: 128
+        value:
+        - 2018-07-30 13:00:00
+        - 2018-07-30 17:00:00
       deliver_by:
         email: true
     type: object
@@ -4721,7 +4728,7 @@ definitions:
         format: int32
       title:
         description: ''
-        example: Título
+        example: Teste 5
         type: string
       description:
         description: ''
@@ -4738,10 +4745,12 @@ definitions:
       targets:
         description: ''
         example:
-        - filter: user.id
-          operator: eq
+        - filter: user.payments.created_at
+          operator: bt
           modifier: ''
-          value: 128
+          value:
+          - 2018-07-30 13:00:00
+          - 2018-07-30 17:00:00
         type: array
         items:
           $ref: '#/definitions/Target'
@@ -4758,27 +4767,33 @@ definitions:
   Target:
     title: Target
     example:
-      filter: user.id
-      operator: eq
+      filter: user.payments.created_at
+      operator: bt
       modifier: ''
-      value: 128
+      value:
+      - 2018-07-30 13:00:00
+      - 2018-07-30 17:00:00
     type: object
     properties:
       filter:
         description: ''
-        example: user.id
+        example: user.payments.created_at
         type: string
       operator:
         description: ''
-        example: eq
+        example: bt
         type: string
       modifier:
         description: ''
         type: string
       value:
         description: ''
-        example: 128
-        type: string
+        example:
+        - 2018-07-30 13:00:00
+        - 2018-07-30 17:00:00
+        type: array
+        items:
+          type: string
     required:
     - filter
     - operator
@@ -5978,11 +5993,11 @@ definitions:
   Creditcard  processrequest:
     title: CreditCard - ProcessRequest
     example:
-      payment_id: 3169
+      payment_id: 5547
       installments: 3
       card:
         brand: master
-        number: 00000000000003
+        number: 00000000000006
         cvc: 123
         holder: Julio Moreira
         exp_date: 02/22
@@ -5990,7 +6005,7 @@ definitions:
     properties:
       payment_id:
         description: ''
-        example: 3169
+        example: 5547
         type: integer
         format: int32
       installments:
@@ -6008,7 +6023,7 @@ definitions:
     title: Card
     example:
       brand: master
-      number: 00000000000003
+      number: 00000000000006
       cvc: 123
       holder: Julio Moreira
       exp_date: 02/22
@@ -6020,7 +6035,7 @@ definitions:
         type: string
       number:
         description: ''
-        example: 00000000000003
+        example: 00000000000006
         type: string
       cvc:
         description: ''

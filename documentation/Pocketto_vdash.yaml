@@ -2759,7 +2759,7 @@ paths:
           headers:
             Account: pocketto
             Content-Type: application/json
-          body: '{"amount":"10","due_date":"2018-10-01","method_id":2,"description":"descrição","user":{"name":"Julio Moreira","email":"juliodorres@gmail.com","cpf":"01688757058","mobile":"51989006719"}}'
+          body: '{"amount":"10","due_date":"2018-10-01","method_id":2,"description":"descrição","user":{"name":"Julio Moreira","email":"juliodorres@gmail.com","cpf":"01688757058","mobile":"51989006719","birthdate":"1989-05-19","gender":"M"}}'
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: RAW
@@ -3836,13 +3836,13 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
-  /users/18:
+  /users/190:
     get:
       description: 'TODO: Add Description'
       summary: Users - View
       tags:
       - Users
-      operationId: Users18Get
+      operationId: Users190Get
       produces:
       - application/json
       parameters:
@@ -3859,7 +3859,7 @@ paths:
       x-unitTests:
       - request:
           method: GET
-          uri: /users/18
+          uri: /users/190
           headers:
             Account: pocketto
         expectedResponse:
@@ -3878,6 +3878,7 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
+  /users/18:
     put:
       description: 'TODO: Add Description'
       summary: Users - Update
@@ -4971,6 +4972,8 @@ definitions:
         email: juliodorres@gmail.com
         cpf: 01688757058
         mobile: 51989006719
+        birthdate: 1989-05-19
+        gender: M
     type: object
     properties:
       amount:
@@ -5005,6 +5008,8 @@ definitions:
       email: juliodorres@gmail.com
       cpf: 01688757058
       mobile: 51989006719
+      birthdate: 1989-05-19
+      gender: M
     type: object
     properties:
       name:
@@ -5023,11 +5028,21 @@ definitions:
         description: ''
         example: 51989006719
         type: string
+      birthdate:
+        description: ''
+        example: 1989-05-19
+        type: string
+      gender:
+        description: ''
+        example: M
+        type: string
     required:
     - name
     - email
     - cpf
     - mobile
+    - birthdate
+    - gender
   Payments  create:
     title: Payments - Create
     example:

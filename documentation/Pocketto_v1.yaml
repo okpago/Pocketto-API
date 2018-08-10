@@ -1244,7 +1244,7 @@ paths:
           headers:
             Account: pocketto
             Content-Type: application/json
-          body: '{"amount":10,"external_campaign_title":"Campanha Tal","method_id":4}'
+          body: '{"amount":10,"method_id":1}'
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -2209,8 +2209,7 @@ definitions:
     title: Payments - CreateRequest
     example:
       amount: 10
-      external_campaign_title: Campanha Tal
-      method_id: 4
+      method_id: 1
     type: object
     properties:
       amount:
@@ -2218,18 +2217,13 @@ definitions:
         example: 10
         type: integer
         format: int32
-      external_campaign_title:
-        description: ''
-        example: Campanha Tal
-        type: string
       method_id:
         description: ''
-        example: 4
+        example: 1
         type: integer
         format: int32
     required:
     - amount
-    - external_campaign_title
     - method_id
   Payments  updaterequest:
     title: Payments - UpdateRequest

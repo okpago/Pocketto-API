@@ -2058,7 +2058,7 @@ paths:
           headers:
             Account: pocketto
             Content-Type: application/json
-          body: '{"message_type_id":1,"title":"Teste 5","description":"Descrição","dispatch":"now","dont_repeat":false,"targets":[{"filter":"user.payments.created_at","operator":"bt","modifier":"","value":["2018-07-30 13:00:00","2018-07-30 17:00:00"]}],"deliver_by":{"email":true}}'
+          body: '{"message_type_id":1,"title":"Teste 13","description":"Descrição","dispatch":"now","dont_repeat":false,"targets":[{"filter":"user.created_at","operator":"eq","modifier":"","value":"2018-05-"}],"deliver_by":{"email":true}}'
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -4707,17 +4707,15 @@ definitions:
     title: Messages - CreateRequest
     example:
       message_type_id: 1
-      title: Teste 5
+      title: Teste 13
       description: Descrição
       dispatch: now
       dont_repeat: false
       targets:
-      - filter: user.payments.created_at
-        operator: bt
+      - filter: user.created_at
+        operator: eq
         modifier: ''
-        value:
-        - 2018-07-30 13:00:00
-        - 2018-07-30 17:00:00
+        value: 2018-05-
       deliver_by:
         email: true
     type: object
@@ -4729,7 +4727,7 @@ definitions:
         format: int32
       title:
         description: ''
-        example: Teste 5
+        example: Teste 13
         type: string
       description:
         description: ''
@@ -4746,12 +4744,10 @@ definitions:
       targets:
         description: ''
         example:
-        - filter: user.payments.created_at
-          operator: bt
+        - filter: user.created_at
+          operator: eq
           modifier: ''
-          value:
-          - 2018-07-30 13:00:00
-          - 2018-07-30 17:00:00
+          value: 2018-05-
         type: array
         items:
           $ref: '#/definitions/Target'
@@ -4768,33 +4764,27 @@ definitions:
   Target:
     title: Target
     example:
-      filter: user.payments.created_at
-      operator: bt
+      filter: user.created_at
+      operator: eq
       modifier: ''
-      value:
-      - 2018-07-30 13:00:00
-      - 2018-07-30 17:00:00
+      value: 2018-05-
     type: object
     properties:
       filter:
         description: ''
-        example: user.payments.created_at
+        example: user.created_at
         type: string
       operator:
         description: ''
-        example: bt
+        example: eq
         type: string
       modifier:
         description: ''
         type: string
       value:
         description: ''
-        example:
-        - 2018-07-30 13:00:00
-        - 2018-07-30 17:00:00
-        type: array
-        items:
-          type: string
+        example: 2018-05-
+        type: string
     required:
     - filter
     - operator

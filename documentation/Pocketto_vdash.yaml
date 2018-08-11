@@ -2759,7 +2759,7 @@ paths:
           headers:
             Account: pocketto
             Content-Type: application/json
-          body: '{"amount":"10","due_date":"2018-10-01","method_id":2,"description":"descrição","user":{"name":"Julio Moreira","email":"juliodorres@gmail.com","cpf":"01688757058","mobile":"51989006719","birthdate":"1989-05-19","gender":"M"}}'
+          body: '{"amount":"10","due_date":"2018-10-01","method_id":2,"description":"descrição","user":{"name":"Julio Moreira","email":"juliodorres@gmail.com","cpf":"22440295060","mobile":"51989006719","birthdate":"20/05/1989","gender":"M"}}'
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: RAW
@@ -4960,9 +4960,9 @@ definitions:
       user:
         name: Julio Moreira
         email: juliodorres@gmail.com
-        cpf: 01688757058
+        cpf: 22440295060
         mobile: 51989006719
-        birthdate: 1989-05-19
+        birthdate: 20/05/1989
         gender: M
     type: object
     properties:
@@ -4996,9 +4996,9 @@ definitions:
     example:
       name: Julio Moreira
       email: juliodorres@gmail.com
-      cpf: 01688757058
+      cpf: 22440295060
       mobile: 51989006719
-      birthdate: 1989-05-19
+      birthdate: 20/05/1989
       gender: M
     type: object
     properties:
@@ -5012,7 +5012,7 @@ definitions:
         type: string
       cpf:
         description: ''
-        example: 01688757058
+        example: 22440295060
         type: string
       mobile:
         description: ''
@@ -5020,7 +5020,7 @@ definitions:
         type: string
       birthdate:
         description: ''
-        example: 1989-05-19
+        example: 20/05/1989
         type: string
       gender:
         description: ''

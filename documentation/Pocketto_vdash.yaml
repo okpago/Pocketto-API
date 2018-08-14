@@ -2759,7 +2759,7 @@ paths:
           headers:
             Account: pocketto
             Content-Type: application/json
-          body: '{"amount":"10","due_date":"2018-10-01","method_id":2,"description":"descrição","user":{"name":"Julio Moreira","email":"juliodorres@gmail.com","cpf":"22440295060","mobile":"51989006719","birthdate":"20/05/1989","gender":"M"}}'
+          body: '{"amount":"10","due_date":"2018-10-01","method_id":2,"description":"descrição","user":{"name":"Julio Moreira","email":"juliodorres@gmail.com","cpf":"22440295060","mobile":"51989006719","gender":"M"},"recurring":1,"recurring_amount":10,"recurring_day_month":10}'
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: RAW
@@ -4055,7 +4055,7 @@ paths:
           headers:
             Account: pocketto
             Content-Type: application/json
-          body: '{"payment_id":5547,"installments":3,"card":{"brand":"master","number":"00000000000006","cvc":"123","holder":"Julio Moreira","exp_date":"02/22"}}'
+          body: '{"payment_id":4682,"installments":1,"card":{"brand":"master","number":"4532781449874068","cvc":"123","holder":"Julio Moreira","exp_date":"02/22"}}'
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -4162,6 +4162,61 @@ paths:
         x-testShouldPass: true
         x-testEnabled: true
         x-testName: CreditCard - Cancel
+        x-testDescription: 'TODO: Add Description'
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
+  /boleto/process:
+    post:
+      description: 'TODO: Add Description'
+      summary: Boleto - Process
+      tags:
+      - Boleto
+      operationId: BoletoProcessPost
+      produces:
+      - application/json
+      parameters:
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Content-Type
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/Boleto  processrequest'
+      responses:
+        200:
+          description: ''
+      security:
+      - auth: []
+      x-unitTests:
+      - request:
+          method: POST
+          uri: /boleto/process
+          headers:
+            Account: pocketto
+            Content-Type: application/json
+          body: '{"payment_id":4680}'
+        expectedResponse:
+          x-allowExtraHeaders: true
+          x-bodyMatchMode: NONE
+          x-arrayOrderedMatching: false
+          x-arrayCheckCount: false
+          x-matchResponseSchema: true
+          headers: {}
+        x-testShouldPass: true
+        x-testEnabled: true
+        x-testName: Boleto - Process
         x-testDescription: 'TODO: Add Description'
       x-operation-settings:
         CollectParameters: false
@@ -4962,8 +5017,10 @@ definitions:
         email: juliodorres@gmail.com
         cpf: 22440295060
         mobile: 51989006719
-        birthdate: 20/05/1989
         gender: M
+      recurring: 1
+      recurring_amount: 10
+      recurring_day_month: 10
     type: object
     properties:
       amount:
@@ -4985,12 +5042,30 @@ definitions:
         type: string
       user:
         $ref: '#/definitions/User'
+      recurring:
+        description: ''
+        example: 1
+        type: integer
+        format: int32
+      recurring_amount:
+        description: ''
+        example: 10
+        type: integer
+        format: int32
+      recurring_day_month:
+        description: ''
+        example: 10
+        type: integer
+        format: int32
     required:
     - amount
     - due_date
     - method_id
     - description
     - user
+    - recurring
+    - recurring_amount
+    - recurring_day_month
   User:
     title: User
     example:
@@ -4998,7 +5073,6 @@ definitions:
       email: juliodorres@gmail.com
       cpf: 22440295060
       mobile: 51989006719
-      birthdate: 20/05/1989
       gender: M
     type: object
     properties:
@@ -5018,10 +5092,6 @@ definitions:
         description: ''
         example: 51989006719
         type: string
-      birthdate:
-        description: ''
-        example: 20/05/1989
-        type: string
       gender:
         description: ''
         example: M
@@ -5031,7 +5101,6 @@ definitions:
     - email
     - cpf
     - mobile
-    - birthdate
     - gender
   Payments  create:
     title: Payments - Create
@@ -5998,11 +6067,11 @@ definitions:
   Creditcard  processrequest:
     title: CreditCard - ProcessRequest
     example:
-      payment_id: 5547
-      installments: 3
+      payment_id: 4682
+      installments: 1
       card:
         brand: master
-        number: 00000000000006
+        number: 4532781449874068
         cvc: 123
         holder: Julio Moreira
         exp_date: 02/22
@@ -6010,12 +6079,12 @@ definitions:
     properties:
       payment_id:
         description: ''
-        example: 5547
+        example: 4682
         type: integer
         format: int32
       installments:
         description: ''
-        example: 3
+        example: 1
         type: integer
         format: int32
       card:
@@ -6028,7 +6097,7 @@ definitions:
     title: Card
     example:
       brand: master
-      number: 00000000000006
+      number: 4532781449874068
       cvc: 123
       holder: Julio Moreira
       exp_date: 02/22
@@ -6040,7 +6109,7 @@ definitions:
         type: string
       number:
         description: ''
-        example: 00000000000006
+        example: 4532781449874068
         type: string
       cvc:
         description: ''
@@ -6060,6 +6129,19 @@ definitions:
     - cvc
     - holder
     - exp_date
+  Boleto  processrequest:
+    title: Boleto - ProcessRequest
+    example:
+      payment_id: 4680
+    type: object
+    properties:
+      payment_id:
+        description: ''
+        example: 4680
+        type: integer
+        format: int32
+    required:
+    - payment_id
   PaymentDocGeneraterequest:
     title: Payment Doc GenerateRequest
     example:

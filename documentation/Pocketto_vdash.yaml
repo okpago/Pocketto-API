@@ -2759,7 +2759,7 @@ paths:
           headers:
             Account: pocketto
             Content-Type: application/json
-          body: '{"amount":"10","due_date":"2018-10-01","method_id":2,"description":"descrição","user":{"name":"Julio Moreira","email":"juliodorres@gmail.com","cpf":"22440295060","mobile":"51989006719","gender":"M"},"recurring":1,"recurring_amount":10,"recurring_day_month":10}'
+          body: '{"amount":"10","due_date":"2018-10-01","method_id":2,"description":"descrição","user":{"name":"Julio Moreira","email":"juliodorres@gmail.com","cpf":"01688757058","mobile":"51989006719","gender":"M"},"recurring":1,"recurring_amount":10,"recurring_day_month":10}'
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: RAW
@@ -4055,7 +4055,7 @@ paths:
           headers:
             Account: pocketto
             Content-Type: application/json
-          body: '{"payment_id":4682,"installments":1,"card":{"brand":"master","number":"4532781449874068","cvc":"123","holder":"Julio Moreira","exp_date":"02/22"}}'
+          body: '{"payment_id":5693,"installments":1,"card":{"brand":"master","number":"4532781449874061","cvc":"123","holder":"Julio Moreira","exp_date":"02/22"}}'
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -4206,7 +4206,7 @@ paths:
           headers:
             Account: pocketto
             Content-Type: application/json
-          body: '{"payment_id":4680}'
+          body: '{"payment_id":5632}'
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -5015,7 +5015,7 @@ definitions:
       user:
         name: Julio Moreira
         email: juliodorres@gmail.com
-        cpf: 22440295060
+        cpf: 01688757058
         mobile: 51989006719
         gender: M
       recurring: 1
@@ -5071,7 +5071,7 @@ definitions:
     example:
       name: Julio Moreira
       email: juliodorres@gmail.com
-      cpf: 22440295060
+      cpf: 01688757058
       mobile: 51989006719
       gender: M
     type: object
@@ -5086,7 +5086,7 @@ definitions:
         type: string
       cpf:
         description: ''
-        example: 22440295060
+        example: 01688757058
         type: string
       mobile:
         description: ''
@@ -6067,11 +6067,11 @@ definitions:
   Creditcard  processrequest:
     title: CreditCard - ProcessRequest
     example:
-      payment_id: 4682
+      payment_id: 5693
       installments: 1
       card:
         brand: master
-        number: 4532781449874068
+        number: 4532781449874061
         cvc: 123
         holder: Julio Moreira
         exp_date: 02/22
@@ -6079,7 +6079,7 @@ definitions:
     properties:
       payment_id:
         description: ''
-        example: 4682
+        example: 5693
         type: integer
         format: int32
       installments:
@@ -6097,7 +6097,7 @@ definitions:
     title: Card
     example:
       brand: master
-      number: 4532781449874068
+      number: 4532781449874061
       cvc: 123
       holder: Julio Moreira
       exp_date: 02/22
@@ -6109,7 +6109,7 @@ definitions:
         type: string
       number:
         description: ''
-        example: 4532781449874068
+        example: 4532781449874061
         type: string
       cvc:
         description: ''
@@ -6132,12 +6132,12 @@ definitions:
   Boleto  processrequest:
     title: Boleto - ProcessRequest
     example:
-      payment_id: 4680
+      payment_id: 5632
     type: object
     properties:
       payment_id:
         description: ''
-        example: 4680
+        example: 5632
         type: integer
         format: int32
     required:

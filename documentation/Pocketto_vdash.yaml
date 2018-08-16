@@ -4206,7 +4206,7 @@ paths:
           headers:
             Account: pocketto
             Content-Type: application/json
-          body: '{"payment_id":5632}'
+          body: '{"payment_id":5706}'
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -6132,12 +6132,12 @@ definitions:
   Boleto  processrequest:
     title: Boleto - ProcessRequest
     example:
-      payment_id: 5632
+      payment_id: 5706
     type: object
     properties:
       payment_id:
         description: ''
-        example: 5632
+        example: 5706
         type: integer
         format: int32
     required:

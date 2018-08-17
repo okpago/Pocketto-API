@@ -2109,7 +2109,7 @@ paths:
           headers:
             Account: pocketto
             Content-Type: application/json
-          body: '{"payment_id":4664,"card":{"brand":"Visa","number":"4763329512296114","cvc":"309","holder":"Luciano Medici Antu","exp_date":"06/20"}}'
+          body: '{"payment_id":4664,"card":{"brand":"Visa","number":"4763329512296114","cvc":"309","holder":"Luciano Medici Antu","exp_date":"06/20"},"password":"R1n6a#g9rj"}'
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -2292,6 +2292,7 @@ definitions:
         cvc: 309
         holder: Luciano Medici Antu
         exp_date: 06/20
+      password: R1n6a#g9rj
     type: object
     properties:
       payment_id:
@@ -2301,9 +2302,14 @@ definitions:
         format: int32
       card:
         $ref: '#/definitions/Card'
+      password:
+        description: ''
+        example: R1n6a#g9rj
+        type: string
     required:
     - payment_id
     - card
+    - password
   Card:
     title: Card
     example:

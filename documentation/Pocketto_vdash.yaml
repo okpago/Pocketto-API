@@ -2759,7 +2759,7 @@ paths:
           headers:
             Account: pocketto
             Content-Type: application/json
-          body: '{"amount":"10","due_date":"2018-10-01","method_id":2,"description":"descrição","user":{"name":"Julio Moreira","email":"juliodorres@gmail.com","cpf":"01688757058","mobile":"51989006719","gender":"M"},"recurring":1,"recurring_amount":10,"recurring_day_month":10}'
+          body: '{"amount":"10","due_date":"2018-10-01","method_id":4,"description":"descrição","user":{"name":"Julio Moreira","email":"juliodorres@gmail.com","cpf":"01688757058","mobile":"51989006719","gender":"M"}}'
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: RAW
@@ -5010,7 +5010,7 @@ definitions:
     example:
       amount: 10
       due_date: 2018-10-01
-      method_id: 2
+      method_id: 4
       description: descrição
       user:
         name: Julio Moreira
@@ -5018,9 +5018,6 @@ definitions:
         cpf: 01688757058
         mobile: 51989006719
         gender: M
-      recurring: 1
-      recurring_amount: 10
-      recurring_day_month: 10
     type: object
     properties:
       amount:
@@ -5033,7 +5030,7 @@ definitions:
         type: string
       method_id:
         description: ''
-        example: 2
+        example: 4
         type: integer
         format: int32
       description:
@@ -5042,30 +5039,12 @@ definitions:
         type: string
       user:
         $ref: '#/definitions/User'
-      recurring:
-        description: ''
-        example: 1
-        type: integer
-        format: int32
-      recurring_amount:
-        description: ''
-        example: 10
-        type: integer
-        format: int32
-      recurring_day_month:
-        description: ''
-        example: 10
-        type: integer
-        format: int32
     required:
     - amount
     - due_date
     - method_id
     - description
     - user
-    - recurring
-    - recurring_amount
-    - recurring_day_month
   User:
     title: User
     example:

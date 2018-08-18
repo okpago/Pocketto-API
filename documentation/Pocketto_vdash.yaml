@@ -2759,7 +2759,7 @@ paths:
           headers:
             Account: pocketto
             Content-Type: application/json
-          body: '{"amount":"10","due_date":"2018-10-01","method_id":4,"description":"descrição","user":{"name":"Julio Moreira","email":"juliodorres@gmail.com","cpf":"01688757058","mobile":"51989006719","gender":"M"}}'
+          body: '{"amount":"10","due_date":"2018-10-01","method_id":2,"description":"descrição","user":{"name":"Julio Moreira","email":"juliodorres@gmail.com","cpf":"01688757058","mobile":"51989006719","gender":"M"}}'
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: RAW
@@ -4055,7 +4055,7 @@ paths:
           headers:
             Account: pocketto
             Content-Type: application/json
-          body: '{"payment_id":5693,"installments":1,"card":{"brand":"master","number":"4532781449874061","cvc":"123","holder":"Julio Moreira","exp_date":"02/22"}}'
+          body: '{"payment_id":446,"installments":1,"card":{"brand":"master","number":"4532781449874062","cvc":"123","holder":"Julio Moreira","exp_date":"02/22"},"password":"R1n6a#g9rj"}'
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -4206,7 +4206,7 @@ paths:
           headers:
             Account: pocketto
             Content-Type: application/json
-          body: '{"payment_id":5706}'
+          body: '{"payment_id":47681}'
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -5010,7 +5010,7 @@ definitions:
     example:
       amount: 10
       due_date: 2018-10-01
-      method_id: 4
+      method_id: 2
       description: descrição
       user:
         name: Julio Moreira
@@ -5030,7 +5030,7 @@ definitions:
         type: string
       method_id:
         description: ''
-        example: 4
+        example: 2
         type: integer
         format: int32
       description:
@@ -6046,19 +6046,20 @@ definitions:
   Creditcard  processrequest:
     title: CreditCard - ProcessRequest
     example:
-      payment_id: 5693
+      payment_id: 446
       installments: 1
       card:
         brand: master
-        number: 4532781449874061
+        number: 4532781449874062
         cvc: 123
         holder: Julio Moreira
         exp_date: 02/22
+      password: R1n6a#g9rj
     type: object
     properties:
       payment_id:
         description: ''
-        example: 5693
+        example: 446
         type: integer
         format: int32
       installments:
@@ -6068,15 +6069,20 @@ definitions:
         format: int32
       card:
         $ref: '#/definitions/Card'
+      password:
+        description: ''
+        example: R1n6a#g9rj
+        type: string
     required:
     - payment_id
     - installments
     - card
+    - password
   Card:
     title: Card
     example:
       brand: master
-      number: 4532781449874061
+      number: 4532781449874062
       cvc: 123
       holder: Julio Moreira
       exp_date: 02/22
@@ -6088,7 +6094,7 @@ definitions:
         type: string
       number:
         description: ''
-        example: 4532781449874061
+        example: 4532781449874062
         type: string
       cvc:
         description: ''
@@ -6111,12 +6117,12 @@ definitions:
   Boleto  processrequest:
     title: Boleto - ProcessRequest
     example:
-      payment_id: 5706
+      payment_id: 47681
     type: object
     properties:
       payment_id:
         description: ''
-        example: 5706
+        example: 47681
         type: integer
         format: int32
     required:

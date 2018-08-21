@@ -2777,6 +2777,62 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
+  /payments/import:
+    post:
+      description: 'TODO: Add Description'
+      summary: Payments - Import
+      tags:
+      - Payments
+      operationId: PaymentsImportPost
+      produces:
+      - application/json
+      consumes:
+      - application/x-www-form-urlencoded
+      parameters:
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: input_data
+        in: formData
+        required: true
+        type: string
+        description: ''
+      - name: input_type
+        in: formData
+        required: true
+        type: string
+        description: ''
+      responses:
+        200:
+          description: ''
+      security:
+      - auth: []
+      x-unitTests:
+      - request:
+          method: POST
+          uri: /payments/import
+          headers:
+            Account: pocketto
+            Content-Type: application/x-www-form-urlencoded
+          body: input_data=&input_type=binary
+        expectedResponse:
+          x-allowExtraHeaders: true
+          x-bodyMatchMode: NONE
+          x-arrayOrderedMatching: false
+          x-arrayCheckCount: false
+          x-matchResponseSchema: true
+          headers: {}
+        x-testShouldPass: true
+        x-testEnabled: true
+        x-testName: Payments - Import
+        x-testDescription: 'TODO: Add Description'
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
   /payments/5072:
     get:
       description: 'TODO: Add Description'

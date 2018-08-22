@@ -3934,6 +3934,48 @@ paths:
         AllowDynamicQueryParameters: false
         AllowDynamicFormParameters: false
         IsMultiContentStreaming: false
+  /users/get/01688757058:
+    get:
+      description: 'TODO: Add Description'
+      summary: Users - View by CPF
+      tags:
+      - Users
+      operationId: UsersGet01688757058Get
+      produces:
+      - application/json
+      parameters:
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        200:
+          description: ''
+      security:
+      - auth: []
+      x-unitTests:
+      - request:
+          method: GET
+          uri: /users/get/01688757058
+          headers:
+            Account: pocketto
+        expectedResponse:
+          x-allowExtraHeaders: true
+          x-bodyMatchMode: NONE
+          x-arrayOrderedMatching: false
+          x-arrayCheckCount: false
+          x-matchResponseSchema: true
+          headers: {}
+        x-testShouldPass: true
+        x-testEnabled: true
+        x-testName: Users - View by CPF
+        x-testDescription: 'TODO: Add Description'
+      x-operation-settings:
+        CollectParameters: false
+        AllowDynamicQueryParameters: false
+        AllowDynamicFormParameters: false
+        IsMultiContentStreaming: false
   /users/18:
     put:
       description: 'TODO: Add Description'
@@ -4111,7 +4153,7 @@ paths:
           headers:
             Account: pocketto
             Content-Type: application/json
-          body: '{"payment_id":446,"installments":1,"card":{"brand":"master","number":"4532781449874062","cvc":"123","holder":"Julio Moreira","exp_date":"02/22"},"password":"R1n6a#g9rj"}'
+          body: '{"payment_id":3407,"installments":1,"card":{"brand":"master","number":"4532781440000001","cvc":"123","holder":"Julio Moreira","exp_date":"02/22"},"password":"R1n6a#g9rj"}'
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: NONE
@@ -6102,11 +6144,11 @@ definitions:
   Creditcard  processrequest:
     title: CreditCard - ProcessRequest
     example:
-      payment_id: 446
+      payment_id: 3407
       installments: 1
       card:
         brand: master
-        number: 4532781449874062
+        number: 4532781440000001
         cvc: 123
         holder: Julio Moreira
         exp_date: 02/22
@@ -6115,7 +6157,7 @@ definitions:
     properties:
       payment_id:
         description: ''
-        example: 446
+        example: 3407
         type: integer
         format: int32
       installments:
@@ -6138,7 +6180,7 @@ definitions:
     title: Card
     example:
       brand: master
-      number: 4532781449874062
+      number: 4532781440000001
       cvc: 123
       holder: Julio Moreira
       exp_date: 02/22
@@ -6150,7 +6192,7 @@ definitions:
         type: string
       number:
         description: ''
-        example: 4532781449874062
+        example: 4532781440000001
         type: string
       cvc:
         description: ''

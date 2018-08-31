@@ -2759,7 +2759,7 @@ paths:
           headers:
             Account: pocketto
             Content-Type: application/json
-          body: '{"amount":"10","due_date":"2018-10-01","method_id":2,"description":"descrição","user":{"name":"Julio Moreira","email":"juliodorres@gmail.com","cpf":"01688757058","mobile":"51989006719","gender":"M"}}'
+          body: '{"amount":"10","due_date":"2018-10-01","method_id":4,"description":"descrição","user":{"name":"Julio Moreira","email":"juliodorres@gmail.com","cpf":"01688757058","mobile":"51989006719","gender":"M"}}'
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: RAW
@@ -5108,7 +5108,7 @@ definitions:
     example:
       amount: 10
       due_date: 2018-10-01
-      method_id: 2
+      method_id: 4
       description: descrição
       user:
         name: Julio Moreira
@@ -5128,7 +5128,7 @@ definitions:
         type: string
       method_id:
         description: ''
-        example: 2
+        example: 4
         type: integer
         format: int32
       description:

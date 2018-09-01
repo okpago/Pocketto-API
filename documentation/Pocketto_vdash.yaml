@@ -2759,7 +2759,7 @@ paths:
           headers:
             Account: pocketto
             Content-Type: application/json
-          body: '{"amount":"10","due_date":"2018-10-01","method_id":4,"description":"descrição","user":{"name":"Julio Moreira","email":"juliodorres@gmail.com","cpf":"01688757058","mobile":"51989006719","gender":"M"}}'
+          body: '{"amount":"10","due_date":"2018-10-01","method_id":4,"description":"descrição","user":{"name":"Julio Moreira","email":"juliodorres@gmail.com","cpf":"02299354000","mobile":"51989006719","gender":"M"},"address_zipcode":"92130-730","address_city_id":4001,"address_state":"RS","address_district":"NITERÓI","address_number":"123"}'
         expectedResponse:
           x-allowExtraHeaders: true
           x-bodyMatchMode: RAW
@@ -5113,9 +5113,14 @@ definitions:
       user:
         name: Julio Moreira
         email: juliodorres@gmail.com
-        cpf: 01688757058
+        cpf: 02299354000
         mobile: 51989006719
         gender: M
+      address_zipcode: 92130-730
+      address_city_id: 4001
+      address_state: RS
+      address_district: NITERÓI
+      address_number: 123
     type: object
     properties:
       amount:
@@ -5137,18 +5142,44 @@ definitions:
         type: string
       user:
         $ref: '#/definitions/User'
+      address_zipcode:
+        description: ''
+        example: 92130-730
+        type: string
+      address_city_id:
+        description: ''
+        example: 4001
+        type: integer
+        format: int32
+      address_state:
+        description: ''
+        example: RS
+        type: string
+      address_district:
+        description: ''
+        example: NITERÓI
+        type: string
+      address_number:
+        description: ''
+        example: 123
+        type: string
     required:
     - amount
     - due_date
     - method_id
     - description
     - user
+    - address_zipcode
+    - address_city_id
+    - address_state
+    - address_district
+    - address_number
   User:
     title: User
     example:
       name: Julio Moreira
       email: juliodorres@gmail.com
-      cpf: 01688757058
+      cpf: 02299354000
       mobile: 51989006719
       gender: M
     type: object
@@ -5163,7 +5194,7 @@ definitions:
         type: string
       cpf:
         description: ''
-        example: 01688757058
+        example: 02299354000
         type: string
       mobile:
         description: ''

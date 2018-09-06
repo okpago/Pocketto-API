@@ -1390,7 +1390,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"message_type_id\": 1,\n  \"title\" : \"Teste 15\",\n  \"description\": \"Descrição\",\n  \"dispatch\": \"now\",\n  \"dont_repeat\": false,\n  \"targets\": [\n\t  {\n\t    \"filter\": \"user.created_at\",\n\t    \"operator\": \"bt\",\n\t    \"modifier\": \"DATE\",\n\t    \"value\": \"2017-09-24,2017-09-25\"\n\t  }\n  ],\n  \"deliver_by\": {\n    \"email\": true\n  }\n}\n"
+              "raw": "{\n  \"message_type_id\": 1,\n  \"title\" : \"Teste 20\",\n  \"description\": \"Birthday!\",\n  \"dispatch\": \"now\",\n  \"dont_repeat\": false,\n  \"targets\": [\n\t  {\n\t    \"filter\": \"user.city.state\",\n\t    \"operator\": \"eq\",\n\t    \"modifier\": \"\",\n\t    \"value\": \"RS\"\n\t  }\n  ],\n  \"deliver_by\": {\n    \"email\": true\n  }\n}\n"
             },
             "url": "https://api.pocketto.com.br/vdash/messages"
           },

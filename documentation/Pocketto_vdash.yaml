@@ -1899,7 +1899,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n\t\"amount\": \"10\",\n\t\"due_date\": \"2018-10-01\",\n\t\"method_id\" : 4,\n\t\"description\":\"descrição\",\n\t\"user\": {\n\t\t\"name\": \"Julio Moreira\",\n\t\t\"email\": \"juliodorres@gmail.com\",\n\t\t\"cpf\" : \"02299354000\",\n\t\t\"mobile\" : \"51989006719\",\n\t\t\"gender\": \"M\",\n\t\t\"address_zipcode\": \"92130-730\",\n\t\t\"address_city_id\": 4001,\n\t\t\"address_state\": \"RS\",\n\t\t\"address_district\": \"NITERÓI\",\n\t\t\"address_street\": \"Toquio\",\n\t\t\"address_number\": \"123\"\n\t},\n\t\"origin\": \"whatsapp\"\n}"
+              "raw": "{\n\t\"amount\": \"1200.25\",\n\t\"due_date\": \"2018-10-01\",\n\t\"method_id\" : 1,\n\t\"description\":\"descrição\",\n\t\"user\": {\n\t\t\"name\": \"Julio Moreira\",\n\t\t\"email\": \"juliodorres@gmail.com\",\n\t\t\"cpf\" : \"01688757058\",\n\t\t\"mobile\" : \"51989006719\",\n\t\t\"gender\": \"M\",\n\t\t\"address_zipcode\": \"92130-730\",\n\t\t\"address_city_id\": 4001,\n\t\t\"address_state\": \"RS\",\n\t\t\"address_district\": \"NITERÓI\",\n\t\t\"address_street\": \"Tóquio\",\n\t\t\"address_number\": \"123\"\n\t},\n\t\"origin\": \"formulario\"\n}"
             },
             "url": "https://api.pocketto.com.br/vdash/payments"
           },

@@ -215,13 +215,13 @@
               "mode": "raw",
               "raw": "{\n  \"username\" : \"rk.fadini@gmail.com\",\n  \"password\" : \"123123\"\n}"
             },
-            "url": "https://api.pocketto.com.br/vdash/emails/payment.received_receipt"
+            "url": "https://api.pocketto.com.br/vdash/emails/payment.paid"
           },
           "response": []
         },
         {
           "_postman_id": "2066044-d2c58207-5941-23e1-8e4b-e8dfae2562ec",
-          "name": "Pagamento Recibo Recebido copy",
+          "name": "Pagamento Recibo Vencimento",
           "request": {
             "method": "GET",
             "header": [

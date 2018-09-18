@@ -886,7 +886,7 @@
               "mode": "raw",
               "raw": "{\n  \"username\" : \"rk.fadini@gmail.com\",\n  \"password\" : \"123123\"\n}"
             },
-            "url": "https://api.pocketto.com.br/vdash/banks"
+            "url": "https://api.pocketto.com.br/vdash/conciliation/files"
           },
           "response": []
         },
@@ -938,7 +938,7 @@
                 }
               ]
             },
-            "url": "https://api.pocketto.com.br/vdash/conciliation/createFile"
+            "url": "https://api.pocketto.com.br/vdash/conciliation/import"
           },
           "response": []
         }
@@ -2793,7 +2793,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"payment_id\": 525,\n  \"destination\": 355\n}"
+              "raw": "{\n  \"payment_id\": 3510,\n  \"destination\": 355\n}"
             },
             "url": "https://api.pocketto.com.br/vdash/boleto/process"
           },

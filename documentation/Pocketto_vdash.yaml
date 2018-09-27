@@ -883,15 +883,172 @@
                   },
                   {
                     "key": "Content-Type",
-                    "value": "application/json",
+                    "value": "application/x-www-form-urlencoded",
                     "disabled": true
+                  }
+                ],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "file",
+                      "description": "",
+                      "type": "file",
+                      "src": {
+                        "0": {
+                          "name": "sheet-2.xlsx",
+                          "lastModified": 1537966859751,
+                          "lastModifiedDate": "2018-09-26T13:00:59.751Z",
+                          "webkitRelativePath": "",
+                          "size": 5090,
+                          "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+                        },
+                        "length": 1
+                      }
+                    }
+                  ]
+                },
+                "url": "https://api.pocketto.com.br/vdash/conciliation/accountcredits/file"
+              },
+              "response": []
+            },
+            {
+              "_postman_id": "2066044-59f5c3cc-9191-dd3d-5a81-9575f6a58636",
+              "name": "AccountCredits - List",
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Account",
+                    "value": "pocketto"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjNiODgxN2U2MmM5Nzg0NmI1NmJmNjBjYmY5OWVmY2U5Mzk2MTUyYTFmYjRhYTkwNGM4MmE3ZGE4M2QzNzBmYTgyZGFlMDFmMDAwMzA0ZDEyIn0.eyJhdWQiOiIyIiwianRpIjoiM2I4ODE3ZTYyYzk3ODQ2YjU2YmY2MGNiZjk5ZWZjZTkzOTYxNTJhMWZiNGFhOTA0YzgyYTdkYTgzZDM3MGZhODJkYWUwMWYwMDAzMDRkMTIiLCJpYXQiOjE1MTE3OTE0MjksIm5iZiI6MTUxMTc5MTQyOSwiZXhwIjoxNTQzMzI3NDI5LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.hIDEX5jGQy1Nz6dBYzyzxnWop_rgyztNNAwZGM0ZhWgcYFjjE6lqxyxux4WK5jY-vPlLBuesTbOnk7yv5MTqiNkwUlGX4dexMWHpZE6j9Jrl_A8TA8uPmSs8eZy1Znl6e4xxSeMWyXNp7UHxsWiMO2qDIDC3f8kydq4f5bQy4HfYSm_HdDOuHOlnw3bf_t1KSfU9saPq_E9h_N4WtMxEkFmhpGtt2CB902WUJG3xrdwj8pRYN5Ydl6VS-lYD2EmnsB-AFYo3uxcw2LiW9o4zOe3TnfKC_1um4pWA91anqqoM4cn0VDUuduZbPu9GUDi782tlmdwZyCD6mbmq25ziHS3VqHI-UfW1Mtm6m7IzZlTYEeaSdm-fRa-b4g_Hc60XGTx9go6xNqoF-lA0ukcrJ0_srH7VZE6MT_XVPdkfww4H2189yjFghn4tgQFXkPxEeocryDJM4FWOZ1VcqwcjdyoTFs3xSJoDAMsnYaHxwgq6r0L89IyGmge0uefWyYfDYcCA7mkKLhgiBQAlgjoY-Y-IJYc6fshUzBmFhupn63KHvxjmry0z_ORwDjoR5nQmHzDYArn6v1CWTsDaastp501NSinMXaL2C3s5wMXgmIqmrOTbGBYPUkm9_bFhZ25kCZHPV9u0qNjSlS3uOho8oEjflVg_pjKoYSON7CYT_Go"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
                   }
                 ],
                 "body": {
                   "mode": "raw",
                   "raw": "{\n  \"username\" : \"rk.fadini@gmail.com\",\n  \"password\" : \"123123\"\n}"
                 },
-                "url": "https://api.pocketto.com.br/vdash/conciliation/accountcredit/file"
+                "url": {
+                  "raw": "https://api.pocketto.com.br/vdash/conciliation/accountcredits?offset=0&limit=15&direction=desc&order=done_at",
+                  "host": [
+                    "https://api.pocketto.com.br"
+                  ],
+                  "path": [
+                    "vdash",
+                    "conciliation",
+                    "accountcredits"
+                  ],
+                  "query": [
+                    {
+                      "key": "offset",
+                      "value": "0",
+                      "equals": true
+                    },
+                    {
+                      "key": "limit",
+                      "value": "15",
+                      "equals": true
+                    },
+                    {
+                      "key": "direction",
+                      "value": "desc",
+                      "equals": true
+                    },
+                    {
+                      "key": "order",
+                      "value": "done_at",
+                      "equals": true
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "_postman_id": "2066044-20604bd7-d846-7690-7065-5ffe61a06759",
+              "name": "AccountCredits - View",
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Account",
+                    "value": "pocketto"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjNiODgxN2U2MmM5Nzg0NmI1NmJmNjBjYmY5OWVmY2U5Mzk2MTUyYTFmYjRhYTkwNGM4MmE3ZGE4M2QzNzBmYTgyZGFlMDFmMDAwMzA0ZDEyIn0.eyJhdWQiOiIyIiwianRpIjoiM2I4ODE3ZTYyYzk3ODQ2YjU2YmY2MGNiZjk5ZWZjZTkzOTYxNTJhMWZiNGFhOTA0YzgyYTdkYTgzZDM3MGZhODJkYWUwMWYwMDAzMDRkMTIiLCJpYXQiOjE1MTE3OTE0MjksIm5iZiI6MTUxMTc5MTQyOSwiZXhwIjoxNTQzMzI3NDI5LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.hIDEX5jGQy1Nz6dBYzyzxnWop_rgyztNNAwZGM0ZhWgcYFjjE6lqxyxux4WK5jY-vPlLBuesTbOnk7yv5MTqiNkwUlGX4dexMWHpZE6j9Jrl_A8TA8uPmSs8eZy1Znl6e4xxSeMWyXNp7UHxsWiMO2qDIDC3f8kydq4f5bQy4HfYSm_HdDOuHOlnw3bf_t1KSfU9saPq_E9h_N4WtMxEkFmhpGtt2CB902WUJG3xrdwj8pRYN5Ydl6VS-lYD2EmnsB-AFYo3uxcw2LiW9o4zOe3TnfKC_1um4pWA91anqqoM4cn0VDUuduZbPu9GUDi782tlmdwZyCD6mbmq25ziHS3VqHI-UfW1Mtm6m7IzZlTYEeaSdm-fRa-b4g_Hc60XGTx9go6xNqoF-lA0ukcrJ0_srH7VZE6MT_XVPdkfww4H2189yjFghn4tgQFXkPxEeocryDJM4FWOZ1VcqwcjdyoTFs3xSJoDAMsnYaHxwgq6r0L89IyGmge0uefWyYfDYcCA7mkKLhgiBQAlgjoY-Y-IJYc6fshUzBmFhupn63KHvxjmry0z_ORwDjoR5nQmHzDYArn6v1CWTsDaastp501NSinMXaL2C3s5wMXgmIqmrOTbGBYPUkm9_bFhZ25kCZHPV9u0qNjSlS3uOho8oEjflVg_pjKoYSON7CYT_Go"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"username\" : \"rk.fadini@gmail.com\",\n  \"password\" : \"123123\"\n}"
+                },
+                "url": "https://api.pocketto.com.br/vdash/conciliation/accountcredits/269"
+              },
+              "response": []
+            },
+            {
+              "_postman_id": "2066044-df573f25-f7ba-b64e-47c2-fd204b6e3db7",
+              "name": "AccountCredits - Delete",
+              "request": {
+                "method": "DELETE",
+                "header": [
+                  {
+                    "key": "Account",
+                    "value": "pocketto"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjNiODgxN2U2MmM5Nzg0NmI1NmJmNjBjYmY5OWVmY2U5Mzk2MTUyYTFmYjRhYTkwNGM4MmE3ZGE4M2QzNzBmYTgyZGFlMDFmMDAwMzA0ZDEyIn0.eyJhdWQiOiIyIiwianRpIjoiM2I4ODE3ZTYyYzk3ODQ2YjU2YmY2MGNiZjk5ZWZjZTkzOTYxNTJhMWZiNGFhOTA0YzgyYTdkYTgzZDM3MGZhODJkYWUwMWYwMDAzMDRkMTIiLCJpYXQiOjE1MTE3OTE0MjksIm5iZiI6MTUxMTc5MTQyOSwiZXhwIjoxNTQzMzI3NDI5LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.hIDEX5jGQy1Nz6dBYzyzxnWop_rgyztNNAwZGM0ZhWgcYFjjE6lqxyxux4WK5jY-vPlLBuesTbOnk7yv5MTqiNkwUlGX4dexMWHpZE6j9Jrl_A8TA8uPmSs8eZy1Znl6e4xxSeMWyXNp7UHxsWiMO2qDIDC3f8kydq4f5bQy4HfYSm_HdDOuHOlnw3bf_t1KSfU9saPq_E9h_N4WtMxEkFmhpGtt2CB902WUJG3xrdwj8pRYN5Ydl6VS-lYD2EmnsB-AFYo3uxcw2LiW9o4zOe3TnfKC_1um4pWA91anqqoM4cn0VDUuduZbPu9GUDi782tlmdwZyCD6mbmq25ziHS3VqHI-UfW1Mtm6m7IzZlTYEeaSdm-fRa-b4g_Hc60XGTx9go6xNqoF-lA0ukcrJ0_srH7VZE6MT_XVPdkfww4H2189yjFghn4tgQFXkPxEeocryDJM4FWOZ1VcqwcjdyoTFs3xSJoDAMsnYaHxwgq6r0L89IyGmge0uefWyYfDYcCA7mkKLhgiBQAlgjoY-Y-IJYc6fshUzBmFhupn63KHvxjmry0z_ORwDjoR5nQmHzDYArn6v1CWTsDaastp501NSinMXaL2C3s5wMXgmIqmrOTbGBYPUkm9_bFhZ25kCZHPV9u0qNjSlS3uOho8oEjflVg_pjKoYSON7CYT_Go"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": "https://api.pocketto.com.br/vdash/conciliation/accountcredits/225"
+              },
+              "response": []
+            },
+            {
+              "_postman_id": "2066044-53a72f9a-7992-5816-7520-8a161867a6d3",
+              "name": "AccountCredits - Update",
+              "request": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Account",
+                    "value": "pocketto"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjNiODgxN2U2MmM5Nzg0NmI1NmJmNjBjYmY5OWVmY2U5Mzk2MTUyYTFmYjRhYTkwNGM4MmE3ZGE4M2QzNzBmYTgyZGFlMDFmMDAwMzA0ZDEyIn0.eyJhdWQiOiIyIiwianRpIjoiM2I4ODE3ZTYyYzk3ODQ2YjU2YmY2MGNiZjk5ZWZjZTkzOTYxNTJhMWZiNGFhOTA0YzgyYTdkYTgzZDM3MGZhODJkYWUwMWYwMDAzMDRkMTIiLCJpYXQiOjE1MTE3OTE0MjksIm5iZiI6MTUxMTc5MTQyOSwiZXhwIjoxNTQzMzI3NDI5LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.hIDEX5jGQy1Nz6dBYzyzxnWop_rgyztNNAwZGM0ZhWgcYFjjE6lqxyxux4WK5jY-vPlLBuesTbOnk7yv5MTqiNkwUlGX4dexMWHpZE6j9Jrl_A8TA8uPmSs8eZy1Znl6e4xxSeMWyXNp7UHxsWiMO2qDIDC3f8kydq4f5bQy4HfYSm_HdDOuHOlnw3bf_t1KSfU9saPq_E9h_N4WtMxEkFmhpGtt2CB902WUJG3xrdwj8pRYN5Ydl6VS-lYD2EmnsB-AFYo3uxcw2LiW9o4zOe3TnfKC_1um4pWA91anqqoM4cn0VDUuduZbPu9GUDi782tlmdwZyCD6mbmq25ziHS3VqHI-UfW1Mtm6m7IzZlTYEeaSdm-fRa-b4g_Hc60XGTx9go6xNqoF-lA0ukcrJ0_srH7VZE6MT_XVPdkfww4H2189yjFghn4tgQFXkPxEeocryDJM4FWOZ1VcqwcjdyoTFs3xSJoDAMsnYaHxwgq6r0L89IyGmge0uefWyYfDYcCA7mkKLhgiBQAlgjoY-Y-IJYc6fshUzBmFhupn63KHvxjmry0z_ORwDjoR5nQmHzDYArn6v1CWTsDaastp501NSinMXaL2C3s5wMXgmIqmrOTbGBYPUkm9_bFhZ25kCZHPV9u0qNjSlS3uOho8oEjflVg_pjKoYSON7CYT_Go"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n\t\"bank\" : \"Bradesco\",\n\t\"description\" : \"DEPOSIT TRANSFER BDN Restaurante e Lanchonete Dejavu\",\n\t\"conciliated\" : 0,\n\t\"done_at\" : \"2019-09-25\",\n\t\"amount\" : 1500.00\n}"
+                },
+                "url": "https://api.pocketto.com.br/vdash/conciliation/accountcredits/233"
               },
               "response": []
             }

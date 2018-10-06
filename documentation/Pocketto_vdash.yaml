@@ -2103,7 +2103,7 @@
               "mode": "raw",
               "raw": "{\n  \"username\" : \"rk.fadini@gmail.com\",\n  \"password\" : \"123123\"\n}"
             },
-            "url": "https://api.pocketto.com.br/vdash/payments/4691"
+            "url": "https://api.pocketto.com.br/vdash/payments/626"
           },
           "response": []
         },
@@ -3014,7 +3014,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"payment_id\": 568\n}"
+              "raw": "{\n  \"payment_id\": 608\n}"
             },
             "url": "https://api.pocketto.com.br/vdash/boleto/process"
           },

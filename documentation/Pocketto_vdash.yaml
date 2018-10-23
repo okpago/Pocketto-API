@@ -2180,9 +2180,9 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"amount\": 100,\n  \"due_date\": \"2018-02-20\"\n}"
+              "raw": "{\n  \"document_data\": \"asdasdasdasdasd\"\n}"
             },
-            "url": "https://api.pocketto.com.br/vdash/payments/7662,"
+            "url": "https://api.pocketto.com.br/vdash/payments/1088"
           },
           "response": []
         },

@@ -2207,7 +2207,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"amount\": \"30\",\n  \"method_id\" : 4,\n  \"description\":\"descrição\",\n  \"user\": {\n    \"name\": \"Julio Moreira\",\n    \"email\": \"juliodorres@gmail.com\",\n    \"cpf\" : \"01688757058\",\n    \"mobile\" : \"51989006719\",\n    \"gender\": \"M\",\n    \"address_zipcode\": \"92130-730\",\n    \"address_city_id\": 4001,\n    \"address_state\": \"RS\",\n    \"address_district\": \"NITERÓI\",\n    \"address_street\": \"Tóquio\",\n    \"address_number\": \"123\"\n  },\n  \"origin\": \"formulario\",\n  \"destination\": 355,\n  \"recurring\" : 0,\n  \"recurring_day_month\" : 1,\n  \"recurring_amount\" : 10,\n  \"bank_code_intention\": \"2\"\n}"
+              "raw": "{\n  \"amount\": \"30\",\n  \"method_id\" : 1,\n  \"description\":\"descrição\",\n  \"user\": {\n    \"name\": \"Julio Moreira\",\n    \"email\": \"juliodorres@gmail.com\",\n    \"cpf\" : \"01688757058\",\n    \"mobile\" : \"51989006719\",\n    \"gender\": \"M\",\n    \"address_zipcode\": \"92130-730\",\n    \"address_city_id\": 4001,\n    \"address_state\": \"RS\",\n    \"address_district\": \"NITERÓI\",\n    \"address_street\": \"Tóquio\",\n    \"address_number\": \"123\"\n  },\n  \"origin\": \"formulario\",\n  \"destination\": 355,\n  \"recurring\" : 0,\n  \"recurring_day_month\" : 1,\n  \"recurring_amount\" : 10,\n  \"bank_code_intention\": \"2\"\n}"
             },
             "url": "https://api.pocketto.com.br/vdash/payments"
           },
@@ -3019,7 +3019,7 @@
       "item": [
         {
           "_postman_id": "2066044-6339aaf7-1f06-4dca-865f-50a52947a9f9",
-          "name": "Boleto - Process",
+          "name": "DEPRECATED - Boleto - Process",
           "request": {
             "method": "POST",
             "header": [

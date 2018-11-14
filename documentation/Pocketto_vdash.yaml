@@ -2931,7 +2931,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"email\" : \"rk.fadini@gmail.com\",\n  \"mobile\" : \"+5511984257898\"\n}"
+              "raw": "{\n  \"email\" : \"rk.fadini@gmail.com\"\n}"
             },
             "url": "https://api.pocketto.com.br/vdash/users/1"
           },

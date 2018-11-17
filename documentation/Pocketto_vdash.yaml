@@ -1080,19 +1080,9 @@
                   "formdata": [
                     {
                       "key": "file",
+                      "value": null,
                       "description": "",
-                      "type": "file",
-                      "src": {
-                        "0": {
-                          "name": "ajustes likert.odt",
-                          "lastModified": 1477345608969,
-                          "lastModifiedDate": "2016-10-24T21:46:48.969Z",
-                          "webkitRelativePath": "",
-                          "size": 9016,
-                          "type": "application/vnd.oasis.opendocument.text"
-                        },
-                        "length": 1
-                      }
+                      "type": "file"
                     },
                     {
                       "key": "bank",

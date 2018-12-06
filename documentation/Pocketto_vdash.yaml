@@ -191,11 +191,28 @@
                 "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjNiODgxN2U2MmM5Nzg0NmI1NmJmNjBjYmY5OWVmY2U5Mzk2MTUyYTFmYjRhYTkwNGM4MmE3ZGE4M2QzNzBmYTgyZGFlMDFmMDAwMzA0ZDEyIn0.eyJhdWQiOiIyIiwianRpIjoiM2I4ODE3ZTYyYzk3ODQ2YjU2YmY2MGNiZjk5ZWZjZTkzOTYxNTJhMWZiNGFhOTA0YzgyYTdkYTgzZDM3MGZhODJkYWUwMWYwMDAzMDRkMTIiLCJpYXQiOjE1MTE3OTE0MjksIm5iZiI6MTUxMTc5MTQyOSwiZXhwIjoxNTQzMzI3NDI5LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.hIDEX5jGQy1Nz6dBYzyzxnWop_rgyztNNAwZGM0ZhWgcYFjjE6lqxyxux4WK5jY-vPlLBuesTbOnk7yv5MTqiNkwUlGX4dexMWHpZE6j9Jrl_A8TA8uPmSs8eZy1Znl6e4xxSeMWyXNp7UHxsWiMO2qDIDC3f8kydq4f5bQy4HfYSm_HdDOuHOlnw3bf_t1KSfU9saPq_E9h_N4WtMxEkFmhpGtt2CB902WUJG3xrdwj8pRYN5Ydl6VS-lYD2EmnsB-AFYo3uxcw2LiW9o4zOe3TnfKC_1um4pWA91anqqoM4cn0VDUuduZbPu9GUDi782tlmdwZyCD6mbmq25ziHS3VqHI-UfW1Mtm6m7IzZlTYEeaSdm-fRa-b4g_Hc60XGTx9go6xNqoF-lA0ukcrJ0_srH7VZE6MT_XVPdkfww4H2189yjFghn4tgQFXkPxEeocryDJM4FWOZ1VcqwcjdyoTFs3xSJoDAMsnYaHxwgq6r0L89IyGmge0uefWyYfDYcCA7mkKLhgiBQAlgjoY-Y-IJYc6fshUzBmFhupn63KHvxjmry0z_ORwDjoR5nQmHzDYArn6v1CWTsDaastp501NSinMXaL2C3s5wMXgmIqmrOTbGBYPUkm9_bFhZ25kCZHPV9u0qNjSlS3uOho8oEjflVg_pjKoYSON7CYT_Go"
               }
             ],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
-            "url": "https://api.pocketto.com.br/vdash/admin_users/1"
+            "body": {},
+            "url": "https://api.pocketto.com.br/vdash/admin_users/9"
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "2066044-d83ed633-3c5a-470f-8f7f-8fa2b254aede",
+          "name": "Admin Users - Me",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Account",
+                "value": "pocketto"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjNiODgxN2U2MmM5Nzg0NmI1NmJmNjBjYmY5OWVmY2U5Mzk2MTUyYTFmYjRhYTkwNGM4MmE3ZGE4M2QzNzBmYTgyZGFlMDFmMDAwMzA0ZDEyIn0.eyJhdWQiOiIyIiwianRpIjoiM2I4ODE3ZTYyYzk3ODQ2YjU2YmY2MGNiZjk5ZWZjZTkzOTYxNTJhMWZiNGFhOTA0YzgyYTdkYTgzZDM3MGZhODJkYWUwMWYwMDAzMDRkMTIiLCJpYXQiOjE1MTE3OTE0MjksIm5iZiI6MTUxMTc5MTQyOSwiZXhwIjoxNTQzMzI3NDI5LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.hIDEX5jGQy1Nz6dBYzyzxnWop_rgyztNNAwZGM0ZhWgcYFjjE6lqxyxux4WK5jY-vPlLBuesTbOnk7yv5MTqiNkwUlGX4dexMWHpZE6j9Jrl_A8TA8uPmSs8eZy1Znl6e4xxSeMWyXNp7UHxsWiMO2qDIDC3f8kydq4f5bQy4HfYSm_HdDOuHOlnw3bf_t1KSfU9saPq_E9h_N4WtMxEkFmhpGtt2CB902WUJG3xrdwj8pRYN5Ydl6VS-lYD2EmnsB-AFYo3uxcw2LiW9o4zOe3TnfKC_1um4pWA91anqqoM4cn0VDUuduZbPu9GUDi782tlmdwZyCD6mbmq25ziHS3VqHI-UfW1Mtm6m7IzZlTYEeaSdm-fRa-b4g_Hc60XGTx9go6xNqoF-lA0ukcrJ0_srH7VZE6MT_XVPdkfww4H2189yjFghn4tgQFXkPxEeocryDJM4FWOZ1VcqwcjdyoTFs3xSJoDAMsnYaHxwgq6r0L89IyGmge0uefWyYfDYcCA7mkKLhgiBQAlgjoY-Y-IJYc6fshUzBmFhupn63KHvxjmry0z_ORwDjoR5nQmHzDYArn6v1CWTsDaastp501NSinMXaL2C3s5wMXgmIqmrOTbGBYPUkm9_bFhZ25kCZHPV9u0qNjSlS3uOho8oEjflVg_pjKoYSON7CYT_Go"
+              }
+            ],
+            "body": {},
+            "url": "https://api.pocketto.com.br/vdash/me"
           },
           "response": []
         },
@@ -2317,7 +2334,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"amount\": 30.00,\n  \"method_id\" : 1,\n  \"user\": {\n    \"name\": \"Vinicius Matteus\",\n    \"email\": \"vmatteus@gmail.com\",\n    \"cpf\" : \"01286800080\",\n    \"mobile\" : \"51981332395\"\n  },\n  \"origin\": \"woocommerce\"\n}"
+              "raw": "{\n  \"amount\": \"30\",\n  \"method_id\" : 1,\n  \"description\":\"descrição\",\n  \"user\": {\n    \"name\": \"Julio Moreira\",\n    \"email\": \"juliodorres@gmail.com\",\n    \"cpf\" : \"01688757058\",\n    \"mobile\" : \"51981332395\",\n    \"gender\": \"M\",\n    \"address_zipcode\": \"92130-730\",\n    \"address_city_id\": 4001,\n    \"address_state\": \"RS\",\n    \"address_district\": \"NITERÓI\",\n    \"address_street\": \"Tóquio\",\n    \"address_number\": \"123\"\n  },\n  \"origin\": \"formulario\",\n  \"destination\": 355,\n  \"recurring\" : 1,\n  \"recurring_day_month\" : 4,\n  \"recurring_amount\" : 10,\n  \"bank_code_intention\": \"\"\n}"
             },
             "url": "https://api.pocketto.com.br/vdash/payments",
             "description": "Api de criação de pagamento/doação"

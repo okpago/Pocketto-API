@@ -2514,7 +2514,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"amount\": \"32\",\n  \"method_id\" : 4,\n  \"description\":\"\",\n  \"user\": {\n    \"name\": \"Julio Moreira\",\n    \"email\": \"juliodorres@gmail.com\",\n    \"cnpj\" : \"54349293000146\",\n    \"mobile\" : \"51981332395\",\n    \"gender\": \"M\",\n    \"address_zipcode\": \"92130730\",\n    \"address_city_id\": 4001,\n    \"address_state\": \"RS\",\n    \"address_district\": \"NITERÓI\",\n    \"address_street\": \"Tóquio\",\n    \"address_number\": \"123\"\n  },\n  \"origin\": \"formulario\",\n  \"destination\": 355,\n  \"recurring\" : 0,\n  \"recurring_day_month\" : 19,\n  \"recurring_amount\" : 30,\n  \"bank_code_intention\": \"611\"\n}"
+              "raw": "{\n  \"amount\": 5,\n  \"method_id\" : 2,\n  \"description\":\"\",\n  \"user\": {\n    \"name\": \"Julio Moreira\",\n    \"email\": \"juliodorres@gmail.com\",\n    \"cnpj\" : \"54349293000146\",\n    \"mobile\" : \"51981332395\",\n    \"gender\": \"M\",\n    \"address_zipcode\": \"92130730\",\n    \"address_city_id\": 4001,\n    \"address_state\": \"RS\",\n    \"address_district\": \"NITERÓI\",\n    \"address_street\": \"Tóquio\",\n    \"address_number\": \"123\"\n  },\n  \"origin\": \"formulario\",\n  \"destination\": 355,\n  \"recurring\" : 0,\n  \"recurring_day_month\" : 19,\n  \"recurring_amount\" : 30,\n  \"bank_code_intention\": \"611\"\n}"
             },
             "url": "https://api.pocketto.com.br/vdash/payments",
             "description": "Api de criação de pagamento/doação"
@@ -3367,7 +3367,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"payment_id\": 4757,\n  \"card\":{\n    \"brand\":\"master\",\n    \"number\":\"4532781440000004\",\n    \"cvc\":\"123\",\n    \"holder\":\"Julio Moreira\",\n    \"exp_date\":\"02/22\"\n  }\n}"
+              "raw": "{\n  \"payment_id\": 4688,\n  \"card\":{\n    \"brand\":\"master\",\n    \"number\":\"4040240007879402\",\n    \"cvc\":\"470\",\n    \"holder\":\"Vinicius M Matteus\",\n    \"exp_date\":\"05/22\"\n  }\n}"
             },
             "url": "https://api.pocketto.com.br/vdash/credit_card/process"
           },

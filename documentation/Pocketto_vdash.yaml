@@ -1644,7 +1644,26 @@
               "mode": "raw",
               "raw": ""
             },
-            "url": "https://api.pocketto.com.br/vdash/financial/transfers/4/2019"
+            "url": {
+              "raw": "https://api.pocketto.com.br/vdash/financial/transfers/4/2019?page=",
+              "host": [
+                "https://api.pocketto.com.br"
+              ],
+              "path": [
+                "vdash",
+                "financial",
+                "transfers",
+                "4",
+                "2019"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "",
+                  "equals": true
+                }
+              ]
+            }
           },
           "response": []
         },
@@ -2656,7 +2675,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"amount\": 5,\n  \"method_id\" : 6,\n  \"description\":\"\",\n  \"user\": {\n    \"name\": \"Vinicius Matteus\",\n    \"email\": \"vmatteus@gmail.com\",\n    \"cnpj\" : \"54349293000146\",\n    \"mobile\" : \"51981332395\",\n    \"gender\": \"M\",\n    \"address_zipcode\": \"90870370\",\n    \"address_city_id\": 4001,\n    \"address_state\": \"RS\",\n    \"address_district\": \"NITERÓI\",\n    \"address_street\": \"Tóquio\",\n    \"address_number\": \"123\"\n  },\n  \"origin\": \"formulario\",\n  \"destination\": 355,\n  \"recurring\" : 0,\n  \"recurring_day_month\" : 19,\n  \"recurring_amount\" : 30,\n  \"bank_code_intention\": \"611\"\n}"
+              "raw": "{\n  \"amount\": 5,\n  \"method_id\" : 4,\n  \"description\":\"\",\n  \"user\": {\n    \"name\": \"Vinicius Matteus\",\n    \"email\": \"vmatteus@gmail.com\",\n    \"cnpj\" : \"54349293000146\",\n    \"mobile\" : \"51981332395\",\n    \"gender\": \"M\",\n    \"address_zipcode\": \"90870370\",\n    \"address_city_id\": 4001,\n    \"address_state\": \"RS\",\n    \"address_district\": \"NITERÓI\",\n    \"address_street\": \"Tóquio\",\n    \"address_number\": \"123\"\n  }\n}"
             },
             "url": "https://api.pocketto.com.br/vdash/payments",
             "description": "Api de criação de pagamento/doação"
@@ -3395,7 +3414,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"email\" : \"teucu@gmail.com\",\n  \"name\": \"Julio Cuvirgem\",\n  \"cpf\": \"95868918606\",\n  \"mobile\" : \"5191332395\",\n  \"page_hash\": \"302a69c66da5d8b99ef70bc399b38d1c608efc97909651b3\"\n}"
+              "raw": "{\n  \"email\" : \"teucu@gmail.com\",\n  \"name\": \"Julio Cuvirgem\",\n  \"cpf\": \"86194691000\",\n  \"mobile\" : \"5191332395\",\n  \"page_hash\": \"302a69c66da5d8b99ef70bc399b38d1c608efc97909651b3\"\n}"
             },
             "url": "https://api.pocketto.com.br/vdash/users"
           },

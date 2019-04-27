@@ -6,13 +6,11 @@
   },
   "item": [
     {
-      "_postman_id": "2066044-c0336628-dc3e-488e-00cd-3978d7af975c",
       "name": "API Keys",
-      "description": "",
       "item": [
         {
-          "_postman_id": "2066044-14067c70-5af6-0a73-93b4-aa983f39908e",
           "name": "API Keys - List",
+          "_postman_id": "2066044-14067c70-5af6-0a73-93b4-aa983f39908e",
           "request": {
             "method": "GET",
             "header": [
@@ -25,17 +23,13 @@
                 "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjNiODgxN2U2MmM5Nzg0NmI1NmJmNjBjYmY5OWVmY2U5Mzk2MTUyYTFmYjRhYTkwNGM4MmE3ZGE4M2QzNzBmYTgyZGFlMDFmMDAwMzA0ZDEyIn0.eyJhdWQiOiIyIiwianRpIjoiM2I4ODE3ZTYyYzk3ODQ2YjU2YmY2MGNiZjk5ZWZjZTkzOTYxNTJhMWZiNGFhOTA0YzgyYTdkYTgzZDM3MGZhODJkYWUwMWYwMDAzMDRkMTIiLCJpYXQiOjE1MTE3OTE0MjksIm5iZiI6MTUxMTc5MTQyOSwiZXhwIjoxNTQzMzI3NDI5LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.hIDEX5jGQy1Nz6dBYzyzxnWop_rgyztNNAwZGM0ZhWgcYFjjE6lqxyxux4WK5jY-vPlLBuesTbOnk7yv5MTqiNkwUlGX4dexMWHpZE6j9Jrl_A8TA8uPmSs8eZy1Znl6e4xxSeMWyXNp7UHxsWiMO2qDIDC3f8kydq4f5bQy4HfYSm_HdDOuHOlnw3bf_t1KSfU9saPq_E9h_N4WtMxEkFmhpGtt2CB902WUJG3xrdwj8pRYN5Ydl6VS-lYD2EmnsB-AFYo3uxcw2LiW9o4zOe3TnfKC_1um4pWA91anqqoM4cn0VDUuduZbPu9GUDi782tlmdwZyCD6mbmq25ziHS3VqHI-UfW1Mtm6m7IzZlTYEeaSdm-fRa-b4g_Hc60XGTx9go6xNqoF-lA0ukcrJ0_srH7VZE6MT_XVPdkfww4H2189yjFghn4tgQFXkPxEeocryDJM4FWOZ1VcqwcjdyoTFs3xSJoDAMsnYaHxwgq6r0L89IyGmge0uefWyYfDYcCA7mkKLhgiBQAlgjoY-Y-IJYc6fshUzBmFhupn63KHvxjmry0z_ORwDjoR5nQmHzDYArn6v1CWTsDaastp501NSinMXaL2C3s5wMXgmIqmrOTbGBYPUkm9_bFhZ25kCZHPV9u0qNjSlS3uOho8oEjflVg_pjKoYSON7CYT_Go"
               }
             ],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
             "url": "https://api.pocketto.com.br/vdash/api_keys"
           },
           "response": []
         },
         {
-          "_postman_id": "2066044-19ad8894-99f8-4a46-f4a9-8b24e25bb820",
           "name": "API Keys - View",
+          "_postman_id": "2066044-19ad8894-99f8-4a46-f4a9-8b24e25bb820",
           "request": {
             "method": "GET",
             "header": [
@@ -61,8 +55,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-ffce84ed-8159-658c-4a23-b07487aefca5",
           "name": "API Keys - Create",
+          "_postman_id": "2066044-ffce84ed-8159-658c-4a23-b07487aefca5",
           "request": {
             "method": "POST",
             "header": [
@@ -88,8 +82,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-51ae9ee7-cfd9-ae6d-ff5e-9c0849138897",
           "name": "API Keys - Update",
+          "_postman_id": "2066044-51ae9ee7-cfd9-ae6d-ff5e-9c0849138897",
           "request": {
             "method": "PUT",
             "header": [
@@ -115,8 +109,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-0a141fbd-347e-b684-3111-6b2d4bc8e89a",
           "name": "API Keys  - Delete",
+          "_postman_id": "2066044-0a141fbd-347e-b684-3111-6b2d4bc8e89a",
           "request": {
             "method": "DELETE",
             "header": [
@@ -141,16 +135,15 @@
           },
           "response": []
         }
-      ]
+      ],
+      "_postman_id": "2066044-c0336628-dc3e-488e-00cd-3978d7af975c"
     },
     {
-      "_postman_id": "2066044-2ab65483-7352-9e5c-3b89-fb9567f2e081",
       "name": "Admin Users",
-      "description": "",
       "item": [
         {
-          "_postman_id": "2066044-3a4c8aab-89c2-4b81-5ad9-6eacf297ac81",
           "name": "Admin Users - List",
+          "_postman_id": "2066044-3a4c8aab-89c2-4b81-5ad9-6eacf297ac81",
           "request": {
             "method": "GET",
             "header": [
@@ -177,8 +170,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-48a85771-b2a0-621c-c123-34e728866e6d",
           "name": "Admin Users - Show",
+          "_postman_id": "2066044-48a85771-b2a0-621c-c123-34e728866e6d",
           "request": {
             "method": "GET",
             "header": [
@@ -191,14 +184,17 @@
                 "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjNiODgxN2U2MmM5Nzg0NmI1NmJmNjBjYmY5OWVmY2U5Mzk2MTUyYTFmYjRhYTkwNGM4MmE3ZGE4M2QzNzBmYTgyZGFlMDFmMDAwMzA0ZDEyIn0.eyJhdWQiOiIyIiwianRpIjoiM2I4ODE3ZTYyYzk3ODQ2YjU2YmY2MGNiZjk5ZWZjZTkzOTYxNTJhMWZiNGFhOTA0YzgyYTdkYTgzZDM3MGZhODJkYWUwMWYwMDAzMDRkMTIiLCJpYXQiOjE1MTE3OTE0MjksIm5iZiI6MTUxMTc5MTQyOSwiZXhwIjoxNTQzMzI3NDI5LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.hIDEX5jGQy1Nz6dBYzyzxnWop_rgyztNNAwZGM0ZhWgcYFjjE6lqxyxux4WK5jY-vPlLBuesTbOnk7yv5MTqiNkwUlGX4dexMWHpZE6j9Jrl_A8TA8uPmSs8eZy1Znl6e4xxSeMWyXNp7UHxsWiMO2qDIDC3f8kydq4f5bQy4HfYSm_HdDOuHOlnw3bf_t1KSfU9saPq_E9h_N4WtMxEkFmhpGtt2CB902WUJG3xrdwj8pRYN5Ydl6VS-lYD2EmnsB-AFYo3uxcw2LiW9o4zOe3TnfKC_1um4pWA91anqqoM4cn0VDUuduZbPu9GUDi782tlmdwZyCD6mbmq25ziHS3VqHI-UfW1Mtm6m7IzZlTYEeaSdm-fRa-b4g_Hc60XGTx9go6xNqoF-lA0ukcrJ0_srH7VZE6MT_XVPdkfww4H2189yjFghn4tgQFXkPxEeocryDJM4FWOZ1VcqwcjdyoTFs3xSJoDAMsnYaHxwgq6r0L89IyGmge0uefWyYfDYcCA7mkKLhgiBQAlgjoY-Y-IJYc6fshUzBmFhupn63KHvxjmry0z_ORwDjoR5nQmHzDYArn6v1CWTsDaastp501NSinMXaL2C3s5wMXgmIqmrOTbGBYPUkm9_bFhZ25kCZHPV9u0qNjSlS3uOho8oEjflVg_pjKoYSON7CYT_Go"
               }
             ],
-            "body": {},
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
             "url": "https://api.pocketto.com.br/vdash/admin_users/9"
           },
           "response": []
         },
         {
-          "_postman_id": "2066044-d83ed633-3c5a-470f-8f7f-8fa2b254aede",
           "name": "Admin Users - Me",
+          "_postman_id": "2066044-d83ed633-3c5a-470f-8f7f-8fa2b254aede",
           "request": {
             "method": "GET",
             "header": [
@@ -216,14 +212,17 @@
                 "disabled": true
               }
             ],
-            "body": {},
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
             "url": "https://api.pocketto.com.br/vdash/me"
           },
           "response": []
         },
         {
-          "_postman_id": "2066044-bf309516-0e93-ef88-3aee-aec8a46fa85f",
           "name": "Admin Users - Create",
+          "_postman_id": "2066044-bf309516-0e93-ef88-3aee-aec8a46fa85f",
           "request": {
             "method": "POST",
             "header": [
@@ -249,8 +248,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-b5b3ab52-2c1e-c79b-bb33-6820e8aa7587",
           "name": "Admin Users - Update",
+          "_postman_id": "2066044-b5b3ab52-2c1e-c79b-bb33-6820e8aa7587",
           "request": {
             "method": "PUT",
             "header": [
@@ -276,8 +275,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-de79663f-7774-499d-a4ae-0e41212bd0b8",
           "name": "Admin Users - Update Me",
+          "_postman_id": "2066044-de79663f-7774-499d-a4ae-0e41212bd0b8",
           "request": {
             "method": "PUT",
             "header": [
@@ -303,8 +302,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-beca1033-a352-caed-861c-c5acbee211f8",
           "name": "Admin Users - Delete",
+          "_postman_id": "2066044-beca1033-a352-caed-861c-c5acbee211f8",
           "request": {
             "method": "DELETE",
             "header": [
@@ -329,16 +328,15 @@
           },
           "response": []
         }
-      ]
+      ],
+      "_postman_id": "2066044-2ab65483-7352-9e5c-3b89-fb9567f2e081"
     },
     {
-      "_postman_id": "2066044-78aaad8b-76cc-7ec3-ab56-bcedc537eaa3",
       "name": "Bank Accounts",
-      "description": "",
       "item": [
         {
-          "_postman_id": "2066044-08d0cc8c-0fd7-54cf-cab4-a0c0f080eee4",
           "name": "Bank Accounts - List",
+          "_postman_id": "2066044-08d0cc8c-0fd7-54cf-cab4-a0c0f080eee4",
           "request": {
             "method": "GET",
             "header": [
@@ -365,8 +363,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-39a22871-c9c8-749a-0fa5-9182214e63a8",
           "name": "Bank Accounts - View",
+          "_postman_id": "2066044-39a22871-c9c8-749a-0fa5-9182214e63a8",
           "request": {
             "method": "GET",
             "header": [
@@ -393,8 +391,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-9971a70b-3e82-5a2c-460e-2e0cd596ba17",
           "name": "Bank Accounts - Create",
+          "_postman_id": "2066044-9971a70b-3e82-5a2c-460e-2e0cd596ba17",
           "request": {
             "method": "POST",
             "header": [
@@ -420,8 +418,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-dd0d8691-f70c-d0e0-be74-7fc4f15129d2",
           "name": "Bank Accounts - Update",
+          "_postman_id": "2066044-dd0d8691-f70c-d0e0-be74-7fc4f15129d2",
           "request": {
             "method": "PUT",
             "header": [
@@ -447,8 +445,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-fe095887-314c-86c7-5d18-7597c7881943",
           "name": "Bank Accounts - Delete",
+          "_postman_id": "2066044-fe095887-314c-86c7-5d18-7597c7881943",
           "request": {
             "method": "DELETE",
             "header": [
@@ -474,8 +472,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-909a31f0-7213-a6d0-c573-4d41283d336a",
           "name": "Bank Accounts - Transactions",
+          "_postman_id": "2066044-909a31f0-7213-a6d0-c573-4d41283d336a",
           "request": {
             "method": "POST",
             "header": [
@@ -494,7 +492,6 @@
                 {
                   "key": "input_data",
                   "value": null,
-                  "description": "",
                   "type": "file"
                 }
               ]
@@ -504,8 +501,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-9946fa53-7e46-e3a6-6595-c4a27bc5c464",
           "name": "Bank Accounts - Dates List",
+          "_postman_id": "2066044-9946fa53-7e46-e3a6-6595-c4a27bc5c464",
           "request": {
             "method": "GET",
             "header": [
@@ -540,13 +537,11 @@
               "query": [
                 {
                   "key": "from",
-                  "value": "2017-06-01",
-                  "equals": true
+                  "value": "2017-06-01"
                 },
                 {
                   "key": "to",
-                  "value": "2017-06-30",
-                  "equals": true
+                  "value": "2017-06-30"
                 }
               ]
             },
@@ -555,8 +550,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-c0f93cc3-8c00-a23e-05a4-c9365a2e81d5",
           "name": "Bank Accounts - Date View",
+          "_postman_id": "2066044-c0f93cc3-8c00-a23e-05a4-c9365a2e81d5",
           "request": {
             "method": "GET",
             "header": [
@@ -583,8 +578,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-48fc5758-8ab0-a9c6-3101-8fa51ec4c6c2",
           "name": "Bank Accounts - Date Close",
+          "_postman_id": "2066044-48fc5758-8ab0-a9c6-3101-8fa51ec4c6c2",
           "request": {
             "method": "POST",
             "header": [
@@ -611,8 +606,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-bb199f3d-d391-bbaa-67ea-a702d0c719aa",
           "name": "Bank Accounts - Date Close (Force)",
+          "_postman_id": "2066044-bb199f3d-d391-bbaa-67ea-a702d0c719aa",
           "request": {
             "method": "POST",
             "header": [
@@ -638,16 +633,15 @@
           },
           "response": []
         }
-      ]
+      ],
+      "_postman_id": "2066044-78aaad8b-76cc-7ec3-ab56-bcedc537eaa3"
     },
     {
-      "_postman_id": "2066044-b8b7ee06-237f-2a05-ca3d-310b76e5fbb4",
       "name": "Banks",
-      "description": "",
       "item": [
         {
-          "_postman_id": "2066044-73b8af8f-a5c0-264e-b932-84d495643e68",
           "name": "Banks - List",
+          "_postman_id": "2066044-73b8af8f-a5c0-264e-b932-84d495643e68",
           "request": {
             "method": "GET",
             "header": [
@@ -674,8 +668,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-06990a64-a2da-7e04-78b0-8e6820be46f8",
           "name": "Banks - View",
+          "_postman_id": "2066044-06990a64-a2da-7e04-78b0-8e6820be46f8",
           "request": {
             "method": "GET",
             "header": [
@@ -701,16 +695,15 @@
           },
           "response": []
         }
-      ]
+      ],
+      "_postman_id": "2066044-b8b7ee06-237f-2a05-ca3d-310b76e5fbb4"
     },
     {
-      "_postman_id": "2066044-625c38fc-a842-e4d0-9cd2-892528448ec5",
       "name": "Campaigns",
-      "description": "",
       "item": [
         {
-          "_postman_id": "2066044-d39a7147-3237-11e2-c8f3-1ed77dbbc987",
           "name": "Campaigns - List",
+          "_postman_id": "2066044-d39a7147-3237-11e2-c8f3-1ed77dbbc987",
           "request": {
             "method": "GET",
             "header": [
@@ -737,8 +730,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-3e102e6d-4536-a27e-76fa-c53086e0787b",
           "name": "Campaigns - View",
+          "_postman_id": "2066044-3e102e6d-4536-a27e-76fa-c53086e0787b",
           "request": {
             "method": "GET",
             "header": [
@@ -765,8 +758,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-2d53b262-17dd-15c9-557c-fe38ad0a026b",
           "name": "Campaigns - Create",
+          "_postman_id": "2066044-2d53b262-17dd-15c9-557c-fe38ad0a026b",
           "request": {
             "method": "POST",
             "header": [
@@ -793,8 +786,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-6067e474-f781-4277-d164-5dbb06d99e49",
           "name": "Campaigns - Update",
+          "_postman_id": "2066044-6067e474-f781-4277-d164-5dbb06d99e49",
           "request": {
             "method": "PUT",
             "header": [
@@ -821,8 +814,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-4f797163-6e32-50b5-07be-2ab586f82c84",
           "name": "Campaigns - Activate",
+          "_postman_id": "2066044-4f797163-6e32-50b5-07be-2ab586f82c84",
           "request": {
             "method": "PUT",
             "header": [
@@ -849,8 +842,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-b1bb5582-4d40-a73b-1fb1-537248cf098a",
           "name": "Campaigns - Desactivate",
+          "_postman_id": "2066044-b1bb5582-4d40-a73b-1fb1-537248cf098a",
           "request": {
             "method": "PUT",
             "header": [
@@ -877,8 +870,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-bfcd6228-7d7d-366d-f771-2a94575886a0",
           "name": "Campaigns - Duplicate",
+          "_postman_id": "2066044-bfcd6228-7d7d-366d-f771-2a94575886a0",
           "request": {
             "method": "POST",
             "header": [
@@ -904,21 +897,18 @@
           },
           "response": []
         }
-      ]
+      ],
+      "_postman_id": "2066044-625c38fc-a842-e4d0-9cd2-892528448ec5"
     },
     {
-      "_postman_id": "2066044-abc3a103-6d76-47c4-8940-48ee4f103ba4",
       "name": "Conciliation",
-      "description": "",
       "item": [
         {
-          "_postman_id": "2066044-9d4a7917-0a48-3d9f-346d-97a78e7062bc",
           "name": "Account Credit",
-          "description": "",
           "item": [
             {
-              "_postman_id": "2066044-13861b83-06f2-fea3-34a5-6d0f7e51b90a",
               "name": "file",
+              "_postman_id": "2066044-13861b83-06f2-fea3-34a5-6d0f7e51b90a",
               "request": {
                 "method": "POST",
                 "header": [
@@ -941,19 +931,8 @@
                   "formdata": [
                     {
                       "key": "file",
-                      "description": "",
-                      "type": "file",
-                      "src": {
-                        "0": {
-                          "name": "sheet-2.xlsx",
-                          "lastModified": 1537966859751,
-                          "lastModifiedDate": "2018-09-26T13:00:59.751Z",
-                          "webkitRelativePath": "",
-                          "size": 5090,
-                          "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
-                        },
-                        "length": 1
-                      }
+                      "value": null,
+                      "type": "file"
                     }
                   ]
                 },
@@ -962,8 +941,8 @@
               "response": []
             },
             {
-              "_postman_id": "2066044-59f5c3cc-9191-dd3d-5a81-9575f6a58636",
               "name": "AccountCredits - List",
+              "_postman_id": "2066044-59f5c3cc-9191-dd3d-5a81-9575f6a58636",
               "request": {
                 "method": "GET",
                 "header": [
@@ -997,23 +976,19 @@
                   "query": [
                     {
                       "key": "offset",
-                      "value": "0",
-                      "equals": true
+                      "value": "0"
                     },
                     {
                       "key": "limit",
-                      "value": "15",
-                      "equals": true
+                      "value": "15"
                     },
                     {
                       "key": "direction",
-                      "value": "desc",
-                      "equals": true
+                      "value": "desc"
                     },
                     {
                       "key": "order",
-                      "value": "done_at",
-                      "equals": true
+                      "value": "done_at"
                     }
                   ]
                 }
@@ -1021,8 +996,8 @@
               "response": []
             },
             {
-              "_postman_id": "2066044-20604bd7-d846-7690-7065-5ffe61a06759",
               "name": "AccountCredits - View",
+              "_postman_id": "2066044-20604bd7-d846-7690-7065-5ffe61a06759",
               "request": {
                 "method": "GET",
                 "header": [
@@ -1048,8 +1023,8 @@
               "response": []
             },
             {
-              "_postman_id": "2066044-df573f25-f7ba-b64e-47c2-fd204b6e3db7",
               "name": "AccountCredits - Delete",
+              "_postman_id": "2066044-df573f25-f7ba-b64e-47c2-fd204b6e3db7",
               "request": {
                 "method": "DELETE",
                 "header": [
@@ -1075,8 +1050,8 @@
               "response": []
             },
             {
-              "_postman_id": "2066044-53a72f9a-7992-5816-7520-8a161867a6d3",
               "name": "AccountCredits - Update",
+              "_postman_id": "2066044-53a72f9a-7992-5816-7520-8a161867a6d3",
               "request": {
                 "method": "PUT",
                 "header": [
@@ -1102,8 +1077,8 @@
               "response": []
             },
             {
-              "_postman_id": "2066044-82d3323d-e167-49b1-81f4-535cdbcdd92b",
               "name": "AccountCredits - List Payments",
+              "_postman_id": "2066044-82d3323d-e167-49b1-81f4-535cdbcdd92b",
               "request": {
                 "method": "GET",
                 "header": [
@@ -1116,22 +1091,24 @@
                     "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjNiODgxN2U2MmM5Nzg0NmI1NmJmNjBjYmY5OWVmY2U5Mzk2MTUyYTFmYjRhYTkwNGM4MmE3ZGE4M2QzNzBmYTgyZGFlMDFmMDAwMzA0ZDEyIn0.eyJhdWQiOiIyIiwianRpIjoiM2I4ODE3ZTYyYzk3ODQ2YjU2YmY2MGNiZjk5ZWZjZTkzOTYxNTJhMWZiNGFhOTA0YzgyYTdkYTgzZDM3MGZhODJkYWUwMWYwMDAzMDRkMTIiLCJpYXQiOjE1MTE3OTE0MjksIm5iZiI6MTUxMTc5MTQyOSwiZXhwIjoxNTQzMzI3NDI5LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.hIDEX5jGQy1Nz6dBYzyzxnWop_rgyztNNAwZGM0ZhWgcYFjjE6lqxyxux4WK5jY-vPlLBuesTbOnk7yv5MTqiNkwUlGX4dexMWHpZE6j9Jrl_A8TA8uPmSs8eZy1Znl6e4xxSeMWyXNp7UHxsWiMO2qDIDC3f8kydq4f5bQy4HfYSm_HdDOuHOlnw3bf_t1KSfU9saPq_E9h_N4WtMxEkFmhpGtt2CB902WUJG3xrdwj8pRYN5Ydl6VS-lYD2EmnsB-AFYo3uxcw2LiW9o4zOe3TnfKC_1um4pWA91anqqoM4cn0VDUuduZbPu9GUDi782tlmdwZyCD6mbmq25ziHS3VqHI-UfW1Mtm6m7IzZlTYEeaSdm-fRa-b4g_Hc60XGTx9go6xNqoF-lA0ukcrJ0_srH7VZE6MT_XVPdkfww4H2189yjFghn4tgQFXkPxEeocryDJM4FWOZ1VcqwcjdyoTFs3xSJoDAMsnYaHxwgq6r0L89IyGmge0uefWyYfDYcCA7mkKLhgiBQAlgjoY-Y-IJYc6fshUzBmFhupn63KHvxjmry0z_ORwDjoR5nQmHzDYArn6v1CWTsDaastp501NSinMXaL2C3s5wMXgmIqmrOTbGBYPUkm9_bFhZ25kCZHPV9u0qNjSlS3uOho8oEjflVg_pjKoYSON7CYT_Go"
                   }
                 ],
-                "body": {},
+                "body": {
+                  "mode": "formdata",
+                  "formdata": []
+                },
                 "url": "https://api.pocketto.com.br/vdash/conciliation/accountcredits/29/payments"
               },
               "response": []
             }
           ],
+          "_postman_id": "2066044-9d4a7917-0a48-3d9f-346d-97a78e7062bc",
           "_postman_isSubFolder": true
         },
         {
-          "_postman_id": "2066044-43766114-f784-44f2-b4b8-9cb708d10855",
           "name": "Bank Statement",
-          "description": "",
           "item": [
             {
-              "_postman_id": "2066044-459a3c1b-d6e0-d87c-3622-bc60a44d2616",
               "name": "Upload File",
+              "_postman_id": "2066044-459a3c1b-d6e0-d87c-3622-bc60a44d2616",
               "request": {
                 "method": "POST",
                 "header": [
@@ -1150,31 +1127,26 @@
                     {
                       "key": "file",
                       "value": null,
-                      "description": "",
                       "type": "file"
                     },
                     {
                       "key": "bank",
                       "value": "santander",
-                      "description": "",
                       "type": "text"
                     },
                     {
                       "key": "type",
                       "value": "xls",
-                      "description": "",
                       "type": "text"
                     },
                     {
                       "key": "date_range",
                       "value": "90",
-                      "description": "",
                       "type": "text"
                     },
                     {
                       "key": "value_range",
                       "value": "300",
-                      "description": "",
                       "type": "text"
                     }
                   ]
@@ -1184,8 +1156,8 @@
               "response": []
             },
             {
-              "_postman_id": "2066044-cced1127-645c-462a-aa30-17d8889c9165",
               "name": "Logs - List",
+              "_postman_id": "2066044-cced1127-645c-462a-aa30-17d8889c9165",
               "request": {
                 "method": "GET",
                 "header": [
@@ -1202,17 +1174,21 @@
                     "value": "application/json"
                   }
                 ],
-                "body": {},
+                "body": {
+                  "mode": "formdata",
+                  "formdata": []
+                },
                 "url": "https://api.pocketto.com.br/vdash/conciliation/bankstatement/logs"
               },
               "response": []
             }
           ],
+          "_postman_id": "2066044-43766114-f784-44f2-b4b8-9cb708d10855",
           "_postman_isSubFolder": true
         },
         {
-          "_postman_id": "2066044-96ec6331-a181-4a2f-ab7a-c08146d3c4d6",
           "name": "Conciliation - List",
+          "_postman_id": "2066044-96ec6331-a181-4a2f-ab7a-c08146d3c4d6",
           "request": {
             "method": "GET",
             "header": [
@@ -1239,8 +1215,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-8b628efa-5ead-4cae-8640-21b4aefcc496",
           "name": "Conciliation - Delete",
+          "_postman_id": "2066044-8b628efa-5ead-4cae-8640-21b4aefcc496",
           "request": {
             "method": "DELETE",
             "header": [
@@ -1267,8 +1243,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-a8a4b345-3ee1-4211-af48-5012800a6e64",
           "name": "Conciliation - Import",
+          "_postman_id": "2066044-a8a4b345-3ee1-4211-af48-5012800a6e64",
           "request": {
             "method": "POST",
             "header": [
@@ -1291,25 +1267,21 @@
                 {
                   "key": "bank",
                   "value": "banco do brasil",
-                  "description": "",
                   "type": "text"
                 },
                 {
                   "key": "date_start",
                   "value": "2018-07-01",
-                  "description": "",
                   "type": "text"
                 },
                 {
                   "key": "date_end",
                   "value": "2018-07-30",
-                  "description": "",
                   "type": "text"
                 },
                 {
                   "key": "doc_file",
                   "value": null,
-                  "description": "",
                   "type": "file"
                 }
               ]
@@ -1318,16 +1290,15 @@
           },
           "response": []
         }
-      ]
+      ],
+      "_postman_id": "2066044-abc3a103-6d76-47c4-8940-48ee4f103ba4"
     },
     {
-      "_postman_id": "2066044-ae8050ff-e9bb-4c9a-2c44-5e8ab3ab750a",
       "name": "Downloads",
-      "description": "",
       "item": [
         {
-          "_postman_id": "2066044-1448a990-a954-0f20-bba5-247932215aea",
           "name": "Downloads - List",
+          "_postman_id": "2066044-1448a990-a954-0f20-bba5-247932215aea",
           "request": {
             "method": "GET",
             "header": [
@@ -1354,8 +1325,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-279da794-bed8-6345-6ad8-d76d9f077173",
           "name": "Downloads - View",
+          "_postman_id": "2066044-279da794-bed8-6345-6ad8-d76d9f077173",
           "request": {
             "method": "GET",
             "header": [
@@ -1382,8 +1353,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-f0df6a38-6f85-0834-2020-8af6ccdeff52",
           "name": "Downloads - Delete",
+          "_postman_id": "2066044-f0df6a38-6f85-0834-2020-8af6ccdeff52",
           "request": {
             "method": "DELETE",
             "header": [
@@ -1408,16 +1379,15 @@
           },
           "response": []
         }
-      ]
+      ],
+      "_postman_id": "2066044-ae8050ff-e9bb-4c9a-2c44-5e8ab3ab750a"
     },
     {
-      "_postman_id": "2066044-dfe92994-0b1b-c916-ed10-5b5eaa1e5d06",
       "name": "Events",
-      "description": "",
       "item": [
         {
-          "_postman_id": "2066044-362de091-64e7-e389-616b-2e0e236e8d1d",
           "name": "Events - List",
+          "_postman_id": "2066044-362de091-64e7-e389-616b-2e0e236e8d1d",
           "request": {
             "method": "GET",
             "header": [
@@ -1430,17 +1400,13 @@
                 "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjNiODgxN2U2MmM5Nzg0NmI1NmJmNjBjYmY5OWVmY2U5Mzk2MTUyYTFmYjRhYTkwNGM4MmE3ZGE4M2QzNzBmYTgyZGFlMDFmMDAwMzA0ZDEyIn0.eyJhdWQiOiIyIiwianRpIjoiM2I4ODE3ZTYyYzk3ODQ2YjU2YmY2MGNiZjk5ZWZjZTkzOTYxNTJhMWZiNGFhOTA0YzgyYTdkYTgzZDM3MGZhODJkYWUwMWYwMDAzMDRkMTIiLCJpYXQiOjE1MTE3OTE0MjksIm5iZiI6MTUxMTc5MTQyOSwiZXhwIjoxNTQzMzI3NDI5LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.hIDEX5jGQy1Nz6dBYzyzxnWop_rgyztNNAwZGM0ZhWgcYFjjE6lqxyxux4WK5jY-vPlLBuesTbOnk7yv5MTqiNkwUlGX4dexMWHpZE6j9Jrl_A8TA8uPmSs8eZy1Znl6e4xxSeMWyXNp7UHxsWiMO2qDIDC3f8kydq4f5bQy4HfYSm_HdDOuHOlnw3bf_t1KSfU9saPq_E9h_N4WtMxEkFmhpGtt2CB902WUJG3xrdwj8pRYN5Ydl6VS-lYD2EmnsB-AFYo3uxcw2LiW9o4zOe3TnfKC_1um4pWA91anqqoM4cn0VDUuduZbPu9GUDi782tlmdwZyCD6mbmq25ziHS3VqHI-UfW1Mtm6m7IzZlTYEeaSdm-fRa-b4g_Hc60XGTx9go6xNqoF-lA0ukcrJ0_srH7VZE6MT_XVPdkfww4H2189yjFghn4tgQFXkPxEeocryDJM4FWOZ1VcqwcjdyoTFs3xSJoDAMsnYaHxwgq6r0L89IyGmge0uefWyYfDYcCA7mkKLhgiBQAlgjoY-Y-IJYc6fshUzBmFhupn63KHvxjmry0z_ORwDjoR5nQmHzDYArn6v1CWTsDaastp501NSinMXaL2C3s5wMXgmIqmrOTbGBYPUkm9_bFhZ25kCZHPV9u0qNjSlS3uOho8oEjflVg_pjKoYSON7CYT_Go"
               }
             ],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
             "url": "https://api.pocketto.com.br/vdash/events"
           },
           "response": []
         },
         {
-          "_postman_id": "2066044-614b51d0-dfb1-ee30-eef7-783934fd1ced",
           "name": "Events - View",
+          "_postman_id": "2066044-614b51d0-dfb1-ee30-eef7-783934fd1ced",
           "request": {
             "method": "GET",
             "header": [
@@ -1453,24 +1419,19 @@
                 "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjNiODgxN2U2MmM5Nzg0NmI1NmJmNjBjYmY5OWVmY2U5Mzk2MTUyYTFmYjRhYTkwNGM4MmE3ZGE4M2QzNzBmYTgyZGFlMDFmMDAwMzA0ZDEyIn0.eyJhdWQiOiIyIiwianRpIjoiM2I4ODE3ZTYyYzk3ODQ2YjU2YmY2MGNiZjk5ZWZjZTkzOTYxNTJhMWZiNGFhOTA0YzgyYTdkYTgzZDM3MGZhODJkYWUwMWYwMDAzMDRkMTIiLCJpYXQiOjE1MTE3OTE0MjksIm5iZiI6MTUxMTc5MTQyOSwiZXhwIjoxNTQzMzI3NDI5LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.hIDEX5jGQy1Nz6dBYzyzxnWop_rgyztNNAwZGM0ZhWgcYFjjE6lqxyxux4WK5jY-vPlLBuesTbOnk7yv5MTqiNkwUlGX4dexMWHpZE6j9Jrl_A8TA8uPmSs8eZy1Znl6e4xxSeMWyXNp7UHxsWiMO2qDIDC3f8kydq4f5bQy4HfYSm_HdDOuHOlnw3bf_t1KSfU9saPq_E9h_N4WtMxEkFmhpGtt2CB902WUJG3xrdwj8pRYN5Ydl6VS-lYD2EmnsB-AFYo3uxcw2LiW9o4zOe3TnfKC_1um4pWA91anqqoM4cn0VDUuduZbPu9GUDi782tlmdwZyCD6mbmq25ziHS3VqHI-UfW1Mtm6m7IzZlTYEeaSdm-fRa-b4g_Hc60XGTx9go6xNqoF-lA0ukcrJ0_srH7VZE6MT_XVPdkfww4H2189yjFghn4tgQFXkPxEeocryDJM4FWOZ1VcqwcjdyoTFs3xSJoDAMsnYaHxwgq6r0L89IyGmge0uefWyYfDYcCA7mkKLhgiBQAlgjoY-Y-IJYc6fshUzBmFhupn63KHvxjmry0z_ORwDjoR5nQmHzDYArn6v1CWTsDaastp501NSinMXaL2C3s5wMXgmIqmrOTbGBYPUkm9_bFhZ25kCZHPV9u0qNjSlS3uOho8oEjflVg_pjKoYSON7CYT_Go"
               }
             ],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
             "url": "https://api.pocketto.com.br/vdash/events/user_profile_updated"
           },
           "response": []
         }
-      ]
+      ],
+      "_postman_id": "2066044-dfe92994-0b1b-c916-ed10-5b5eaa1e5d06"
     },
     {
-      "_postman_id": "2066044-f6b4989b-7f97-a4f8-8b6f-520fa11ae597",
       "name": "Files",
-      "description": "",
       "item": [
         {
-          "_postman_id": "2066044-787e439c-5972-cd90-7572-ae6b8fc2b6f4",
           "name": "Files - Create (Binary)",
+          "_postman_id": "2066044-787e439c-5972-cd90-7572-ae6b8fc2b6f4",
           "request": {
             "method": "POST",
             "header": [
@@ -1508,8 +1469,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-22953d9d-86f7-6f7f-53e3-59f022eb60b8",
           "name": "Files - Create (Base64)",
+          "_postman_id": "2066044-22953d9d-86f7-6f7f-53e3-59f022eb60b8",
           "request": {
             "method": "POST",
             "header": [
@@ -1547,8 +1508,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-0974fb4a-2275-92bf-25e1-8a89d52f860b",
           "name": "Files - View",
+          "_postman_id": "2066044-0974fb4a-2275-92bf-25e1-8a89d52f860b",
           "request": {
             "method": "GET",
             "header": [
@@ -1585,16 +1546,18 @@
           },
           "response": []
         }
-      ]
+      ],
+      "_postman_id": "2066044-f6b4989b-7f97-a4f8-8b6f-520fa11ae597"
     },
     {
-      "_postman_id": "2066044-a9e6f6ce-aa4a-492b-930c-a392e84f8cd0",
       "name": "Financial",
-      "description": "",
       "item": [
         {
-          "_postman_id": "2066044-c5d12648-5568-482b-af81-b5ce9373e551",
           "name": "Balance",
+          "_postman_id": "2066044-c5d12648-5568-482b-af81-b5ce9373e551",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
           "request": {
             "method": "GET",
             "header": [
@@ -1612,17 +1575,16 @@
                 "disabled": true
               }
             ],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
             "url": "https://api.pocketto.com.br/vdash/financial/balance"
           },
           "response": []
         },
         {
-          "_postman_id": "2066044-83d2b594-42e1-4a96-afba-0553feb7dacf",
           "name": "Transfers",
+          "_postman_id": "2066044-83d2b594-42e1-4a96-afba-0553feb7dacf",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
           "request": {
             "method": "GET",
             "header": [
@@ -1640,10 +1602,6 @@
                 "disabled": true
               }
             ],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
             "url": {
               "raw": "https://api.pocketto.com.br/vdash/financial/transfers/4/2019?crowdfundingPage=no",
               "host": [
@@ -1659,8 +1617,7 @@
               "query": [
                 {
                   "key": "crowdfundingPage",
-                  "value": "no",
-                  "equals": true
+                  "value": "no"
                 }
               ]
             }
@@ -1668,8 +1625,11 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-9569775b-520f-4619-a97c-b80e2732ed59",
           "name": "Transfers Detail",
+          "_postman_id": "2066044-9569775b-520f-4619-a97c-b80e2732ed59",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
           "request": {
             "method": "GET",
             "header": [
@@ -1687,17 +1647,16 @@
                 "disabled": true
               }
             ],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
             "url": "https://api.pocketto.com.br/vdash/financial/transfers/1/4/2019"
           },
           "response": []
         },
         {
-          "_postman_id": "2066044-d3c9e94a-97ac-4c5a-871d-45db28f636f8",
           "name": "Withdraw",
+          "_postman_id": "2066044-d3c9e94a-97ac-4c5a-871d-45db28f636f8",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
           "request": {
             "method": "POST",
             "header": [
@@ -1715,23 +1674,17 @@
                 "disabled": true
               }
             ],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
             "url": "https://api.pocketto.com.br/vdash/financial/withdraw"
           },
           "response": []
         }
-      ]
+      ],
+      "_postman_id": "2066044-a9e6f6ce-aa4a-492b-930c-a392e84f8cd0"
     },
     {
-      "_postman_id": "2066044-b1dca487-c6de-a34d-d03a-8e3fa785b38e",
       "name": "Login",
-      "description": "",
       "item": [
         {
-          "_postman_id": "2066044-a8be5b8b-03e3-cf07-159c-8a95d46dc212",
           "name": "Login",
           "event": [
             {
@@ -1745,6 +1698,7 @@
               }
             }
           ],
+          "_postman_id": "2066044-a8be5b8b-03e3-cf07-159c-8a95d46dc212",
           "request": {
             "method": "POST",
             "header": [
@@ -1768,37 +1722,31 @@
                 {
                   "key": "username",
                   "value": "admin@pocketto.com.br",
-                  "description": "",
                   "type": "text"
                 },
                 {
                   "key": "password",
                   "value": "pocketto",
-                  "description": "",
                   "type": "text"
                 },
                 {
                   "key": "client_id",
                   "value": "{{client_id}}",
-                  "description": "",
                   "type": "text"
                 },
                 {
                   "key": "grant_type",
                   "value": "password",
-                  "description": "",
                   "type": "text"
                 },
                 {
                   "key": "client_secret",
                   "value": "{{client_secret}}",
-                  "description": "",
                   "type": "text"
                 },
                 {
                   "key": "scope",
                   "value": "",
-                  "description": "",
                   "type": "text"
                 }
               ]
@@ -1809,8 +1757,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-eed006b3-17c2-08c2-a622-8df12ade29f4",
           "name": "Login - Recovery",
+          "_postman_id": "2066044-eed006b3-17c2-08c2-a622-8df12ade29f4",
           "request": {
             "method": "POST",
             "header": [
@@ -1837,8 +1785,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-958cda91-f8de-6c37-8c94-8af08a8caf51",
           "name": "Login - Reset",
+          "_postman_id": "2066044-958cda91-f8de-6c37-8c94-8af08a8caf51",
           "request": {
             "method": "PUT",
             "header": [
@@ -1865,7 +1813,6 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-e9cb2749-bd4a-b127-6be1-74e94f61d9d3",
           "name": "Logout",
           "event": [
             {
@@ -1879,6 +1826,7 @@
               }
             }
           ],
+          "_postman_id": "2066044-e9cb2749-bd4a-b127-6be1-74e94f61d9d3",
           "request": {
             "method": "POST",
             "header": [
@@ -1904,16 +1852,15 @@
           },
           "response": []
         }
-      ]
+      ],
+      "_postman_id": "2066044-b1dca487-c6de-a34d-d03a-8e3fa785b38e"
     },
     {
-      "_postman_id": "2066044-a5f3615d-493e-9a6b-3cfd-55489a094d10",
       "name": "Messages",
-      "description": "",
       "item": [
         {
-          "_postman_id": "2066044-0b03369d-9122-c42e-782d-111098077f09",
           "name": "Messages - List",
+          "_postman_id": "2066044-0b03369d-9122-c42e-782d-111098077f09",
           "request": {
             "method": "GET",
             "header": [
@@ -1971,8 +1918,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-4af3b54c-7067-5438-1d54-55c8efe24eff",
           "name": "Messages - Create",
+          "_postman_id": "2066044-4af3b54c-7067-5438-1d54-55c8efe24eff",
           "request": {
             "method": "POST",
             "header": [
@@ -1998,8 +1945,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-0f8d43bd-4e34-9617-89f6-fedf1ea85dc0",
           "name": "Messages - View",
+          "_postman_id": "2066044-0f8d43bd-4e34-9617-89f6-fedf1ea85dc0",
           "request": {
             "method": "GET",
             "header": [
@@ -2026,8 +1973,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-f9327264-0d02-66eb-8de1-347c0a75349c",
           "name": "Messages - Cancel",
+          "_postman_id": "2066044-f9327264-0d02-66eb-8de1-347c0a75349c",
           "request": {
             "method": "PUT",
             "header": [
@@ -2054,8 +2001,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-718d6b35-b97b-10b2-8918-fd446cbeff8b",
           "name": "Messages - Delete",
+          "_postman_id": "2066044-718d6b35-b97b-10b2-8918-fd446cbeff8b",
           "request": {
             "method": "DELETE",
             "header": [
@@ -2081,16 +2028,15 @@
           },
           "response": []
         }
-      ]
+      ],
+      "_postman_id": "2066044-a5f3615d-493e-9a6b-3cfd-55489a094d10"
     },
     {
-      "_postman_id": "2066044-391178a1-a39d-51eb-ba11-48042b3a45ab",
       "name": "Me",
-      "description": "",
       "item": [
         {
-          "_postman_id": "2066044-c179827e-19b2-7cee-5c3c-03055a93ad78",
           "name": "Me - Show",
+          "_postman_id": "2066044-c179827e-19b2-7cee-5c3c-03055a93ad78",
           "request": {
             "method": "GET",
             "header": [
@@ -2103,17 +2049,13 @@
                 "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjNiODgxN2U2MmM5Nzg0NmI1NmJmNjBjYmY5OWVmY2U5Mzk2MTUyYTFmYjRhYTkwNGM4MmE3ZGE4M2QzNzBmYTgyZGFlMDFmMDAwMzA0ZDEyIn0.eyJhdWQiOiIyIiwianRpIjoiM2I4ODE3ZTYyYzk3ODQ2YjU2YmY2MGNiZjk5ZWZjZTkzOTYxNTJhMWZiNGFhOTA0YzgyYTdkYTgzZDM3MGZhODJkYWUwMWYwMDAzMDRkMTIiLCJpYXQiOjE1MTE3OTE0MjksIm5iZiI6MTUxMTc5MTQyOSwiZXhwIjoxNTQzMzI3NDI5LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.hIDEX5jGQy1Nz6dBYzyzxnWop_rgyztNNAwZGM0ZhWgcYFjjE6lqxyxux4WK5jY-vPlLBuesTbOnk7yv5MTqiNkwUlGX4dexMWHpZE6j9Jrl_A8TA8uPmSs8eZy1Znl6e4xxSeMWyXNp7UHxsWiMO2qDIDC3f8kydq4f5bQy4HfYSm_HdDOuHOlnw3bf_t1KSfU9saPq_E9h_N4WtMxEkFmhpGtt2CB902WUJG3xrdwj8pRYN5Ydl6VS-lYD2EmnsB-AFYo3uxcw2LiW9o4zOe3TnfKC_1um4pWA91anqqoM4cn0VDUuduZbPu9GUDi782tlmdwZyCD6mbmq25ziHS3VqHI-UfW1Mtm6m7IzZlTYEeaSdm-fRa-b4g_Hc60XGTx9go6xNqoF-lA0ukcrJ0_srH7VZE6MT_XVPdkfww4H2189yjFghn4tgQFXkPxEeocryDJM4FWOZ1VcqwcjdyoTFs3xSJoDAMsnYaHxwgq6r0L89IyGmge0uefWyYfDYcCA7mkKLhgiBQAlgjoY-Y-IJYc6fshUzBmFhupn63KHvxjmry0z_ORwDjoR5nQmHzDYArn6v1CWTsDaastp501NSinMXaL2C3s5wMXgmIqmrOTbGBYPUkm9_bFhZ25kCZHPV9u0qNjSlS3uOho8oEjflVg_pjKoYSON7CYT_Go"
               }
             ],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
             "url": "https://api.pocketto.com.br/vdash/me"
           },
           "response": []
         },
         {
-          "_postman_id": "2066044-bae08001-4c7c-e6ba-b894-1460dd514aab",
           "name": "Me - Update",
+          "_postman_id": "2066044-bae08001-4c7c-e6ba-b894-1460dd514aab",
           "request": {
             "method": "PUT",
             "header": [
@@ -2138,16 +2080,15 @@
           },
           "response": []
         }
-      ]
+      ],
+      "_postman_id": "2066044-391178a1-a39d-51eb-ba11-48042b3a45ab"
     },
     {
-      "_postman_id": "2066044-2cc604fa-3a66-f592-eb96-543ea572622c",
       "name": "Message Types",
-      "description": "",
       "item": [
         {
-          "_postman_id": "2066044-4fe16290-f142-ac7e-b621-5f2c5a18e1e2",
           "name": "Message Types - List",
+          "_postman_id": "2066044-4fe16290-f142-ac7e-b621-5f2c5a18e1e2",
           "request": {
             "method": "GET",
             "header": [
@@ -2160,17 +2101,13 @@
                 "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjNiODgxN2U2MmM5Nzg0NmI1NmJmNjBjYmY5OWVmY2U5Mzk2MTUyYTFmYjRhYTkwNGM4MmE3ZGE4M2QzNzBmYTgyZGFlMDFmMDAwMzA0ZDEyIn0.eyJhdWQiOiIyIiwianRpIjoiM2I4ODE3ZTYyYzk3ODQ2YjU2YmY2MGNiZjk5ZWZjZTkzOTYxNTJhMWZiNGFhOTA0YzgyYTdkYTgzZDM3MGZhODJkYWUwMWYwMDAzMDRkMTIiLCJpYXQiOjE1MTE3OTE0MjksIm5iZiI6MTUxMTc5MTQyOSwiZXhwIjoxNTQzMzI3NDI5LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.hIDEX5jGQy1Nz6dBYzyzxnWop_rgyztNNAwZGM0ZhWgcYFjjE6lqxyxux4WK5jY-vPlLBuesTbOnk7yv5MTqiNkwUlGX4dexMWHpZE6j9Jrl_A8TA8uPmSs8eZy1Znl6e4xxSeMWyXNp7UHxsWiMO2qDIDC3f8kydq4f5bQy4HfYSm_HdDOuHOlnw3bf_t1KSfU9saPq_E9h_N4WtMxEkFmhpGtt2CB902WUJG3xrdwj8pRYN5Ydl6VS-lYD2EmnsB-AFYo3uxcw2LiW9o4zOe3TnfKC_1um4pWA91anqqoM4cn0VDUuduZbPu9GUDi782tlmdwZyCD6mbmq25ziHS3VqHI-UfW1Mtm6m7IzZlTYEeaSdm-fRa-b4g_Hc60XGTx9go6xNqoF-lA0ukcrJ0_srH7VZE6MT_XVPdkfww4H2189yjFghn4tgQFXkPxEeocryDJM4FWOZ1VcqwcjdyoTFs3xSJoDAMsnYaHxwgq6r0L89IyGmge0uefWyYfDYcCA7mkKLhgiBQAlgjoY-Y-IJYc6fshUzBmFhupn63KHvxjmry0z_ORwDjoR5nQmHzDYArn6v1CWTsDaastp501NSinMXaL2C3s5wMXgmIqmrOTbGBYPUkm9_bFhZ25kCZHPV9u0qNjSlS3uOho8oEjflVg_pjKoYSON7CYT_Go"
               }
             ],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
             "url": "https://api.pocketto.com.br/vdash/message_types"
           },
           "response": []
         },
         {
-          "_postman_id": "2066044-eb1a697b-c1ab-01ec-4092-00bf76f6685d",
           "name": "Message Types - View",
+          "_postman_id": "2066044-eb1a697b-c1ab-01ec-4092-00bf76f6685d",
           "request": {
             "method": "GET",
             "header": [
@@ -2196,8 +2133,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-13991bff-7e5f-3b07-ccb6-044f2783c7f2",
           "name": "Message Types - Create",
+          "_postman_id": "2066044-13991bff-7e5f-3b07-ccb6-044f2783c7f2",
           "request": {
             "method": "POST",
             "header": [
@@ -2223,8 +2160,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-64d7f933-6a4b-8f78-1188-ce7a70691bd9",
           "name": "Message Types - Update",
+          "_postman_id": "2066044-64d7f933-6a4b-8f78-1188-ce7a70691bd9",
           "request": {
             "method": "PUT",
             "header": [
@@ -2250,8 +2187,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-f3f67f64-cd1f-9714-5fcb-e55957211a2d",
           "name": "Message Types - Delete",
+          "_postman_id": "2066044-f3f67f64-cd1f-9714-5fcb-e55957211a2d",
           "request": {
             "method": "DELETE",
             "header": [
@@ -2276,16 +2213,15 @@
           },
           "response": []
         }
-      ]
+      ],
+      "_postman_id": "2066044-2cc604fa-3a66-f592-eb96-543ea572622c"
     },
     {
-      "_postman_id": "2066044-6062cbb0-0603-9639-6804-e6d5d77e483c",
       "name": "Payments",
-      "description": "",
       "item": [
         {
-          "_postman_id": "2066044-2691b475-e808-2ec4-aad9-e5f5cf46509e",
           "name": "Payments - List",
+          "_postman_id": "2066044-2691b475-e808-2ec4-aad9-e5f5cf46509e",
           "request": {
             "method": "GET",
             "header": [
@@ -2303,7 +2239,10 @@
                 "disabled": true
               }
             ],
-            "body": {},
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
             "url": {
               "raw": "https://api.pocketto.com.br/vdash/payments?filters=method_id::eq(4)",
               "host": [
@@ -2316,8 +2255,7 @@
               "query": [
                 {
                   "key": "filters",
-                  "value": "method_id::eq(4)",
-                  "equals": true
+                  "value": "method_id::eq(4)"
                 }
               ]
             }
@@ -2325,8 +2263,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-b7eb3a3a-750a-4970-ae11-d83fd43981a9",
           "name": "Payments - List Account Credits",
+          "_postman_id": "2066044-b7eb3a3a-750a-4970-ae11-d83fd43981a9",
           "request": {
             "method": "GET",
             "header": [
@@ -2344,7 +2282,10 @@
                 "disabled": true
               }
             ],
-            "body": {},
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
             "url": {
               "raw": "https://api.pocketto.com.br/vdash/payments/4893/account-credits?date_range=0&value_range=0&bank=Banco%20do%20Brasil&description=nul",
               "host": [
@@ -2359,23 +2300,19 @@
               "query": [
                 {
                   "key": "date_range",
-                  "value": "0",
-                  "equals": true
+                  "value": "0"
                 },
                 {
                   "key": "value_range",
-                  "value": "0",
-                  "equals": true
+                  "value": "0"
                 },
                 {
                   "key": "bank",
-                  "value": "Banco%20do%20Brasil",
-                  "equals": true
+                  "value": "Banco%20do%20Brasil"
                 },
                 {
                   "key": "description",
-                  "value": "nul",
-                  "equals": true
+                  "value": "nul"
                 }
               ]
             }
@@ -2383,8 +2320,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-adf7e649-336c-474e-adc1-f6b49574a6f7",
           "name": "Payments - Import",
+          "_postman_id": "2066044-adf7e649-336c-474e-adc1-f6b49574a6f7",
           "request": {
             "method": "POST",
             "header": [
@@ -2411,14 +2348,12 @@
                   "sessionValue": {
                     "0": {}
                   },
-                  "description": "",
                   "type": "file"
                 },
                 {
                   "key": "input_type",
                   "value": "binary",
                   "sessionValue": "binary",
-                  "description": "",
                   "type": "text"
                 }
               ]
@@ -2428,8 +2363,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-ad5f5143-9d0e-457a-883d-3afd7ebf6414",
           "name": "Payments - Import Exemplo",
+          "_postman_id": "2066044-ad5f5143-9d0e-457a-883d-3afd7ebf6414",
           "request": {
             "method": "GET",
             "header": [
@@ -2458,14 +2393,12 @@
                   "sessionValue": {
                     "0": {}
                   },
-                  "description": "",
                   "type": "file"
                 },
                 {
                   "key": "input_type",
                   "value": "binary",
                   "sessionValue": "binary",
-                  "description": "",
                   "type": "text"
                 }
               ]
@@ -2475,8 +2408,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-27856725-8900-494b-837b-1cf5765fa5ea",
           "name": "Payments - Import Exemplo Log",
+          "_postman_id": "2066044-27856725-8900-494b-837b-1cf5765fa5ea",
           "request": {
             "method": "GET",
             "header": [
@@ -2503,14 +2436,12 @@
                   "sessionValue": {
                     "0": {}
                   },
-                  "description": "",
                   "type": "file"
                 },
                 {
                   "key": "input_type",
                   "value": "binary",
                   "sessionValue": "binary",
-                  "description": "",
                   "type": "text"
                 }
               ]
@@ -2520,8 +2451,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-45c3609b-997a-dcc0-8d03-a42445c7a5d4",
           "name": "Payments - View",
+          "_postman_id": "2066044-45c3609b-997a-dcc0-8d03-a42445c7a5d4",
           "request": {
             "method": "GET",
             "header": [
@@ -2548,8 +2479,11 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-73338245-57a4-4373-8003-c0f56ac6c8eb",
           "name": "Payments - Get By Transaction Id",
+          "_postman_id": "2066044-73338245-57a4-4373-8003-c0f56ac6c8eb",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
           "request": {
             "method": "GET",
             "header": [
@@ -2567,17 +2501,13 @@
                 "disabled": true
               }
             ],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
             "url": "https://api.pocketto.com.br/vdash/payments/transaction/294031"
           },
           "response": []
         },
         {
-          "_postman_id": "2066044-cd9ec741-5228-44bf-6a7a-eab1523af8e6",
           "name": "Payments - Update Status",
+          "_postman_id": "2066044-cd9ec741-5228-44bf-6a7a-eab1523af8e6",
           "request": {
             "method": "PUT",
             "header": [
@@ -2604,8 +2534,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-c0d05d17-30d3-708b-1ea3-8b3415a96334",
           "name": "Payments - Delete",
+          "_postman_id": "2066044-c0d05d17-30d3-708b-1ea3-8b3415a96334",
           "request": {
             "method": "DELETE",
             "header": [
@@ -2627,8 +2557,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-1ed1bb7b-2484-d7d7-5b1d-823ec9e90027",
           "name": "Payments - Update",
+          "_postman_id": "2066044-1ed1bb7b-2484-d7d7-5b1d-823ec9e90027",
           "request": {
             "method": "PUT",
             "header": [
@@ -2655,8 +2585,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-269714ad-c2ef-dbb3-6e90-ac4e0c2424c2",
           "name": "Payments - Create",
+          "_postman_id": "2066044-269714ad-c2ef-dbb3-6e90-ac4e0c2424c2",
           "request": {
             "method": "POST",
             "header": [
@@ -2717,8 +2647,8 @@
           ]
         },
         {
-          "_postman_id": "2066044-ed519196-2d16-ddb4-be5a-a962c8408ea4",
           "name": "Payments - Resend Email Created",
+          "_postman_id": "2066044-ed519196-2d16-ddb4-be5a-a962c8408ea4",
           "request": {
             "method": "GET",
             "header": [
@@ -2744,8 +2674,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-8e33e1ce-d96a-fb1f-9e9c-33921d6e4bad",
           "name": "Residual Payments",
+          "_postman_id": "2066044-8e33e1ce-d96a-fb1f-9e9c-33921d6e4bad",
           "request": {
             "method": "POST",
             "header": [
@@ -2770,16 +2700,15 @@
           },
           "response": []
         }
-      ]
+      ],
+      "_postman_id": "2066044-6062cbb0-0603-9639-6804-e6d5d77e483c"
     },
     {
-      "_postman_id": "2066044-10828b0b-bd95-c01e-43e9-ee131151f6db",
       "name": "Settings",
-      "description": "",
       "item": [
         {
-          "_postman_id": "2066044-d2996c68-0b49-94c4-ba59-37929d0392e1",
           "name": "Settings - List",
+          "_postman_id": "2066044-d2996c68-0b49-94c4-ba59-37929d0392e1",
           "request": {
             "method": "GET",
             "header": [
@@ -2792,17 +2721,13 @@
                 "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjNiODgxN2U2MmM5Nzg0NmI1NmJmNjBjYmY5OWVmY2U5Mzk2MTUyYTFmYjRhYTkwNGM4MmE3ZGE4M2QzNzBmYTgyZGFlMDFmMDAwMzA0ZDEyIn0.eyJhdWQiOiIyIiwianRpIjoiM2I4ODE3ZTYyYzk3ODQ2YjU2YmY2MGNiZjk5ZWZjZTkzOTYxNTJhMWZiNGFhOTA0YzgyYTdkYTgzZDM3MGZhODJkYWUwMWYwMDAzMDRkMTIiLCJpYXQiOjE1MTE3OTE0MjksIm5iZiI6MTUxMTc5MTQyOSwiZXhwIjoxNTQzMzI3NDI5LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.hIDEX5jGQy1Nz6dBYzyzxnWop_rgyztNNAwZGM0ZhWgcYFjjE6lqxyxux4WK5jY-vPlLBuesTbOnk7yv5MTqiNkwUlGX4dexMWHpZE6j9Jrl_A8TA8uPmSs8eZy1Znl6e4xxSeMWyXNp7UHxsWiMO2qDIDC3f8kydq4f5bQy4HfYSm_HdDOuHOlnw3bf_t1KSfU9saPq_E9h_N4WtMxEkFmhpGtt2CB902WUJG3xrdwj8pRYN5Ydl6VS-lYD2EmnsB-AFYo3uxcw2LiW9o4zOe3TnfKC_1um4pWA91anqqoM4cn0VDUuduZbPu9GUDi782tlmdwZyCD6mbmq25ziHS3VqHI-UfW1Mtm6m7IzZlTYEeaSdm-fRa-b4g_Hc60XGTx9go6xNqoF-lA0ukcrJ0_srH7VZE6MT_XVPdkfww4H2189yjFghn4tgQFXkPxEeocryDJM4FWOZ1VcqwcjdyoTFs3xSJoDAMsnYaHxwgq6r0L89IyGmge0uefWyYfDYcCA7mkKLhgiBQAlgjoY-Y-IJYc6fshUzBmFhupn63KHvxjmry0z_ORwDjoR5nQmHzDYArn6v1CWTsDaastp501NSinMXaL2C3s5wMXgmIqmrOTbGBYPUkm9_bFhZ25kCZHPV9u0qNjSlS3uOho8oEjflVg_pjKoYSON7CYT_Go"
               }
             ],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
             "url": "https://api.pocketto.com.br/vdash/settings/default_payment_values"
           },
           "response": []
         },
         {
-          "_postman_id": "2066044-581f5782-dfa5-8327-6b0b-99e1880be32c",
           "name": "Settings - Show",
+          "_postman_id": "2066044-581f5782-dfa5-8327-6b0b-99e1880be32c",
           "request": {
             "method": "GET",
             "header": [
@@ -2815,17 +2740,13 @@
                 "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjNiODgxN2U2MmM5Nzg0NmI1NmJmNjBjYmY5OWVmY2U5Mzk2MTUyYTFmYjRhYTkwNGM4MmE3ZGE4M2QzNzBmYTgyZGFlMDFmMDAwMzA0ZDEyIn0.eyJhdWQiOiIyIiwianRpIjoiM2I4ODE3ZTYyYzk3ODQ2YjU2YmY2MGNiZjk5ZWZjZTkzOTYxNTJhMWZiNGFhOTA0YzgyYTdkYTgzZDM3MGZhODJkYWUwMWYwMDAzMDRkMTIiLCJpYXQiOjE1MTE3OTE0MjksIm5iZiI6MTUxMTc5MTQyOSwiZXhwIjoxNTQzMzI3NDI5LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.hIDEX5jGQy1Nz6dBYzyzxnWop_rgyztNNAwZGM0ZhWgcYFjjE6lqxyxux4WK5jY-vPlLBuesTbOnk7yv5MTqiNkwUlGX4dexMWHpZE6j9Jrl_A8TA8uPmSs8eZy1Znl6e4xxSeMWyXNp7UHxsWiMO2qDIDC3f8kydq4f5bQy4HfYSm_HdDOuHOlnw3bf_t1KSfU9saPq_E9h_N4WtMxEkFmhpGtt2CB902WUJG3xrdwj8pRYN5Ydl6VS-lYD2EmnsB-AFYo3uxcw2LiW9o4zOe3TnfKC_1um4pWA91anqqoM4cn0VDUuduZbPu9GUDi782tlmdwZyCD6mbmq25ziHS3VqHI-UfW1Mtm6m7IzZlTYEeaSdm-fRa-b4g_Hc60XGTx9go6xNqoF-lA0ukcrJ0_srH7VZE6MT_XVPdkfww4H2189yjFghn4tgQFXkPxEeocryDJM4FWOZ1VcqwcjdyoTFs3xSJoDAMsnYaHxwgq6r0L89IyGmge0uefWyYfDYcCA7mkKLhgiBQAlgjoY-Y-IJYc6fshUzBmFhupn63KHvxjmry0z_ORwDjoR5nQmHzDYArn6v1CWTsDaastp501NSinMXaL2C3s5wMXgmIqmrOTbGBYPUkm9_bFhZ25kCZHPV9u0qNjSlS3uOho8oEjflVg_pjKoYSON7CYT_Go"
               }
             ],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
             "url": "https://api.pocketto.com.br/vdash/settings/user_card_model_front"
           },
           "response": []
         },
         {
-          "_postman_id": "2066044-482b002a-3fc6-f4d7-53c7-9bff0ec554b8",
           "name": "Settings - Update",
+          "_postman_id": "2066044-482b002a-3fc6-f4d7-53c7-9bff0ec554b8",
           "request": {
             "method": "PUT",
             "header": [
@@ -2851,8 +2772,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-6a65348a-c527-178c-b48e-a841224119cd",
           "name": "Settings - Update All",
+          "_postman_id": "2066044-6a65348a-c527-178c-b48e-a841224119cd",
           "request": {
             "method": "PATCH",
             "header": [
@@ -2878,8 +2799,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-7eba6ec9-4dbf-51b5-d913-b5017fa0821b",
           "name": "Settings - Delete",
+          "_postman_id": "2066044-7eba6ec9-4dbf-51b5-d913-b5017fa0821b",
           "request": {
             "method": "DELETE",
             "header": [
@@ -2892,24 +2813,19 @@
                 "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjNiODgxN2U2MmM5Nzg0NmI1NmJmNjBjYmY5OWVmY2U5Mzk2MTUyYTFmYjRhYTkwNGM4MmE3ZGE4M2QzNzBmYTgyZGFlMDFmMDAwMzA0ZDEyIn0.eyJhdWQiOiIyIiwianRpIjoiM2I4ODE3ZTYyYzk3ODQ2YjU2YmY2MGNiZjk5ZWZjZTkzOTYxNTJhMWZiNGFhOTA0YzgyYTdkYTgzZDM3MGZhODJkYWUwMWYwMDAzMDRkMTIiLCJpYXQiOjE1MTE3OTE0MjksIm5iZiI6MTUxMTc5MTQyOSwiZXhwIjoxNTQzMzI3NDI5LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.hIDEX5jGQy1Nz6dBYzyzxnWop_rgyztNNAwZGM0ZhWgcYFjjE6lqxyxux4WK5jY-vPlLBuesTbOnk7yv5MTqiNkwUlGX4dexMWHpZE6j9Jrl_A8TA8uPmSs8eZy1Znl6e4xxSeMWyXNp7UHxsWiMO2qDIDC3f8kydq4f5bQy4HfYSm_HdDOuHOlnw3bf_t1KSfU9saPq_E9h_N4WtMxEkFmhpGtt2CB902WUJG3xrdwj8pRYN5Ydl6VS-lYD2EmnsB-AFYo3uxcw2LiW9o4zOe3TnfKC_1um4pWA91anqqoM4cn0VDUuduZbPu9GUDi782tlmdwZyCD6mbmq25ziHS3VqHI-UfW1Mtm6m7IzZlTYEeaSdm-fRa-b4g_Hc60XGTx9go6xNqoF-lA0ukcrJ0_srH7VZE6MT_XVPdkfww4H2189yjFghn4tgQFXkPxEeocryDJM4FWOZ1VcqwcjdyoTFs3xSJoDAMsnYaHxwgq6r0L89IyGmge0uefWyYfDYcCA7mkKLhgiBQAlgjoY-Y-IJYc6fshUzBmFhupn63KHvxjmry0z_ORwDjoR5nQmHzDYArn6v1CWTsDaastp501NSinMXaL2C3s5wMXgmIqmrOTbGBYPUkm9_bFhZ25kCZHPV9u0qNjSlS3uOho8oEjflVg_pjKoYSON7CYT_Go"
               }
             ],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
             "url": "https://api.pocketto.com.br/vdash/settings/test"
           },
           "response": []
         }
-      ]
+      ],
+      "_postman_id": "2066044-10828b0b-bd95-c01e-43e9-ee131151f6db"
     },
     {
-      "_postman_id": "2066044-43c6d929-2b66-0eed-f7dd-96fedea87983",
       "name": "User Categories",
-      "description": "",
       "item": [
         {
-          "_postman_id": "2066044-084d1e38-a219-fdf2-3d93-d72c53533a4b",
           "name": "User Categories - List",
+          "_postman_id": "2066044-084d1e38-a219-fdf2-3d93-d72c53533a4b",
           "request": {
             "method": "GET",
             "header": [
@@ -2922,17 +2838,13 @@
                 "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjNiODgxN2U2MmM5Nzg0NmI1NmJmNjBjYmY5OWVmY2U5Mzk2MTUyYTFmYjRhYTkwNGM4MmE3ZGE4M2QzNzBmYTgyZGFlMDFmMDAwMzA0ZDEyIn0.eyJhdWQiOiIyIiwianRpIjoiM2I4ODE3ZTYyYzk3ODQ2YjU2YmY2MGNiZjk5ZWZjZTkzOTYxNTJhMWZiNGFhOTA0YzgyYTdkYTgzZDM3MGZhODJkYWUwMWYwMDAzMDRkMTIiLCJpYXQiOjE1MTE3OTE0MjksIm5iZiI6MTUxMTc5MTQyOSwiZXhwIjoxNTQzMzI3NDI5LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.hIDEX5jGQy1Nz6dBYzyzxnWop_rgyztNNAwZGM0ZhWgcYFjjE6lqxyxux4WK5jY-vPlLBuesTbOnk7yv5MTqiNkwUlGX4dexMWHpZE6j9Jrl_A8TA8uPmSs8eZy1Znl6e4xxSeMWyXNp7UHxsWiMO2qDIDC3f8kydq4f5bQy4HfYSm_HdDOuHOlnw3bf_t1KSfU9saPq_E9h_N4WtMxEkFmhpGtt2CB902WUJG3xrdwj8pRYN5Ydl6VS-lYD2EmnsB-AFYo3uxcw2LiW9o4zOe3TnfKC_1um4pWA91anqqoM4cn0VDUuduZbPu9GUDi782tlmdwZyCD6mbmq25ziHS3VqHI-UfW1Mtm6m7IzZlTYEeaSdm-fRa-b4g_Hc60XGTx9go6xNqoF-lA0ukcrJ0_srH7VZE6MT_XVPdkfww4H2189yjFghn4tgQFXkPxEeocryDJM4FWOZ1VcqwcjdyoTFs3xSJoDAMsnYaHxwgq6r0L89IyGmge0uefWyYfDYcCA7mkKLhgiBQAlgjoY-Y-IJYc6fshUzBmFhupn63KHvxjmry0z_ORwDjoR5nQmHzDYArn6v1CWTsDaastp501NSinMXaL2C3s5wMXgmIqmrOTbGBYPUkm9_bFhZ25kCZHPV9u0qNjSlS3uOho8oEjflVg_pjKoYSON7CYT_Go"
               }
             ],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
             "url": "https://api.pocketto.com.br/vdash/user_categories"
           },
           "response": []
         },
         {
-          "_postman_id": "2066044-a8d95cf6-b9ba-570a-40a2-398bf2dd6952",
           "name": "User Categories - View",
+          "_postman_id": "2066044-a8d95cf6-b9ba-570a-40a2-398bf2dd6952",
           "request": {
             "method": "GET",
             "header": [
@@ -2958,8 +2870,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-3af2197f-ec6e-71d5-ad52-98fb3c5fc803",
           "name": "User Categories - Create",
+          "_postman_id": "2066044-3af2197f-ec6e-71d5-ad52-98fb3c5fc803",
           "request": {
             "method": "POST",
             "header": [
@@ -2985,8 +2897,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-cf19f775-278f-01d2-97ae-2c8685e93c4b",
           "name": "User Categories - Update",
+          "_postman_id": "2066044-cf19f775-278f-01d2-97ae-2c8685e93c4b",
           "request": {
             "method": "PUT",
             "header": [
@@ -3012,8 +2924,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-96af4dcb-8a98-26cc-67fa-0fdc7411055e",
           "name": "User Categories - Delete",
+          "_postman_id": "2066044-96af4dcb-8a98-26cc-67fa-0fdc7411055e",
           "request": {
             "method": "DELETE",
             "header": [
@@ -3038,16 +2950,15 @@
           },
           "response": []
         }
-      ]
+      ],
+      "_postman_id": "2066044-43c6d929-2b66-0eed-f7dd-96fedea87983"
     },
     {
-      "_postman_id": "2066044-c430637d-da85-4f7b-9fac-3fcfa3544775",
       "name": "User Recurrence",
-      "description": "",
       "item": [
         {
-          "_postman_id": "2066044-d3bdea39-fc4d-4eaf-a81c-abadab9b7d5c",
           "name": "User Recurrences - List",
+          "_postman_id": "2066044-d3bdea39-fc4d-4eaf-a81c-abadab9b7d5c",
           "request": {
             "method": "GET",
             "header": [
@@ -3060,7 +2971,10 @@
                 "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjNiODgxN2U2MmM5Nzg0NmI1NmJmNjBjYmY5OWVmY2U5Mzk2MTUyYTFmYjRhYTkwNGM4MmE3ZGE4M2QzNzBmYTgyZGFlMDFmMDAwMzA0ZDEyIn0.eyJhdWQiOiIyIiwianRpIjoiM2I4ODE3ZTYyYzk3ODQ2YjU2YmY2MGNiZjk5ZWZjZTkzOTYxNTJhMWZiNGFhOTA0YzgyYTdkYTgzZDM3MGZhODJkYWUwMWYwMDAzMDRkMTIiLCJpYXQiOjE1MTE3OTE0MjksIm5iZiI6MTUxMTc5MTQyOSwiZXhwIjoxNTQzMzI3NDI5LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.hIDEX5jGQy1Nz6dBYzyzxnWop_rgyztNNAwZGM0ZhWgcYFjjE6lqxyxux4WK5jY-vPlLBuesTbOnk7yv5MTqiNkwUlGX4dexMWHpZE6j9Jrl_A8TA8uPmSs8eZy1Znl6e4xxSeMWyXNp7UHxsWiMO2qDIDC3f8kydq4f5bQy4HfYSm_HdDOuHOlnw3bf_t1KSfU9saPq_E9h_N4WtMxEkFmhpGtt2CB902WUJG3xrdwj8pRYN5Ydl6VS-lYD2EmnsB-AFYo3uxcw2LiW9o4zOe3TnfKC_1um4pWA91anqqoM4cn0VDUuduZbPu9GUDi782tlmdwZyCD6mbmq25ziHS3VqHI-UfW1Mtm6m7IzZlTYEeaSdm-fRa-b4g_Hc60XGTx9go6xNqoF-lA0ukcrJ0_srH7VZE6MT_XVPdkfww4H2189yjFghn4tgQFXkPxEeocryDJM4FWOZ1VcqwcjdyoTFs3xSJoDAMsnYaHxwgq6r0L89IyGmge0uefWyYfDYcCA7mkKLhgiBQAlgjoY-Y-IJYc6fshUzBmFhupn63KHvxjmry0z_ORwDjoR5nQmHzDYArn6v1CWTsDaastp501NSinMXaL2C3s5wMXgmIqmrOTbGBYPUkm9_bFhZ25kCZHPV9u0qNjSlS3uOho8oEjflVg_pjKoYSON7CYT_Go"
               }
             ],
-            "body": {},
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
             "url": {
               "raw": "https://api.pocketto.com.br/vdash/user_recurs?filters=%7Ccarnet.id::eq(2)",
               "host": [
@@ -3073,8 +2987,7 @@
               "query": [
                 {
                   "key": "filters",
-                  "value": "%7Ccarnet.id::eq(2)",
-                  "equals": true
+                  "value": "%7Ccarnet.id::eq(2)"
                 }
               ]
             }
@@ -3082,8 +2995,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-99c22561-fdcf-4ec2-b488-7daad98495cf",
           "name": "User Recurrences - List by User",
+          "_postman_id": "2066044-99c22561-fdcf-4ec2-b488-7daad98495cf",
           "request": {
             "method": "GET",
             "header": [
@@ -3096,14 +3009,17 @@
                 "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjNiODgxN2U2MmM5Nzg0NmI1NmJmNjBjYmY5OWVmY2U5Mzk2MTUyYTFmYjRhYTkwNGM4MmE3ZGE4M2QzNzBmYTgyZGFlMDFmMDAwMzA0ZDEyIn0.eyJhdWQiOiIyIiwianRpIjoiM2I4ODE3ZTYyYzk3ODQ2YjU2YmY2MGNiZjk5ZWZjZTkzOTYxNTJhMWZiNGFhOTA0YzgyYTdkYTgzZDM3MGZhODJkYWUwMWYwMDAzMDRkMTIiLCJpYXQiOjE1MTE3OTE0MjksIm5iZiI6MTUxMTc5MTQyOSwiZXhwIjoxNTQzMzI3NDI5LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.hIDEX5jGQy1Nz6dBYzyzxnWop_rgyztNNAwZGM0ZhWgcYFjjE6lqxyxux4WK5jY-vPlLBuesTbOnk7yv5MTqiNkwUlGX4dexMWHpZE6j9Jrl_A8TA8uPmSs8eZy1Znl6e4xxSeMWyXNp7UHxsWiMO2qDIDC3f8kydq4f5bQy4HfYSm_HdDOuHOlnw3bf_t1KSfU9saPq_E9h_N4WtMxEkFmhpGtt2CB902WUJG3xrdwj8pRYN5Ydl6VS-lYD2EmnsB-AFYo3uxcw2LiW9o4zOe3TnfKC_1um4pWA91anqqoM4cn0VDUuduZbPu9GUDi782tlmdwZyCD6mbmq25ziHS3VqHI-UfW1Mtm6m7IzZlTYEeaSdm-fRa-b4g_Hc60XGTx9go6xNqoF-lA0ukcrJ0_srH7VZE6MT_XVPdkfww4H2189yjFghn4tgQFXkPxEeocryDJM4FWOZ1VcqwcjdyoTFs3xSJoDAMsnYaHxwgq6r0L89IyGmge0uefWyYfDYcCA7mkKLhgiBQAlgjoY-Y-IJYc6fshUzBmFhupn63KHvxjmry0z_ORwDjoR5nQmHzDYArn6v1CWTsDaastp501NSinMXaL2C3s5wMXgmIqmrOTbGBYPUkm9_bFhZ25kCZHPV9u0qNjSlS3uOho8oEjflVg_pjKoYSON7CYT_Go"
               }
             ],
-            "body": {},
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
             "url": "https://api.pocketto.com.br/vdash/user_recurs/user/02153512077"
           },
           "response": []
         },
         {
-          "_postman_id": "2066044-f9fb7f5d-b360-4a9d-ad2f-725e98dd92d0",
           "name": "User Recurrences - View",
+          "_postman_id": "2066044-f9fb7f5d-b360-4a9d-ad2f-725e98dd92d0",
           "request": {
             "method": "GET",
             "header": [
@@ -3116,14 +3032,17 @@
                 "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjNiODgxN2U2MmM5Nzg0NmI1NmJmNjBjYmY5OWVmY2U5Mzk2MTUyYTFmYjRhYTkwNGM4MmE3ZGE4M2QzNzBmYTgyZGFlMDFmMDAwMzA0ZDEyIn0.eyJhdWQiOiIyIiwianRpIjoiM2I4ODE3ZTYyYzk3ODQ2YjU2YmY2MGNiZjk5ZWZjZTkzOTYxNTJhMWZiNGFhOTA0YzgyYTdkYTgzZDM3MGZhODJkYWUwMWYwMDAzMDRkMTIiLCJpYXQiOjE1MTE3OTE0MjksIm5iZiI6MTUxMTc5MTQyOSwiZXhwIjoxNTQzMzI3NDI5LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.hIDEX5jGQy1Nz6dBYzyzxnWop_rgyztNNAwZGM0ZhWgcYFjjE6lqxyxux4WK5jY-vPlLBuesTbOnk7yv5MTqiNkwUlGX4dexMWHpZE6j9Jrl_A8TA8uPmSs8eZy1Znl6e4xxSeMWyXNp7UHxsWiMO2qDIDC3f8kydq4f5bQy4HfYSm_HdDOuHOlnw3bf_t1KSfU9saPq_E9h_N4WtMxEkFmhpGtt2CB902WUJG3xrdwj8pRYN5Ydl6VS-lYD2EmnsB-AFYo3uxcw2LiW9o4zOe3TnfKC_1um4pWA91anqqoM4cn0VDUuduZbPu9GUDi782tlmdwZyCD6mbmq25ziHS3VqHI-UfW1Mtm6m7IzZlTYEeaSdm-fRa-b4g_Hc60XGTx9go6xNqoF-lA0ukcrJ0_srH7VZE6MT_XVPdkfww4H2189yjFghn4tgQFXkPxEeocryDJM4FWOZ1VcqwcjdyoTFs3xSJoDAMsnYaHxwgq6r0L89IyGmge0uefWyYfDYcCA7mkKLhgiBQAlgjoY-Y-IJYc6fshUzBmFhupn63KHvxjmry0z_ORwDjoR5nQmHzDYArn6v1CWTsDaastp501NSinMXaL2C3s5wMXgmIqmrOTbGBYPUkm9_bFhZ25kCZHPV9u0qNjSlS3uOho8oEjflVg_pjKoYSON7CYT_Go"
               }
             ],
-            "body": {},
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
             "url": "https://api.pocketto.com.br/vdash/user_recurs/1"
           },
           "response": []
         },
         {
-          "_postman_id": "2066044-2653a930-27b4-4413-9ca7-30ef6ed3a23b",
           "name": "User Recurrences - Cancel",
+          "_postman_id": "2066044-2653a930-27b4-4413-9ca7-30ef6ed3a23b",
           "request": {
             "method": "PUT",
             "header": [
@@ -3136,14 +3055,17 @@
                 "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjNiODgxN2U2MmM5Nzg0NmI1NmJmNjBjYmY5OWVmY2U5Mzk2MTUyYTFmYjRhYTkwNGM4MmE3ZGE4M2QzNzBmYTgyZGFlMDFmMDAwMzA0ZDEyIn0.eyJhdWQiOiIyIiwianRpIjoiM2I4ODE3ZTYyYzk3ODQ2YjU2YmY2MGNiZjk5ZWZjZTkzOTYxNTJhMWZiNGFhOTA0YzgyYTdkYTgzZDM3MGZhODJkYWUwMWYwMDAzMDRkMTIiLCJpYXQiOjE1MTE3OTE0MjksIm5iZiI6MTUxMTc5MTQyOSwiZXhwIjoxNTQzMzI3NDI5LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.hIDEX5jGQy1Nz6dBYzyzxnWop_rgyztNNAwZGM0ZhWgcYFjjE6lqxyxux4WK5jY-vPlLBuesTbOnk7yv5MTqiNkwUlGX4dexMWHpZE6j9Jrl_A8TA8uPmSs8eZy1Znl6e4xxSeMWyXNp7UHxsWiMO2qDIDC3f8kydq4f5bQy4HfYSm_HdDOuHOlnw3bf_t1KSfU9saPq_E9h_N4WtMxEkFmhpGtt2CB902WUJG3xrdwj8pRYN5Ydl6VS-lYD2EmnsB-AFYo3uxcw2LiW9o4zOe3TnfKC_1um4pWA91anqqoM4cn0VDUuduZbPu9GUDi782tlmdwZyCD6mbmq25ziHS3VqHI-UfW1Mtm6m7IzZlTYEeaSdm-fRa-b4g_Hc60XGTx9go6xNqoF-lA0ukcrJ0_srH7VZE6MT_XVPdkfww4H2189yjFghn4tgQFXkPxEeocryDJM4FWOZ1VcqwcjdyoTFs3xSJoDAMsnYaHxwgq6r0L89IyGmge0uefWyYfDYcCA7mkKLhgiBQAlgjoY-Y-IJYc6fshUzBmFhupn63KHvxjmry0z_ORwDjoR5nQmHzDYArn6v1CWTsDaastp501NSinMXaL2C3s5wMXgmIqmrOTbGBYPUkm9_bFhZ25kCZHPV9u0qNjSlS3uOho8oEjflVg_pjKoYSON7CYT_Go"
               }
             ],
-            "body": {},
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
             "url": "https://api.pocketto.com.br/vdash/user_recurs/1/cancel"
           },
           "response": []
         },
         {
-          "_postman_id": "2066044-1e904799-92aa-4928-b560-443a4a729b59",
           "name": "Create Payment",
+          "_postman_id": "2066044-1e904799-92aa-4928-b560-443a4a729b59",
           "request": {
             "method": "POST",
             "header": [
@@ -3168,16 +3090,15 @@
           },
           "response": []
         }
-      ]
+      ],
+      "_postman_id": "2066044-c430637d-da85-4f7b-9fac-3fcfa3544775"
     },
     {
-      "_postman_id": "2066044-37ea004f-b626-9da2-403e-d45d7b5ecbb0",
       "name": "Webhooks",
-      "description": "",
       "item": [
         {
-          "_postman_id": "2066044-d6c4bbec-babe-4bb2-9ca1-6e9b7615573e",
           "name": "Webhooks - List",
+          "_postman_id": "2066044-d6c4bbec-babe-4bb2-9ca1-6e9b7615573e",
           "request": {
             "method": "GET",
             "header": [
@@ -3190,17 +3111,13 @@
                 "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjNiODgxN2U2MmM5Nzg0NmI1NmJmNjBjYmY5OWVmY2U5Mzk2MTUyYTFmYjRhYTkwNGM4MmE3ZGE4M2QzNzBmYTgyZGFlMDFmMDAwMzA0ZDEyIn0.eyJhdWQiOiIyIiwianRpIjoiM2I4ODE3ZTYyYzk3ODQ2YjU2YmY2MGNiZjk5ZWZjZTkzOTYxNTJhMWZiNGFhOTA0YzgyYTdkYTgzZDM3MGZhODJkYWUwMWYwMDAzMDRkMTIiLCJpYXQiOjE1MTE3OTE0MjksIm5iZiI6MTUxMTc5MTQyOSwiZXhwIjoxNTQzMzI3NDI5LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.hIDEX5jGQy1Nz6dBYzyzxnWop_rgyztNNAwZGM0ZhWgcYFjjE6lqxyxux4WK5jY-vPlLBuesTbOnk7yv5MTqiNkwUlGX4dexMWHpZE6j9Jrl_A8TA8uPmSs8eZy1Znl6e4xxSeMWyXNp7UHxsWiMO2qDIDC3f8kydq4f5bQy4HfYSm_HdDOuHOlnw3bf_t1KSfU9saPq_E9h_N4WtMxEkFmhpGtt2CB902WUJG3xrdwj8pRYN5Ydl6VS-lYD2EmnsB-AFYo3uxcw2LiW9o4zOe3TnfKC_1um4pWA91anqqoM4cn0VDUuduZbPu9GUDi782tlmdwZyCD6mbmq25ziHS3VqHI-UfW1Mtm6m7IzZlTYEeaSdm-fRa-b4g_Hc60XGTx9go6xNqoF-lA0ukcrJ0_srH7VZE6MT_XVPdkfww4H2189yjFghn4tgQFXkPxEeocryDJM4FWOZ1VcqwcjdyoTFs3xSJoDAMsnYaHxwgq6r0L89IyGmge0uefWyYfDYcCA7mkKLhgiBQAlgjoY-Y-IJYc6fshUzBmFhupn63KHvxjmry0z_ORwDjoR5nQmHzDYArn6v1CWTsDaastp501NSinMXaL2C3s5wMXgmIqmrOTbGBYPUkm9_bFhZ25kCZHPV9u0qNjSlS3uOho8oEjflVg_pjKoYSON7CYT_Go"
               }
             ],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
             "url": "https://api.pocketto.com.br/vdash/webhooks"
           },
           "response": []
         },
         {
-          "_postman_id": "2066044-ae39ef47-c706-466d-81bb-f770ff48ec06",
           "name": "Webhooks - External",
+          "_postman_id": "2066044-ae39ef47-c706-466d-81bb-f770ff48ec06",
           "request": {
             "method": "GET",
             "header": [
@@ -3226,8 +3143,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-3ffc6dea-43d8-3561-c0ca-0e556cfdeb8f",
           "name": "Webhooks - View",
+          "_postman_id": "2066044-3ffc6dea-43d8-3561-c0ca-0e556cfdeb8f",
           "request": {
             "method": "GET",
             "header": [
@@ -3253,8 +3170,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-350d0466-b838-9d4a-123d-c04d73fca893",
           "name": "Webhooks - Create",
+          "_postman_id": "2066044-350d0466-b838-9d4a-123d-c04d73fca893",
           "request": {
             "method": "POST",
             "header": [
@@ -3280,8 +3197,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-3a6eb41c-9aab-ab19-a170-51e7920581a3",
           "name": "Webhooks - Update",
+          "_postman_id": "2066044-3a6eb41c-9aab-ab19-a170-51e7920581a3",
           "request": {
             "method": "PUT",
             "header": [
@@ -3307,8 +3224,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-98fa4541-90b6-94bb-3ab5-7b246188f232",
           "name": "Webhooks - Delete",
+          "_postman_id": "2066044-98fa4541-90b6-94bb-3ab5-7b246188f232",
           "request": {
             "method": "DELETE",
             "header": [
@@ -3333,16 +3250,15 @@
           },
           "response": []
         }
-      ]
+      ],
+      "_postman_id": "2066044-37ea004f-b626-9da2-403e-d45d7b5ecbb0"
     },
     {
-      "_postman_id": "2066044-01023cec-dc2a-82c3-3ef1-83a24844d9b0",
       "name": "Users",
-      "description": "",
       "item": [
         {
-          "_postman_id": "2066044-827f39cc-ae7e-09be-533c-d0580edc88e2",
           "name": "Users - List",
+          "_postman_id": "2066044-827f39cc-ae7e-09be-533c-d0580edc88e2",
           "request": {
             "method": "GET",
             "header": [
@@ -3392,8 +3308,11 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-f1e23d28-caeb-4a4f-93b6-479691686653",
           "name": "Users - Create",
+          "_postman_id": "2066044-f1e23d28-caeb-4a4f-93b6-479691686653",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
           "request": {
             "method": "POST",
             "header": [
@@ -3421,8 +3340,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-b1e4ae75-9322-8ed6-3f9b-2c7ca7fa0ab8",
           "name": "Users - View",
+          "_postman_id": "2066044-b1e4ae75-9322-8ed6-3f9b-2c7ca7fa0ab8",
           "request": {
             "method": "GET",
             "header": [
@@ -3449,8 +3368,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-dc11980a-09cb-44ef-8b7d-c91d437e038a",
           "name": "Users - View by CPF",
+          "_postman_id": "2066044-dc11980a-09cb-44ef-8b7d-c91d437e038a",
           "request": {
             "method": "GET",
             "header": [
@@ -3468,17 +3387,13 @@
                 "disabled": true
               }
             ],
-            "body": {
-              "mode": "raw",
-              "raw": "{\n  \"username\" : \"rk.fadini@gmail.com\",\n  \"password\" : \"123123\"\n}"
-            },
             "url": "https://api.pocketto.com.br/vdash/users/get/01286800080"
           },
           "response": []
         },
         {
-          "_postman_id": "2066044-91b7d5c8-c0ac-5b55-c0d9-34a601ec97e4",
           "name": "Users - Update",
+          "_postman_id": "2066044-91b7d5c8-c0ac-5b55-c0d9-34a601ec97e4",
           "request": {
             "method": "PUT",
             "header": [
@@ -3505,8 +3420,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-1982070d-ba27-a7de-02c6-ef6c9a01bd10",
           "name": "Users - Import",
+          "_postman_id": "2066044-1982070d-ba27-a7de-02c6-ef6c9a01bd10",
           "request": {
             "method": "POST",
             "header": [
@@ -3523,14 +3438,17 @@
                 "value": "application/x-www-form-urlencoded"
               }
             ],
-            "body": {},
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
             "url": "https://api.pocketto.com.br/vdash/users/import"
           },
           "response": []
         },
         {
-          "_postman_id": "2066044-27cff129-744c-e2a6-4a9d-7e4ad8786b7e",
           "name": "Users - Delete",
+          "_postman_id": "2066044-27cff129-744c-e2a6-4a9d-7e4ad8786b7e",
           "request": {
             "method": "DELETE",
             "header": [
@@ -3556,16 +3474,15 @@
           },
           "response": []
         }
-      ]
+      ],
+      "_postman_id": "2066044-01023cec-dc2a-82c3-3ef1-83a24844d9b0"
     },
     {
-      "_postman_id": "2066044-82f1c272-0b60-811b-eb1e-8801b156ded1",
       "name": "CreditCard",
-      "description": "",
       "item": [
         {
-          "_postman_id": "2066044-b4601163-65af-226c-5da1-640d4ea63865",
           "name": "CreditCard - Process",
+          "_postman_id": "2066044-b4601163-65af-226c-5da1-640d4ea63865",
           "request": {
             "method": "POST",
             "header": [
@@ -3591,8 +3508,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-b4ab63f7-bb3b-e1ef-8115-10570fa491e4",
           "name": "CreditCard - Consult",
+          "_postman_id": "2066044-b4ab63f7-bb3b-e1ef-8115-10570fa491e4",
           "request": {
             "method": "GET",
             "header": [
@@ -3618,8 +3535,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-23336bd1-1963-4225-b11d-e300e4ca8b30",
           "name": "CreditCard - Cancel",
+          "_postman_id": "2066044-23336bd1-1963-4225-b11d-e300e4ca8b30",
           "request": {
             "method": "GET",
             "header": [
@@ -3636,14 +3553,17 @@
                 "value": "application/json"
               }
             ],
-            "body": {},
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
             "url": "https://api.pocketto.com.br/vdash/credit_card/cancel/cielo/1"
           },
           "response": []
         },
         {
-          "_postman_id": "2066044-5e643e2c-d232-4e40-91e0-7f94f52bffe5",
           "name": "CreditCard - Cancel by Tid",
+          "_postman_id": "2066044-5e643e2c-d232-4e40-91e0-7f94f52bffe5",
           "request": {
             "method": "GET",
             "header": [
@@ -3660,14 +3580,17 @@
                 "value": "application/json"
               }
             ],
-            "body": {},
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
             "url": "https://api.pocketto.com.br/vdash/credit_card/cancelByTid/cielo/0a9cae18-99b1-4783-b93a-4534a6513e90"
           },
           "response": []
         },
         {
-          "_postman_id": "2066044-e1de53e6-e589-4ef9-a8c0-de30d0b18390",
           "name": "CreditCard - Consult by Tid",
+          "_postman_id": "2066044-e1de53e6-e589-4ef9-a8c0-de30d0b18390",
           "request": {
             "method": "GET",
             "header": [
@@ -3684,21 +3607,23 @@
                 "value": "application/json"
               }
             ],
-            "body": {},
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
             "url": "https://api.pocketto.com.br/vdash/credit_card/consultByTid/cielo/0a9cae18-99b1-4783-b93a-4534a6513e90"
           },
           "response": []
         }
-      ]
+      ],
+      "_postman_id": "2066044-82f1c272-0b60-811b-eb1e-8801b156ded1"
     },
     {
-      "_postman_id": "2066044-497ad5be-97b6-493f-b0c4-a0615bea487b",
       "name": "Boleto",
-      "description": "",
       "item": [
         {
-          "_postman_id": "2066044-6339aaf7-1f06-4dca-865f-50a52947a9f9",
           "name": "DEPRECATED - Boleto - Process",
+          "_postman_id": "2066044-6339aaf7-1f06-4dca-865f-50a52947a9f9",
           "request": {
             "method": "POST",
             "header": [
@@ -3723,16 +3648,15 @@
           },
           "response": []
         }
-      ]
+      ],
+      "_postman_id": "2066044-497ad5be-97b6-493f-b0c4-a0615bea487b"
     },
     {
-      "_postman_id": "2066044-86149879-ef17-8dfc-95fd-7ef051928200",
       "name": "Test",
-      "description": "",
       "item": [
         {
-          "_postman_id": "2066044-2c7fe633-b690-8071-95a1-569e6fa3956f",
           "name": "Test",
+          "_postman_id": "2066044-2c7fe633-b690-8071-95a1-569e6fa3956f",
           "request": {
             "method": "GET",
             "header": [
@@ -3759,8 +3683,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-0c5fc491-45a6-dc95-230b-df5ca3e9ba32",
           "name": "Email",
+          "_postman_id": "2066044-0c5fc491-45a6-dc95-230b-df5ca3e9ba32",
           "request": {
             "method": "GET",
             "header": [
@@ -3777,21 +3701,23 @@
                 "value": "application/json"
               }
             ],
-            "body": {},
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
             "url": "https://api.pocketto.com.br/vdash/emails/payment.created/4828"
           },
           "response": []
         }
-      ]
+      ],
+      "_postman_id": "2066044-86149879-ef17-8dfc-95fd-7ef051928200"
     },
     {
-      "_postman_id": "2066044-7614f6bf-9fbe-9684-db04-1ceab3c31ea9",
       "name": "AccountDebit",
-      "description": "Débito em conta.",
       "item": [
         {
-          "_postman_id": "2066044-131f990e-346a-762c-813c-c34fd06a7566",
           "name": "Banks - List",
+          "_postman_id": "2066044-131f990e-346a-762c-813c-c34fd06a7566",
           "request": {
             "method": "GET",
             "header": [
@@ -3808,15 +3734,18 @@
                 "value": "application/json"
               }
             ],
-            "body": {},
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
             "url": "https://api.pocketto.com.br/vdash/accountdebits/banks",
             "description": "Lista bancos disponíveis para débito em conta."
           },
           "response": []
         },
         {
-          "_postman_id": "2066044-5414346d-e9d9-5bd6-45af-ed835ef56ed1",
           "name": "AccountDebits - Create",
+          "_postman_id": "2066044-5414346d-e9d9-5bd6-45af-ed835ef56ed1",
           "request": {
             "method": "POST",
             "header": [
@@ -3833,22 +3762,25 @@
                 "value": "application/json"
               }
             ],
-            "body": {},
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
             "url": "https://api.pocketto.com.br/vdash/accountdebits",
             "description": "Lista bancos disponíveis para débito em conta."
           },
           "response": []
         }
-      ]
+      ],
+      "_postman_id": "2066044-7614f6bf-9fbe-9684-db04-1ceab3c31ea9",
+      "description": "Débito em conta."
     },
     {
-      "_postman_id": "2066044-eeecc43a-cf88-4282-b8a4-1a4b387d0d1d",
       "name": "Reports",
-      "description": null,
       "item": [
         {
-          "_postman_id": "2066044-7a778a18-d6ce-4ad2-a185-d65bb095ec1f",
           "name": "Report - Payments",
+          "_postman_id": "2066044-7a778a18-d6ce-4ad2-a185-d65bb095ec1f",
           "request": {
             "method": "GET",
             "header": [
@@ -3861,7 +3793,10 @@
                 "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjNiODgxN2U2MmM5Nzg0NmI1NmJmNjBjYmY5OWVmY2U5Mzk2MTUyYTFmYjRhYTkwNGM4MmE3ZGE4M2QzNzBmYTgyZGFlMDFmMDAwMzA0ZDEyIn0.eyJhdWQiOiIyIiwianRpIjoiM2I4ODE3ZTYyYzk3ODQ2YjU2YmY2MGNiZjk5ZWZjZTkzOTYxNTJhMWZiNGFhOTA0YzgyYTdkYTgzZDM3MGZhODJkYWUwMWYwMDAzMDRkMTIiLCJpYXQiOjE1MTE3OTE0MjksIm5iZiI6MTUxMTc5MTQyOSwiZXhwIjoxNTQzMzI3NDI5LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.hIDEX5jGQy1Nz6dBYzyzxnWop_rgyztNNAwZGM0ZhWgcYFjjE6lqxyxux4WK5jY-vPlLBuesTbOnk7yv5MTqiNkwUlGX4dexMWHpZE6j9Jrl_A8TA8uPmSs8eZy1Znl6e4xxSeMWyXNp7UHxsWiMO2qDIDC3f8kydq4f5bQy4HfYSm_HdDOuHOlnw3bf_t1KSfU9saPq_E9h_N4WtMxEkFmhpGtt2CB902WUJG3xrdwj8pRYN5Ydl6VS-lYD2EmnsB-AFYo3uxcw2LiW9o4zOe3TnfKC_1um4pWA91anqqoM4cn0VDUuduZbPu9GUDi782tlmdwZyCD6mbmq25ziHS3VqHI-UfW1Mtm6m7IzZlTYEeaSdm-fRa-b4g_Hc60XGTx9go6xNqoF-lA0ukcrJ0_srH7VZE6MT_XVPdkfww4H2189yjFghn4tgQFXkPxEeocryDJM4FWOZ1VcqwcjdyoTFs3xSJoDAMsnYaHxwgq6r0L89IyGmge0uefWyYfDYcCA7mkKLhgiBQAlgjoY-Y-IJYc6fshUzBmFhupn63KHvxjmry0z_ORwDjoR5nQmHzDYArn6v1CWTsDaastp501NSinMXaL2C3s5wMXgmIqmrOTbGBYPUkm9_bFhZ25kCZHPV9u0qNjSlS3uOho8oEjflVg_pjKoYSON7CYT_Go"
               }
             ],
-            "body": {},
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
             "url": {
               "raw": "https://api.pocketto.com.br/vdash/report/payment?cad_from=2019-08-01&cad_to=2019-10-01",
               "host": [
@@ -3875,13 +3810,11 @@
               "query": [
                 {
                   "key": "cad_from",
-                  "value": "2019-08-01",
-                  "equals": true
+                  "value": "2019-08-01"
                 },
                 {
                   "key": "cad_to",
-                  "value": "2019-10-01",
-                  "equals": true
+                  "value": "2019-10-01"
                 }
               ]
             }
@@ -3889,8 +3822,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-7598b3dc-efcd-4e41-aff4-c2a170ed6772",
           "name": "Report - Users",
+          "_postman_id": "2066044-7598b3dc-efcd-4e41-aff4-c2a170ed6772",
           "request": {
             "method": "GET",
             "header": [
@@ -3903,14 +3836,17 @@
                 "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjNiODgxN2U2MmM5Nzg0NmI1NmJmNjBjYmY5OWVmY2U5Mzk2MTUyYTFmYjRhYTkwNGM4MmE3ZGE4M2QzNzBmYTgyZGFlMDFmMDAwMzA0ZDEyIn0.eyJhdWQiOiIyIiwianRpIjoiM2I4ODE3ZTYyYzk3ODQ2YjU2YmY2MGNiZjk5ZWZjZTkzOTYxNTJhMWZiNGFhOTA0YzgyYTdkYTgzZDM3MGZhODJkYWUwMWYwMDAzMDRkMTIiLCJpYXQiOjE1MTE3OTE0MjksIm5iZiI6MTUxMTc5MTQyOSwiZXhwIjoxNTQzMzI3NDI5LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.hIDEX5jGQy1Nz6dBYzyzxnWop_rgyztNNAwZGM0ZhWgcYFjjE6lqxyxux4WK5jY-vPlLBuesTbOnk7yv5MTqiNkwUlGX4dexMWHpZE6j9Jrl_A8TA8uPmSs8eZy1Znl6e4xxSeMWyXNp7UHxsWiMO2qDIDC3f8kydq4f5bQy4HfYSm_HdDOuHOlnw3bf_t1KSfU9saPq_E9h_N4WtMxEkFmhpGtt2CB902WUJG3xrdwj8pRYN5Ydl6VS-lYD2EmnsB-AFYo3uxcw2LiW9o4zOe3TnfKC_1um4pWA91anqqoM4cn0VDUuduZbPu9GUDi782tlmdwZyCD6mbmq25ziHS3VqHI-UfW1Mtm6m7IzZlTYEeaSdm-fRa-b4g_Hc60XGTx9go6xNqoF-lA0ukcrJ0_srH7VZE6MT_XVPdkfww4H2189yjFghn4tgQFXkPxEeocryDJM4FWOZ1VcqwcjdyoTFs3xSJoDAMsnYaHxwgq6r0L89IyGmge0uefWyYfDYcCA7mkKLhgiBQAlgjoY-Y-IJYc6fshUzBmFhupn63KHvxjmry0z_ORwDjoR5nQmHzDYArn6v1CWTsDaastp501NSinMXaL2C3s5wMXgmIqmrOTbGBYPUkm9_bFhZ25kCZHPV9u0qNjSlS3uOho8oEjflVg_pjKoYSON7CYT_Go"
               }
             ],
-            "body": {},
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
             "url": "https://api.pocketto.com.br/vdash/report/user"
           },
           "response": []
         },
         {
-          "_postman_id": "2066044-bcdb0ab0-e30a-4cd0-b3c6-670698d11764",
           "name": "Report - Users x Payments",
+          "_postman_id": "2066044-bcdb0ab0-e30a-4cd0-b3c6-670698d11764",
           "request": {
             "method": "GET",
             "header": [
@@ -3923,21 +3859,23 @@
                 "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjNiODgxN2U2MmM5Nzg0NmI1NmJmNjBjYmY5OWVmY2U5Mzk2MTUyYTFmYjRhYTkwNGM4MmE3ZGE4M2QzNzBmYTgyZGFlMDFmMDAwMzA0ZDEyIn0.eyJhdWQiOiIyIiwianRpIjoiM2I4ODE3ZTYyYzk3ODQ2YjU2YmY2MGNiZjk5ZWZjZTkzOTYxNTJhMWZiNGFhOTA0YzgyYTdkYTgzZDM3MGZhODJkYWUwMWYwMDAzMDRkMTIiLCJpYXQiOjE1MTE3OTE0MjksIm5iZiI6MTUxMTc5MTQyOSwiZXhwIjoxNTQzMzI3NDI5LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.hIDEX5jGQy1Nz6dBYzyzxnWop_rgyztNNAwZGM0ZhWgcYFjjE6lqxyxux4WK5jY-vPlLBuesTbOnk7yv5MTqiNkwUlGX4dexMWHpZE6j9Jrl_A8TA8uPmSs8eZy1Znl6e4xxSeMWyXNp7UHxsWiMO2qDIDC3f8kydq4f5bQy4HfYSm_HdDOuHOlnw3bf_t1KSfU9saPq_E9h_N4WtMxEkFmhpGtt2CB902WUJG3xrdwj8pRYN5Ydl6VS-lYD2EmnsB-AFYo3uxcw2LiW9o4zOe3TnfKC_1um4pWA91anqqoM4cn0VDUuduZbPu9GUDi782tlmdwZyCD6mbmq25ziHS3VqHI-UfW1Mtm6m7IzZlTYEeaSdm-fRa-b4g_Hc60XGTx9go6xNqoF-lA0ukcrJ0_srH7VZE6MT_XVPdkfww4H2189yjFghn4tgQFXkPxEeocryDJM4FWOZ1VcqwcjdyoTFs3xSJoDAMsnYaHxwgq6r0L89IyGmge0uefWyYfDYcCA7mkKLhgiBQAlgjoY-Y-IJYc6fshUzBmFhupn63KHvxjmry0z_ORwDjoR5nQmHzDYArn6v1CWTsDaastp501NSinMXaL2C3s5wMXgmIqmrOTbGBYPUkm9_bFhZ25kCZHPV9u0qNjSlS3uOho8oEjflVg_pjKoYSON7CYT_Go"
               }
             ],
-            "body": {},
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
             "url": "https://api.pocketto.com.br/vdash/report/userpayment"
           },
           "response": []
         }
-      ]
+      ],
+      "_postman_id": "2066044-eeecc43a-cf88-4282-b8a4-1a4b387d0d1d"
     },
     {
-      "_postman_id": "2066044-440b8830-61d0-4db4-8477-52684c25a3f0",
       "name": "Cities",
-      "description": null,
       "item": [
         {
-          "_postman_id": "2066044-f707db25-8b53-4843-ac5a-80c2c996d108",
           "name": "Cities",
+          "_postman_id": "2066044-f707db25-8b53-4843-ac5a-80c2c996d108",
           "request": {
             "method": "GET",
             "header": [
@@ -3952,10 +3890,6 @@
                 "type": "text"
               }
             ],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
             "url": {
               "raw": "https://api.pocketto.com.br/vdash/cities?state=rs",
               "host": [
@@ -3968,29 +3902,25 @@
               "query": [
                 {
                   "key": "state",
-                  "value": "rs",
-                  "equals": true
+                  "value": "rs"
                 }
               ]
             }
           },
           "response": []
         }
-      ]
+      ],
+      "_postman_id": "2066044-440b8830-61d0-4db4-8477-52684c25a3f0"
     },
     {
-      "_postman_id": "2066044-187dc6d6-b1db-4f22-92ab-87377b7b5bb4",
       "name": "Crowdfunding",
-      "description": null,
       "item": [
         {
-          "_postman_id": "2066044-56a0a956-3fab-473f-b382-f187cf4bc2b0",
           "name": "Settings",
-          "description": "",
           "item": [
             {
-              "_postman_id": "2066044-cbc78e39-c7b9-4a65-9378-6ef24c8fb864",
               "name": "Settings - List",
+              "_postman_id": "2066044-cbc78e39-c7b9-4a65-9378-6ef24c8fb864",
               "request": {
                 "method": "GET",
                 "header": [
@@ -4007,14 +3937,17 @@
                     "value": "application/json"
                   }
                 ],
-                "body": {},
+                "body": {
+                  "mode": "formdata",
+                  "formdata": []
+                },
                 "url": "https://api.pocketto.com.br/vdash/crowdfundingpage/2/settings"
               },
               "response": []
             },
             {
-              "_postman_id": "2066044-7c852488-3f2d-4779-a977-436476b121bf",
               "name": "Settings - Update",
+              "_postman_id": "2066044-7c852488-3f2d-4779-a977-436476b121bf",
               "request": {
                 "method": "PUT",
                 "header": [
@@ -4044,16 +3977,15 @@
               "response": []
             }
           ],
+          "_postman_id": "2066044-56a0a956-3fab-473f-b382-f187cf4bc2b0",
           "_postman_isSubFolder": true
         },
         {
-          "_postman_id": "2066044-9fbff5f9-04f2-4528-8e20-138ad9ac5ff1",
           "name": "Bank Accounts",
-          "description": "",
           "item": [
             {
-              "_postman_id": "2066044-e32ea53d-68a6-4ec9-a75d-4f72b8504606",
               "name": "Bank Accounts - All",
+              "_postman_id": "2066044-e32ea53d-68a6-4ec9-a75d-4f72b8504606",
               "request": {
                 "method": "GET",
                 "header": [
@@ -4074,14 +4006,17 @@
                     "value": "application/json"
                   }
                 ],
-                "body": {},
+                "body": {
+                  "mode": "formdata",
+                  "formdata": []
+                },
                 "url": "https://api.pocketto.com.br/vdash/crowdfundingpage/2/bank-accounts"
               },
               "response": []
             },
             {
-              "_postman_id": "2066044-21fdc715-13e8-4950-bf9c-2e2898116c07",
               "name": "Bank Accounts - Create",
+              "_postman_id": "2066044-21fdc715-13e8-4950-bf9c-2e2898116c07",
               "request": {
                 "method": "POST",
                 "header": [
@@ -4111,8 +4046,8 @@
               "response": []
             },
             {
-              "_postman_id": "2066044-3d26956e-6c3a-458d-9c87-7fa9e4680300",
               "name": "Bank Accounts - Update",
+              "_postman_id": "2066044-3d26956e-6c3a-458d-9c87-7fa9e4680300",
               "request": {
                 "method": "PUT",
                 "header": [
@@ -4142,8 +4077,8 @@
               "response": []
             },
             {
-              "_postman_id": "2066044-02edc6c5-978f-4727-bf47-a1d40ec121dc",
               "name": "Bank Accounts - Delete",
+              "_postman_id": "2066044-02edc6c5-978f-4727-bf47-a1d40ec121dc",
               "request": {
                 "method": "DELETE",
                 "header": [
@@ -4173,16 +4108,15 @@
               "response": []
             }
           ],
+          "_postman_id": "2066044-9fbff5f9-04f2-4528-8e20-138ad9ac5ff1",
           "_postman_isSubFolder": true
         },
         {
-          "_postman_id": "2066044-ff0d9992-c1ff-436f-8e06-f89402401ffc",
           "name": "Carnets",
-          "description": "",
           "item": [
             {
-              "_postman_id": "2066044-32abd9a7-1e2e-4304-9eb1-36c4e14cf0fe",
               "name": "Carnets - List",
+              "_postman_id": "2066044-32abd9a7-1e2e-4304-9eb1-36c4e14cf0fe",
               "request": {
                 "method": "GET",
                 "header": [
@@ -4199,14 +4133,17 @@
                     "value": "application/json"
                   }
                 ],
-                "body": {},
+                "body": {
+                  "mode": "formdata",
+                  "formdata": []
+                },
                 "url": "https://api.pocketto.com.br/vdash/crowdfundingpage/3/carnets"
               },
               "response": []
             },
             {
-              "_postman_id": "2066044-a72e81d8-3a89-4094-98b3-19a26c0354b6",
               "name": "Carnets - Update",
+              "_postman_id": "2066044-a72e81d8-3a89-4094-98b3-19a26c0354b6",
               "request": {
                 "method": "PUT",
                 "header": [
@@ -4236,11 +4173,15 @@
               "response": []
             }
           ],
+          "_postman_id": "2066044-ff0d9992-c1ff-436f-8e06-f89402401ffc",
           "_postman_isSubFolder": true
         },
         {
-          "_postman_id": "2066044-a5537a48-c93b-42aa-ae97-e41e6d9f2aa1",
           "name": "Save Page",
+          "_postman_id": "2066044-a5537a48-c93b-42aa-ae97-e41e6d9f2aa1",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
           "request": {
             "method": "POST",
             "header": [
@@ -4310,8 +4251,11 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-bb6034ad-68de-43b2-8315-459d7b8155f5",
           "name": "Save or Create News",
+          "_postman_id": "2066044-bb6034ad-68de-43b2-8315-459d7b8155f5",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
           "request": {
             "method": "POST",
             "header": [
@@ -4357,8 +4301,11 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-3155c100-98fd-4725-89a7-d0658f5b94dd",
           "name": "Save or Create Reward",
+          "_postman_id": "2066044-3155c100-98fd-4725-89a7-d0658f5b94dd",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
           "request": {
             "method": "POST",
             "header": [
@@ -4409,28 +4356,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-76c7a637-fa68-4c18-b69f-89df3fde498a",
           "name": "Public Settings - Get",
-          "request": {
-            "method": "GET",
-            "header": [
-              {
-                "key": "Account",
-                "value": "pocketto"
-              },
-              {
-                "key": "Authorization",
-                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjNiODgxN2U2MmM5Nzg0NmI1NmJmNjBjYmY5OWVmY2U5Mzk2MTUyYTFmYjRhYTkwNGM4MmE3ZGE4M2QzNzBmYTgyZGFlMDFmMDAwMzA0ZDEyIn0.eyJhdWQiOiIyIiwianRpIjoiM2I4ODE3ZTYyYzk3ODQ2YjU2YmY2MGNiZjk5ZWZjZTkzOTYxNTJhMWZiNGFhOTA0YzgyYTdkYTgzZDM3MGZhODJkYWUwMWYwMDAzMDRkMTIiLCJpYXQiOjE1MTE3OTE0MjksIm5iZiI6MTUxMTc5MTQyOSwiZXhwIjoxNTQzMzI3NDI5LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.hIDEX5jGQy1Nz6dBYzyzxnWop_rgyztNNAwZGM0ZhWgcYFjjE6lqxyxux4WK5jY-vPlLBuesTbOnk7yv5MTqiNkwUlGX4dexMWHpZE6j9Jrl_A8TA8uPmSs8eZy1Znl6e4xxSeMWyXNp7UHxsWiMO2qDIDC3f8kydq4f5bQy4HfYSm_HdDOuHOlnw3bf_t1KSfU9saPq_E9h_N4WtMxEkFmhpGtt2CB902WUJG3xrdwj8pRYN5Ydl6VS-lYD2EmnsB-AFYo3uxcw2LiW9o4zOe3TnfKC_1um4pWA91anqqoM4cn0VDUuduZbPu9GUDi782tlmdwZyCD6mbmq25ziHS3VqHI-UfW1Mtm6m7IzZlTYEeaSdm-fRa-b4g_Hc60XGTx9go6xNqoF-lA0ukcrJ0_srH7VZE6MT_XVPdkfww4H2189yjFghn4tgQFXkPxEeocryDJM4FWOZ1VcqwcjdyoTFs3xSJoDAMsnYaHxwgq6r0L89IyGmge0uefWyYfDYcCA7mkKLhgiBQAlgjoY-Y-IJYc6fshUzBmFhupn63KHvxjmry0z_ORwDjoR5nQmHzDYArn6v1CWTsDaastp501NSinMXaL2C3s5wMXgmIqmrOTbGBYPUkm9_bFhZ25kCZHPV9u0qNjSlS3uOho8oEjflVg_pjKoYSON7CYT_Go"
-              }
-            ],
-            "body": {},
-            "url": "https://api.pocketto.com.br/vdash/crowdfundingpage/82c83d6640f9cae92f6e7c43171982d0e6ee1b062e2f842d/public-settings"
-          },
-          "response": []
-        },
-        {
-          "_postman_id": "2066044-0f1751ac-7b46-4f30-aa37-48c8216174d3",
-          "name": "List SP",
+          "_postman_id": "2066044-76c7a637-fa68-4c18-b69f-89df3fde498a",
           "request": {
             "method": "GET",
             "header": [
@@ -4444,23 +4371,44 @@
               }
             ],
             "body": {
-              "mode": "raw",
-              "raw": ""
+              "mode": "formdata",
+              "formdata": []
             },
+            "url": "https://api.pocketto.com.br/vdash/crowdfundingpage/82c83d6640f9cae92f6e7c43171982d0e6ee1b062e2f842d/public-settings"
+          },
+          "response": []
+        },
+        {
+          "name": "List SP",
+          "_postman_id": "2066044-0f1751ac-7b46-4f30-aa37-48c8216174d3",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Account",
+                "value": "pocketto"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjNiODgxN2U2MmM5Nzg0NmI1NmJmNjBjYmY5OWVmY2U5Mzk2MTUyYTFmYjRhYTkwNGM4MmE3ZGE4M2QzNzBmYTgyZGFlMDFmMDAwMzA0ZDEyIn0.eyJhdWQiOiIyIiwianRpIjoiM2I4ODE3ZTYyYzk3ODQ2YjU2YmY2MGNiZjk5ZWZjZTkzOTYxNTJhMWZiNGFhOTA0YzgyYTdkYTgzZDM3MGZhODJkYWUwMWYwMDAzMDRkMTIiLCJpYXQiOjE1MTE3OTE0MjksIm5iZiI6MTUxMTc5MTQyOSwiZXhwIjoxNTQzMzI3NDI5LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.hIDEX5jGQy1Nz6dBYzyzxnWop_rgyztNNAwZGM0ZhWgcYFjjE6lqxyxux4WK5jY-vPlLBuesTbOnk7yv5MTqiNkwUlGX4dexMWHpZE6j9Jrl_A8TA8uPmSs8eZy1Znl6e4xxSeMWyXNp7UHxsWiMO2qDIDC3f8kydq4f5bQy4HfYSm_HdDOuHOlnw3bf_t1KSfU9saPq_E9h_N4WtMxEkFmhpGtt2CB902WUJG3xrdwj8pRYN5Ydl6VS-lYD2EmnsB-AFYo3uxcw2LiW9o4zOe3TnfKC_1um4pWA91anqqoM4cn0VDUuduZbPu9GUDi782tlmdwZyCD6mbmq25ziHS3VqHI-UfW1Mtm6m7IzZlTYEeaSdm-fRa-b4g_Hc60XGTx9go6xNqoF-lA0ukcrJ0_srH7VZE6MT_XVPdkfww4H2189yjFghn4tgQFXkPxEeocryDJM4FWOZ1VcqwcjdyoTFs3xSJoDAMsnYaHxwgq6r0L89IyGmge0uefWyYfDYcCA7mkKLhgiBQAlgjoY-Y-IJYc6fshUzBmFhupn63KHvxjmry0z_ORwDjoR5nQmHzDYArn6v1CWTsDaastp501NSinMXaL2C3s5wMXgmIqmrOTbGBYPUkm9_bFhZ25kCZHPV9u0qNjSlS3uOho8oEjflVg_pjKoYSON7CYT_Go"
+              }
+            ],
             "url": "https://api.pocketto.com.br/vdash/crowdfundingpage/list_sp"
           },
           "response": []
         }
-      ]
+      ],
+      "_postman_id": "2066044-187dc6d6-b1db-4f22-92ab-87377b7b5bb4"
     },
     {
-      "_postman_id": "2066044-769eccfe-e372-40c2-9b8e-fac1e6e9e915",
       "name": "Actions",
-      "description": "",
       "item": [
         {
-          "_postman_id": "2066044-0f0ad475-9f33-4e3d-9e4e-8a7c5b907080",
           "name": "Actions - List",
+          "_postman_id": "2066044-0f0ad475-9f33-4e3d-9e4e-8a7c5b907080",
           "request": {
             "method": "GET",
             "header": [
@@ -4477,21 +4425,23 @@
                 "value": "application/json"
               }
             ],
-            "body": {},
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
             "url": "https://api.pocketto.com.br/vdash/actions"
           },
           "response": []
         }
-      ]
+      ],
+      "_postman_id": "2066044-769eccfe-e372-40c2-9b8e-fac1e6e9e915"
     },
     {
-      "_postman_id": "2066044-1f72ad97-7acf-4f86-98b2-95406aaa31c1",
       "name": "Roles",
-      "description": "",
       "item": [
         {
-          "_postman_id": "2066044-5eeaa319-625a-475e-9ade-dba57fa7dc97",
           "name": "Roles - List",
+          "_postman_id": "2066044-5eeaa319-625a-475e-9ade-dba57fa7dc97",
           "request": {
             "method": "GET",
             "header": [
@@ -4508,21 +4458,23 @@
                 "value": "application/json"
               }
             ],
-            "body": {},
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
             "url": "https://api.pocketto.com.br/vdash/roles"
           },
           "response": []
         }
-      ]
+      ],
+      "_postman_id": "2066044-1f72ad97-7acf-4f86-98b2-95406aaa31c1"
     },
     {
-      "_postman_id": "2066044-4b399748-9036-42bc-905b-0c47812924bd",
       "name": "Carnets",
-      "description": "",
       "item": [
         {
-          "_postman_id": "2066044-f416ec0e-27c9-4d97-b38d-8149c9b965c4",
           "name": "Carnets - Post",
+          "_postman_id": "2066044-f416ec0e-27c9-4d97-b38d-8149c9b965c4",
           "request": {
             "method": "POST",
             "header": [
@@ -4548,8 +4500,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-c2f37f5a-8706-46e4-8000-45bd1004d67a",
           "name": "Carnets - Post Contact",
+          "_postman_id": "2066044-c2f37f5a-8706-46e4-8000-45bd1004d67a",
           "request": {
             "method": "POST",
             "header": [
@@ -4576,8 +4528,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-6009f6e7-8f78-4a4e-8ee0-3f19e83da88c",
           "name": "Carnets - Delete",
+          "_postman_id": "2066044-6009f6e7-8f78-4a4e-8ee0-3f19e83da88c",
           "request": {
             "method": "DELETE",
             "header": [
@@ -4603,8 +4555,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-aa9b3865-c824-4b6e-9f37-c0d8f8a52f00",
           "name": "Carnets - Update",
+          "_postman_id": "2066044-aa9b3865-c824-4b6e-9f37-c0d8f8a52f00",
           "request": {
             "method": "PUT",
             "header": [
@@ -4630,8 +4582,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-e794cb67-345e-4487-bee3-c8d85edd9929",
           "name": "Carnets - List",
+          "_postman_id": "2066044-e794cb67-345e-4487-bee3-c8d85edd9929",
           "request": {
             "method": "GET",
             "header": [
@@ -4657,8 +4609,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-332cc220-15a3-47b0-9caa-fdeb5c8c8f98",
           "name": "Carnets - List Home",
+          "_postman_id": "2066044-332cc220-15a3-47b0-9caa-fdeb5c8c8f98",
           "request": {
             "method": "GET",
             "header": [
@@ -4684,8 +4636,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-c70a96f4-fd94-4bcb-b616-291217b1c2e3",
           "name": "Carnets - Show",
+          "_postman_id": "2066044-c70a96f4-fd94-4bcb-b616-291217b1c2e3",
           "request": {
             "method": "GET",
             "header": [
@@ -4710,16 +4662,15 @@
           },
           "response": []
         }
-      ]
+      ],
+      "_postman_id": "2066044-4b399748-9036-42bc-905b-0c47812924bd"
     },
     {
-      "_postman_id": "2066044-84df2a5e-5ac6-4c1b-a8ee-bc44c4a69b16",
       "name": "WebPush",
-      "description": "",
       "item": [
         {
-          "_postman_id": "2066044-3f1f530c-e29c-4bdb-8afb-500f7b2b5788",
           "name": "Subscription - Post",
+          "_postman_id": "2066044-3f1f530c-e29c-4bdb-8afb-500f7b2b5788",
           "request": {
             "method": "POST",
             "header": [
@@ -4745,8 +4696,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-a81ede08-e32e-4200-9837-c9d029368bec",
           "name": "Key",
+          "_postman_id": "2066044-a81ede08-e32e-4200-9837-c9d029368bec",
           "request": {
             "method": "GET",
             "header": [
@@ -4772,8 +4723,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-67bc5fd0-40ba-44cd-8693-0b6caaf36f45",
           "name": "Teste",
+          "_postman_id": "2066044-67bc5fd0-40ba-44cd-8693-0b6caaf36f45",
           "request": {
             "method": "POST",
             "header": [
@@ -4799,8 +4750,8 @@
           "response": []
         },
         {
-          "_postman_id": "2066044-e0865a22-a20e-4427-b9da-da4c8a205bae",
           "name": "Subscription - Delete",
+          "_postman_id": "2066044-e0865a22-a20e-4427-b9da-da4c8a205bae",
           "request": {
             "method": "DELETE",
             "header": [
@@ -4825,11 +4776,12 @@
           },
           "response": []
         }
-      ]
+      ],
+      "_postman_id": "2066044-84df2a5e-5ac6-4c1b-a8ee-bc44c4a69b16"
     },
     {
-      "_postman_id": "2066044-74dbea7c-c607-ceda-ae24-21534ee93801",
       "name": "Payment Doc Generate",
+      "_postman_id": "2066044-74dbea7c-c607-ceda-ae24-21534ee93801",
       "request": {
         "method": "POST",
         "header": [
@@ -4856,8 +4808,8 @@
       "response": []
     },
     {
-      "_postman_id": "2066044-1de9dcf0-d6f7-9ee5-658a-c8adb119583e",
       "name": "Account - View (Code)",
+      "_postman_id": "2066044-1de9dcf0-d6f7-9ee5-658a-c8adb119583e",
       "request": {
         "method": "GET",
         "header": [
@@ -4866,17 +4818,13 @@
             "value": "pocketto"
           }
         ],
-        "body": {
-          "mode": "raw",
-          "raw": ""
-        },
         "url": "https://api.pocketto.com.br/vdash/accounts/code:pocketto"
       },
       "response": []
     },
     {
-      "_postman_id": "2066044-acc33fd8-b42c-444f-ef4d-cefef8207b01",
       "name": "Address",
+      "_postman_id": "2066044-acc33fd8-b42c-444f-ef4d-cefef8207b01",
       "request": {
         "method": "GET",
         "header": [
@@ -4889,14 +4837,17 @@
             "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjNiODgxN2U2MmM5Nzg0NmI1NmJmNjBjYmY5OWVmY2U5Mzk2MTUyYTFmYjRhYTkwNGM4MmE3ZGE4M2QzNzBmYTgyZGFlMDFmMDAwMzA0ZDEyIn0.eyJhdWQiOiIyIiwianRpIjoiM2I4ODE3ZTYyYzk3ODQ2YjU2YmY2MGNiZjk5ZWZjZTkzOTYxNTJhMWZiNGFhOTA0YzgyYTdkYTgzZDM3MGZhODJkYWUwMWYwMDAzMDRkMTIiLCJpYXQiOjE1MTE3OTE0MjksIm5iZiI6MTUxMTc5MTQyOSwiZXhwIjoxNTQzMzI3NDI5LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.hIDEX5jGQy1Nz6dBYzyzxnWop_rgyztNNAwZGM0ZhWgcYFjjE6lqxyxux4WK5jY-vPlLBuesTbOnk7yv5MTqiNkwUlGX4dexMWHpZE6j9Jrl_A8TA8uPmSs8eZy1Znl6e4xxSeMWyXNp7UHxsWiMO2qDIDC3f8kydq4f5bQy4HfYSm_HdDOuHOlnw3bf_t1KSfU9saPq_E9h_N4WtMxEkFmhpGtt2CB902WUJG3xrdwj8pRYN5Ydl6VS-lYD2EmnsB-AFYo3uxcw2LiW9o4zOe3TnfKC_1um4pWA91anqqoM4cn0VDUuduZbPu9GUDi782tlmdwZyCD6mbmq25ziHS3VqHI-UfW1Mtm6m7IzZlTYEeaSdm-fRa-b4g_Hc60XGTx9go6xNqoF-lA0ukcrJ0_srH7VZE6MT_XVPdkfww4H2189yjFghn4tgQFXkPxEeocryDJM4FWOZ1VcqwcjdyoTFs3xSJoDAMsnYaHxwgq6r0L89IyGmge0uefWyYfDYcCA7mkKLhgiBQAlgjoY-Y-IJYc6fshUzBmFhupn63KHvxjmry0z_ORwDjoR5nQmHzDYArn6v1CWTsDaastp501NSinMXaL2C3s5wMXgmIqmrOTbGBYPUkm9_bFhZ25kCZHPV9u0qNjSlS3uOho8oEjflVg_pjKoYSON7CYT_Go"
           }
         ],
-        "body": {},
+        "body": {
+          "mode": "formdata",
+          "formdata": []
+        },
         "url": "https://api.pocketto.com.br/vdash/address/92130730"
       },
       "response": []
     },
     {
-      "_postman_id": "2066044-2d98b3ad-ed1c-901e-2103-1c2324c619d2",
       "name": "Analytics - Show",
+      "_postman_id": "2066044-2d98b3ad-ed1c-901e-2103-1c2324c619d2",
       "request": {
         "method": "GET",
         "header": [
@@ -4909,7 +4860,10 @@
             "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjNiODgxN2U2MmM5Nzg0NmI1NmJmNjBjYmY5OWVmY2U5Mzk2MTUyYTFmYjRhYTkwNGM4MmE3ZGE4M2QzNzBmYTgyZGFlMDFmMDAwMzA0ZDEyIn0.eyJhdWQiOiIyIiwianRpIjoiM2I4ODE3ZTYyYzk3ODQ2YjU2YmY2MGNiZjk5ZWZjZTkzOTYxNTJhMWZiNGFhOTA0YzgyYTdkYTgzZDM3MGZhODJkYWUwMWYwMDAzMDRkMTIiLCJpYXQiOjE1MTE3OTE0MjksIm5iZiI6MTUxMTc5MTQyOSwiZXhwIjoxNTQzMzI3NDI5LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.hIDEX5jGQy1Nz6dBYzyzxnWop_rgyztNNAwZGM0ZhWgcYFjjE6lqxyxux4WK5jY-vPlLBuesTbOnk7yv5MTqiNkwUlGX4dexMWHpZE6j9Jrl_A8TA8uPmSs8eZy1Znl6e4xxSeMWyXNp7UHxsWiMO2qDIDC3f8kydq4f5bQy4HfYSm_HdDOuHOlnw3bf_t1KSfU9saPq_E9h_N4WtMxEkFmhpGtt2CB902WUJG3xrdwj8pRYN5Ydl6VS-lYD2EmnsB-AFYo3uxcw2LiW9o4zOe3TnfKC_1um4pWA91anqqoM4cn0VDUuduZbPu9GUDi782tlmdwZyCD6mbmq25ziHS3VqHI-UfW1Mtm6m7IzZlTYEeaSdm-fRa-b4g_Hc60XGTx9go6xNqoF-lA0ukcrJ0_srH7VZE6MT_XVPdkfww4H2189yjFghn4tgQFXkPxEeocryDJM4FWOZ1VcqwcjdyoTFs3xSJoDAMsnYaHxwgq6r0L89IyGmge0uefWyYfDYcCA7mkKLhgiBQAlgjoY-Y-IJYc6fshUzBmFhupn63KHvxjmry0z_ORwDjoR5nQmHzDYArn6v1CWTsDaastp501NSinMXaL2C3s5wMXgmIqmrOTbGBYPUkm9_bFhZ25kCZHPV9u0qNjSlS3uOho8oEjflVg_pjKoYSON7CYT_Go"
           }
         ],
-        "body": {},
+        "body": {
+          "mode": "formdata",
+          "formdata": []
+        },
         "url": {
           "raw": "https://api.pocketto.com.br/vdash/analytics/payments?filters=status::eq(refused)&operation=count&groupby=user_id",
           "host": [
@@ -4923,18 +4877,15 @@
           "query": [
             {
               "key": "filters",
-              "value": "status::eq(refused)",
-              "equals": true
+              "value": "status::eq(refused)"
             },
             {
               "key": "operation",
-              "value": "count",
-              "equals": true
+              "value": "count"
             },
             {
               "key": "groupby",
-              "value": "user_id",
-              "equals": true
+              "value": "user_id"
             }
           ]
         }
@@ -4942,8 +4893,11 @@
       "response": []
     },
     {
-      "_postman_id": "2066044-d33da392-f17d-4568-a900-6da2e5964b9e",
       "name": "Contato",
+      "_postman_id": "2066044-d33da392-f17d-4568-a900-6da2e5964b9e",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
       "request": {
         "method": "POST",
         "header": [

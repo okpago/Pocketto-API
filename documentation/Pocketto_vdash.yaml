@@ -1603,7 +1603,7 @@
               }
             ],
             "url": {
-              "raw": "https://api.pocketto.com.br/vdash/financial/transfers/2/2019?crowdfundingPage=no",
+              "raw": "https://api.pocketto.com.br/vdash/financial/transfers/4/2019?crowdfundingPage=no",
               "host": [
                 "https://api.pocketto.com.br"
               ],
@@ -1611,7 +1611,7 @@
                 "vdash",
                 "financial",
                 "transfers",
-                "2",
+                "4",
                 "2019"
               ],
               "query": [
@@ -1647,7 +1647,7 @@
                 "disabled": true
               }
             ],
-            "url": "https://api.pocketto.com.br/vdash/financial/transfers/22/3/2019"
+            "url": "https://api.pocketto.com.br/vdash/financial/transfers/7/2/2019"
           },
           "response": []
         },
@@ -2613,6 +2613,71 @@
           "response": [
             {
               "id": "2066044-fe3c3174-b3eb-4510-ae97-ad5b61023773",
+              "name": "Payments - Create",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Account",
+                    "value": "pocketto"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjNiODgxN2U2MmM5Nzg0NmI1NmJmNjBjYmY5OWVmY2U5Mzk2MTUyYTFmYjRhYTkwNGM4MmE3ZGE4M2QzNzBmYTgyZGFlMDFmMDAwMzA0ZDEyIn0.eyJhdWQiOiIyIiwianRpIjoiM2I4ODE3ZTYyYzk3ODQ2YjU2YmY2MGNiZjk5ZWZjZTkzOTYxNTJhMWZiNGFhOTA0YzgyYTdkYTgzZDM3MGZhODJkYWUwMWYwMDAzMDRkMTIiLCJpYXQiOjE1MTE3OTE0MjksIm5iZiI6MTUxMTc5MTQyOSwiZXhwIjoxNTQzMzI3NDI5LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.hIDEX5jGQy1Nz6dBYzyzxnWop_rgyztNNAwZGM0ZhWgcYFjjE6lqxyxux4WK5jY-vPlLBuesTbOnk7yv5MTqiNkwUlGX4dexMWHpZE6j9Jrl_A8TA8uPmSs8eZy1Znl6e4xxSeMWyXNp7UHxsWiMO2qDIDC3f8kydq4f5bQy4HfYSm_HdDOuHOlnw3bf_t1KSfU9saPq_E9h_N4WtMxEkFmhpGtt2CB902WUJG3xrdwj8pRYN5Ydl6VS-lYD2EmnsB-AFYo3uxcw2LiW9o4zOe3TnfKC_1um4pWA91anqqoM4cn0VDUuduZbPu9GUDi782tlmdwZyCD6mbmq25ziHS3VqHI-UfW1Mtm6m7IzZlTYEeaSdm-fRa-b4g_Hc60XGTx9go6xNqoF-lA0ukcrJ0_srH7VZE6MT_XVPdkfww4H2189yjFghn4tgQFXkPxEeocryDJM4FWOZ1VcqwcjdyoTFs3xSJoDAMsnYaHxwgq6r0L89IyGmge0uefWyYfDYcCA7mkKLhgiBQAlgjoY-Y-IJYc6fshUzBmFhupn63KHvxjmry0z_ORwDjoR5nQmHzDYArn6v1CWTsDaastp501NSinMXaL2C3s5wMXgmIqmrOTbGBYPUkm9_bFhZ25kCZHPV9u0qNjSlS3uOho8oEjflVg_pjKoYSON7CYT_Go"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"amount\": \"10\",\n  \"due_date\": \"2018-10-01\",\n  \"method_id\" : 2,\n  \"user\": {\n    \"name\": \"Vinicius Matteus\",\n    \"email\": \"vmatteus@gmail.com\",\n    \"cnpj\" : \"27433043000117\",\n    \"mobile\" : \"51981332395\"\n  },\n  \"extra_data_1\" : \"Vini\",\n  \"extra_data_2\" : \"Vini 2\"\n}"
+                },
+                "url": "https://api.pocketto.com.br/vdash/payments"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"success\": true,\n    \"error\": \"\",\n    \"current_time\": \"2018-06-29T19:19:44+00:00\",\n    \"payment\": {\n        \"id\": 5380,\n        \"payment_id\": null,\n        \"user_id\": 162,\n        \"user\": {\n            \"id\": 162,\n            \"photo_file_id\": null,\n            \"photo_file_url\": null,\n            \"photo\": null,\n            \"card_front_file_id\": null,\n            \"card_front_file_url\": null,\n            \"card_front\": null,\n            \"card_back_file_id\": null,\n            \"card_back_file_url\": null,\n            \"card_back\": null,\n            \"qrcode_file_id\": null,\n            \"qrcode_file_url\": null,\n            \"qrcode\": null,\n            \"category\": null,\n            \"name\": \"Vinicius Matteus\",\n            \"email\": \"vmatteus@gmail.com\",\n            \"code\": \"CNG9S\",\n            \"cpf\": null,\n            \"cnpj\": \"27433043000117\",\n            \"gender\": null,\n            \"birthdate\": null,\n            \"birthdate_f\": null,\n            \"address_number\": null,\n            \"address_complement\": null,\n            \"address_zipcode\": null,\n            \"address_state\": null,\n            \"address_city\": null,\n            \"address_district\": null,\n            \"address_street\": null,\n            \"address_lat\": null,\n            \"address_lng\": null,\n            \"geolocation\": null,\n            \"recurring\": false,\n            \"recurring_day_month\": null,\n            \"recurring_amount\": null,\n            \"recurring_amount_f\": null,\n            \"require_fill\": true,\n            \"status\": true,\n            \"mobile\": \"+5551981332395\",\n            \"created_at\": \"2018-02-26T18:35:37+00:00\",\n            \"created_at_f\": \"26/02/2018\",\n            \"updated_at\": \"2018-02-26T18:35:37+00:00\",\n            \"updated_at_f\": \"26/02/2018\",\n            \"deleted_at\": null,\n            \"deleted_at_f\": null\n        },\n        \"owner_id\": 3,\n        \"owner\": {\n            \"id\": 3,\n            \"name\": \"Pocketto\",\n            \"email\": \"admin@pocketto.com.br\",\n            \"role\": \"S\",\n            \"status\": 1,\n            \"created_at\": \"2017-03-21T13:31:15+00:00\",\n            \"created_at_f\": \"21/03/2017\",\n            \"updated_at\": \"2017-12-20T17:02:31+00:00\",\n            \"updated_at_f\": \"20/12/2017\"\n        },\n        \"campaign_id\": null,\n        \"campaign\": null,\n        \"method_id\": 2,\n        \"doc_file_id\": null,\n        \"doc_file_url\": null,\n        \"doc\": null,\n        \"doc_file_vert_id\": null,\n        \"doc_file_vert_url\": null,\n        \"doc_vert\": null,\n        \"doc_file_horiz_id\": null,\n        \"doc_file_horiz_url\": null,\n        \"doc_horiz\": null,\n        \"claim_photo_file_id\": null,\n        \"claim_photo_file_url\": null,\n        \"claim_photo\": null,\n        \"claim_photo_data\": null,\n        \"claim_url\": \"https://web.dev.pocketto.com.br/pocketto#!/confirma/eqworxh\",\n        \"code\": \"eqworxh\",\n        \"amount\": 10,\n        \"amount_f\": \"R$ 10,00\",\n        \"amount_original\": null,\n        \"amount_original_f\": \"R$ 0,00\",\n        \"claim_date\": null,\n        \"claim_date_f\": null,\n        \"due_date\": \"2018-10-01T00:00:00+00:00\",\n        \"due_date_f\": \"01/10/2018\",\n        \"method_data\": null,\n        \"description\": null,\n        \"transaction_id\": null,\n        \"uid\": null,\n        \"created_at\": \"2018-06-29T19:19:44+00:00\",\n        \"created_at_f\": \"29/06/2018\",\n        \"updated_at\": \"2018-06-29T19:19:44+00:00\",\n        \"updated_at_f\": \"29/06/2018\",\n        \"deleted_at\": null,\n        \"deleted_at_f\": null,\n        \"status\": \"pending\",\n        \"refused_reason\": null,\n        \"external_campaign_title\": null,\n        \"error\": \"\",\n        \"extra_data_1\": \"Vini\",\n        \"extra_data_2\": \"Vini 2\",\n        \"installments\": null,\n        \"debit_card_url\": null,\n        \"method\": {\n            \"id\": 2,\n            \"name\": \"Cartão de Crédito\",\n            \"gateway\": \"cielo\",\n            \"type\": \"credit_card\",\n            \"status\": 1\n        }\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Payments - Create Copy",
+          "_postman_id": "2066044-8122d280-9f1c-478a-a9c6-bae5d9985cf4",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Account",
+                "value": "pocketto"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjY4NTdmNjBjOWU4ZWI3ZDA4NDgyNWMyYzhjYTU0ZDZjN2MwMzM2Njk3Zjc2ODRiYjI3MGQ3ZDExYWJjMmE5ZjQ2ZDM5MjFkNzZlODJiMTA2In0.eyJhdWQiOiIyIiwianRpIjoiNjg1N2Y2MGM5ZThlYjdkMDg0ODI1YzJjOGNhNTRkNmM3YzAzMzY2OTdmNzY4NGJiMjcwZDdkMTFhYmMyYTlmNDZkMzkyMWQ3NmU4MmIxMDYiLCJpYXQiOjE1NTQ0MDM2MDAsIm5iZiI6MTU1NDQwMzYwMCwiZXhwIjoxNTg2MDI1OTk5LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.JYZdJFc-F_Snmzi_AGNG0ggDd8FmP5pGiLGBCBD8wMes_c1LPgQtNMPZlYhtjPH8B0vANCDkvHOo1qk6v2pXb66T7V7t0Uzi77tndn5nzbg7ElvnVNAP8s3sa7wjrQDQn55u1Rft9-jqea2iEWI2un-f-nK1snDYVmkW7UK5ObohFNuN_-h34QJz_udH9Ocr9ugNHJxi-_l72w13vX5H1-BkNv0nlZ7Q2cOmpxLaRo-SocWGyVpy9h4CGVvp-o9nccVY29lXh8TLKzkKXy-5nGNcsoogeyty-bNZk6BLApmNa4poGRl2gWo6lnBmdbBQOkz1mCsbK_JzaYoOSI-YofvVeS31YIsDitGaKBZwfCrOgZN1NLQF_emukUa-9YY8fp-haNl2uTdECk8O6VHZgSvLfl-tPb47jJmCCrOuAQjSfkhiaGvyqcfmkwdTs8pjny9knyL113KrzGzXE8U1JAtZJNIU2qcdyOzdQ-rtOeNCM4Tlq7u8AG-4H0ePV87jIvqENwaD8wWwIo2Hz_tzRtSURf6OZIJCbFqmiQkekz6t3b4is5Xvfx_SnaA4uzwgkwdo28eJ2_bFbKduIKVQIB9Bu6HLomOIiA6eCPKewqVadPeqFs4hDE6XDtAry_DWW1uyPn5_yJOLKUdAdfo1oGe7M16sM0q81xmFTViv1IM"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"amount\":10,\"method_id\":4,\"user\":{\"name\":\"Vinicius Mautone Matteus\",\"cp\":\"01286800080\",\"email\":\"vmatteus@gmail.com\",\"mobile\":\"+5551981332395\",\"gender\":\"Masculino\",\"birthdate\":\"1987-05-08\",\"address_zipcode\":\"90870-370\",\"address_city_id\":4247,\"address_state\":\"RS\",\"address_district\":\"MEDIANEIRA\",\"address_number\":\"123\",\"address_complement\":null,\"cpf\":\"01286800080\"},\"destination\":null,\"origin\":null,\"bank_code_intention\":null,\"description\":null,\"due_date\":null,\"account_debit\":null}"
+            },
+            "url": "https://api.pocketto.com.br/vdash/payments",
+            "description": "Api de criação de pagamento/doação"
+          },
+          "response": [
+            {
+              "id": "2066044-67969030-9603-4a63-a20f-d33ba433ad24",
               "name": "Payments - Create",
               "originalRequest": {
                 "method": "POST",

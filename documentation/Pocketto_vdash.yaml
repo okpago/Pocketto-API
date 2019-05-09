@@ -4904,7 +4904,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n\t\"lot_infos\": [\n\t\t{\n\t\t\t\"carnet_id\": 10,\n\t\t\t\"crowdfunding_page_id\": null,\n\t\t\t\"period_start\": \"2019-05-01\"\n\t\t},\n\t\t{\n\t\t\t\"carnet_id\": 11,\n\t\t\t\"crowdfunding_page_id\": null,\n\t\t\t\"period_start\": \"2019-07-01\"\n\t\t}\n\t]\n}"
+              "raw": "{\n\t\"lot_infos\": [\n\t\t{\n\t\t\t\"carnet_id\": 13,\n\t\t\t\"crowdfunding_page_id\": null,\n\t\t\t\"period_start\": \"2020-01-01\"\n\t\t}\n\t]\n}"
             },
             "url": "https://api.pocketto.com.br/vdash/lots"
           },

@@ -2605,7 +2605,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"amount\": 5,\n  \"method_id\" : 4,\n  \"description\":\"\",\n  \"user\": {\n    \"name\": \"Vinicius Matteus\",\n    \"email\": \"vmatteus@gmail.com\",\n    \"cnpj\" : \"54349293000146\",\n    \"mobile\" : \"51981332395\",\n    \"gender\": \"M\",\n    \"address_zipcode\": \"90870370\",\n    \"address_city_id\": 4001,\n    \"address_state\": \"RS\",\n    \"address_district\": \"NITERÓI\",\n    \"address_street\": \"Tóquio\",\n    \"address_number\": \"123\"\n  }\n}"
+              "raw": "{\n  \"amount\": 5,\n  \"method_id\" : 4,\n  \"description\":\"\",\n  \"url_notification\": \"\",\n  \"user\": {\n    \"name\": \"Vinicius Matteus\",\n    \"email\": \"vmatteus@gmail.com\",\n    \"cnpj\" : \"54349293000146\",\n    \"mobile\" : \"51981332395\",\n    \"gender\": \"M\",\n    \"address_zipcode\": \"90870370\",\n    \"address_city_id\": 4001,\n    \"address_state\": \"RS\",\n    \"address_district\": \"NITERÓI\",\n    \"address_street\": \"Tóquio\",\n    \"address_number\": \"123\"\n  }\n}"
             },
             "url": "https://api.pocketto.com.br/vdash/payments",
             "description": "Api de criação de pagamento/doação"

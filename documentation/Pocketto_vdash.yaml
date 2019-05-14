@@ -3187,7 +3187,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n\t\"user_id\": null,\n\t\"method_id\": 4,\n\t\"carnet_id\": 13,\n\t\"day\": 7,\n\t\"origin\": \"b76691dfc3a64a90ca264d13ee92ef38440621610e677b9f\",\n\t\"user\": {\n\t    \"name\": \"Lyla Martins\",\n\t    \"email\": \"teste@okpago.com\",\n\t    \"cpf\" : \"70690890079\",\n\t    \"mobile\" : \"51981332395\",\n\t    \"gender\": \"F\",\n\t    \"birthdate\": \"1995-07-22\",\n\t    \"address_complement\": \"Bloco 3\",\n\t    \"address_zipcode\": \"92440230\",\n\t    \"address_city_id\": 4001,\n\t    \"address_state\": \"RS\",\n\t    \"address_district\": \"Guajuviras\",\n\t    \"address_street\": \"Rua 58B\",\n\t    \"address_number\": \"17\"\n\t}\n}"
+              "raw": "{\n\t\"user_id\": 148,\n\t\"method_id\": 4,\n\t\"carnet_id\": 13,\n\t\"day\": 22,\n\t\"origin\": \"bb135fd4c1238cecb84a38572a67bab8dd6192c37b313826\"\n}"
             },
             "url": {
               "raw": "https://api.pocketto.com.br/vdash/user_recurs",
@@ -3639,7 +3639,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"payment_id\": 4713,\n  \"card\":{\n    \"brand\":\"master\",\n    \"number\":\"4024007153763190\",\n    \"cvc\":\"471\",\n    \"holder\":\"Vinicius Matteus\",\n    \"exp_date\":\"05/22\"\n  }\n}"
+              "raw": "{\n  \"payment_id\": 4657,\n  \"card\":{\n    \"brand\":\"master\",\n    \"number\":\"4024007153763190\",\n    \"cvc\":\"471\",\n    \"holder\":\"Vinicius Matteus\",\n    \"exp_date\":\"05/22\"\n  }\n}"
             },
             "url": "https://api.pocketto.com.br/vdash/credit_card/process"
           },

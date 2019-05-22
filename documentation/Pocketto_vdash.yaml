@@ -7699,10 +7699,10 @@ definitions:
   UserRecurrences-CreatePhysicalRequest:
     title: UserRecurrences-CreatePhysicalRequest
     example:
-      user_id: 148
+      user_id: 192
       method_id: 4
-      carnet_id: 13
-      day: 22
+      carnet_id: 10
+      day: 15
       origin: bb135fd4c1238cecb84a38572a67bab8dd6192c37b313826
     type: object
     properties:

@@ -7701,9 +7701,11 @@ definitions:
     example:
       user_id: 192
       method_id: 4
-      carnet_id: 10
+      carnet_id: 11
       day: 15
+      amount: 50
       origin: bb135fd4c1238cecb84a38572a67bab8dd6192c37b313826
+      generate_carnet: true
     type: object
     properties:
       user_id:
@@ -7718,14 +7720,21 @@ definitions:
       day:
         type: integer
         format: int32
+      amount:
+        type: integer
+        format: int32
       origin:
         type: string
+      generate_carnet:
+        type: boolean
     required:
     - user_id
     - method_id
     - carnet_id
     - day
+    - amount
     - origin
+    - generate_carnet
   Webhooks-CreateRequest:
     title: Webhooks-CreateRequest
     example:

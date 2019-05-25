@@ -708,13 +708,11 @@ paths:
         in: query
         required: true
         type: string
-        format: date-time
         description: ''
       - name: to
         in: query
         required: true
         type: string
-        format: date-time
         description: ''
       - name: Account
         in: header
@@ -1723,13 +1721,11 @@ paths:
         in: formData
         required: true
         type: string
-        format: date-time
         description: ''
       - name: date_end
         in: formData
         required: true
         type: string
-        format: date-time
         description: ''
       - name: doc_file
         in: formData
@@ -4695,13 +4691,11 @@ paths:
         in: query
         required: true
         type: string
-        format: date-time
         description: ''
       - name: cad_to
         in: query
         required: true
         type: string
-        format: date-time
         description: ''
       - name: Account
         in: header
@@ -6714,7 +6708,7 @@ definitions:
     title: Payments-CreateRequest
     example:
       amount: 10
-      method_id: 2
+      method_id: 4
       description: ''
       url_notification: https://webhook.site/b04fd25e-48f6-4494-af2e-6bc5d4894700
       installments: 2
@@ -6724,7 +6718,7 @@ definitions:
         cnpj: 54349293000146
         mobile: 51981332395
         gender: M
-        address_zipcode: 90870370
+        address_zipcode: hahahaha
         address_city_id: 4001
         address_state: RS
         address_district: NITERÓI
@@ -6762,7 +6756,7 @@ definitions:
       cnpj: 54349293000146
       mobile: 51981332395
       gender: M
-      address_zipcode: 90870370
+      address_zipcode: hahahaha
       address_city_id: 4001
       address_state: RS
       address_district: NITERÓI
@@ -7705,7 +7699,9 @@ definitions:
       day: 25
       amount: 
       origin: bb135fd4c1238cecb84a38572a67bab8dd6192c37b313826
+      description: ''
       generate_carnet: true
+      start_date: 
     type: object
     properties:
       user_id:
@@ -7724,8 +7720,12 @@ definitions:
         type: string
       origin:
         type: string
+      description:
+        type: string
       generate_carnet:
         type: boolean
+      start_date:
+        type: string
     required:
     - user_id
     - method_id
@@ -7733,7 +7733,9 @@ definitions:
     - day
     - amount
     - origin
+    - description
     - generate_carnet
+    - start_date
   Webhooks-CreateRequest:
     title: Webhooks-CreateRequest
     example:

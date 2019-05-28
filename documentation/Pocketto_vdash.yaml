@@ -3035,13 +3035,13 @@ paths:
         200:
           description: ''
           headers: {}
-  /payments/4457/status/cancelled:
+  /payments/7714/status/paid:
     put:
       description: 'TODO: Add Description'
       summary: Payments - Update Status
       tags:
       - Payments
-      operationId: Payments4457StatusCancelledPut
+      operationId: Payments7714StatusPaidPut
       deprecated: false
       produces:
       - application/json
@@ -5763,6 +5763,52 @@ paths:
         200:
           description: ''
           headers: {}
+  /lots/16:
+    put:
+      description: 'TODO: Add Description'
+      summary: Lot - Update
+      tags:
+      - Lot
+      operationId: Lots16Put
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: false
+        default: Bearer {token}
+        type: string
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Accept
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Content-Type
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/Lot-UpdateRequest'
+      responses:
+        200:
+          description: ''
+          headers: {}
   /lots/17/filters:
     get:
       description: 'TODO: Add Description'
@@ -5895,6 +5941,52 @@ paths:
         200:
           description: ''
           headers: {}
+  /lot-infos/32:
+    put:
+      description: 'TODO: Add Description'
+      summary: Lot Info - Update
+      tags:
+      - Lot Info
+      operationId: LotInfos32Put
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: false
+        default: Bearer {token}
+        type: string
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Content-Type
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Accept
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/LotInfo-UpdateRequest'
+      responses:
+        200:
+          description: ''
+          headers: {}
   /lot-infos/29:
     delete:
       description: 'TODO: Add Description'
@@ -5976,6 +6068,52 @@ paths:
         required: true
         type: string
         description: ''
+      responses:
+        200:
+          description: ''
+          headers: {}
+  /userrecurlots/56:
+    put:
+      description: 'TODO: Add Description'
+      summary: UserRecurLot - Update
+      tags:
+      - UserRecurLot
+      operationId: Userrecurlots56Put
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: false
+        default: Bearer {token}
+        type: string
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Accept
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Content-Type
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/UserRecurLot-UpdateRequest'
       responses:
         200:
           description: ''
@@ -8063,6 +8201,36 @@ definitions:
     - carnet_id
     - crowdfunding_page_id
     - period_start
+  Lot-UpdateRequest:
+    title: Lot-UpdateRequest
+    example:
+      status: pending
+    type: object
+    properties:
+      status:
+        type: string
+    required:
+    - status
+  LotInfo-UpdateRequest:
+    title: LotInfo-UpdateRequest
+    example:
+      status: chalalala
+    type: object
+    properties:
+      status:
+        type: string
+    required:
+    - status
+  UserRecurLot-UpdateRequest:
+    title: UserRecurLot-UpdateRequest
+    example:
+      status: done
+    type: object
+    properties:
+      status:
+        type: string
+    required:
+    - status
   PaymentDocGenerateRequest:
     title: PaymentDocGenerateRequest
     example:

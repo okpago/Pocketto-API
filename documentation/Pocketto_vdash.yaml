@@ -3035,13 +3035,13 @@ paths:
         200:
           description: ''
           headers: {}
-  /payments/7727/status/paid:
+  /payments/8275/status/paid:
     put:
       description: 'TODO: Add Description'
       summary: Payments - Update Status
       tags:
       - Payments
-      operationId: Payments7727StatusPaidPut
+      operationId: Payments8275StatusPaidPut
       deprecated: false
       produces:
       - application/json
@@ -6209,6 +6209,46 @@ paths:
         200:
           description: ''
           headers: {}
+  /print/test:
+    get:
+      description: 'TODO: Add Description'
+      summary: Print Test
+      tags:
+      - Print
+      operationId: PrintTestGet
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: false
+        default: Bearer {token}
+        type: string
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Accept
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Content-Type
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        200:
+          description: ''
+          headers: {}
   /payment_doc_generate:
     post:
       description: 'TODO: Add Description'
@@ -6886,7 +6926,7 @@ definitions:
   Payments-UpdateStatusRequest:
     title: Payments-UpdateStatusRequest
     example:
-      amount: 30
+      amount: 180
     type: object
     properties:
       amount:
@@ -6908,7 +6948,7 @@ definitions:
     title: Payments-CreateRequest
     example:
       amount: 10
-      method_id: 2
+      method_id: 4
       description: ''
       url_notification: https://webhook.site/b04fd25e-48f6-4494-af2e-6bc5d4894700
       installments: 1
@@ -6918,7 +6958,7 @@ definitions:
         cpf: 41545838836
         mobile: 51999999999
         gender: M
-        address_zipcode: hahahaha
+        address_zipcode: 90160004
         address_city_id: 4001
         address_state: RS
         address_district: NITERÓI
@@ -6956,7 +6996,7 @@ definitions:
       cpf: 41545838836
       mobile: 51999999999
       gender: M
-      address_zipcode: hahahaha
+      address_zipcode: 90160004
       address_city_id: 4001
       address_state: RS
       address_district: NITERÓI

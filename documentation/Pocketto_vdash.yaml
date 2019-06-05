@@ -3035,13 +3035,13 @@ paths:
         200:
           description: ''
           headers: {}
-  /payments/8275/status/paid:
+  /payments/9022/status/paid:
     put:
       description: 'TODO: Add Description'
       summary: Payments - Update Status
       tags:
       - Payments
-      operationId: Payments8275StatusPaidPut
+      operationId: Payments9022StatusPaidPut
       deprecated: false
       produces:
       - application/json
@@ -5221,6 +5221,46 @@ paths:
         200:
           description: ''
           headers: {}
+  /crowdfundingpage/4:
+    delete:
+      description: 'TODO: Add Description'
+      summary: Delete Page
+      tags:
+      - Crowdfunding
+      operationId: Crowdfundingpage4Delete
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: false
+        default: Bearer {token}
+        type: string
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Authorization
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Accept
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Content-Type
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        200:
+          description: ''
+          headers: {}
   /crowdfundingpage/news:
     post:
       description: 'TODO: Add Description'
@@ -6926,7 +6966,7 @@ definitions:
   Payments-UpdateStatusRequest:
     title: Payments-UpdateStatusRequest
     example:
-      amount: 180
+      amount: 1000
     type: object
     properties:
       amount:

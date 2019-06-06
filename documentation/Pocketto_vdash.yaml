@@ -3035,13 +3035,13 @@ paths:
         200:
           description: ''
           headers: {}
-  /payments/9022/status/paid:
+  /payments/9047/status/paid:
     put:
       description: 'TODO: Add Description'
       summary: Payments - Update Status
       tags:
       - Payments
-      operationId: Payments9022StatusPaidPut
+      operationId: Payments9047StatusPaidPut
       deprecated: false
       produces:
       - application/json
@@ -6966,14 +6966,19 @@ definitions:
   Payments-UpdateStatusRequest:
     title: Payments-UpdateStatusRequest
     example:
-      amount: 1000
+      amount: 200
+      amount_original: 200
     type: object
     properties:
       amount:
         type: integer
         format: int32
+      amount_original:
+        type: integer
+        format: int32
     required:
     - amount
+    - amount_original
   Payments-UpdateRequest:
     title: Payments-UpdateRequest
     example:

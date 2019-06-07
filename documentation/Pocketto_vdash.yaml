@@ -8088,7 +8088,7 @@ definitions:
   CreditCard-ProcessRequest:
     title: CreditCard-ProcessRequest
     example:
-      payment_id: 4658
+      payment_id: 4677
       card:
         brand: master
         number: 5540000000000533

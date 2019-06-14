@@ -6263,12 +6263,12 @@ definitions:
         cpf: 41545838836
         mobile: 51999999999
         gender: M
-        address_zipcode: 90160004
+        address_zipcode: 90870370
         address_city_id: 4001
         address_state: RS
         address_district: NITERÓI
         address_street: Tóquio
-        address_number: ''
+        address_number: 123
     type: object
     properties:
       amount:
@@ -6301,12 +6301,12 @@ definitions:
       cpf: 41545838836
       mobile: 51999999999
       gender: M
-      address_zipcode: 90160004
+      address_zipcode: 90870370
       address_city_id: 4001
       address_state: RS
       address_district: NITERÓI
       address_street: Tóquio
-      address_number: ''
+      address_number: 123
     type: object
     properties:
       name:

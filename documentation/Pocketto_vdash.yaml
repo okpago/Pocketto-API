@@ -5414,6 +5414,26 @@ paths:
         200:
           description: ''
           headers: {}
+  /gifts:
+    get:
+      description: 'TODO: Add Description'
+      summary: Gifts - List
+      tags:
+      - Gift
+      operationId: GiftsGet
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: false
+        default: Bearer {token}
+        type: string
+      responses:
+        200:
+          description: ''
+          headers: {}
   /print/user/{id}/address:
     get:
       description: 'TODO: Add Description'
@@ -7596,6 +7616,7 @@ tags:
 - name: Lot
 - name: Lot Info
 - name: UserRecurLot
+- name: Gift
 - name: Print
 - name: Misc
   description: ''

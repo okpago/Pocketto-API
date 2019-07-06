@@ -879,31 +879,6 @@ paths:
         200:
           description: ''
           headers: {}
-  /banks:
-    get:
-      description: 'TODO: Add Description'
-      summary: Banks - List
-      tags:
-      - Banks
-      operationId: BanksGet
-      deprecated: false
-      produces:
-      - application/json
-      parameters:
-      - name: Authorization
-        in: header
-        required: false
-        default: Bearer {token}
-        type: string
-      - name: Account
-        in: header
-        required: true
-        type: string
-        description: ''
-      responses:
-        200:
-          description: ''
-          headers: {}
   /banks/caixa:
     get:
       description: 'TODO: Add Description'
@@ -5692,6 +5667,36 @@ paths:
         type: string
         description: ''
       - name: groupby
+        in: query
+        required: true
+        type: string
+        description: ''
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        200:
+          description: ''
+          headers: {}
+  /accountnew/trash:
+    get:
+      description: 'TODO: Add Description'
+      summary: Create Account
+      tags:
+      - Misc
+      operationId: AccountnewTrashGet
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: false
+        default: Bearer {token}
+        type: string
+      - name: p
         in: query
         required: true
         type: string

@@ -1818,7 +1818,8 @@ paths:
       - name: client_id
         in: formData
         required: true
-        type: string
+        type: integer
+        format: int32
         description: ''
       - name: grant_type
         in: formData
@@ -5405,6 +5406,21 @@ paths:
         required: false
         default: Bearer {token}
         type: string
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Accept
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Content-Type
+        in: header
+        required: true
+        type: string
+        description: ''
       responses:
         200:
           description: ''
@@ -5551,6 +5567,81 @@ paths:
         type: string
         description: ''
       - name: Content-Type
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        200:
+          description: ''
+          headers: {}
+  /products:
+    post:
+      description: 'TODO: Add Description'
+      summary: Products - Create
+      tags:
+      - Products
+      operationId: ProductsPost
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: false
+        default: Bearer {token}
+        type: string
+      - name: Content-Type
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Accept
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/Products-CreateRequest'
+      responses:
+        200:
+          description: ''
+          headers: {}
+    get:
+      description: 'TODO: Add Description'
+      summary: Products - List
+      tags:
+      - Products
+      operationId: ProductsGet
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: false
+        default: Bearer {token}
+        type: string
+      - name: Content-Type
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Accept
         in: header
         required: true
         type: string
@@ -7547,6 +7638,36 @@ definitions:
         type: string
     required:
     - status
+  Products-CreateRequest:
+    title: Products-CreateRequest
+    example:
+      name: Novo Produto
+      carnets:
+      - id: 1
+      - id: 2
+      - id: 3
+    type: object
+    properties:
+      name:
+        type: string
+      carnets:
+        type: array
+        items:
+          $ref: '#/definitions/Carnet'
+    required:
+    - name
+    - carnets
+  Carnet:
+    title: Carnet
+    example:
+      id: 1
+    type: object
+    properties:
+      id:
+        type: integer
+        format: int32
+    required:
+    - id
   PaymentDocGenerateRequest:
     title: PaymentDocGenerateRequest
     example:
@@ -7623,5 +7744,6 @@ tags:
 - name: UserRecurLot
 - name: Gift
 - name: Print
+- name: Products
 - name: Misc
   description: ''

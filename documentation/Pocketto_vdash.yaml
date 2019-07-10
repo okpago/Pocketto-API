@@ -5631,6 +5631,11 @@ paths:
         required: false
         default: Bearer {token}
         type: string
+      - name: filters
+        in: query
+        required: true
+        type: string
+        description: ''
       - name: Content-Type
         in: header
         required: true

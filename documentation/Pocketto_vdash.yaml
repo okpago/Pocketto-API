@@ -5655,6 +5655,116 @@ paths:
         200:
           description: ''
           headers: {}
+  /products/6:
+    put:
+      description: 'TODO: Add Description'
+      summary: Products - Update
+      tags:
+      - Products
+      operationId: Products6Put
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: false
+        default: Bearer {token}
+        type: string
+      - name: Content-Type
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Accept
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/Products-UpdateRequest'
+      responses:
+        200:
+          description: ''
+          headers: {}
+    get:
+      description: 'TODO: Add Description'
+      summary: Products - Get
+      tags:
+      - Products
+      operationId: Products6Get
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: false
+        default: Bearer {token}
+        type: string
+      - name: Content-Type
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Accept
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        200:
+          description: ''
+          headers: {}
+  /products/7:
+    delete:
+      description: 'TODO: Add Description'
+      summary: Products - Delete
+      tags:
+      - Products
+      operationId: Products7Delete
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: false
+        default: Bearer {token}
+        type: string
+      - name: Content-Type
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Accept
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        200:
+          description: ''
+          headers: {}
   /payment_doc_generate:
     post:
       description: 'TODO: Add Description'
@@ -7673,6 +7783,20 @@ definitions:
         format: int32
     required:
     - id
+  Products-UpdateRequest:
+    title: Products-UpdateRequest
+    example:
+      name: OkPago Físico
+      active: false
+    type: object
+    properties:
+      name:
+        type: string
+      active:
+        type: boolean
+    required:
+    - name
+    - active
   PaymentDocGenerateRequest:
     title: PaymentDocGenerateRequest
     example:

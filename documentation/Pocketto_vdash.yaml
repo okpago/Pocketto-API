@@ -5886,13 +5886,13 @@ paths:
         200:
           description: ''
           headers: {}
-  /accountnew/trash:
+  /accountnew/aparecida:
     get:
       description: 'TODO: Add Description'
       summary: Create Account
       tags:
       - Misc
-      operationId: AccountnewTrashGet
+      operationId: AccountnewAparecidaGet
       deprecated: false
       produces:
       - application/json

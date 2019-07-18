@@ -5631,11 +5631,6 @@ paths:
         required: false
         default: Bearer {token}
         type: string
-      - name: filters
-        in: query
-        required: true
-        type: string
-        description: ''
       - name: Content-Type
         in: header
         required: true
@@ -5761,6 +5756,47 @@ paths:
         required: true
         type: string
         description: ''
+      responses:
+        200:
+          description: ''
+          headers: {}
+  /userproducts:
+    post:
+      description: 'TODO: Add Description'
+      summary: User Products Create
+      tags:
+      - User Products
+      operationId: UserproductsPost
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: false
+        default: Bearer {token}
+        type: string
+      - name: Content-Type
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Accept
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/UserProductsCreateRequest'
       responses:
         200:
           description: ''
@@ -7356,6 +7392,7 @@ definitions:
       user_id: 192
       method_id: 4
       carnet_id: 11
+      gift_id: 
       day: 25
       amount: 
       origin: bb135fd4c1238cecb84a38572a67bab8dd6192c37b313826
@@ -7373,6 +7410,8 @@ definitions:
       carnet_id:
         type: integer
         format: int32
+      gift_id:
+        type: string
       day:
         type: integer
         format: int32
@@ -7390,6 +7429,7 @@ definitions:
     - user_id
     - method_id
     - carnet_id
+    - gift_id
     - day
     - amount
     - origin
@@ -7797,6 +7837,183 @@ definitions:
     required:
     - name
     - active
+  UserProductsCreateRequest:
+    title: UserProductsCreateRequest
+    example:
+      user:
+        name: Hildor Junior
+        email: faber1337@gmail.com
+        mobile: +5551999999999
+        gender: M
+        birthdate: 1999-03-11
+        cpf: 02463942002
+        custom_fields: []
+        address_zipcode: 90250220
+        address_city_id: 4247
+        address_state: RS
+        address_district: HUMAITÁ
+        address_street: RUA WALTER FERREIRA
+        address_number: 100
+        address_complement: ''
+      product_id: 5
+      page_id: 
+      product_carnets:
+      - method_id: 4
+        carnet_id: 25
+        gift_id: 3
+        description: Oração Carnê Pai
+        amount: 60
+        due_date: 2019-07-22
+        day: 15
+        credit_card: 
+        account_debit: 
+      - method_id: 4
+        carnet_id: 26
+        gift_id: 2
+        description: Oração Carnê Filho
+        amount: 120
+        due_date: 2019-07-24
+        day: 20
+        credit_card: 
+        account_debit: 
+      - method_id: 4
+        carnet_id: 27
+        gift_id: 1
+        description: Oração Carnê Espírito Santo
+        amount: 160
+        due_date: 2019-07-27
+        day: 25
+        credit_card: 
+        account_debit: 
+    type: object
+    properties:
+      user:
+        $ref: '#/definitions/User2'
+      product_id:
+        type: integer
+        format: int32
+      page_id:
+        type: string
+      product_carnets:
+        type: array
+        items:
+          $ref: '#/definitions/ProductCarnet'
+    required:
+    - user
+    - product_id
+    - page_id
+    - product_carnets
+  User2:
+    title: User2
+    example:
+      name: Hildor Junior
+      email: faber1337@gmail.com
+      mobile: +5551999999999
+      gender: M
+      birthdate: 1999-03-11
+      cpf: 02463942002
+      custom_fields: []
+      address_zipcode: 90250220
+      address_city_id: 4247
+      address_state: RS
+      address_district: HUMAITÁ
+      address_street: RUA WALTER FERREIRA
+      address_number: 100
+      address_complement: ''
+    type: object
+    properties:
+      name:
+        type: string
+      email:
+        type: string
+      mobile:
+        type: string
+      gender:
+        type: string
+      birthdate:
+        type: string
+      cpf:
+        type: string
+      custom_fields:
+        type: array
+        items:
+          type: string
+      address_zipcode:
+        type: string
+      address_city_id:
+        type: integer
+        format: int32
+      address_state:
+        type: string
+      address_district:
+        type: string
+      address_street:
+        type: string
+      address_number:
+        type: string
+      address_complement:
+        type: string
+    required:
+    - name
+    - email
+    - mobile
+    - gender
+    - birthdate
+    - cpf
+    - custom_fields
+    - address_zipcode
+    - address_city_id
+    - address_state
+    - address_district
+    - address_street
+    - address_number
+    - address_complement
+  ProductCarnet:
+    title: ProductCarnet
+    example:
+      method_id: 4
+      carnet_id: 25
+      gift_id: 3
+      description: Oração Carnê Pai
+      amount: 60
+      due_date: 2019-07-22
+      day: 15
+      credit_card: 
+      account_debit: 
+    type: object
+    properties:
+      method_id:
+        type: integer
+        format: int32
+      carnet_id:
+        type: integer
+        format: int32
+      gift_id:
+        type: integer
+        format: int32
+      description:
+        type: string
+      amount:
+        type: integer
+        format: int32
+      due_date:
+        type: string
+      day:
+        type: string
+      credit_card:
+        type: string
+      account_debit:
+        type: string
+    required:
+    - method_id
+    - carnet_id
+    - gift_id
+    - description
+    - amount
+    - due_date
+    - day
+    - credit_card
+    - account_debit
   PaymentDocGenerateRequest:
     title: PaymentDocGenerateRequest
     example:
@@ -7874,5 +8091,6 @@ tags:
 - name: Gift
 - name: Print
 - name: Products
+- name: User Products
 - name: Misc
   description: ''

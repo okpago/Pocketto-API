@@ -6038,6 +6038,51 @@ paths:
         200:
           description: ''
           headers: {}
+  /teleprompter/list:
+    get:
+      description: 'TODO: Add Description'
+      summary: Carnets - List
+      tags:
+      - Teleprompter
+      operationId: TeleprompterListGet
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: false
+        default: Bearer {token}
+        type: string
+      - name: ini
+        in: query
+        required: true
+        type: string
+        description: ''
+      - name: end
+        in: query
+        required: true
+        type: string
+        description: ''
+      - name: order
+        in: query
+        required: true
+        type: string
+        description: ''
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Content-Type
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        200:
+          description: ''
+          headers: {}
   /payment_doc_generate:
     post:
       description: 'TODO: Add Description'
@@ -8357,5 +8402,6 @@ tags:
 - name: DeliveryGifts
 - name: DeliveryGiftFiles
 - name: Report
+- name: Teleprompter
 - name: Misc
   description: ''

@@ -3671,6 +3671,47 @@ paths:
         200:
           description: ''
           headers: {}
+  /users/150/logs:
+    get:
+      description: 'TODO: Add Description'
+      summary: Users - Logs
+      tags:
+      - Users
+      operationId: Users150LogsGet
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: false
+        default: Bearer {token}
+        type: string
+      - name: limit
+        in: query
+        required: true
+        type: integer
+        format: int32
+        description: ''
+      - name: order
+        in: query
+        required: true
+        type: string
+        description: ''
+      - name: direction
+        in: query
+        required: true
+        type: string
+        description: ''
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        200:
+          description: ''
+          headers: {}
   /users/128:
     get:
       description: 'TODO: Add Description'

@@ -21,7 +21,7 @@ paths:
       summary: API Keys - List
       tags:
       - API Keys
-      operationId: ApiKeysGet
+      operationId: APIKeys-List
       deprecated: false
       produces:
       - application/json
@@ -45,7 +45,7 @@ paths:
       summary: API Keys - Create
       tags:
       - API Keys
-      operationId: ApiKeysPost
+      operationId: APIKeys-Create
       deprecated: false
       produces:
       - application/json
@@ -81,7 +81,7 @@ paths:
       summary: API Keys - View
       tags:
       - API Keys
-      operationId: ApiKeys0cb476ab3aa6820ab36ba27e04226d338f4cd201c714ef1c662bc4c1b5c5a0cfb40b2140f37ce276Get
+      operationId: APIKeys-View
       deprecated: false
       produces:
       - application/json
@@ -110,7 +110,7 @@ paths:
       summary: API Keys - Update
       tags:
       - API Keys
-      operationId: ApiKeys0cb476ab3aa6820ab36ba27e04226d338f4cd201c714ef1c662bc4c1b5c5a0cfb40b2140f37ce276Put
+      operationId: APIKeys-Update
       deprecated: false
       produces:
       - application/json
@@ -145,7 +145,7 @@ paths:
       summary: API Keys  - Delete
       tags:
       - API Keys
-      operationId: ApiKeys0cb476ab3aa6820ab36ba27e04226d338f4cd201c714ef1c662bc4c1b5c5a0cfb40b2140f37ce276Delete
+      operationId: APIKeys-Delete
       deprecated: false
       produces:
       - application/json
@@ -175,7 +175,7 @@ paths:
       summary: Admin Users - List
       tags:
       - Admin Users
-      operationId: AdminUsersGet
+      operationId: AdminUsers-List
       deprecated: false
       produces:
       - application/json
@@ -199,7 +199,7 @@ paths:
       summary: Admin Users - Create
       tags:
       - Admin Users
-      operationId: AdminUsersPost
+      operationId: AdminUsers-Create
       deprecated: false
       produces:
       - application/json
@@ -235,7 +235,7 @@ paths:
       summary: Admin Users - Show
       tags:
       - Admin Users
-      operationId: AdminUsers9Get
+      operationId: AdminUsers-Show
       deprecated: false
       produces:
       - application/json
@@ -260,7 +260,7 @@ paths:
       summary: Admin Users - Me
       tags:
       - Admin Users
-      operationId: MeGet
+      operationId: AdminUsers-Me
       deprecated: false
       produces:
       - application/json
@@ -284,7 +284,7 @@ paths:
       summary: Me - Update
       tags:
       - Me
-      operationId: MePut
+      operationId: Me-Update
       deprecated: false
       produces:
       - application/json
@@ -320,7 +320,7 @@ paths:
       summary: Admin Users - Update
       tags:
       - Admin Users
-      operationId: AdminUsers5Put
+      operationId: AdminUsers-Update
       deprecated: false
       produces:
       - application/json
@@ -356,7 +356,7 @@ paths:
       summary: Admin Users - Update Me
       tags:
       - Admin Users
-      operationId: AdminUsersMePut
+      operationId: AdminUsers-UpdateMe
       deprecated: false
       produces:
       - application/json
@@ -392,7 +392,7 @@ paths:
       summary: Admin Users - Delete
       tags:
       - Admin Users
-      operationId: AdminUsers8Delete
+      operationId: AdminUsers-Delete
       deprecated: false
       produces:
       - application/json
@@ -422,7 +422,7 @@ paths:
       summary: Bank Accounts - List
       tags:
       - Bank Accounts
-      operationId: BankAccountsGet
+      operationId: BankAccounts-List
       deprecated: false
       produces:
       - application/json
@@ -446,7 +446,7 @@ paths:
       summary: Bank Accounts - Create
       tags:
       - Bank Accounts
-      operationId: BankAccountsPost
+      operationId: BankAccounts-Create
       deprecated: false
       produces:
       - application/json
@@ -482,7 +482,7 @@ paths:
       summary: Bank Accounts - View
       tags:
       - Bank Accounts
-      operationId: BankAccounts2Get
+      operationId: BankAccounts-View
       deprecated: false
       produces:
       - application/json
@@ -507,7 +507,7 @@ paths:
       summary: Bank Accounts - Update
       tags:
       - Bank Accounts
-      operationId: BankAccounts4Put
+      operationId: BankAccounts-Update
       deprecated: false
       produces:
       - application/json
@@ -542,7 +542,7 @@ paths:
       summary: Bank Accounts - Delete
       tags:
       - Bank Accounts
-      operationId: BankAccounts4Delete
+      operationId: BankAccounts-Delete
       deprecated: false
       produces:
       - application/json
@@ -572,7 +572,7 @@ paths:
       summary: Bank Accounts - Transactions
       tags:
       - Bank Accounts
-      operationId: BankAccounts2TransactionsPost
+      operationId: BankAccounts-Transactions
       deprecated: false
       produces:
       - application/json
@@ -604,7 +604,7 @@ paths:
       summary: Bank Accounts - Dates List
       tags:
       - Bank Accounts
-      operationId: BankAccounts2DatesGet
+      operationId: BankAccounts-DatesList
       deprecated: false
       produces:
       - application/json
@@ -644,7 +644,7 @@ paths:
       summary: Bank Accounts - Date View
       tags:
       - Bank Accounts
-      operationId: BankAccounts5Dates20171010Get
+      operationId: BankAccounts-DateView
       deprecated: false
       produces:
       - application/json
@@ -674,7 +674,7 @@ paths:
       summary: Bank Accounts - Date Close
       tags:
       - Bank Accounts
-      operationId: BankAccounts5Dates20170930ClosePost
+      operationId: BankAccounts-DateClose
       deprecated: false
       produces:
       - application/json
@@ -704,7 +704,7 @@ paths:
       summary: Bank Accounts - Date Close (Force)
       tags:
       - Bank Accounts
-      operationId: BankAccounts2Dates20171108ClosePost
+      operationId: BankAccounts-DateClose(Force)
       deprecated: false
       produces:
       - application/json
@@ -734,7 +734,7 @@ paths:
       summary: Bank Accounts - All
       tags:
       - Bank Accounts
-      operationId: Crowdfundingpage2BankAccountsGet
+      operationId: BankAccounts-All
       deprecated: false
       produces:
       - application/json
@@ -768,7 +768,7 @@ paths:
       summary: Bank Accounts - Create
       tags:
       - Bank Accounts
-      operationId: Crowdfundingpage2BankAccountsPost
+      operationId: PostBankAccounts-Create
       deprecated: false
       produces:
       - application/json
@@ -809,7 +809,7 @@ paths:
       summary: Bank Accounts - Update
       tags:
       - Bank Accounts
-      operationId: Crowdfundingpage2BankAccounts1Put
+      operationId: PutBankAccounts-Update
       deprecated: false
       produces:
       - application/json
@@ -850,7 +850,7 @@ paths:
       summary: Bank Accounts - Delete
       tags:
       - Bank Accounts
-      operationId: Crowdfundingpage2BankAccounts2Delete
+      operationId: DeleteBankAccounts-Delete
       deprecated: false
       produces:
       - application/json
@@ -885,7 +885,7 @@ paths:
       summary: Banks - View
       tags:
       - Banks
-      operationId: BanksCaixaGet
+      operationId: Banks-View
       deprecated: false
       produces:
       - application/json
@@ -910,7 +910,7 @@ paths:
       summary: Campaigns - List
       tags:
       - Campaigns
-      operationId: CampaignsGet
+      operationId: Campaigns-List
       deprecated: false
       produces:
       - application/json
@@ -934,7 +934,7 @@ paths:
       summary: Campaigns - Create
       tags:
       - Campaigns
-      operationId: CampaignsPost
+      operationId: Campaigns-Create
       deprecated: false
       produces:
       - application/json
@@ -965,7 +965,7 @@ paths:
       summary: Campaigns - View
       tags:
       - Campaigns
-      operationId: Campaigns35Get
+      operationId: Campaigns-View
       deprecated: false
       produces:
       - application/json
@@ -990,7 +990,7 @@ paths:
       summary: Campaigns - Update
       tags:
       - Campaigns
-      operationId: Campaigns3Put
+      operationId: Campaigns-Update
       deprecated: false
       produces:
       - application/json
@@ -1021,7 +1021,7 @@ paths:
       summary: Campaigns - Activate
       tags:
       - Campaigns
-      operationId: Campaigns38ActivatePut
+      operationId: Campaigns-Activate
       deprecated: false
       produces:
       - application/json
@@ -1046,7 +1046,7 @@ paths:
       summary: Campaigns - Desactivate
       tags:
       - Campaigns
-      operationId: Campaigns14DesactivatePut
+      operationId: Campaigns-Desactivate
       deprecated: false
       produces:
       - application/json
@@ -1071,7 +1071,7 @@ paths:
       summary: Campaigns - Duplicate
       tags:
       - Campaigns
-      operationId: Campaigns66DuplicatePost
+      operationId: Campaigns-Duplicate
       deprecated: false
       produces:
       - application/json
@@ -1096,7 +1096,7 @@ paths:
       summary: file
       tags:
       - Account Credit
-      operationId: ConciliationAccountcreditsFilePost
+      operationId: file
       deprecated: false
       produces:
       - application/json
@@ -1128,7 +1128,7 @@ paths:
       summary: AccountCredits - List
       tags:
       - Account Credit
-      operationId: ConciliationAccountcreditsGet
+      operationId: AccountCredits-List
       deprecated: false
       produces:
       - application/json
@@ -1180,7 +1180,7 @@ paths:
       summary: AccountCredits - Analytics
       tags:
       - Account Credit
-      operationId: ConciliationAccountcreditsAnalyticsGet
+      operationId: AccountCredits-Analytics
       deprecated: false
       produces:
       - application/json
@@ -1210,7 +1210,7 @@ paths:
       summary: AccountCredits - View
       tags:
       - Account Credit
-      operationId: ConciliationAccountcredits369Get
+      operationId: AccountCredits-View
       deprecated: false
       produces:
       - application/json
@@ -1240,7 +1240,7 @@ paths:
       summary: AccountCredits - Delete
       tags:
       - Account Credit
-      operationId: ConciliationAccountcredits225Delete
+      operationId: AccountCredits-Delete
       deprecated: false
       produces:
       - application/json
@@ -1270,7 +1270,7 @@ paths:
       summary: AccountCredits - Update
       tags:
       - Account Credit
-      operationId: ConciliationAccountcredits233Put
+      operationId: AccountCredits-Update
       deprecated: false
       produces:
       - application/json
@@ -1306,7 +1306,7 @@ paths:
       summary: AccountCredits - List Payments
       tags:
       - Account Credit
-      operationId: ConciliationAccountcredits29PaymentsGet
+      operationId: AccountCredits-ListPayments
       deprecated: false
       produces:
       - application/json
@@ -1331,7 +1331,7 @@ paths:
       summary: Upload File
       tags:
       - Bank Statement
-      operationId: ConciliationBankstatementFilePost
+      operationId: UploadFile
       deprecated: false
       produces:
       - application/json
@@ -1385,7 +1385,7 @@ paths:
       summary: Logs - List
       tags:
       - Bank Statement
-      operationId: ConciliationBankstatementLogsGet
+      operationId: Logs-List
       deprecated: false
       produces:
       - application/json
@@ -1415,7 +1415,7 @@ paths:
       summary: Conciliation - List
       tags:
       - Conciliation
-      operationId: ConciliationFilesGet
+      operationId: Conciliation-List
       deprecated: false
       produces:
       - application/json
@@ -1440,7 +1440,7 @@ paths:
       summary: Conciliation - Delete
       tags:
       - Conciliation
-      operationId: ConciliationFiles1Delete
+      operationId: Conciliation-Delete
       deprecated: false
       produces:
       - application/json
@@ -1465,7 +1465,7 @@ paths:
       summary: Conciliation - Import
       tags:
       - Conciliation
-      operationId: ConciliationCreateFilePost
+      operationId: Conciliation-Import
       deprecated: false
       produces:
       - application/json
@@ -1517,7 +1517,7 @@ paths:
       summary: Downloads - List
       tags:
       - Downloads
-      operationId: DownloadsGet
+      operationId: Downloads-List
       deprecated: false
       produces:
       - application/json
@@ -1542,7 +1542,7 @@ paths:
       summary: Downloads - View
       tags:
       - Downloads
-      operationId: Downloads3Get
+      operationId: Downloads-View
       deprecated: false
       produces:
       - application/json
@@ -1566,7 +1566,7 @@ paths:
       summary: Downloads - Delete
       tags:
       - Downloads
-      operationId: Downloads3Delete
+      operationId: Downloads-Delete
       deprecated: false
       produces:
       - application/json
@@ -1596,7 +1596,7 @@ paths:
       summary: Events - List
       tags:
       - Events
-      operationId: EventsGet
+      operationId: Events-List
       deprecated: false
       produces:
       - application/json
@@ -1621,7 +1621,7 @@ paths:
       summary: Events - View
       tags:
       - Events
-      operationId: EventsUserProfileUpdatedGet
+      operationId: Events-View
       deprecated: false
       produces:
       - application/json
@@ -1646,7 +1646,7 @@ paths:
       summary: Files - Create (Binary)
       tags:
       - Files
-      operationId: FilesPost
+      operationId: Files-Create(Binary)
       deprecated: false
       produces:
       - application/json
@@ -1683,7 +1683,7 @@ paths:
       summary: Files - View
       tags:
       - Files
-      operationId: Files803Get
+      operationId: Files-View
       deprecated: false
       produces:
       - application/json
@@ -1708,7 +1708,7 @@ paths:
       summary: Balance
       tags:
       - Financial
-      operationId: FinancialBalanceGet
+      operationId: Balance
       deprecated: false
       produces:
       - application/json
@@ -1733,7 +1733,7 @@ paths:
       summary: Transfers
       tags:
       - Financial
-      operationId: FinancialTransfers42019Get
+      operationId: Transfers
       deprecated: false
       produces:
       - application/json
@@ -1763,7 +1763,7 @@ paths:
       summary: Transfers Detail
       tags:
       - Financial
-      operationId: FinancialTransfers722019Get
+      operationId: TransfersDetail
       deprecated: false
       produces:
       - application/json
@@ -1788,7 +1788,7 @@ paths:
       summary: Withdraw
       tags:
       - Financial
-      operationId: FinancialWithdrawPost
+      operationId: Withdraw
       deprecated: false
       produces:
       - application/json
@@ -1813,7 +1813,7 @@ paths:
       summary: Login
       tags:
       - Login
-      operationId: LoginPost
+      operationId: Login
       deprecated: false
       produces:
       - application/json
@@ -1876,7 +1876,7 @@ paths:
       summary: Login - Recovery
       tags:
       - Login
-      operationId: LoginRecoveryPost
+      operationId: Login-Recovery
       deprecated: false
       produces:
       - application/json
@@ -1912,7 +1912,7 @@ paths:
       summary: Login - Reset
       tags:
       - Login
-      operationId: LoginResetPut
+      operationId: Login-Reset
       deprecated: false
       produces:
       - application/json
@@ -1948,7 +1948,7 @@ paths:
       summary: Logout
       tags:
       - Login
-      operationId: LogoutPost
+      operationId: Logout
       deprecated: false
       produces:
       - application/json
@@ -1984,7 +1984,7 @@ paths:
       summary: Messages - List
       tags:
       - Messages
-      operationId: MessagesGet
+      operationId: Messages-List
       deprecated: false
       produces:
       - application/json
@@ -2035,7 +2035,7 @@ paths:
       summary: Messages - Create
       tags:
       - Messages
-      operationId: MessagesPost
+      operationId: Messages-Create
       deprecated: false
       produces:
       - application/json
@@ -2071,7 +2071,7 @@ paths:
       summary: Messages - View
       tags:
       - Messages
-      operationId: Messages2Get
+      operationId: Messages-View
       deprecated: false
       produces:
       - application/json
@@ -2095,7 +2095,7 @@ paths:
       summary: Messages - Delete
       tags:
       - Messages
-      operationId: Messages2Delete
+      operationId: Messages-Delete
       deprecated: false
       produces:
       - application/json
@@ -2126,7 +2126,7 @@ paths:
       summary: Messages - Cancel
       tags:
       - Messages
-      operationId: Messages181CancelPut
+      operationId: Messages-Cancel
       deprecated: false
       produces:
       - application/json
@@ -2157,7 +2157,7 @@ paths:
       summary: Message Types - List
       tags:
       - Message Types
-      operationId: MessageTypesGet
+      operationId: MessageTypes-List
       deprecated: false
       produces:
       - application/json
@@ -2181,7 +2181,7 @@ paths:
       summary: Message Types - Create
       tags:
       - Message Types
-      operationId: MessageTypesPost
+      operationId: MessageTypes-Create
       deprecated: false
       produces:
       - application/json
@@ -2217,7 +2217,7 @@ paths:
       summary: Message Types - View
       tags:
       - Message Types
-      operationId: MessageTypes41Get
+      operationId: MessageTypes-View
       deprecated: false
       produces:
       - application/json
@@ -2246,7 +2246,7 @@ paths:
       summary: Message Types - Update
       tags:
       - Message Types
-      operationId: MessageTypes41Put
+      operationId: MessageTypes-Update
       deprecated: false
       produces:
       - application/json
@@ -2281,7 +2281,7 @@ paths:
       summary: Message Types - Delete
       tags:
       - Message Types
-      operationId: MessageTypes41Delete
+      operationId: MessageTypes-Delete
       deprecated: false
       produces:
       - application/json
@@ -2311,7 +2311,7 @@ paths:
       summary: Payments - List
       tags:
       - Payments
-      operationId: PaymentsGet
+      operationId: Payments-List
       deprecated: false
       produces:
       - application/json
@@ -2340,7 +2340,7 @@ paths:
       summary: Payments - Create
       tags:
       - Payments
-      operationId: PaymentsPost
+      operationId: Payments-Create
       deprecated: false
       produces:
       - application/json
@@ -2494,7 +2494,7 @@ paths:
       summary: Payments - List Account Credits
       tags:
       - Payments
-      operationId: Payments4893AccountCreditsGet
+      operationId: Payments-ListAccountCredits
       deprecated: false
       produces:
       - application/json
@@ -2541,7 +2541,7 @@ paths:
       summary: Payments - Import
       tags:
       - Payments
-      operationId: PaymentsImportPost
+      operationId: Payments-Import
       deprecated: false
       produces:
       - application/json
@@ -2577,7 +2577,7 @@ paths:
       summary: Payments - Import Exemplo
       tags:
       - Payments
-      operationId: PaymentsImportGet
+      operationId: Payments-ImportExemplo
       deprecated: false
       produces:
       - application/json
@@ -2597,7 +2597,7 @@ paths:
       summary: Payments - Import Exemplo Log
       tags:
       - Payments
-      operationId: PaymentsImportLogsGet
+      operationId: Payments-ImportExemploLog
       deprecated: false
       produces:
       - application/json
@@ -2622,7 +2622,7 @@ paths:
       summary: Payments - View
       tags:
       - Payments
-      operationId: Payments2147Get
+      operationId: Payments-View
       deprecated: false
       produces:
       - application/json
@@ -2647,7 +2647,7 @@ paths:
       summary: Payments - Logs
       tags:
       - Payments
-      operationId: Payments4828LogsGet
+      operationId: Payments-Logs
       deprecated: false
       produces:
       - application/json
@@ -2682,7 +2682,7 @@ paths:
       summary: Payments - Get By Transaction Id
       tags:
       - Payments
-      operationId: PaymentsTransaction294031Get
+      operationId: Payments-GetByTransactionId
       deprecated: false
       produces:
       - application/json
@@ -2707,7 +2707,7 @@ paths:
       summary: Payments - Update Status
       tags:
       - Payments
-      operationId: Payments11715StatusPaidPut
+      operationId: Payments-UpdateStatus
       deprecated: false
       produces:
       - application/json
@@ -2738,7 +2738,7 @@ paths:
       summary: Payments - Delete
       tags:
       - Payments
-      operationId: Payments47339Delete
+      operationId: Payments-Delete
       deprecated: false
       produces:
       - application/json
@@ -2763,7 +2763,7 @@ paths:
       summary: Payments - Update
       tags:
       - Payments
-      operationId: Payments1088Put
+      operationId: Payments-Update
       deprecated: false
       produces:
       - application/json
@@ -2794,7 +2794,7 @@ paths:
       summary: Payments - Resend Email Created
       tags:
       - Payments
-      operationId: Payments4682ResendEmailCreatedGet
+      operationId: Payments-ResendEmailCreated
       deprecated: false
       produces:
       - application/json
@@ -2824,7 +2824,7 @@ paths:
       summary: Residual Payments
       tags:
       - Payments
-      operationId: ResidualPaymentsPost
+      operationId: ResidualPayments
       deprecated: false
       produces:
       - application/json
@@ -2860,7 +2860,7 @@ paths:
       summary: Settings - List
       tags:
       - Settings
-      operationId: SettingsDefaultPaymentValuesGet
+      operationId: Settings-List
       deprecated: false
       produces:
       - application/json
@@ -2885,7 +2885,7 @@ paths:
       summary: Settings - Show
       tags:
       - Settings
-      operationId: SettingsUserCardModelFrontGet
+      operationId: Settings-Show
       deprecated: false
       produces:
       - application/json
@@ -2910,7 +2910,7 @@ paths:
       summary: Settings - Update
       tags:
       - Settings
-      operationId: SettingsDescriptionTextPut
+      operationId: Settings-Update
       deprecated: false
       produces:
       - application/json
@@ -2946,7 +2946,7 @@ paths:
       summary: Settings - Update All
       tags:
       - Settings
-      operationId: SettingsPatch
+      operationId: Settings-UpdateAll
       deprecated: false
       produces:
       - application/json
@@ -2982,7 +2982,7 @@ paths:
       summary: Settings - Delete
       tags:
       - Settings
-      operationId: SettingsTestDelete
+      operationId: Settings-Delete
       deprecated: false
       produces:
       - application/json
@@ -3007,7 +3007,7 @@ paths:
       summary: Settings - List
       tags:
       - Settings
-      operationId: Crowdfundingpage2SettingsGet
+      operationId: GetSettings-List
       deprecated: false
       produces:
       - application/json
@@ -3037,7 +3037,7 @@ paths:
       summary: Settings - Update
       tags:
       - Settings
-      operationId: Crowdfundingpage3SettingsPut
+      operationId: PutSettings-Update
       deprecated: false
       produces:
       - application/json
@@ -3078,7 +3078,7 @@ paths:
       summary: User Categories - List
       tags:
       - User Categories
-      operationId: UserCategoriesGet
+      operationId: UserCategories-List
       deprecated: false
       produces:
       - application/json
@@ -3102,7 +3102,7 @@ paths:
       summary: User Categories - Create
       tags:
       - User Categories
-      operationId: UserCategoriesPost
+      operationId: UserCategories-Create
       deprecated: false
       produces:
       - application/json
@@ -3138,7 +3138,7 @@ paths:
       summary: User Categories - View
       tags:
       - User Categories
-      operationId: UserCategories2Get
+      operationId: UserCategories-View
       deprecated: false
       produces:
       - application/json
@@ -3168,7 +3168,7 @@ paths:
       summary: User Categories - Update
       tags:
       - User Categories
-      operationId: UserCategories3Put
+      operationId: UserCategories-Update
       deprecated: false
       produces:
       - application/json
@@ -3204,7 +3204,7 @@ paths:
       summary: User Categories - Delete
       tags:
       - User Categories
-      operationId: UserCategories1Delete
+      operationId: UserCategories-Delete
       deprecated: false
       produces:
       - application/json
@@ -3234,7 +3234,7 @@ paths:
       summary: User Recurrences - List
       tags:
       - User Recurrence
-      operationId: UserRecursGet
+      operationId: UserRecurrences-List
       deprecated: false
       produces:
       - application/json
@@ -3263,7 +3263,7 @@ paths:
       summary: User Recurrences - Create Physical
       tags:
       - User Recurrence
-      operationId: UserRecursPost
+      operationId: UserRecurrences-CreatePhysical
       deprecated: false
       produces:
       - application/json
@@ -3304,7 +3304,7 @@ paths:
       summary: User Recurrences - List by User
       tags:
       - User Recurrence
-      operationId: UserRecursUser02153512077Get
+      operationId: UserRecurrences-ListbyUser
       deprecated: false
       produces:
       - application/json
@@ -3329,7 +3329,7 @@ paths:
       summary: User Recurrences - View
       tags:
       - User Recurrence
-      operationId: UserRecurs1Get
+      operationId: UserRecurrences-View
       deprecated: false
       produces:
       - application/json
@@ -3354,7 +3354,7 @@ paths:
       summary: User Recurrences - Cancel
       tags:
       - User Recurrence
-      operationId: UserRecurs1CancelPut
+      operationId: UserRecurrences-Cancel
       deprecated: false
       produces:
       - application/json
@@ -3379,7 +3379,7 @@ paths:
       summary: Create Payment
       tags:
       - User Recurrence
-      operationId: Recurrences7PaymentsPost
+      operationId: CreatePayment
       deprecated: false
       produces:
       - application/json
@@ -3415,7 +3415,7 @@ paths:
       summary: Create Anticipate Payment
       tags:
       - User Recurrence
-      operationId: Recurrences331AnticipatePost
+      operationId: CreateAnticipatePayment
       deprecated: false
       produces:
       - application/json
@@ -3451,7 +3451,7 @@ paths:
       summary: Webhooks - List
       tags:
       - Webhooks
-      operationId: WebhooksGet
+      operationId: Webhooks-List
       deprecated: false
       produces:
       - application/json
@@ -3475,7 +3475,7 @@ paths:
       summary: Webhooks - Create
       tags:
       - Webhooks
-      operationId: WebhooksPost
+      operationId: Webhooks-Create
       deprecated: false
       produces:
       - application/json
@@ -3511,7 +3511,7 @@ paths:
       summary: Webhooks - External
       tags:
       - Webhooks
-      operationId: WebhooksExternal4628Get
+      operationId: Webhooks-External
       deprecated: false
       produces:
       - application/json
@@ -3541,7 +3541,7 @@ paths:
       summary: Webhooks - View
       tags:
       - Webhooks
-      operationId: Webhooks2Get
+      operationId: Webhooks-View
       deprecated: false
       produces:
       - application/json
@@ -3570,7 +3570,7 @@ paths:
       summary: Webhooks - Update
       tags:
       - Webhooks
-      operationId: Webhooks2Put
+      operationId: Webhooks-Update
       deprecated: false
       produces:
       - application/json
@@ -3605,7 +3605,7 @@ paths:
       summary: Webhooks - Delete
       tags:
       - Webhooks
-      operationId: Webhooks2Delete
+      operationId: Webhooks-Delete
       deprecated: false
       produces:
       - application/json
@@ -3635,7 +3635,7 @@ paths:
       summary: Users - List
       tags:
       - Users
-      operationId: UsersGet
+      operationId: Users-List
       deprecated: false
       produces:
       - application/json
@@ -3676,7 +3676,7 @@ paths:
       summary: Users - Create
       tags:
       - Users
-      operationId: UsersPost
+      operationId: Users-Create
       deprecated: false
       produces:
       - application/json
@@ -3712,7 +3712,7 @@ paths:
       summary: Users - Logs
       tags:
       - Users
-      operationId: Users150LogsGet
+      operationId: Users-Logs
       deprecated: false
       produces:
       - application/json
@@ -3753,7 +3753,7 @@ paths:
       summary: Users - View
       tags:
       - Users
-      operationId: Users128Get
+      operationId: Users-View
       deprecated: false
       produces:
       - application/json
@@ -3778,7 +3778,7 @@ paths:
       summary: Users - View by CPF
       tags:
       - Users
-      operationId: UsersGet01286800080Get
+      operationId: Users-ViewbyCPF
       deprecated: false
       produces:
       - application/json
@@ -3803,7 +3803,7 @@ paths:
       summary: Users - Update
       tags:
       - Users
-      operationId: Users1Put
+      operationId: Users-Update
       deprecated: false
       produces:
       - application/json
@@ -3834,7 +3834,7 @@ paths:
       summary: Users - Import
       tags:
       - Users
-      operationId: UsersImportPost
+      operationId: Users-Import
       deprecated: false
       produces:
       - application/json
@@ -3864,7 +3864,7 @@ paths:
       summary: Users - Delete
       tags:
       - Users
-      operationId: Users18Delete
+      operationId: Users-Delete
       deprecated: false
       produces:
       - application/json
@@ -3889,7 +3889,7 @@ paths:
       summary: CreditCard - Process
       tags:
       - CreditCard
-      operationId: CreditCardProcessPost
+      operationId: CreditCard-Process
       deprecated: false
       produces:
       - application/json
@@ -3925,7 +3925,7 @@ paths:
       summary: CreditCard - Consult
       tags:
       - CreditCard
-      operationId: DebitCardConsultCieloD1a33d83Ef6a42d495e83e761e15cbb3Get
+      operationId: CreditCard-Consult
       deprecated: false
       produces:
       - application/json
@@ -3955,7 +3955,7 @@ paths:
       summary: CreditCard - Cancel
       tags:
       - CreditCard
-      operationId: CreditCardCancelCielo1Get
+      operationId: CreditCard-Cancel
       deprecated: false
       produces:
       - application/json
@@ -3985,7 +3985,7 @@ paths:
       summary: CreditCard - Cancel by Tid
       tags:
       - CreditCard
-      operationId: CreditCardCancelByTidCielo0a9cae1899b14783B93a4534a6513e90Get
+      operationId: CreditCard-CancelbyTid
       deprecated: false
       produces:
       - application/json
@@ -4015,7 +4015,7 @@ paths:
       summary: CreditCard - Consult by Tid
       tags:
       - CreditCard
-      operationId: CreditCardConsultByTidCielo0a9cae1899b14783B93a4534a6513e90Get
+      operationId: CreditCard-ConsultbyTid
       deprecated: false
       produces:
       - application/json
@@ -4045,7 +4045,7 @@ paths:
       summary: DEPRECATED - Boleto - Process
       tags:
       - Boleto
-      operationId: BoletoProcessPost
+      operationId: DEPRECATED-Boleto-Process
       deprecated: false
       produces:
       - application/json
@@ -4081,7 +4081,7 @@ paths:
       summary: Test
       tags:
       - Test
-      operationId: ConciliationTestGet
+      operationId: Test
       deprecated: false
       produces:
       - application/json
@@ -4106,7 +4106,7 @@ paths:
       summary: Email
       tags:
       - Test
-      operationId: EmailsPaymentRefused4697Get
+      operationId: Email
       deprecated: false
       produces:
       - application/json
@@ -4136,7 +4136,7 @@ paths:
       summary: Banks - List
       tags:
       - AccountDebit
-      operationId: AccountdebitsBanksGet
+      operationId: Banks-List
       deprecated: false
       produces:
       - application/json
@@ -4166,7 +4166,7 @@ paths:
       summary: AccountDebits - Create
       tags:
       - AccountDebit
-      operationId: AccountdebitsPost
+      operationId: AccountDebits-Create
       deprecated: false
       produces:
       - application/json
@@ -4196,7 +4196,7 @@ paths:
       summary: Report - Payments
       tags:
       - Reports
-      operationId: ReportPaymentGet
+      operationId: Report-Payments
       deprecated: false
       produces:
       - application/json
@@ -4231,7 +4231,7 @@ paths:
       summary: Report - Users
       tags:
       - Reports
-      operationId: ReportUserGet
+      operationId: Report-Users
       deprecated: false
       produces:
       - application/json
@@ -4256,7 +4256,7 @@ paths:
       summary: Report - Users x Payments
       tags:
       - Reports
-      operationId: ReportUserpaymentGet
+      operationId: Report-UsersxPayments
       deprecated: false
       produces:
       - application/json
@@ -4281,7 +4281,7 @@ paths:
       summary: Cities
       tags:
       - Cities
-      operationId: CitiesGet
+      operationId: Cities
       deprecated: false
       produces:
       - application/json
@@ -4311,7 +4311,7 @@ paths:
       summary: Carnets - List
       tags:
       - Carnets
-      operationId: Crowdfundingpage3CarnetsGet
+      operationId: Carnets-List
       deprecated: false
       produces:
       - application/json
@@ -4340,7 +4340,7 @@ paths:
       summary: Carnets - Update
       tags:
       - Carnets
-      operationId: Crowdfundingpage3CarnetsPut
+      operationId: Carnets-Update
       deprecated: false
       produces:
       - application/json
@@ -4381,7 +4381,7 @@ paths:
       summary: Carnets - Post
       tags:
       - Carnets
-      operationId: CarnetsPost
+      operationId: Carnets-Post
       deprecated: false
       produces:
       - application/json
@@ -4416,7 +4416,7 @@ paths:
       summary: Carnets - List
       tags:
       - Carnets
-      operationId: CarnetsGet
+      operationId: GetCarnets-List
       deprecated: false
       produces:
       - application/json
@@ -4446,7 +4446,7 @@ paths:
       summary: Carnets - Post Contact
       tags:
       - Carnets
-      operationId: CarnetContactPost
+      operationId: Carnets-PostContact
       deprecated: false
       produces:
       - application/json
@@ -4482,7 +4482,7 @@ paths:
       summary: Carnets - Delete
       tags:
       - Carnets
-      operationId: Carnets5Delete
+      operationId: Carnets-Delete
       deprecated: false
       produces:
       - application/json
@@ -4512,7 +4512,7 @@ paths:
       summary: Carnets - Update
       tags:
       - Carnets
-      operationId: Carnets2Put
+      operationId: PutCarnets-Update
       deprecated: false
       produces:
       - application/json
@@ -4547,7 +4547,7 @@ paths:
       summary: Carnets - Show
       tags:
       - Carnets
-      operationId: Carnets2Get
+      operationId: Carnets-Show
       deprecated: false
       produces:
       - application/json
@@ -4577,7 +4577,7 @@ paths:
       summary: Carnets - List Home
       tags:
       - Carnets
-      operationId: CarnetsHomeGet
+      operationId: Carnets-ListHome
       deprecated: false
       produces:
       - application/json
@@ -4607,7 +4607,7 @@ paths:
       summary: Save Page
       tags:
       - Crowdfunding
-      operationId: CrowdfundingpagePost
+      operationId: SavePage
       deprecated: false
       produces:
       - application/json
@@ -4675,7 +4675,7 @@ paths:
       summary: Delete Page
       tags:
       - Crowdfunding
-      operationId: Crowdfundingpage4Delete
+      operationId: DeletePage
       deprecated: false
       produces:
       - application/json
@@ -4710,7 +4710,7 @@ paths:
       summary: Save or Create News
       tags:
       - Crowdfunding
-      operationId: CrowdfundingpageNewsPost
+      operationId: SaveorCreateNews
       deprecated: false
       produces:
       - application/json
@@ -4753,7 +4753,7 @@ paths:
       summary: Save or Create Reward
       tags:
       - Crowdfunding
-      operationId: CrowdfundingpageRewardPost
+      operationId: SaveorCreateReward
       deprecated: false
       produces:
       - application/json
@@ -4802,7 +4802,7 @@ paths:
       summary: Public Settings - Get
       tags:
       - Crowdfunding
-      operationId: Crowdfundingpage82c83d6640f9cae92f6e7c43171982d0e6ee1b062e2f842dPublicSettingsGet
+      operationId: PublicSettings-Get
       deprecated: false
       produces:
       - application/json
@@ -4827,7 +4827,7 @@ paths:
       summary: List SP
       tags:
       - Crowdfunding
-      operationId: CrowdfundingpageListSpGet
+      operationId: ListSP
       deprecated: false
       produces:
       - application/json
@@ -4852,7 +4852,7 @@ paths:
       summary: Actions - List
       tags:
       - Actions
-      operationId: ActionsGet
+      operationId: Actions-List
       deprecated: false
       produces:
       - application/json
@@ -4882,7 +4882,7 @@ paths:
       summary: Roles - List
       tags:
       - Roles
-      operationId: RolesGet
+      operationId: Roles-List
       deprecated: false
       produces:
       - application/json
@@ -4912,7 +4912,7 @@ paths:
       summary: Subscription - Post
       tags:
       - WebPush
-      operationId: WebpushSubscriptionPost
+      operationId: Subscription-Post
       deprecated: false
       produces:
       - application/json
@@ -4947,7 +4947,7 @@ paths:
       summary: Subscription - Delete
       tags:
       - WebPush
-      operationId: WebpushSubscriptionDelete
+      operationId: Subscription-Delete
       deprecated: false
       produces:
       - application/json
@@ -4983,7 +4983,7 @@ paths:
       summary: Key
       tags:
       - WebPush
-      operationId: WebpushKeyGet
+      operationId: Key
       deprecated: false
       produces:
       - application/json
@@ -5013,7 +5013,7 @@ paths:
       summary: Teste
       tags:
       - WebPush
-      operationId: WebpushTestePost
+      operationId: Teste
       deprecated: false
       produces:
       - application/json
@@ -5043,7 +5043,7 @@ paths:
       summary: Lot - Create
       tags:
       - Lot
-      operationId: LotsPost
+      operationId: Lot-Create
       deprecated: false
       produces:
       - application/json
@@ -5083,7 +5083,7 @@ paths:
       summary: Lot - List
       tags:
       - Lot
-      operationId: LotsGet
+      operationId: Lot-List
       deprecated: false
       produces:
       - application/json
@@ -5118,7 +5118,7 @@ paths:
       summary: Lot - Delete
       tags:
       - Lot
-      operationId: Lots10Delete
+      operationId: Lot-Delete
       deprecated: false
       produces:
       - application/json
@@ -5153,7 +5153,7 @@ paths:
       summary: Lot - Get
       tags:
       - Lot
-      operationId: Lots7Get
+      operationId: Lot-Get
       deprecated: false
       produces:
       - application/json
@@ -5188,7 +5188,7 @@ paths:
       summary: Lot - Update
       tags:
       - Lot
-      operationId: Lots26Put
+      operationId: Lot-Update
       deprecated: false
       produces:
       - application/json
@@ -5229,7 +5229,7 @@ paths:
       summary: Lot Filters - Get
       tags:
       - Lot
-      operationId: Lots17FiltersGet
+      operationId: LotFilters-Get
       deprecated: false
       produces:
       - application/json
@@ -5264,7 +5264,7 @@ paths:
       summary: Lot Info - List
       tags:
       - Lot Info
-      operationId: LotInfosGet
+      operationId: LotInfo-List
       deprecated: false
       produces:
       - application/json
@@ -5311,7 +5311,7 @@ paths:
       summary: Lot Info - Show
       tags:
       - Lot Info
-      operationId: LotInfos24Get
+      operationId: LotInfo-Show
       deprecated: false
       produces:
       - application/json
@@ -5346,7 +5346,7 @@ paths:
       summary: Lot Info - Update
       tags:
       - Lot Info
-      operationId: LotInfos32Put
+      operationId: LotInfo-Update
       deprecated: false
       produces:
       - application/json
@@ -5387,7 +5387,7 @@ paths:
       summary: Lot Info - Delete
       tags:
       - Lot Info
-      operationId: LotInfos29Delete
+      operationId: LotInfo-Delete
       deprecated: false
       produces:
       - application/json
@@ -5422,7 +5422,7 @@ paths:
       summary: UserRecurLot - List
       tags:
       - UserRecurLot
-      operationId: UserrecurlotsGet
+      operationId: UserRecurLot-List
       deprecated: false
       produces:
       - application/json
@@ -5462,7 +5462,7 @@ paths:
       summary: UserRecurLot - Update
       tags:
       - UserRecurLot
-      operationId: Userrecurlots56Put
+      operationId: UserRecurLot-Update
       deprecated: false
       produces:
       - application/json
@@ -5503,7 +5503,7 @@ paths:
       summary: UserRecurLot - Reprocess
       tags:
       - UserRecurLot
-      operationId: UserrecurlotsReprocess241Post
+      operationId: UserRecurLot-Reprocess
       deprecated: false
       produces:
       - application/json
@@ -5538,7 +5538,7 @@ paths:
       summary: UserRecurLot - Delete
       tags:
       - UserRecurLot
-      operationId: Userrecurlots35Delete
+      operationId: UserRecurLot-Delete
       deprecated: false
       produces:
       - application/json
@@ -5573,7 +5573,7 @@ paths:
       summary: Gifts - List
       tags:
       - Gift
-      operationId: GiftsGet
+      operationId: Gifts-List
       deprecated: false
       produces:
       - application/json
@@ -5608,7 +5608,7 @@ paths:
       summary: Print Address
       tags:
       - Print
-      operationId: PrintUserAddressByIdGet
+      operationId: PrintAddress
       deprecated: false
       produces:
       - application/json
@@ -5648,7 +5648,7 @@ paths:
       summary: Print Test
       tags:
       - Print
-      operationId: PrintTestGet
+      operationId: PrintTest
       deprecated: false
       produces:
       - application/json
@@ -5683,7 +5683,7 @@ paths:
       summary: PrintCarnet - Post
       tags:
       - Print
-      operationId: PrintCarnetsPost
+      operationId: PrintCarnet-Post
       deprecated: false
       produces:
       - application/json
@@ -5723,7 +5723,7 @@ paths:
       summary: PrintCarnet - List
       tags:
       - Print
-      operationId: PrintCarnetsGet
+      operationId: PrintCarnet-List
       deprecated: false
       produces:
       - application/json
@@ -5758,7 +5758,7 @@ paths:
       summary: Products - Create
       tags:
       - Products
-      operationId: ProductsPost
+      operationId: Products-Create
       deprecated: false
       produces:
       - application/json
@@ -5798,7 +5798,7 @@ paths:
       summary: Products - List
       tags:
       - Products
-      operationId: ProductsGet
+      operationId: Products-List
       deprecated: false
       produces:
       - application/json
@@ -5833,7 +5833,7 @@ paths:
       summary: Products - Update
       tags:
       - Products
-      operationId: Products6Put
+      operationId: Products-Update
       deprecated: false
       produces:
       - application/json
@@ -5873,7 +5873,7 @@ paths:
       summary: Products - Get
       tags:
       - Products
-      operationId: Products6Get
+      operationId: Products-Get
       deprecated: false
       produces:
       - application/json
@@ -5908,7 +5908,7 @@ paths:
       summary: Products - Delete
       tags:
       - Products
-      operationId: Products7Delete
+      operationId: Products-Delete
       deprecated: false
       produces:
       - application/json
@@ -5943,7 +5943,7 @@ paths:
       summary: User Products Create
       tags:
       - User Products
-      operationId: UserproductsPost
+      operationId: UserProductsCreate
       deprecated: false
       produces:
       - application/json
@@ -5984,7 +5984,7 @@ paths:
       summary: DeliveryGifts - List
       tags:
       - DeliveryGifts
-      operationId: UnnammedEndpointGet
+      operationId: DeliveryGifts-List
       deprecated: false
       produces:
       - application/json
@@ -6014,7 +6014,7 @@ paths:
       summary: DeliveryGifts - Update
       tags:
       - DeliveryGifts
-      operationId: Deliverygifts2Put
+      operationId: DeliveryGifts-Update
       deprecated: false
       produces:
       - application/json
@@ -6050,7 +6050,7 @@ paths:
       summary: DeliveryGiftFIles - Create
       tags:
       - DeliveryGiftFiles
-      operationId: DeliverygiftfilesPost
+      operationId: DeliveryGiftFIles-Create
       deprecated: false
       produces:
       - application/json
@@ -6090,7 +6090,7 @@ paths:
       summary: DeliveryGiftFIles - List
       tags:
       - DeliveryGiftFiles
-      operationId: DeliverygiftfilesGet
+      operationId: DeliveryGiftFIles-List
       deprecated: false
       produces:
       - application/json
@@ -6120,7 +6120,7 @@ paths:
       summary: BillingReport
       tags:
       - Report
-      operationId: ReportBillingGet
+      operationId: BillingReport
       deprecated: false
       produces:
       - application/json
@@ -6155,7 +6155,7 @@ paths:
       summary: Carnets - List
       tags:
       - Teleprompter
-      operationId: TeleprompterListGet
+      operationId: GetCarnets-List1
       deprecated: false
       produces:
       - application/json
@@ -6200,7 +6200,7 @@ paths:
       summary: Payment Doc Generate
       tags:
       - Misc
-      operationId: PaymentDocGeneratePost
+      operationId: PaymentDocGenerate
       deprecated: false
       produces:
       - application/json
@@ -6231,7 +6231,7 @@ paths:
       summary: Account - View (Code)
       tags:
       - Misc
-      operationId: AccountsCodePockettoGet
+      operationId: Account-View(Code)
       deprecated: false
       produces:
       - application/json
@@ -6256,7 +6256,7 @@ paths:
       summary: Address
       tags:
       - Misc
-      operationId: Address92130730Get
+      operationId: Address
       deprecated: false
       produces:
       - application/json
@@ -6281,7 +6281,7 @@ paths:
       summary: Analytics - Show
       tags:
       - Misc
-      operationId: AnalyticsPaymentsGet
+      operationId: Analytics-Show
       deprecated: false
       produces:
       - application/json
@@ -6321,7 +6321,7 @@ paths:
       summary: Create Account
       tags:
       - Misc
-      operationId: AccountnewNerdGet
+      operationId: CreateAccount
       deprecated: false
       produces:
       - application/json
@@ -6351,7 +6351,7 @@ paths:
       summary: Contato
       tags:
       - Misc
-      operationId: ContactPost
+      operationId: Contato
       deprecated: false
       produces:
       - application/json

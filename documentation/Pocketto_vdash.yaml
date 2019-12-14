@@ -5978,7 +5978,7 @@ paths:
         200:
           description: ''
           headers: {}
-  //:
+  /:
     get:
       description: 'TODO: Add Description'
       summary: DeliveryGifts - List

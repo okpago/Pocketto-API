@@ -2788,6 +2788,37 @@ paths:
         200:
           description: ''
           headers: {}
+  /payments/4928/cancel-receipt:
+    put:
+      description: 'TODO: Add Description'
+      summary: Payments - Update Cancel Receipt
+      tags:
+      - Payments
+      operationId: Payments-UpdateCancelReceipt
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: false
+        default: Bearer {token}
+        type: string
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/Payments-UpdateCancelReceiptRequest'
+      responses:
+        200:
+          description: ''
+          headers: {}
   /payments/4682/resendEmailCreated:
     get:
       description: 'TODO: Add Description'
@@ -6909,6 +6940,16 @@ definitions:
         type: string
     required:
     - document_data
+  Payments-UpdateCancelReceiptRequest:
+    title: Payments-UpdateCancelReceiptRequest
+    example:
+      reason_cancel_receipt: Teste envio pelo postman
+    type: object
+    properties:
+      reason_cancel_receipt:
+        type: string
+    required:
+    - reason_cancel_receipt
   Payments-CreateRequest:
     title: Payments-CreateRequest
     example:

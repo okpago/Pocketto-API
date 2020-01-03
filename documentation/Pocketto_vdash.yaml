@@ -2,7 +2,6 @@ swagger: '2.0'
 info:
   version: '1.0'
   title: Deposite vdash
-  description: 'TODO: Add Description'
   contact: {}
 host: api.pocketto.com.br
 basePath: /vdash
@@ -17,7 +16,6 @@ produces:
 paths:
   /api_keys:
     get:
-      description: 'TODO: Add Description'
       summary: API Keys - List
       tags:
       - API Keys
@@ -41,7 +39,6 @@ paths:
           description: ''
           headers: {}
     post:
-      description: 'TODO: Add Description'
       summary: API Keys - Create
       tags:
       - API Keys
@@ -77,7 +74,6 @@ paths:
           headers: {}
   /api_keys/0cb476ab3aa6820ab36ba27e04226d338f4cd201c714ef1c662bc4c1b5c5a0cfb40b2140f37ce276:
     get:
-      description: 'TODO: Add Description'
       summary: API Keys - View
       tags:
       - API Keys
@@ -106,7 +102,6 @@ paths:
           description: ''
           headers: {}
     put:
-      description: 'TODO: Add Description'
       summary: API Keys - Update
       tags:
       - API Keys
@@ -141,7 +136,6 @@ paths:
           description: ''
           headers: {}
     delete:
-      description: 'TODO: Add Description'
       summary: API Keys  - Delete
       tags:
       - API Keys
@@ -171,7 +165,6 @@ paths:
           headers: {}
   /admin_users:
     get:
-      description: 'TODO: Add Description'
       summary: Admin Users - List
       tags:
       - Admin Users
@@ -195,7 +188,6 @@ paths:
           description: ''
           headers: {}
     post:
-      description: 'TODO: Add Description'
       summary: Admin Users - Create
       tags:
       - Admin Users
@@ -231,7 +223,6 @@ paths:
           headers: {}
   /admin_users/9:
     get:
-      description: 'TODO: Add Description'
       summary: Admin Users - Show
       tags:
       - Admin Users
@@ -256,7 +247,6 @@ paths:
           headers: {}
   /me:
     get:
-      description: 'TODO: Add Description'
       summary: Admin Users - Me
       tags:
       - Admin Users
@@ -280,7 +270,6 @@ paths:
           description: ''
           headers: {}
     put:
-      description: 'TODO: Add Description'
       summary: Me - Update
       tags:
       - Me
@@ -316,7 +305,6 @@ paths:
           headers: {}
   /admin_users/5:
     put:
-      description: 'TODO: Add Description'
       summary: Admin Users - Update
       tags:
       - Admin Users
@@ -352,7 +340,6 @@ paths:
           headers: {}
   /admin_users/me:
     put:
-      description: 'TODO: Add Description'
       summary: Admin Users - Update Me
       tags:
       - Admin Users
@@ -388,7 +375,6 @@ paths:
           headers: {}
   /admin_users/8:
     delete:
-      description: 'TODO: Add Description'
       summary: Admin Users - Delete
       tags:
       - Admin Users
@@ -418,7 +404,6 @@ paths:
           headers: {}
   /bank_accounts:
     get:
-      description: 'TODO: Add Description'
       summary: Bank Accounts - List
       tags:
       - Bank Accounts
@@ -442,7 +427,6 @@ paths:
           description: ''
           headers: {}
     post:
-      description: 'TODO: Add Description'
       summary: Bank Accounts - Create
       tags:
       - Bank Accounts
@@ -478,7 +462,6 @@ paths:
           headers: {}
   /bank_accounts/2:
     get:
-      description: 'TODO: Add Description'
       summary: Bank Accounts - View
       tags:
       - Bank Accounts
@@ -503,7 +486,6 @@ paths:
           headers: {}
   /bank_accounts/4:
     put:
-      description: 'TODO: Add Description'
       summary: Bank Accounts - Update
       tags:
       - Bank Accounts
@@ -538,7 +520,6 @@ paths:
           description: ''
           headers: {}
     delete:
-      description: 'TODO: Add Description'
       summary: Bank Accounts - Delete
       tags:
       - Bank Accounts
@@ -568,7 +549,6 @@ paths:
           headers: {}
   /bank_accounts/2/transactions:
     post:
-      description: 'TODO: Add Description'
       summary: Bank Accounts - Transactions
       tags:
       - Bank Accounts
@@ -730,7 +710,6 @@ paths:
           headers: {}
   /crowdfundingpage/2/bank-accounts:
     get:
-      description: 'TODO: Add Description'
       summary: Bank Accounts - All
       tags:
       - Bank Accounts
@@ -764,7 +743,6 @@ paths:
           description: ''
           headers: {}
     post:
-      description: 'TODO: Add Description'
       summary: Bank Accounts - Create
       tags:
       - Bank Accounts
@@ -805,7 +783,6 @@ paths:
           headers: {}
   /crowdfundingpage/2/bank-accounts/1:
     put:
-      description: 'TODO: Add Description'
       summary: Bank Accounts - Update
       tags:
       - Bank Accounts
@@ -846,7 +823,6 @@ paths:
           headers: {}
   /crowdfundingpage/2/bank-accounts/2:
     delete:
-      description: 'TODO: Add Description'
       summary: Bank Accounts - Delete
       tags:
       - Bank Accounts
@@ -881,7 +857,6 @@ paths:
           headers: {}
   /banks/caixa:
     get:
-      description: 'TODO: Add Description'
       summary: Banks - View
       tags:
       - Banks
@@ -906,7 +881,6 @@ paths:
           headers: {}
   /campaigns:
     get:
-      description: 'TODO: Add Description'
       summary: Campaigns - List
       tags:
       - Campaigns
@@ -930,7 +904,6 @@ paths:
           description: ''
           headers: {}
     post:
-      description: 'TODO: Add Description'
       summary: Campaigns - Create
       tags:
       - Campaigns
@@ -961,7 +934,6 @@ paths:
           headers: {}
   /campaigns/35:
     get:
-      description: 'TODO: Add Description'
       summary: Campaigns - View
       tags:
       - Campaigns
@@ -986,7 +958,6 @@ paths:
           headers: {}
   /campaigns/3:
     put:
-      description: 'TODO: Add Description'
       summary: Campaigns - Update
       tags:
       - Campaigns
@@ -1017,7 +988,6 @@ paths:
           headers: {}
   /campaigns/38/activate:
     put:
-      description: 'TODO: Add Description'
       summary: Campaigns - Activate
       tags:
       - Campaigns
@@ -1042,7 +1012,6 @@ paths:
           headers: {}
   /campaigns/14/desactivate:
     put:
-      description: 'TODO: Add Description'
       summary: Campaigns - Desactivate
       tags:
       - Campaigns
@@ -1067,7 +1036,6 @@ paths:
           headers: {}
   /campaigns/66/duplicate:
     post:
-      description: 'TODO: Add Description'
       summary: Campaigns - Duplicate
       tags:
       - Campaigns
@@ -1092,7 +1060,6 @@ paths:
           headers: {}
   /conciliation/accountcredits/file:
     post:
-      description: 'TODO: Add Description'
       summary: file
       tags:
       - Account Credit
@@ -1124,7 +1091,6 @@ paths:
           headers: {}
   /conciliation/accountcredits:
     get:
-      description: 'TODO: Add Description'
       summary: AccountCredits - List
       tags:
       - Account Credit
@@ -1176,7 +1142,6 @@ paths:
           headers: {}
   /conciliation/accountcredits/analytics:
     get:
-      description: 'TODO: Add Description'
       summary: AccountCredits - Analytics
       tags:
       - Account Credit
@@ -1206,7 +1171,6 @@ paths:
           headers: {}
   /conciliation/accountcredits/369:
     get:
-      description: 'TODO: Add Description'
       summary: AccountCredits - View
       tags:
       - Account Credit
@@ -1236,7 +1200,6 @@ paths:
           headers: {}
   /conciliation/accountcredits/225:
     delete:
-      description: 'TODO: Add Description'
       summary: AccountCredits - Delete
       tags:
       - Account Credit
@@ -1266,7 +1229,6 @@ paths:
           headers: {}
   /conciliation/accountcredits/233:
     put:
-      description: 'TODO: Add Description'
       summary: AccountCredits - Update
       tags:
       - Account Credit
@@ -1302,7 +1264,6 @@ paths:
           headers: {}
   /conciliation/accountcredits/29/payments:
     get:
-      description: 'TODO: Add Description'
       summary: AccountCredits - List Payments
       tags:
       - Account Credit
@@ -1327,7 +1288,6 @@ paths:
           headers: {}
   /conciliation/bankstatement/file:
     post:
-      description: 'TODO: Add Description'
       summary: Upload File
       tags:
       - Bank Statement
@@ -1381,7 +1341,6 @@ paths:
           headers: {}
   /conciliation/bankstatement/logs:
     get:
-      description: 'TODO: Add Description'
       summary: Logs - List
       tags:
       - Bank Statement
@@ -1411,7 +1370,6 @@ paths:
           headers: {}
   /conciliation/files:
     get:
-      description: 'TODO: Add Description'
       summary: Conciliation - List
       tags:
       - Conciliation
@@ -1436,7 +1394,6 @@ paths:
           headers: {}
   /conciliation/files/1:
     delete:
-      description: 'TODO: Add Description'
       summary: Conciliation - Delete
       tags:
       - Conciliation
@@ -1461,7 +1418,6 @@ paths:
           headers: {}
   /conciliation/createFile:
     post:
-      description: 'TODO: Add Description'
       summary: Conciliation - Import
       tags:
       - Conciliation
@@ -1513,7 +1469,6 @@ paths:
           headers: {}
   /downloads:
     get:
-      description: 'TODO: Add Description'
       summary: Downloads - List
       tags:
       - Downloads
@@ -1538,7 +1493,6 @@ paths:
           headers: {}
   /downloads/3:
     get:
-      description: 'TODO: Add Description'
       summary: Downloads - View
       tags:
       - Downloads
@@ -1562,7 +1516,6 @@ paths:
           description: ''
           headers: {}
     delete:
-      description: 'TODO: Add Description'
       summary: Downloads - Delete
       tags:
       - Downloads
@@ -1592,7 +1545,6 @@ paths:
           headers: {}
   /events:
     get:
-      description: 'TODO: Add Description'
       summary: Events - List
       tags:
       - Events
@@ -1617,7 +1569,6 @@ paths:
           headers: {}
   /events/user_profile_updated:
     get:
-      description: 'TODO: Add Description'
       summary: Events - View
       tags:
       - Events
@@ -1642,7 +1593,6 @@ paths:
           headers: {}
   /files:
     post:
-      description: 'TODO: Add Description'
       summary: Files - Create (Binary)
       tags:
       - Files
@@ -1679,7 +1629,6 @@ paths:
           headers: {}
   /files/803:
     get:
-      description: 'TODO: Add Description'
       summary: Files - View
       tags:
       - Files
@@ -1704,7 +1653,6 @@ paths:
           headers: {}
   /financial/balance:
     get:
-      description: 'TODO: Add Description'
       summary: Balance
       tags:
       - Financial
@@ -1729,7 +1677,6 @@ paths:
           headers: {}
   /financial/transfers/4/2019:
     get:
-      description: 'TODO: Add Description'
       summary: Transfers
       tags:
       - Financial
@@ -1759,7 +1706,6 @@ paths:
           headers: {}
   /financial/transfers/7/2/2019:
     get:
-      description: 'TODO: Add Description'
       summary: Transfers Detail
       tags:
       - Financial
@@ -1784,7 +1730,6 @@ paths:
           headers: {}
   /financial/withdraw:
     post:
-      description: 'TODO: Add Description'
       summary: Withdraw
       tags:
       - Financial
@@ -1872,7 +1817,6 @@ paths:
           headers: {}
   /login/recovery:
     post:
-      description: 'TODO: Add Description'
       summary: Login - Recovery
       tags:
       - Login
@@ -1908,7 +1852,6 @@ paths:
           headers: {}
   /login/reset:
     put:
-      description: 'TODO: Add Description'
       summary: Login - Reset
       tags:
       - Login
@@ -1973,6 +1916,7 @@ paths:
         required: true
         description: ''
         schema:
+          example: {}
           type: object
       responses:
         200:
@@ -1980,7 +1924,6 @@ paths:
           headers: {}
   /messages:
     get:
-      description: 'TODO: Add Description'
       summary: Messages - List
       tags:
       - Messages
@@ -2031,7 +1974,6 @@ paths:
           description: ''
           headers: {}
     post:
-      description: 'TODO: Add Description'
       summary: Messages - Create
       tags:
       - Messages
@@ -2067,7 +2009,6 @@ paths:
           headers: {}
   /messages/2:
     get:
-      description: 'TODO: Add Description'
       summary: Messages - View
       tags:
       - Messages
@@ -2091,7 +2032,6 @@ paths:
           description: ''
           headers: {}
     delete:
-      description: 'TODO: Add Description'
       summary: Messages - Delete
       tags:
       - Messages
@@ -2122,7 +2062,6 @@ paths:
           headers: {}
   /messages/181/cancel:
     put:
-      description: 'TODO: Add Description'
       summary: Messages - Cancel
       tags:
       - Messages
@@ -2153,7 +2092,6 @@ paths:
           headers: {}
   /message_types:
     get:
-      description: 'TODO: Add Description'
       summary: Message Types - List
       tags:
       - Message Types
@@ -2177,7 +2115,6 @@ paths:
           description: ''
           headers: {}
     post:
-      description: 'TODO: Add Description'
       summary: Message Types - Create
       tags:
       - Message Types
@@ -2213,7 +2150,6 @@ paths:
           headers: {}
   /message_types/41:
     get:
-      description: 'TODO: Add Description'
       summary: Message Types - View
       tags:
       - Message Types
@@ -2242,7 +2178,6 @@ paths:
           description: ''
           headers: {}
     put:
-      description: 'TODO: Add Description'
       summary: Message Types - Update
       tags:
       - Message Types
@@ -2277,7 +2212,6 @@ paths:
           description: ''
           headers: {}
     delete:
-      description: 'TODO: Add Description'
       summary: Message Types - Delete
       tags:
       - Message Types
@@ -2307,7 +2241,6 @@ paths:
           headers: {}
   /payments:
     get:
-      description: 'TODO: Add Description'
       summary: Payments - List
       tags:
       - Payments
@@ -2490,7 +2423,6 @@ paths:
           headers: {}
   /payments/4893/account-credits:
     get:
-      description: 'TODO: Add Description'
       summary: Payments - List Account Credits
       tags:
       - Payments
@@ -2537,7 +2469,6 @@ paths:
           headers: {}
   /payments/import:
     post:
-      description: 'TODO: Add Description'
       summary: Payments - Import
       tags:
       - Payments
@@ -2573,7 +2504,6 @@ paths:
           description: ''
           headers: {}
     get:
-      description: 'TODO: Add Description'
       summary: Payments - Import Exemplo
       tags:
       - Payments
@@ -2593,7 +2523,6 @@ paths:
           headers: {}
   /payments/import/logs:
     get:
-      description: 'TODO: Add Description'
       summary: Payments - Import Exemplo Log
       tags:
       - Payments
@@ -2618,7 +2547,6 @@ paths:
           headers: {}
   /payments/2147:
     get:
-      description: 'TODO: Add Description'
       summary: Payments - View
       tags:
       - Payments
@@ -2643,7 +2571,6 @@ paths:
           headers: {}
   /payments/4828/logs:
     get:
-      description: 'TODO: Add Description'
       summary: Payments - Logs
       tags:
       - Payments
@@ -2678,7 +2605,6 @@ paths:
           headers: {}
   /payments/transaction/294031:
     get:
-      description: 'TODO: Add Description'
       summary: Payments - Get By Transaction Id
       tags:
       - Payments
@@ -2703,7 +2629,6 @@ paths:
           headers: {}
   /payments/11715/status/paid:
     put:
-      description: 'TODO: Add Description'
       summary: Payments - Update Status
       tags:
       - Payments
@@ -2734,7 +2659,6 @@ paths:
           headers: {}
   /payments/47339:
     delete:
-      description: 'TODO: Add Description'
       summary: Payments - Delete
       tags:
       - Payments
@@ -2759,7 +2683,6 @@ paths:
           headers: {}
   /payments/1088:
     put:
-      description: 'TODO: Add Description'
       summary: Payments - Update
       tags:
       - Payments
@@ -2790,7 +2713,6 @@ paths:
           headers: {}
   /payments/4928/cancel-receipt:
     put:
-      description: 'TODO: Add Description'
       summary: Payments - Update Cancel Receipt
       tags:
       - Payments
@@ -2821,7 +2743,6 @@ paths:
           headers: {}
   /payments/4682/resendEmailCreated:
     get:
-      description: 'TODO: Add Description'
       summary: Payments - Resend Email Created
       tags:
       - Payments
@@ -2851,7 +2772,6 @@ paths:
           headers: {}
   /residual-payments:
     post:
-      description: 'TODO: Add Description'
       summary: Residual Payments
       tags:
       - Payments
@@ -2887,7 +2807,6 @@ paths:
           headers: {}
   /settings/default_payment_values:
     get:
-      description: 'TODO: Add Description'
       summary: Settings - List
       tags:
       - Settings
@@ -2912,7 +2831,6 @@ paths:
           headers: {}
   /settings/user_card_model_front:
     get:
-      description: 'TODO: Add Description'
       summary: Settings - Show
       tags:
       - Settings
@@ -2937,7 +2855,6 @@ paths:
           headers: {}
   /settings/description_text:
     put:
-      description: 'TODO: Add Description'
       summary: Settings - Update
       tags:
       - Settings
@@ -2973,7 +2890,6 @@ paths:
           headers: {}
   /settings:
     patch:
-      description: 'TODO: Add Description'
       summary: Settings - Update All
       tags:
       - Settings
@@ -3009,7 +2925,6 @@ paths:
           headers: {}
   /settings/test:
     delete:
-      description: 'TODO: Add Description'
       summary: Settings - Delete
       tags:
       - Settings
@@ -3034,7 +2949,6 @@ paths:
           headers: {}
   /crowdfundingpage/2/settings:
     get:
-      description: 'TODO: Add Description'
       summary: Settings - List
       tags:
       - Settings
@@ -3064,7 +2978,6 @@ paths:
           headers: {}
   /crowdfundingpage/3/settings:
     put:
-      description: 'TODO: Add Description'
       summary: Settings - Update
       tags:
       - Settings
@@ -3105,7 +3018,6 @@ paths:
           headers: {}
   /user_categories:
     get:
-      description: 'TODO: Add Description'
       summary: User Categories - List
       tags:
       - User Categories
@@ -3129,7 +3041,6 @@ paths:
           description: ''
           headers: {}
     post:
-      description: 'TODO: Add Description'
       summary: User Categories - Create
       tags:
       - User Categories
@@ -3165,7 +3076,6 @@ paths:
           headers: {}
   /user_categories/2:
     get:
-      description: 'TODO: Add Description'
       summary: User Categories - View
       tags:
       - User Categories
@@ -3195,7 +3105,6 @@ paths:
           headers: {}
   /user_categories/3:
     put:
-      description: 'TODO: Add Description'
       summary: User Categories - Update
       tags:
       - User Categories
@@ -3231,7 +3140,6 @@ paths:
           headers: {}
   /user_categories/1:
     delete:
-      description: 'TODO: Add Description'
       summary: User Categories - Delete
       tags:
       - User Categories
@@ -3261,7 +3169,6 @@ paths:
           headers: {}
   /user_recurs:
     get:
-      description: 'TODO: Add Description'
       summary: User Recurrences - List
       tags:
       - User Recurrence
@@ -3290,7 +3197,6 @@ paths:
           description: ''
           headers: {}
     post:
-      description: 'TODO: Add Description'
       summary: User Recurrences - Create Physical
       tags:
       - User Recurrence
@@ -3331,7 +3237,6 @@ paths:
           headers: {}
   /user_recurs/user/02153512077:
     get:
-      description: 'TODO: Add Description'
       summary: User Recurrences - List by User
       tags:
       - User Recurrence
@@ -3356,7 +3261,6 @@ paths:
           headers: {}
   /user_recurs/1:
     get:
-      description: 'TODO: Add Description'
       summary: User Recurrences - View
       tags:
       - User Recurrence
@@ -3381,7 +3285,6 @@ paths:
           headers: {}
   /user_recurs/1/cancel:
     put:
-      description: 'TODO: Add Description'
       summary: User Recurrences - Cancel
       tags:
       - User Recurrence
@@ -3406,7 +3309,6 @@ paths:
           headers: {}
   /recurrences/7/payments:
     post:
-      description: 'TODO: Add Description'
       summary: Create Payment
       tags:
       - User Recurrence
@@ -3442,7 +3344,6 @@ paths:
           headers: {}
   /recurrences/331/anticipate:
     post:
-      description: 'TODO: Add Description'
       summary: Create Anticipate Payment
       tags:
       - User Recurrence
@@ -3478,7 +3379,6 @@ paths:
           headers: {}
   /webhooks:
     get:
-      description: 'TODO: Add Description'
       summary: Webhooks - List
       tags:
       - Webhooks
@@ -3502,7 +3402,6 @@ paths:
           description: ''
           headers: {}
     post:
-      description: 'TODO: Add Description'
       summary: Webhooks - Create
       tags:
       - Webhooks
@@ -3538,7 +3437,6 @@ paths:
           headers: {}
   /webhooks/external/4628:
     get:
-      description: 'TODO: Add Description'
       summary: Webhooks - External
       tags:
       - Webhooks
@@ -3568,7 +3466,6 @@ paths:
           headers: {}
   /webhooks/2:
     get:
-      description: 'TODO: Add Description'
       summary: Webhooks - View
       tags:
       - Webhooks
@@ -3597,7 +3494,6 @@ paths:
           description: ''
           headers: {}
     put:
-      description: 'TODO: Add Description'
       summary: Webhooks - Update
       tags:
       - Webhooks
@@ -3632,7 +3528,6 @@ paths:
           description: ''
           headers: {}
     delete:
-      description: 'TODO: Add Description'
       summary: Webhooks - Delete
       tags:
       - Webhooks
@@ -3662,7 +3557,6 @@ paths:
           headers: {}
   /users:
     get:
-      description: 'TODO: Add Description'
       summary: Users - List
       tags:
       - Users
@@ -3703,7 +3597,6 @@ paths:
           description: ''
           headers: {}
     post:
-      description: 'TODO: Add Description'
       summary: Users - Create
       tags:
       - Users
@@ -3739,7 +3632,6 @@ paths:
           headers: {}
   /users/150/logs:
     get:
-      description: 'TODO: Add Description'
       summary: Users - Logs
       tags:
       - Users
@@ -3780,7 +3672,6 @@ paths:
           headers: {}
   /users/128:
     get:
-      description: 'TODO: Add Description'
       summary: Users - View
       tags:
       - Users
@@ -3805,7 +3696,6 @@ paths:
           headers: {}
   /users/get/01286800080:
     get:
-      description: 'TODO: Add Description'
       summary: Users - View by CPF
       tags:
       - Users
@@ -3830,7 +3720,6 @@ paths:
           headers: {}
   /users/1:
     put:
-      description: 'TODO: Add Description'
       summary: Users - Update
       tags:
       - Users
@@ -3861,7 +3750,6 @@ paths:
           headers: {}
   /users/import:
     post:
-      description: 'TODO: Add Description'
       summary: Users - Import
       tags:
       - Users
@@ -3891,7 +3779,6 @@ paths:
           headers: {}
   /users/18:
     delete:
-      description: 'TODO: Add Description'
       summary: Users - Delete
       tags:
       - Users
@@ -3916,7 +3803,6 @@ paths:
           headers: {}
   /credit_card/process:
     post:
-      description: 'TODO: Add Description'
       summary: CreditCard - Process
       tags:
       - CreditCard
@@ -3952,7 +3838,6 @@ paths:
           headers: {}
   /debit_card/consult/cielo/d1a33d83-ef6a-42d4-95e8-3e761e15cbb3:
     get:
-      description: 'TODO: Add Description'
       summary: CreditCard - Consult
       tags:
       - CreditCard
@@ -3982,7 +3867,6 @@ paths:
           headers: {}
   /credit_card/cancel/cielo/1:
     get:
-      description: 'TODO: Add Description'
       summary: CreditCard - Cancel
       tags:
       - CreditCard
@@ -4012,7 +3896,6 @@ paths:
           headers: {}
   /credit_card/cancelByTid/cielo/0a9cae18-99b1-4783-b93a-4534a6513e90:
     get:
-      description: 'TODO: Add Description'
       summary: CreditCard - Cancel by Tid
       tags:
       - CreditCard
@@ -4042,7 +3925,6 @@ paths:
           headers: {}
   /credit_card/consultByTid/cielo/0a9cae18-99b1-4783-b93a-4534a6513e90:
     get:
-      description: 'TODO: Add Description'
       summary: CreditCard - Consult by Tid
       tags:
       - CreditCard
@@ -4072,7 +3954,6 @@ paths:
           headers: {}
   /boleto/process:
     post:
-      description: 'TODO: Add Description'
       summary: DEPRECATED - Boleto - Process
       tags:
       - Boleto
@@ -4108,7 +3989,6 @@ paths:
           headers: {}
   /conciliation/test:
     get:
-      description: 'TODO: Add Description'
       summary: Test
       tags:
       - Test
@@ -4133,7 +4013,6 @@ paths:
           headers: {}
   /emails/payment.refused/4697:
     get:
-      description: 'TODO: Add Description'
       summary: Email
       tags:
       - Test
@@ -4223,7 +4102,6 @@ paths:
           headers: {}
   /report/payment:
     get:
-      description: 'TODO: Add Description'
       summary: Report - Payments
       tags:
       - Reports
@@ -4258,7 +4136,6 @@ paths:
           headers: {}
   /report/user:
     get:
-      description: 'TODO: Add Description'
       summary: Report - Users
       tags:
       - Reports
@@ -4283,7 +4160,6 @@ paths:
           headers: {}
   /report/userpayment:
     get:
-      description: 'TODO: Add Description'
       summary: Report - Users x Payments
       tags:
       - Reports
@@ -4308,7 +4184,6 @@ paths:
           headers: {}
   /cities:
     get:
-      description: 'TODO: Add Description'
       summary: Cities
       tags:
       - Cities
@@ -4338,7 +4213,6 @@ paths:
           headers: {}
   /crowdfundingpage/3/carnets:
     get:
-      description: 'TODO: Add Description'
       summary: Carnets - List
       tags:
       - Carnets
@@ -4367,7 +4241,6 @@ paths:
           description: ''
           headers: {}
     put:
-      description: 'TODO: Add Description'
       summary: Carnets - Update
       tags:
       - Carnets
@@ -4408,7 +4281,6 @@ paths:
           headers: {}
   /carnets:
     post:
-      description: 'TODO: Add Description'
       summary: Carnets - Post
       tags:
       - Carnets
@@ -4443,7 +4315,6 @@ paths:
           description: ''
           headers: {}
     get:
-      description: 'TODO: Add Description'
       summary: Carnets - List
       tags:
       - Carnets
@@ -4473,7 +4344,6 @@ paths:
           headers: {}
   /carnet/contact:
     post:
-      description: 'TODO: Add Description'
       summary: Carnets - Post Contact
       tags:
       - Carnets
@@ -4509,7 +4379,6 @@ paths:
           headers: {}
   /carnets/5:
     delete:
-      description: 'TODO: Add Description'
       summary: Carnets - Delete
       tags:
       - Carnets
@@ -4539,7 +4408,6 @@ paths:
           headers: {}
   /carnets/2:
     put:
-      description: 'TODO: Add Description'
       summary: Carnets - Update
       tags:
       - Carnets
@@ -4574,7 +4442,6 @@ paths:
           description: ''
           headers: {}
     get:
-      description: 'TODO: Add Description'
       summary: Carnets - Show
       tags:
       - Carnets
@@ -4604,7 +4471,6 @@ paths:
           headers: {}
   /carnets/home:
     get:
-      description: 'TODO: Add Description'
       summary: Carnets - List Home
       tags:
       - Carnets
@@ -4634,7 +4500,6 @@ paths:
           headers: {}
   /crowdfundingpage/:
     post:
-      description: 'TODO: Add Description'
       summary: Save Page
       tags:
       - Crowdfunding
@@ -4702,7 +4567,6 @@ paths:
           headers: {}
   /crowdfundingpage/4:
     delete:
-      description: 'TODO: Add Description'
       summary: Delete Page
       tags:
       - Crowdfunding
@@ -4737,7 +4601,6 @@ paths:
           headers: {}
   /crowdfundingpage/news:
     post:
-      description: 'TODO: Add Description'
       summary: Save or Create News
       tags:
       - Crowdfunding
@@ -4780,7 +4643,6 @@ paths:
           headers: {}
   /crowdfundingpage/reward:
     post:
-      description: 'TODO: Add Description'
       summary: Save or Create Reward
       tags:
       - Crowdfunding
@@ -4829,7 +4691,6 @@ paths:
           headers: {}
   /crowdfundingpage/82c83d6640f9cae92f6e7c43171982d0e6ee1b062e2f842d/public-settings:
     get:
-      description: 'TODO: Add Description'
       summary: Public Settings - Get
       tags:
       - Crowdfunding
@@ -4854,7 +4715,6 @@ paths:
           headers: {}
   /crowdfundingpage/list_sp:
     get:
-      description: 'TODO: Add Description'
       summary: List SP
       tags:
       - Crowdfunding
@@ -4879,7 +4739,6 @@ paths:
           headers: {}
   /actions:
     get:
-      description: 'TODO: Add Description'
       summary: Actions - List
       tags:
       - Actions
@@ -4909,7 +4768,6 @@ paths:
           headers: {}
   /roles:
     get:
-      description: 'TODO: Add Description'
       summary: Roles - List
       tags:
       - Roles
@@ -4939,7 +4797,6 @@ paths:
           headers: {}
   /webpush/subscription:
     post:
-      description: 'TODO: Add Description'
       summary: Subscription - Post
       tags:
       - WebPush
@@ -4974,7 +4831,6 @@ paths:
           description: ''
           headers: {}
     delete:
-      description: 'TODO: Add Description'
       summary: Subscription - Delete
       tags:
       - WebPush
@@ -5010,7 +4866,6 @@ paths:
           headers: {}
   /webpush/key:
     get:
-      description: 'TODO: Add Description'
       summary: Key
       tags:
       - WebPush
@@ -5040,7 +4895,6 @@ paths:
           headers: {}
   /webpush/teste:
     post:
-      description: 'TODO: Add Description'
       summary: Teste
       tags:
       - WebPush
@@ -5070,7 +4924,6 @@ paths:
           headers: {}
   /lots:
     post:
-      description: 'TODO: Add Description'
       summary: Lot - Create
       tags:
       - Lot
@@ -5110,7 +4963,6 @@ paths:
           description: ''
           headers: {}
     get:
-      description: 'TODO: Add Description'
       summary: Lot - List
       tags:
       - Lot
@@ -5145,7 +4997,6 @@ paths:
           headers: {}
   /lots/10:
     delete:
-      description: 'TODO: Add Description'
       summary: Lot - Delete
       tags:
       - Lot
@@ -5180,7 +5031,6 @@ paths:
           headers: {}
   /lots/7:
     get:
-      description: 'TODO: Add Description'
       summary: Lot - Get
       tags:
       - Lot
@@ -5215,7 +5065,6 @@ paths:
           headers: {}
   /lots/26:
     put:
-      description: 'TODO: Add Description'
       summary: Lot - Update
       tags:
       - Lot
@@ -5256,7 +5105,6 @@ paths:
           headers: {}
   /lots/17/filters:
     get:
-      description: 'TODO: Add Description'
       summary: Lot Filters - Get
       tags:
       - Lot
@@ -5291,7 +5139,6 @@ paths:
           headers: {}
   /lot-infos:
     get:
-      description: 'TODO: Add Description'
       summary: Lot Info - List
       tags:
       - Lot Info
@@ -5338,7 +5185,6 @@ paths:
           headers: {}
   /lot-infos/24:
     get:
-      description: 'TODO: Add Description'
       summary: Lot Info - Show
       tags:
       - Lot Info
@@ -5373,7 +5219,6 @@ paths:
           headers: {}
   /lot-infos/32:
     put:
-      description: 'TODO: Add Description'
       summary: Lot Info - Update
       tags:
       - Lot Info
@@ -5414,7 +5259,6 @@ paths:
           headers: {}
   /lot-infos/29:
     delete:
-      description: 'TODO: Add Description'
       summary: Lot Info - Delete
       tags:
       - Lot Info
@@ -5449,7 +5293,6 @@ paths:
           headers: {}
   /userrecurlots:
     get:
-      description: 'TODO: Add Description'
       summary: UserRecurLot - List
       tags:
       - UserRecurLot
@@ -5489,7 +5332,6 @@ paths:
           headers: {}
   /userrecurlots/56:
     put:
-      description: 'TODO: Add Description'
       summary: UserRecurLot - Update
       tags:
       - UserRecurLot
@@ -5530,7 +5372,6 @@ paths:
           headers: {}
   /userrecurlots/reprocess/241:
     post:
-      description: 'TODO: Add Description'
       summary: UserRecurLot - Reprocess
       tags:
       - UserRecurLot
@@ -5565,7 +5406,6 @@ paths:
           headers: {}
   /userrecurlots/35:
     delete:
-      description: 'TODO: Add Description'
       summary: UserRecurLot - Delete
       tags:
       - UserRecurLot
@@ -5600,7 +5440,6 @@ paths:
           headers: {}
   /gifts:
     get:
-      description: 'TODO: Add Description'
       summary: Gifts - List
       tags:
       - Gift
@@ -5635,7 +5474,6 @@ paths:
           headers: {}
   /print/user/{id}/address:
     get:
-      description: 'TODO: Add Description'
       summary: Print Address
       tags:
       - Print
@@ -5675,7 +5513,6 @@ paths:
           headers: {}
   /print/test:
     get:
-      description: 'TODO: Add Description'
       summary: Print Test
       tags:
       - Print
@@ -5710,7 +5547,6 @@ paths:
           headers: {}
   /print/carnets:
     post:
-      description: 'TODO: Add Description'
       summary: PrintCarnet - Post
       tags:
       - Print
@@ -5744,13 +5580,13 @@ paths:
         required: true
         description: ''
         schema:
+          example: {}
           type: object
       responses:
         200:
           description: ''
           headers: {}
     get:
-      description: 'TODO: Add Description'
       summary: PrintCarnet - List
       tags:
       - Print
@@ -5785,7 +5621,6 @@ paths:
           headers: {}
   /products:
     post:
-      description: 'TODO: Add Description'
       summary: Products - Create
       tags:
       - Products
@@ -5825,7 +5660,6 @@ paths:
           description: ''
           headers: {}
     get:
-      description: 'TODO: Add Description'
       summary: Products - List
       tags:
       - Products
@@ -5860,7 +5694,6 @@ paths:
           headers: {}
   /products/6:
     put:
-      description: 'TODO: Add Description'
       summary: Products - Update
       tags:
       - Products
@@ -5900,7 +5733,6 @@ paths:
           description: ''
           headers: {}
     get:
-      description: 'TODO: Add Description'
       summary: Products - Get
       tags:
       - Products
@@ -5935,7 +5767,6 @@ paths:
           headers: {}
   /products/7:
     delete:
-      description: 'TODO: Add Description'
       summary: Products - Delete
       tags:
       - Products
@@ -5970,7 +5801,6 @@ paths:
           headers: {}
   /userproducts:
     post:
-      description: 'TODO: Add Description'
       summary: User Products Create
       tags:
       - User Products
@@ -6011,7 +5841,6 @@ paths:
           headers: {}
   /:
     get:
-      description: 'TODO: Add Description'
       summary: DeliveryGifts - List
       tags:
       - DeliveryGifts
@@ -6041,7 +5870,6 @@ paths:
           headers: {}
   /deliverygifts/2:
     put:
-      description: 'TODO: Add Description'
       summary: DeliveryGifts - Update
       tags:
       - DeliveryGifts
@@ -6077,7 +5905,6 @@ paths:
           headers: {}
   /deliverygiftfiles:
     post:
-      description: 'TODO: Add Description'
       summary: DeliveryGiftFIles - Create
       tags:
       - DeliveryGiftFiles
@@ -6117,7 +5944,6 @@ paths:
           description: ''
           headers: {}
     get:
-      description: 'TODO: Add Description'
       summary: DeliveryGiftFIles - List
       tags:
       - DeliveryGiftFiles
@@ -6147,7 +5973,6 @@ paths:
           headers: {}
   /report/billing:
     get:
-      description: 'TODO: Add Description'
       summary: BillingReport
       tags:
       - Report
@@ -6182,7 +6007,6 @@ paths:
           headers: {}
   /teleprompter/list:
     get:
-      description: 'TODO: Add Description'
       summary: Carnets - List
       tags:
       - Teleprompter
@@ -6227,7 +6051,6 @@ paths:
           headers: {}
   /payment_doc_generate:
     post:
-      description: 'TODO: Add Description'
       summary: Payment Doc Generate
       tags:
       - Misc
@@ -6258,7 +6081,6 @@ paths:
           headers: {}
   /accounts/code:pocketto:
     get:
-      description: 'TODO: Add Description'
       summary: Account - View (Code)
       tags:
       - Misc
@@ -6283,7 +6105,6 @@ paths:
           headers: {}
   /address/92130730:
     get:
-      description: 'TODO: Add Description'
       summary: Address
       tags:
       - Misc
@@ -6308,7 +6129,6 @@ paths:
           headers: {}
   /analytics/payments:
     get:
-      description: 'TODO: Add Description'
       summary: Analytics - Show
       tags:
       - Misc
@@ -6348,7 +6168,6 @@ paths:
           headers: {}
   /accountnew/nerd:
     get:
-      description: 'TODO: Add Description'
       summary: Create Account
       tags:
       - Misc
@@ -6378,7 +6197,6 @@ paths:
           headers: {}
   /contact/:
     post:
-      description: 'TODO: Add Description'
       summary: Contato
       tags:
       - Misc

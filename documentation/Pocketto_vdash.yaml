@@ -3894,7 +3894,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /credit_card/cancelByTid/cielo/0a9cae18-99b1-4783-b93a-4534a6513e90:
+  /credit_card/cancelByTid/cielo/837f84b6-b52d-42c9-b7bd-9de46476ec76:
     get:
       summary: CreditCard - Cancel by Tid
       tags:

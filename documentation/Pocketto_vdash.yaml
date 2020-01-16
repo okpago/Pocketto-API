@@ -3987,7 +3987,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /conciliation/test:
+  /test:
     get:
       summary: Test
       tags:

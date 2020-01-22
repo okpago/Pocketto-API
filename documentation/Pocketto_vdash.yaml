@@ -3894,12 +3894,12 @@ paths:
         200:
           description: ''
           headers: {}
-  /credit_card/cancelByTid/cielo/837f84b6-b52d-42c9-b7bd-9de46476ec76:
+  /credit_card/cancelByTid/cielo/3e2f8080-f1f2-4499-bd22-8ded1de2a22d:
     get:
-      summary: CreditCard - Cancel by Tid
+      summary: CreditCard - Cancel by PaymentId
       tags:
       - CreditCard
-      operationId: CreditCard-CancelbyTid
+      operationId: CreditCard-CancelbyPaymentId
       deprecated: false
       produces:
       - application/json
@@ -3923,12 +3923,12 @@ paths:
         200:
           description: ''
           headers: {}
-  /credit_card/consultByTid/cielo/0a9cae18-99b1-4783-b93a-4534a6513e90:
+  /credit_card/consultByTid/cielo/3e2f8080-f1f2-4499-bd22-8ded1de2a22d:
     get:
-      summary: CreditCard - Consult by Tid
+      summary: CreditCard - Consult by PaymentId
       tags:
       - CreditCard
-      operationId: CreditCard-ConsultbyTid
+      operationId: CreditCard-ConsultbyPaymentId
       deprecated: false
       produces:
       - application/json

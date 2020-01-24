@@ -3,18 +3,18 @@ info:
   version: '1.0'
   title: Deposite vdash
   contact: {}
-host: api.pocketto.com.br
-basePath: /vdash
+host: 'https:'
+basePath: //api.pocketto.com.br/vdash
 securityDefinitions: {}
 schemes:
-- https
 - http
+- https
 consumes:
 - application/json
 produces:
 - application/json
 paths:
-  /api_keys:
+  /vdash/api_keys:
     get:
       summary: API Keys - List
       tags:
@@ -72,7 +72,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /api_keys/0cb476ab3aa6820ab36ba27e04226d338f4cd201c714ef1c662bc4c1b5c5a0cfb40b2140f37ce276:
+  /vdash/api_keys/0cb476ab3aa6820ab36ba27e04226d338f4cd201c714ef1c662bc4c1b5c5a0cfb40b2140f37ce276:
     get:
       summary: API Keys - View
       tags:
@@ -163,7 +163,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /admin_users:
+  /vdash/admin_users:
     get:
       summary: Admin Users - List
       tags:
@@ -221,7 +221,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /admin_users/9:
+  /vdash/admin_users/9:
     get:
       summary: Admin Users - Show
       tags:
@@ -245,7 +245,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /me:
+  /vdash/me:
     get:
       summary: Admin Users - Me
       tags:
@@ -303,7 +303,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /admin_users/5:
+  /vdash/admin_users/5:
     put:
       summary: Admin Users - Update
       tags:
@@ -338,7 +338,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /admin_users/me:
+  /vdash/admin_users/me:
     put:
       summary: Admin Users - Update Me
       tags:
@@ -373,7 +373,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /admin_users/8:
+  /vdash/admin_users/8:
     delete:
       summary: Admin Users - Delete
       tags:
@@ -402,7 +402,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /bank_accounts:
+  /vdash/bank_accounts:
     get:
       summary: Bank Accounts - List
       tags:
@@ -460,7 +460,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /bank_accounts/2:
+  /vdash/bank_accounts/2:
     get:
       summary: Bank Accounts - View
       tags:
@@ -484,7 +484,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /bank_accounts/4:
+  /vdash/bank_accounts/4:
     put:
       summary: Bank Accounts - Update
       tags:
@@ -547,7 +547,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /bank_accounts/2/transactions:
+  /vdash/bank_accounts/2/transactions:
     post:
       summary: Bank Accounts - Transactions
       tags:
@@ -618,7 +618,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /bank_accounts/5/dates/2017-10-10:
+  /vdash/bank_accounts/5/dates/2017-10-10:
     get:
       description: /vdash/bank_accounts/{id}/dates/{date}
       summary: Bank Accounts - Date View
@@ -648,7 +648,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /bank_accounts/5/dates/2017-09-30/close:
+  /vdash/bank_accounts/5/dates/2017-09-30/close:
     post:
       description: /vdash/bank_accounts/{id}/dates/{date}/close
       summary: Bank Accounts - Date Close
@@ -678,7 +678,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /bank_accounts/2/dates/2017-11-08/close:
+  /vdash/bank_accounts/2/dates/2017-11-08/close:
     post:
       description: /vdash/bank_accounts/{id}/dates/{date}/close
       summary: Bank Accounts - Date Close (Force)
@@ -708,7 +708,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /crowdfundingpage/2/bank-accounts:
+  /vdash/crowdfundingpage/2/bank-accounts:
     get:
       summary: Bank Accounts - All
       tags:
@@ -781,7 +781,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /crowdfundingpage/2/bank-accounts/1:
+  /vdash/crowdfundingpage/2/bank-accounts/1:
     put:
       summary: Bank Accounts - Update
       tags:
@@ -821,7 +821,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /crowdfundingpage/2/bank-accounts/2:
+  /vdash/crowdfundingpage/2/bank-accounts/2:
     delete:
       summary: Bank Accounts - Delete
       tags:
@@ -855,7 +855,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /banks/caixa:
+  /vdash/banks/caixa:
     get:
       summary: Banks - View
       tags:
@@ -879,7 +879,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /campaigns:
+  /vdash/campaigns:
     get:
       summary: Campaigns - List
       tags:
@@ -932,7 +932,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /campaigns/35:
+  /vdash/campaigns/35:
     get:
       summary: Campaigns - View
       tags:
@@ -956,7 +956,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /campaigns/3:
+  /vdash/campaigns/3:
     put:
       summary: Campaigns - Update
       tags:
@@ -986,7 +986,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /campaigns/38/activate:
+  /vdash/campaigns/38/activate:
     put:
       summary: Campaigns - Activate
       tags:
@@ -1010,7 +1010,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /campaigns/14/desactivate:
+  /vdash/campaigns/14/desactivate:
     put:
       summary: Campaigns - Desactivate
       tags:
@@ -1034,7 +1034,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /campaigns/66/duplicate:
+  /vdash/campaigns/66/duplicate:
     post:
       summary: Campaigns - Duplicate
       tags:
@@ -1058,7 +1058,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /conciliation/accountcredits/file:
+  /vdash/conciliation/accountcredits/file:
     post:
       summary: file
       tags:
@@ -1140,7 +1140,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /conciliation/accountcredits/analytics:
+  /vdash/conciliation/accountcredits/analytics:
     get:
       summary: AccountCredits - Analytics
       tags:
@@ -1169,7 +1169,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /conciliation/accountcredits/369:
+  /vdash/conciliation/accountcredits/369:
     get:
       summary: AccountCredits - View
       tags:
@@ -1198,7 +1198,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /conciliation/accountcredits/225:
+  /vdash/conciliation/accountcredits/225:
     delete:
       summary: AccountCredits - Delete
       tags:
@@ -1227,7 +1227,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /conciliation/accountcredits/233:
+  /vdash/conciliation/accountcredits/233:
     put:
       summary: AccountCredits - Update
       tags:
@@ -1262,7 +1262,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /conciliation/accountcredits/29/payments:
+  /vdash/conciliation/accountcredits/29/payments:
     get:
       summary: AccountCredits - List Payments
       tags:
@@ -1286,7 +1286,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /conciliation/bankstatement/file:
+  /vdash/conciliation/bankstatement/file:
     post:
       summary: Upload File
       tags:
@@ -1339,7 +1339,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /conciliation/bankstatement/logs:
+  /vdash/conciliation/bankstatement/logs:
     get:
       summary: Logs - List
       tags:
@@ -1368,7 +1368,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /conciliation/files:
+  /vdash/conciliation/files:
     get:
       summary: Conciliation - List
       tags:
@@ -1392,7 +1392,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /conciliation/files/1:
+  /vdash/conciliation/files/1:
     delete:
       summary: Conciliation - Delete
       tags:
@@ -1416,7 +1416,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /conciliation/createFile:
+  /vdash/conciliation/createFile:
     post:
       summary: Conciliation - Import
       tags:
@@ -1467,7 +1467,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /downloads:
+  /vdash/downloads:
     get:
       summary: Downloads - List
       tags:
@@ -1491,7 +1491,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /downloads/3:
+  /vdash/downloads/3:
     get:
       summary: Downloads - View
       tags:
@@ -1543,7 +1543,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /events:
+  /vdash/events:
     get:
       summary: Events - List
       tags:
@@ -1567,7 +1567,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /events/user_profile_updated:
+  /vdash/events/user_profile_updated:
     get:
       summary: Events - View
       tags:
@@ -1591,7 +1591,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /files:
+  /vdash/files:
     post:
       summary: Files - Create (Binary)
       tags:
@@ -1627,7 +1627,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /files/803:
+  /vdash/files/803:
     get:
       summary: Files - View
       tags:
@@ -1651,7 +1651,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /financial/balance:
+  /vdash/financial/balance:
     get:
       summary: Balance
       tags:
@@ -1704,7 +1704,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /financial/transfers/7/2/2019:
+  /vdash/financial/transfers/7/2/2019:
     get:
       summary: Transfers Detail
       tags:
@@ -1728,7 +1728,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /financial/withdraw:
+  /vdash/financial/withdraw:
     post:
       summary: Withdraw
       tags:
@@ -1752,7 +1752,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /login:
+  /vdash/login:
     post:
       description: This endpoint call logs in admin user, and set the "authorization" environment variable, to next requests.
       summary: Login
@@ -1815,7 +1815,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /login/recovery:
+  /vdash/login/recovery:
     post:
       summary: Login - Recovery
       tags:
@@ -1850,7 +1850,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /login/reset:
+  /vdash/login/reset:
     put:
       summary: Login - Reset
       tags:
@@ -1885,7 +1885,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /logout:
+  /vdash/logout:
     post:
       description: This endpoint call logs in admin user, and set the "authorization" environment variable, to next requests.
       summary: Logout
@@ -1973,6 +1973,7 @@ paths:
         200:
           description: ''
           headers: {}
+  /vdash/messages:
     post:
       summary: Messages - Create
       tags:
@@ -2007,7 +2008,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /messages/2:
+  /vdash/messages/2:
     get:
       summary: Messages - View
       tags:
@@ -2060,7 +2061,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /messages/181/cancel:
+  /vdash/messages/181/cancel:
     put:
       summary: Messages - Cancel
       tags:
@@ -2090,7 +2091,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /message_types:
+  /vdash/message_types:
     get:
       summary: Message Types - List
       tags:
@@ -2148,7 +2149,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /message_types/41:
+  /vdash/message_types/41:
     get:
       summary: Message Types - View
       tags:
@@ -2268,6 +2269,327 @@ paths:
         200:
           description: ''
           headers: {}
+  /payments/4893/account-credits:
+    get:
+      summary: Payments - List Account Credits
+      tags:
+      - Payments
+      operationId: Payments-ListAccountCredits
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: false
+        default: Bearer {token}
+        type: string
+      - name: date_range
+        in: query
+        required: true
+        type: integer
+        format: int32
+        description: ''
+      - name: value_range
+        in: query
+        required: true
+        type: integer
+        format: int32
+        description: ''
+      - name: bank
+        in: query
+        required: true
+        type: string
+        description: ''
+      - name: description
+        in: query
+        required: true
+        type: string
+        description: ''
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        200:
+          description: ''
+          headers: {}
+  /vdash/payments/import:
+    post:
+      summary: Payments - Import
+      tags:
+      - Payments
+      operationId: Payments-Import
+      deprecated: false
+      produces:
+      - application/json
+      consumes:
+      - application/x-www-form-urlencoded
+      parameters:
+      - name: Authorization
+        in: header
+        required: false
+        default: Bearer {token}
+        type: string
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: input_data
+        in: formData
+        required: true
+        type: string
+        description: ''
+      - name: input_type
+        in: formData
+        required: true
+        type: string
+        description: ''
+      responses:
+        200:
+          description: ''
+          headers: {}
+    get:
+      summary: Payments - Import Exemplo
+      tags:
+      - Payments
+      operationId: Payments-ImportExemplo
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: false
+        default: Bearer {token}
+        type: string
+      responses:
+        200:
+          description: ''
+          headers: {}
+  /vdash/payments/import/logs:
+    get:
+      summary: Payments - Import Exemplo Log
+      tags:
+      - Payments
+      operationId: Payments-ImportExemploLog
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: false
+        default: Bearer {token}
+        type: string
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        200:
+          description: ''
+          headers: {}
+  /vdash/payments/2147:
+    get:
+      summary: Payments - View
+      tags:
+      - Payments
+      operationId: Payments-View
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: false
+        default: Bearer {token}
+        type: string
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        200:
+          description: ''
+          headers: {}
+  /payments/4828/logs:
+    get:
+      summary: Payments - Logs
+      tags:
+      - Payments
+      operationId: Payments-Logs
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: false
+        default: Bearer {token}
+        type: string
+      - name: order
+        in: query
+        required: true
+        type: string
+        description: ''
+      - name: direction
+        in: query
+        required: true
+        type: string
+        description: ''
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        200:
+          description: ''
+          headers: {}
+  /vdash/payments/transaction/294031:
+    get:
+      summary: Payments - Get By Transaction Id
+      tags:
+      - Payments
+      operationId: Payments-GetByTransactionId
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: false
+        default: Bearer {token}
+        type: string
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        200:
+          description: ''
+          headers: {}
+  /vdash/payments/11715/status/paid:
+    put:
+      summary: Payments - Update Status
+      tags:
+      - Payments
+      operationId: Payments-UpdateStatus
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: false
+        default: Bearer {token}
+        type: string
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/Payments-UpdateStatusRequest'
+      responses:
+        200:
+          description: ''
+          headers: {}
+  /vdash/payments/47339:
+    delete:
+      summary: Payments - Delete
+      tags:
+      - Payments
+      operationId: Payments-Delete
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: false
+        default: Bearer {token}
+        type: string
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        200:
+          description: ''
+          headers: {}
+  /vdash/payments/1088:
+    put:
+      summary: Payments - Update
+      tags:
+      - Payments
+      operationId: Payments-Update
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: false
+        default: Bearer {token}
+        type: string
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/Payments-UpdateRequest'
+      responses:
+        200:
+          description: ''
+          headers: {}
+  /vdash/payments/4928/cancel-receipt:
+    put:
+      summary: Payments - Update Cancel Receipt
+      tags:
+      - Payments
+      operationId: Payments-UpdateCancelReceipt
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: false
+        default: Bearer {token}
+        type: string
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/Payments-UpdateCancelReceiptRequest'
+      responses:
+        200:
+          description: ''
+          headers: {}
+  /vdash/payments:
     post:
       description: Api de criação de pagamento/doação
       summary: Payments - Create
@@ -2421,327 +2743,7 @@ paths:
                   type: credit_card
                   status: 1
           headers: {}
-  /payments/4893/account-credits:
-    get:
-      summary: Payments - List Account Credits
-      tags:
-      - Payments
-      operationId: Payments-ListAccountCredits
-      deprecated: false
-      produces:
-      - application/json
-      parameters:
-      - name: Authorization
-        in: header
-        required: false
-        default: Bearer {token}
-        type: string
-      - name: date_range
-        in: query
-        required: true
-        type: integer
-        format: int32
-        description: ''
-      - name: value_range
-        in: query
-        required: true
-        type: integer
-        format: int32
-        description: ''
-      - name: bank
-        in: query
-        required: true
-        type: string
-        description: ''
-      - name: description
-        in: query
-        required: true
-        type: string
-        description: ''
-      - name: Account
-        in: header
-        required: true
-        type: string
-        description: ''
-      responses:
-        200:
-          description: ''
-          headers: {}
-  /payments/import:
-    post:
-      summary: Payments - Import
-      tags:
-      - Payments
-      operationId: Payments-Import
-      deprecated: false
-      produces:
-      - application/json
-      consumes:
-      - application/x-www-form-urlencoded
-      parameters:
-      - name: Authorization
-        in: header
-        required: false
-        default: Bearer {token}
-        type: string
-      - name: Account
-        in: header
-        required: true
-        type: string
-        description: ''
-      - name: input_data
-        in: formData
-        required: true
-        type: string
-        description: ''
-      - name: input_type
-        in: formData
-        required: true
-        type: string
-        description: ''
-      responses:
-        200:
-          description: ''
-          headers: {}
-    get:
-      summary: Payments - Import Exemplo
-      tags:
-      - Payments
-      operationId: Payments-ImportExemplo
-      deprecated: false
-      produces:
-      - application/json
-      parameters:
-      - name: Authorization
-        in: header
-        required: false
-        default: Bearer {token}
-        type: string
-      responses:
-        200:
-          description: ''
-          headers: {}
-  /payments/import/logs:
-    get:
-      summary: Payments - Import Exemplo Log
-      tags:
-      - Payments
-      operationId: Payments-ImportExemploLog
-      deprecated: false
-      produces:
-      - application/json
-      parameters:
-      - name: Authorization
-        in: header
-        required: false
-        default: Bearer {token}
-        type: string
-      - name: Account
-        in: header
-        required: true
-        type: string
-        description: ''
-      responses:
-        200:
-          description: ''
-          headers: {}
-  /payments/2147:
-    get:
-      summary: Payments - View
-      tags:
-      - Payments
-      operationId: Payments-View
-      deprecated: false
-      produces:
-      - application/json
-      parameters:
-      - name: Authorization
-        in: header
-        required: false
-        default: Bearer {token}
-        type: string
-      - name: Account
-        in: header
-        required: true
-        type: string
-        description: ''
-      responses:
-        200:
-          description: ''
-          headers: {}
-  /payments/4828/logs:
-    get:
-      summary: Payments - Logs
-      tags:
-      - Payments
-      operationId: Payments-Logs
-      deprecated: false
-      produces:
-      - application/json
-      parameters:
-      - name: Authorization
-        in: header
-        required: false
-        default: Bearer {token}
-        type: string
-      - name: order
-        in: query
-        required: true
-        type: string
-        description: ''
-      - name: direction
-        in: query
-        required: true
-        type: string
-        description: ''
-      - name: Account
-        in: header
-        required: true
-        type: string
-        description: ''
-      responses:
-        200:
-          description: ''
-          headers: {}
-  /payments/transaction/294031:
-    get:
-      summary: Payments - Get By Transaction Id
-      tags:
-      - Payments
-      operationId: Payments-GetByTransactionId
-      deprecated: false
-      produces:
-      - application/json
-      parameters:
-      - name: Authorization
-        in: header
-        required: false
-        default: Bearer {token}
-        type: string
-      - name: Account
-        in: header
-        required: true
-        type: string
-        description: ''
-      responses:
-        200:
-          description: ''
-          headers: {}
-  /payments/11715/status/paid:
-    put:
-      summary: Payments - Update Status
-      tags:
-      - Payments
-      operationId: Payments-UpdateStatus
-      deprecated: false
-      produces:
-      - application/json
-      parameters:
-      - name: Authorization
-        in: header
-        required: false
-        default: Bearer {token}
-        type: string
-      - name: Account
-        in: header
-        required: true
-        type: string
-        description: ''
-      - name: Body
-        in: body
-        required: true
-        description: ''
-        schema:
-          $ref: '#/definitions/Payments-UpdateStatusRequest'
-      responses:
-        200:
-          description: ''
-          headers: {}
-  /payments/47339:
-    delete:
-      summary: Payments - Delete
-      tags:
-      - Payments
-      operationId: Payments-Delete
-      deprecated: false
-      produces:
-      - application/json
-      parameters:
-      - name: Authorization
-        in: header
-        required: false
-        default: Bearer {token}
-        type: string
-      - name: Account
-        in: header
-        required: true
-        type: string
-        description: ''
-      responses:
-        200:
-          description: ''
-          headers: {}
-  /payments/1088:
-    put:
-      summary: Payments - Update
-      tags:
-      - Payments
-      operationId: Payments-Update
-      deprecated: false
-      produces:
-      - application/json
-      parameters:
-      - name: Authorization
-        in: header
-        required: false
-        default: Bearer {token}
-        type: string
-      - name: Account
-        in: header
-        required: true
-        type: string
-        description: ''
-      - name: Body
-        in: body
-        required: true
-        description: ''
-        schema:
-          $ref: '#/definitions/Payments-UpdateRequest'
-      responses:
-        200:
-          description: ''
-          headers: {}
-  /payments/4928/cancel-receipt:
-    put:
-      summary: Payments - Update Cancel Receipt
-      tags:
-      - Payments
-      operationId: Payments-UpdateCancelReceipt
-      deprecated: false
-      produces:
-      - application/json
-      parameters:
-      - name: Authorization
-        in: header
-        required: false
-        default: Bearer {token}
-        type: string
-      - name: Account
-        in: header
-        required: true
-        type: string
-        description: ''
-      - name: Body
-        in: body
-        required: true
-        description: ''
-        schema:
-          $ref: '#/definitions/Payments-UpdateCancelReceiptRequest'
-      responses:
-        200:
-          description: ''
-          headers: {}
-  /payments/4682/resendEmailCreated:
+  /vdash/payments/4682/resendEmailCreated:
     get:
       summary: Payments - Resend Email Created
       tags:
@@ -2770,7 +2772,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /residual-payments:
+  /vdash/residual-payments:
     post:
       summary: Residual Payments
       tags:
@@ -2805,7 +2807,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /settings/default_payment_values:
+  /vdash/settings/default_payment_values:
     get:
       summary: Settings - List
       tags:
@@ -2829,7 +2831,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /settings/user_card_model_front:
+  /vdash/settings/user_card_model_front:
     get:
       summary: Settings - Show
       tags:
@@ -2853,7 +2855,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /settings/description_text:
+  /vdash/settings/description_text:
     put:
       summary: Settings - Update
       tags:
@@ -2888,7 +2890,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /settings:
+  /vdash/settings:
     patch:
       summary: Settings - Update All
       tags:
@@ -2923,7 +2925,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /settings/test:
+  /vdash/settings/test:
     delete:
       summary: Settings - Delete
       tags:
@@ -2947,7 +2949,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /crowdfundingpage/2/settings:
+  /vdash/crowdfundingpage/2/settings:
     get:
       summary: Settings - List
       tags:
@@ -2976,7 +2978,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /crowdfundingpage/3/settings:
+  /vdash/crowdfundingpage/3/settings:
     put:
       summary: Settings - Update
       tags:
@@ -3016,7 +3018,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /user_categories:
+  /vdash/user_categories:
     get:
       summary: User Categories - List
       tags:
@@ -3074,7 +3076,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /user_categories/2:
+  /vdash/user_categories/2:
     get:
       summary: User Categories - View
       tags:
@@ -3103,7 +3105,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /user_categories/3:
+  /vdash/user_categories/3:
     put:
       summary: User Categories - Update
       tags:
@@ -3138,7 +3140,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /user_categories/1:
+  /vdash/user_categories/1:
     delete:
       summary: User Categories - Delete
       tags:
@@ -3235,7 +3237,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /user_recurs/user/02153512077:
+  /vdash/user_recurs/user/02153512077:
     get:
       summary: User Recurrences - List by User
       tags:
@@ -3259,7 +3261,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /user_recurs/1:
+  /vdash/user_recurs/1:
     get:
       summary: User Recurrences - View
       tags:
@@ -3283,7 +3285,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /user_recurs/1/cancel:
+  /vdash/user_recurs/1/cancel:
     put:
       summary: User Recurrences - Cancel
       tags:
@@ -3307,7 +3309,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /recurrences/7/payments:
+  /vdash/recurrences/7/payments:
     post:
       summary: Create Payment
       tags:
@@ -3342,7 +3344,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /recurrences/331/anticipate:
+  /vdash/recurrences/331/anticipate:
     post:
       summary: Create Anticipate Payment
       tags:
@@ -3377,7 +3379,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /webhooks:
+  /vdash/webhooks:
     get:
       summary: Webhooks - List
       tags:
@@ -3435,7 +3437,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /webhooks/external/4628:
+  /vdash/webhooks/external/4628:
     get:
       summary: Webhooks - External
       tags:
@@ -3464,7 +3466,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /webhooks/2:
+  /vdash/webhooks/2:
     get:
       summary: Webhooks - View
       tags:
@@ -3596,40 +3598,6 @@ paths:
         200:
           description: ''
           headers: {}
-    post:
-      summary: Users - Create
-      tags:
-      - Users
-      operationId: Users-Create
-      deprecated: false
-      produces:
-      - application/json
-      parameters:
-      - name: Authorization
-        in: header
-        required: false
-        default: Bearer {token}
-        type: string
-      - name: Account
-        in: header
-        required: true
-        type: string
-        description: ''
-      - name: Content-Type
-        in: header
-        required: true
-        type: string
-        description: ''
-      - name: Body
-        in: body
-        required: true
-        description: ''
-        schema:
-          $ref: '#/definitions/Users-CreateRequest'
-      responses:
-        200:
-          description: ''
-          headers: {}
   /users/150/logs:
     get:
       summary: Users - Logs
@@ -3670,7 +3638,42 @@ paths:
         200:
           description: ''
           headers: {}
-  /users/128:
+  /vdash/users:
+    post:
+      summary: Users - Create
+      tags:
+      - Users
+      operationId: Users-Create
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: false
+        default: Bearer {token}
+        type: string
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Content-Type
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Body
+        in: body
+        required: true
+        description: ''
+        schema:
+          $ref: '#/definitions/Users-CreateRequest'
+      responses:
+        200:
+          description: ''
+          headers: {}
+  /vdash/users/128:
     get:
       summary: Users - View
       tags:
@@ -3694,7 +3697,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /users/get/01286800080:
+  /vdash/users/get/01286800080:
     get:
       summary: Users - View by CPF
       tags:
@@ -3718,7 +3721,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /users/1:
+  /vdash/users/1:
     put:
       summary: Users - Update
       tags:
@@ -3748,7 +3751,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /users/import:
+  /vdash/users/import:
     post:
       summary: Users - Import
       tags:
@@ -3777,7 +3780,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /users/18:
+  /vdash/users/18:
     delete:
       summary: Users - Delete
       tags:
@@ -3801,7 +3804,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /credit_card/process:
+  /vdash/credit_card/process:
     post:
       summary: CreditCard - Process
       tags:
@@ -3836,7 +3839,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /debit_card/consult/cielo/d1a33d83-ef6a-42d4-95e8-3e761e15cbb3:
+  /vdash/debit_card/consult/cielo/d1a33d83-ef6a-42d4-95e8-3e761e15cbb3:
     get:
       summary: CreditCard - Consult
       tags:
@@ -3865,7 +3868,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /credit_card/cancel/cielo/1:
+  /vdash/credit_card/cancel/cielo/1:
     get:
       summary: CreditCard - Cancel
       tags:
@@ -3894,7 +3897,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /credit_card/cancelByTid/cielo/3e2f8080-f1f2-4499-bd22-8ded1de2a22d:
+  /vdash/credit_card/cancelByTid/cielo/3e2f8080-f1f2-4499-bd22-8ded1de2a22d:
     get:
       summary: CreditCard - Cancel by PaymentId
       tags:
@@ -3923,7 +3926,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /credit_card/consultByTid/cielo/3e2f8080-f1f2-4499-bd22-8ded1de2a22d:
+  /vdash/credit_card/consultByTid/cielo/3e2f8080-f1f2-4499-bd22-8ded1de2a22d:
     get:
       summary: CreditCard - Consult by PaymentId
       tags:
@@ -3952,7 +3955,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /boleto/process:
+  /vdash/boleto/process:
     post:
       summary: DEPRECATED - Boleto - Process
       tags:
@@ -3987,7 +3990,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /test:
+  /api/users/me:
     get:
       summary: Test
       tags:
@@ -4011,7 +4014,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /emails/payment.refused/4697:
+  /vdash/emails/payment.refused/4697:
     get:
       summary: Email
       tags:
@@ -4040,7 +4043,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /accountdebits/banks:
+  /vdash/accountdebits/banks:
     get:
       description: Lista bancos disponíveis para débito em conta.
       summary: Banks - List
@@ -4070,7 +4073,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /accountdebits:
+  /vdash/accountdebits:
     post:
       description: Lista bancos disponíveis para débito em conta.
       summary: AccountDebits - Create
@@ -4134,7 +4137,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /report/user:
+  /vdash/report/user:
     get:
       summary: Report - Users
       tags:
@@ -4158,7 +4161,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /report/userpayment:
+  /vdash/report/userpayment:
     get:
       summary: Report - Users x Payments
       tags:
@@ -4211,7 +4214,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /crowdfundingpage/3/carnets:
+  /vdash/crowdfundingpage/3/carnets:
     get:
       summary: Carnets - List
       tags:
@@ -4279,7 +4282,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /carnets:
+  /vdash/carnets:
     post:
       summary: Carnets - Post
       tags:
@@ -4342,7 +4345,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /carnet/contact:
+  /vdash/carnet/contact:
     post:
       summary: Carnets - Post Contact
       tags:
@@ -4377,7 +4380,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /carnets/5:
+  /vdash/carnets/5:
     delete:
       summary: Carnets - Delete
       tags:
@@ -4406,7 +4409,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /carnets/2:
+  /vdash/carnets/2:
     put:
       summary: Carnets - Update
       tags:
@@ -4469,7 +4472,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /carnets/home:
+  /vdash/carnets/home:
     get:
       summary: Carnets - List Home
       tags:
@@ -4498,7 +4501,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /crowdfundingpage/:
+  /vdash/crowdfundingpage/:
     post:
       summary: Save Page
       tags:
@@ -4565,7 +4568,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /crowdfundingpage/4:
+  /vdash/crowdfundingpage/4:
     delete:
       summary: Delete Page
       tags:
@@ -4599,7 +4602,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /crowdfundingpage/news:
+  /vdash/crowdfundingpage/news:
     post:
       summary: Save or Create News
       tags:
@@ -4641,7 +4644,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /crowdfundingpage/reward:
+  /vdash/crowdfundingpage/reward:
     post:
       summary: Save or Create Reward
       tags:
@@ -4689,7 +4692,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /crowdfundingpage/82c83d6640f9cae92f6e7c43171982d0e6ee1b062e2f842d/public-settings:
+  /vdash/crowdfundingpage/82c83d6640f9cae92f6e7c43171982d0e6ee1b062e2f842d/public-settings:
     get:
       summary: Public Settings - Get
       tags:
@@ -4713,7 +4716,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /crowdfundingpage/list_sp:
+  /vdash/crowdfundingpage/list_sp:
     get:
       summary: List SP
       tags:
@@ -4737,7 +4740,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /actions:
+  /vdash/actions:
     get:
       summary: Actions - List
       tags:
@@ -4766,7 +4769,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /roles:
+  /vdash/roles:
     get:
       summary: Roles - List
       tags:
@@ -4795,7 +4798,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /webpush/subscription:
+  /vdash/webpush/subscription:
     post:
       summary: Subscription - Post
       tags:
@@ -4864,7 +4867,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /webpush/key:
+  /vdash/webpush/key:
     get:
       summary: Key
       tags:
@@ -4893,7 +4896,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /webpush/teste:
+  /vdash/webpush/teste:
     post:
       summary: Teste
       tags:
@@ -4922,7 +4925,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /lots:
+  /vdash/lots:
     post:
       summary: Lot - Create
       tags:
@@ -4995,7 +4998,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /lots/10:
+  /vdash/lots/10:
     delete:
       summary: Lot - Delete
       tags:
@@ -5029,7 +5032,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /lots/7:
+  /vdash/lots/7:
     get:
       summary: Lot - Get
       tags:
@@ -5063,7 +5066,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /lots/26:
+  /vdash/lots/26:
     put:
       summary: Lot - Update
       tags:
@@ -5103,7 +5106,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /lots/17/filters:
+  /vdash/lots/17/filters:
     get:
       summary: Lot Filters - Get
       tags:
@@ -5183,7 +5186,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /lot-infos/24:
+  /vdash/lot-infos/24:
     get:
       summary: Lot Info - Show
       tags:
@@ -5217,7 +5220,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /lot-infos/32:
+  /vdash/lot-infos/32:
     put:
       summary: Lot Info - Update
       tags:
@@ -5257,7 +5260,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /lot-infos/29:
+  /vdash/lot-infos/29:
     delete:
       summary: Lot Info - Delete
       tags:
@@ -5330,7 +5333,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /userrecurlots/56:
+  /vdash/userrecurlots/56:
     put:
       summary: UserRecurLot - Update
       tags:
@@ -5370,7 +5373,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /userrecurlots/reprocess/241:
+  /vdash/userrecurlots/reprocess/241:
     post:
       summary: UserRecurLot - Reprocess
       tags:
@@ -5404,7 +5407,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /userrecurlots/35:
+  /vdash/userrecurlots/35:
     delete:
       summary: UserRecurLot - Delete
       tags:
@@ -5438,7 +5441,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /gifts:
+  /vdash/gifts:
     get:
       summary: Gifts - List
       tags:
@@ -5472,7 +5475,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /print/user/{id}/address:
+  /vdash/print/user/{id}/address:
     get:
       summary: Print Address
       tags:
@@ -5511,7 +5514,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /print/test:
+  /vdash/print/test:
     get:
       summary: Print Test
       tags:
@@ -5545,7 +5548,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /print/carnets:
+  /vdash/print/carnets:
     post:
       summary: PrintCarnet - Post
       tags:
@@ -5619,7 +5622,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /products:
+  /vdash/products:
     post:
       summary: Products - Create
       tags:
@@ -5692,7 +5695,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /products/6:
+  /vdash/products/6:
     put:
       summary: Products - Update
       tags:
@@ -5765,7 +5768,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /products/7:
+  /vdash/products/7:
     delete:
       summary: Products - Delete
       tags:
@@ -5799,7 +5802,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /userproducts:
+  /vdash/userproducts:
     post:
       summary: User Products Create
       tags:
@@ -5868,7 +5871,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /deliverygifts/2:
+  /vdash/deliverygifts/2:
     put:
       summary: DeliveryGifts - Update
       tags:
@@ -5943,6 +5946,7 @@ paths:
         200:
           description: ''
           headers: {}
+  /vdash/deliverygiftfiles:
     get:
       summary: DeliveryGiftFIles - List
       tags:
@@ -5971,7 +5975,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /report/billing:
+  /vdash/report/billing:
     get:
       summary: BillingReport
       tags:
@@ -6049,7 +6053,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /payment_doc_generate:
+  /vdash/payment_doc_generate:
     post:
       summary: Payment Doc Generate
       tags:
@@ -6079,7 +6083,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /accounts/code:pocketto:
+  /vdash/accounts/code:pocketto:
     get:
       summary: Account - View (Code)
       tags:
@@ -6103,7 +6107,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /address/92130730:
+  /vdash/address/92130730:
     get:
       summary: Address
       tags:
@@ -6195,7 +6199,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /contact/:
+  /vdash/contact/:
     post:
       summary: Contato
       tags:

@@ -46,6 +46,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/json
       parameters:
       - name: Authorization
         in: header
@@ -81,6 +83,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/json
       parameters:
       - name: Authorization
         in: header
@@ -108,6 +112,8 @@ paths:
       operationId: APIKeys-Update
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
@@ -142,6 +148,8 @@ paths:
       operationId: APIKeys-Delete
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
@@ -194,6 +202,8 @@ paths:
       operationId: AdminUsers-Create
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
@@ -277,6 +287,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/json
       parameters:
       - name: Authorization
         in: header
@@ -311,6 +323,8 @@ paths:
       operationId: AdminUsers-Update
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
@@ -347,6 +361,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/json
       parameters:
       - name: Authorization
         in: header
@@ -381,6 +397,8 @@ paths:
       operationId: AdminUsers-Delete
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
@@ -433,6 +451,8 @@ paths:
       operationId: BankAccounts-Create
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
@@ -493,6 +513,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/json
       parameters:
       - name: Authorization
         in: header
@@ -526,6 +548,8 @@ paths:
       operationId: BankAccounts-Delete
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
@@ -588,6 +612,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/json
       parameters:
       - name: Authorization
         in: header
@@ -628,6 +654,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/json
       parameters:
       - name: Authorization
         in: header
@@ -657,6 +685,8 @@ paths:
       operationId: BankAccounts-DateClose
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
@@ -688,6 +718,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/json
       parameters:
       - name: Authorization
         in: header
@@ -716,6 +748,8 @@ paths:
       operationId: BankAccounts-All
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
@@ -749,6 +783,8 @@ paths:
       operationId: PostBankAccounts-Create
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
@@ -790,6 +826,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/json
       parameters:
       - name: Authorization
         in: header
@@ -829,6 +867,8 @@ paths:
       operationId: DeleteBankAccounts-Delete
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
@@ -1098,6 +1138,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/json
       parameters:
       - name: Authorization
         in: header
@@ -1149,6 +1191,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/json
       parameters:
       - name: Authorization
         in: header
@@ -1177,6 +1221,8 @@ paths:
       operationId: AccountCredits-View
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
@@ -1207,6 +1253,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/json
       parameters:
       - name: Authorization
         in: header
@@ -1235,6 +1283,8 @@ paths:
       operationId: AccountCredits-Update
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
@@ -1347,6 +1397,8 @@ paths:
       operationId: Logs-List
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
@@ -1522,6 +1574,8 @@ paths:
       operationId: Downloads-Delete
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
@@ -1763,7 +1817,7 @@ paths:
       produces:
       - application/json
       consumes:
-      - application/x-www-form-urlencoded
+      - application/json
       parameters:
       - name: Authorization
         in: header
@@ -1824,6 +1878,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/json
       parameters:
       - name: Authorization
         in: header
@@ -1858,6 +1914,8 @@ paths:
       operationId: Login-Reset
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
@@ -1894,6 +1952,8 @@ paths:
       operationId: Logout
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
@@ -1981,6 +2041,8 @@ paths:
       operationId: Messages-Create
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
@@ -2123,6 +2185,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/json
       parameters:
       - name: Authorization
         in: header
@@ -2158,6 +2222,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/json
       parameters:
       - name: Authorization
         in: header
@@ -2185,6 +2251,8 @@ paths:
       operationId: MessageTypes-Update
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
@@ -2219,6 +2287,8 @@ paths:
       operationId: MessageTypes-Delete
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
@@ -2599,6 +2669,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/json
       parameters:
       - name: Authorization
         in: header
@@ -2752,6 +2824,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/json
       parameters:
       - name: Authorization
         in: header
@@ -2780,6 +2854,8 @@ paths:
       operationId: ResidualPayments
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
@@ -2864,6 +2940,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/json
       parameters:
       - name: Authorization
         in: header
@@ -2898,6 +2976,8 @@ paths:
       operationId: Settings-UpdateAll
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
@@ -2987,6 +3067,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/json
       parameters:
       - name: Authorization
         in: header
@@ -3050,6 +3132,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/json
       parameters:
       - name: Authorization
         in: header
@@ -3085,6 +3169,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/json
       parameters:
       - name: Authorization
         in: header
@@ -3113,6 +3199,8 @@ paths:
       operationId: UserCategories-Update
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
@@ -3148,6 +3236,8 @@ paths:
       operationId: UserCategories-Delete
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
@@ -3205,6 +3295,8 @@ paths:
       operationId: UserRecurrences-CreatePhysical
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
@@ -3318,6 +3410,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/json
       parameters:
       - name: Authorization
         in: header
@@ -3352,6 +3446,8 @@ paths:
       operationId: CreateAnticipatePayment
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
@@ -3411,6 +3507,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/json
       parameters:
       - name: Authorization
         in: header
@@ -3446,6 +3544,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/x-www-form-urlencoded
       parameters:
       - name: Authorization
         in: header
@@ -3475,6 +3575,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/json
       parameters:
       - name: Authorization
         in: header
@@ -3502,6 +3604,8 @@ paths:
       operationId: Webhooks-Update
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
@@ -3536,6 +3640,8 @@ paths:
       operationId: Webhooks-Delete
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
@@ -3646,6 +3752,8 @@ paths:
       operationId: Users-Create
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
@@ -3760,6 +3868,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/x-www-form-urlencoded
       parameters:
       - name: Authorization
         in: header
@@ -3813,6 +3923,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/json
       parameters:
       - name: Authorization
         in: header
@@ -3848,6 +3960,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/json
       parameters:
       - name: Authorization
         in: header
@@ -3876,6 +3990,8 @@ paths:
       operationId: CreditCard-Cancel
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
@@ -3906,6 +4022,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/json
       parameters:
       - name: Authorization
         in: header
@@ -3935,6 +4053,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/json
       parameters:
       - name: Authorization
         in: header
@@ -3963,6 +4083,8 @@ paths:
       operationId: DEPRECATED-Boleto-Process
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
@@ -4023,6 +4145,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/json
       parameters:
       - name: Authorization
         in: header
@@ -4053,6 +4177,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/json
       parameters:
       - name: Authorization
         in: header
@@ -4082,6 +4208,8 @@ paths:
       operationId: AccountDebits-Create
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
@@ -4251,6 +4379,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/json
       parameters:
       - name: Authorization
         in: header
@@ -4291,6 +4421,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/json
       parameters:
       - name: Authorization
         in: header
@@ -4325,6 +4457,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/json
       parameters:
       - name: Authorization
         in: header
@@ -4353,6 +4487,8 @@ paths:
       operationId: Carnets-PostContact
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
@@ -4389,6 +4525,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/json
       parameters:
       - name: Authorization
         in: header
@@ -4417,6 +4555,8 @@ paths:
       operationId: PutCarnets-Update
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
@@ -4452,6 +4592,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/json
       parameters:
       - name: Authorization
         in: header
@@ -4480,6 +4622,8 @@ paths:
       operationId: Carnets-ListHome
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
@@ -4576,6 +4720,8 @@ paths:
       operationId: DeletePage
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
@@ -4749,6 +4895,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/json
       parameters:
       - name: Authorization
         in: header
@@ -4778,6 +4926,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/json
       parameters:
       - name: Authorization
         in: header
@@ -4806,6 +4956,8 @@ paths:
       operationId: Subscription-Post
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
@@ -4840,6 +4992,8 @@ paths:
       operationId: Subscription-Delete
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
@@ -4876,6 +5030,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/json
       parameters:
       - name: Authorization
         in: header
@@ -4905,6 +5061,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/json
       parameters:
       - name: Authorization
         in: header
@@ -4933,6 +5091,8 @@ paths:
       operationId: Lot-Create
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
@@ -4973,6 +5133,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/json
       parameters:
       - name: Authorization
         in: header
@@ -5006,6 +5168,8 @@ paths:
       operationId: Lot-Delete
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
@@ -5041,6 +5205,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/json
       parameters:
       - name: Authorization
         in: header
@@ -5074,6 +5240,8 @@ paths:
       operationId: Lot-Update
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
@@ -5115,6 +5283,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/json
       parameters:
       - name: Authorization
         in: header
@@ -5148,6 +5318,8 @@ paths:
       operationId: LotInfo-List
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
@@ -5195,6 +5367,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/json
       parameters:
       - name: Authorization
         in: header
@@ -5228,6 +5402,8 @@ paths:
       operationId: LotInfo-Update
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
@@ -5269,6 +5445,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/json
       parameters:
       - name: Authorization
         in: header
@@ -5302,6 +5480,8 @@ paths:
       operationId: UserRecurLot-List
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
@@ -5341,6 +5521,8 @@ paths:
       operationId: UserRecurLot-Update
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
@@ -5382,6 +5564,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/json
       parameters:
       - name: Authorization
         in: header
@@ -5415,6 +5599,8 @@ paths:
       operationId: UserRecurLot-Delete
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
@@ -5450,6 +5636,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/json
       parameters:
       - name: Authorization
         in: header
@@ -5483,6 +5671,8 @@ paths:
       operationId: PrintAddress
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
@@ -5523,6 +5713,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/json
       parameters:
       - name: Authorization
         in: header
@@ -5556,6 +5748,8 @@ paths:
       operationId: PrintCarnet-Post
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
@@ -5597,6 +5791,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/json
       parameters:
       - name: Authorization
         in: header
@@ -5630,6 +5826,8 @@ paths:
       operationId: Products-Create
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
@@ -5670,6 +5868,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/json
       parameters:
       - name: Authorization
         in: header
@@ -5703,6 +5903,8 @@ paths:
       operationId: Products-Update
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
@@ -5743,6 +5945,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/json
       parameters:
       - name: Authorization
         in: header
@@ -5777,6 +5981,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/json
       parameters:
       - name: Authorization
         in: header
@@ -5810,6 +6016,8 @@ paths:
       operationId: UserProductsCreate
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
@@ -5851,6 +6059,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/json
       parameters:
       - name: Authorization
         in: header
@@ -5879,6 +6089,8 @@ paths:
       operationId: DeliveryGifts-Update
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
@@ -5914,6 +6126,8 @@ paths:
       operationId: DeliveryGiftFIles-Create
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
@@ -5955,6 +6169,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/json
       parameters:
       - name: Authorization
         in: header
@@ -5983,6 +6199,8 @@ paths:
       operationId: BillingReport
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
@@ -6017,6 +6235,8 @@ paths:
       operationId: GetCarnets-List1
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
@@ -6062,6 +6282,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/json
       parameters:
       - name: Authorization
         in: header
@@ -6105,6 +6327,8 @@ paths:
       operationId: BankStatement-Get
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization
@@ -6150,6 +6374,8 @@ paths:
       deprecated: false
       produces:
       - application/json
+      consumes:
+      - application/json
       parameters:
       - name: Authorization
         in: header
@@ -6187,7 +6413,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /wallet/taxes/fransfer:
+  /wallet/taxes/transfer:
     get:
       summary: Transfer Tax - Get
       tags:
@@ -6195,6 +6421,8 @@ paths:
       operationId: TransferTax-Get
       deprecated: false
       produces:
+      - application/json
+      consumes:
       - application/json
       parameters:
       - name: Authorization

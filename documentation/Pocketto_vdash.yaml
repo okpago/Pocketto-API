@@ -6699,7 +6699,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /accountnew/sedetremembe:
+  /accountnew/sedevilamatilde:
     get:
       summary: Create Account
       tags:

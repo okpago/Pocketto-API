@@ -4044,7 +4044,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /vdash/credit_card/consultByTid/cielo/3e2f8080-f1f2-4499-bd22-8ded1de2a22d:
+  /vdash/credit_card/consultByTid/cielo/645e06e4-38b1-4ac5-a644-d00deccaacf4:
     get:
       summary: CreditCard - Consult by PaymentId
       tags:

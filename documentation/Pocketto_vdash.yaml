@@ -1729,7 +1729,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /financial/transfers/4/2019:
+  /financial/transfers/6/2020:
     get:
       summary: Transfers
       tags:
@@ -1758,7 +1758,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /vdash/financial/transfers/7/2/2019:
+  /vdash/financial/transfers/17/6/2020:
     get:
       summary: Transfers Detail
       tags:
@@ -2575,7 +2575,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /vdash/payments/47339:
+  /vdash/payments/4643:
     delete:
       summary: Payments - Delete
       tags:
@@ -2687,12 +2687,6 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Body
-        in: body
-        required: true
-        description: ''
-        schema:
-          $ref: '#/definitions/Payments-CreateRequest'
       responses:
         200:
           description: ''
@@ -3771,12 +3765,6 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Body
-        in: body
-        required: true
-        description: ''
-        schema:
-          $ref: '#/definitions/Users-CreateRequest'
       responses:
         200:
           description: ''
@@ -3914,44 +3902,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /vdash/credit_card/process:
-    post:
-      summary: CreditCard - Process
-      tags:
-      - CreditCard
-      operationId: CreditCard-Process
-      deprecated: false
-      produces:
-      - application/json
-      consumes:
-      - application/json
-      parameters:
-      - name: Authorization
-        in: header
-        required: false
-        default: Bearer {token}
-        type: string
-      - name: Account
-        in: header
-        required: true
-        type: string
-        description: ''
-      - name: Content-Type
-        in: header
-        required: true
-        type: string
-        description: ''
-      - name: Body
-        in: body
-        required: true
-        description: ''
-        schema:
-          $ref: '#/definitions/CreditCard-ProcessRequest'
-      responses:
-        200:
-          description: ''
-          headers: {}
-  /vdash/debit_card/consult/cielo/d1a33d83-ef6a-42d4-95e8-3e761e15cbb3:
+  /vdash/debit_card/consult/genialpay/163:
     get:
       summary: CreditCard - Consult
       tags:
@@ -3982,7 +3933,38 @@ paths:
         200:
           description: ''
           headers: {}
-  /vdash/credit_card/cancel/cielo/1:
+  /vdash/credit_card/process/:
+    post:
+      summary: CreditCard - Process
+      tags:
+      - CreditCard
+      operationId: CreditCard-Process
+      deprecated: false
+      produces:
+      - application/json
+      consumes:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: false
+        default: Bearer {token}
+        type: string
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Content-Type
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        200:
+          description: ''
+          headers: {}
+  /vdash/credit_card/cancel/cielo/4657:
     get:
       summary: CreditCard - Cancel
       tags:
@@ -4044,7 +4026,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /vdash/credit_card/consultByTid/cielo/645e06e4-38b1-4ac5-a644-d00deccaacf4:
+  /vdash/credit_card/consultByTid/genialpay/8975:
     get:
       summary: CreditCard - Consult by PaymentId
       tags:
@@ -5058,6 +5040,37 @@ paths:
       tags:
       - WebPush
       operationId: Teste
+      deprecated: false
+      produces:
+      - application/json
+      consumes:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: false
+        default: Bearer {token}
+        type: string
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Content-Type
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        200:
+          description: ''
+          headers: {}
+  /vdash/methods:
+    get:
+      summary: Methods - List
+      tags:
+      - Methods
+      operationId: Methods-List
       deprecated: false
       produces:
       - application/json
@@ -6636,7 +6649,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /vdash/address/92130730:
+  /vdash/address/90130061:
     get:
       summary: Address
       tags:
@@ -6699,7 +6712,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /accountnew/sedevilamatilde:
+  /accountnew/sedejundiai:
     get:
       summary: Create Account
       tags:
@@ -7301,96 +7314,6 @@ definitions:
         type: string
     required:
     - reason_cancel_receipt
-  Payments-CreateRequest:
-    title: Payments-CreateRequest
-    example:
-      method_id: 1
-      description: ''
-      url_notification: https://webhook.site/b04fd25e-48f6-4494-af2e-6bc5d4894700
-      installments: 1
-      user:
-        name: João Silva
-        email: contato@okpago.com.br
-        cpf: 41545838836
-        mobile: 51999999999
-        gender: M
-        address_zipcode: 90870370
-        address_city_id: 4001
-        address_state: RS
-        address_district: NITERÓI
-        address_street: Tóquio
-        address_number: 123
-    type: object
-    properties:
-      method_id:
-        type: integer
-        format: int32
-      description:
-        type: string
-      url_notification:
-        type: string
-      installments:
-        type: integer
-        format: int32
-      user:
-        $ref: '#/definitions/User'
-    required:
-    - method_id
-    - description
-    - url_notification
-    - installments
-    - user
-  User:
-    title: User
-    example:
-      name: João Silva
-      email: contato@okpago.com.br
-      cpf: 41545838836
-      mobile: 51999999999
-      gender: M
-      address_zipcode: 90870370
-      address_city_id: 4001
-      address_state: RS
-      address_district: NITERÓI
-      address_street: Tóquio
-      address_number: 123
-    type: object
-    properties:
-      name:
-        type: string
-      email:
-        type: string
-      cpf:
-        type: string
-      mobile:
-        type: string
-      gender:
-        type: string
-      address_zipcode:
-        type: string
-      address_city_id:
-        type: integer
-        format: int32
-      address_state:
-        type: string
-      address_district:
-        type: string
-      address_street:
-        type: string
-      address_number:
-        type: string
-    required:
-    - name
-    - email
-    - cpf
-    - mobile
-    - gender
-    - address_zipcode
-    - address_city_id
-    - address_state
-    - address_district
-    - address_street
-    - address_number
   Payments-Create:
     title: Payments-Create
     example:
@@ -7647,7 +7570,7 @@ definitions:
         type: integer
         format: int32
       user:
-        $ref: '#/definitions/User1'
+        $ref: '#/definitions/User'
       owner_id:
         type: integer
         format: int32
@@ -7797,8 +7720,8 @@ definitions:
     - installments
     - debit_card_url
     - method
-  User1:
-    title: User1
+  User:
+    title: User
     example:
       id: 162
       photo_file_id: 
@@ -8254,32 +8177,6 @@ definitions:
     required:
     - url
     - event
-  Users-CreateRequest:
-    title: Users-CreateRequest
-    example:
-      email: teucu@gmail.com
-      name: Julio Cuvirgem
-      cpf: 86194691000
-      mobile: 5191332395
-      page_hash: 302a69c66da5d8b99ef70bc399b38d1c608efc97909651b3
-    type: object
-    properties:
-      email:
-        type: string
-      name:
-        type: string
-      cpf:
-        type: string
-      mobile:
-        type: string
-      page_hash:
-        type: string
-    required:
-    - email
-    - name
-    - cpf
-    - mobile
-    - page_hash
   Users-UpdateRequest:
     title: Users-UpdateRequest
     example:
@@ -8290,52 +8187,6 @@ definitions:
         type: string
     required:
     - email
-  CreditCard-ProcessRequest:
-    title: CreditCard-ProcessRequest
-    example:
-      payment_id: 4677
-      card:
-        brand: master
-        number: 5540000000000533
-        cvc: 763
-        holder: Vinicius Matteus
-        exp_date: 03/26
-    type: object
-    properties:
-      payment_id:
-        type: integer
-        format: int32
-      card:
-        $ref: '#/definitions/Card'
-    required:
-    - payment_id
-    - card
-  Card:
-    title: Card
-    example:
-      brand: master
-      number: 5540000000000533
-      cvc: 763
-      holder: Vinicius Matteus
-      exp_date: 03/26
-    type: object
-    properties:
-      brand:
-        type: string
-      number:
-        type: string
-      cvc:
-        type: string
-      holder:
-        type: string
-      exp_date:
-        type: string
-    required:
-    - brand
-    - number
-    - cvc
-    - holder
-    - exp_date
   DEPRECATED-Boleto-ProcessRequest:
     title: DEPRECATED-Boleto-ProcessRequest
     example:

@@ -3995,7 +3995,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /vdash/credit_card/cancelByTid/cielo/3e2f8080-f1f2-4499-bd22-8ded1de2a22d:
+  /vdash/credit_card/cancelByTid/cielo/400737ad-45da-454c-99ee-303d326a2b16:
     get:
       summary: CreditCard - Cancel by PaymentId
       tags:

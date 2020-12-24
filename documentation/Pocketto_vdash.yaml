@@ -4026,7 +4026,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /vdash/credit_card/consultByTid/genialpay/8975:
+  /vdash/credit_card/consultByTid/cielo/400737ad-45da-454c-99ee-303d326a2b16:
     get:
       summary: CreditCard - Consult by PaymentId
       tags:

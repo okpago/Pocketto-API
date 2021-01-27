@@ -6712,7 +6712,7 @@ paths:
         200:
           description: ''
           headers: {}
-  /accountnew/sedejundiai:
+  /accountnew/abencoador:
     get:
       summary: Create Account
       tags:

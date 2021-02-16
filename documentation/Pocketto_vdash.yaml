@@ -2689,7 +2689,7 @@ paths:
         description: ''
       responses:
         200:
-          description: ''
+          description: OK
           schema:
             $ref: '#/definitions/Payments-Create'
           examples:

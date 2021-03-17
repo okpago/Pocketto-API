@@ -35,7 +35,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
     post:
@@ -71,7 +71,7 @@ paths:
         schema:
           $ref: '#/definitions/APIKeys-CreateRequest'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/api_keys/0cb476ab3aa6820ab36ba27e04226d338f4cd201c714ef1c662bc4c1b5c5a0cfb40b2140f37ce276:
@@ -102,7 +102,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
     put:
@@ -138,7 +138,7 @@ paths:
         schema:
           $ref: '#/definitions/APIKeys-UpdateRequest'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
     delete:
@@ -168,7 +168,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/admin_users:
@@ -192,7 +192,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
     post:
@@ -228,7 +228,7 @@ paths:
         schema:
           $ref: '#/definitions/AdminUsers-CreateRequest'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/admin_users/9:
@@ -252,7 +252,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/me:
@@ -276,7 +276,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
     put:
@@ -312,7 +312,7 @@ paths:
         schema:
           $ref: '#/definitions/Me-UpdateRequest'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/admin_users/5:
@@ -349,7 +349,7 @@ paths:
         schema:
           $ref: '#/definitions/AdminUsers-UpdateRequest'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/admin_users/me:
@@ -386,7 +386,7 @@ paths:
         schema:
           $ref: '#/definitions/AdminUsers-UpdateMeRequest'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/admin_users/8:
@@ -417,7 +417,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/bank_accounts:
@@ -441,7 +441,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
     post:
@@ -477,7 +477,7 @@ paths:
         schema:
           $ref: '#/definitions/BankAccounts-CreateRequest'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/bank_accounts/2:
@@ -501,7 +501,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/bank_accounts/4:
@@ -538,7 +538,7 @@ paths:
         schema:
           $ref: '#/definitions/BankAccounts-UpdateRequest'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
     delete:
@@ -568,7 +568,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/bank_accounts/2/transactions:
@@ -599,7 +599,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /bank_accounts/2/dates:
@@ -641,7 +641,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/bank_accounts/5/dates/2017-10-10:
@@ -673,7 +673,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/bank_accounts/5/dates/2017-09-30/close:
@@ -705,7 +705,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/bank_accounts/2/dates/2017-11-08/close:
@@ -737,7 +737,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/crowdfundingpage/2/bank-accounts:
@@ -773,7 +773,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
     post:
@@ -814,7 +814,7 @@ paths:
         schema:
           $ref: '#/definitions/BankAccounts-CreateRequest'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/crowdfundingpage/2/bank-accounts/1:
@@ -856,7 +856,7 @@ paths:
         schema:
           $ref: '#/definitions/BankAccounts-UpdateRequest1'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/crowdfundingpage/2/bank-accounts/2:
@@ -892,7 +892,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/banks/caixa:
@@ -916,7 +916,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/campaigns:
@@ -940,7 +940,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
     post:
@@ -969,7 +969,7 @@ paths:
         schema:
           $ref: '#/definitions/Campaigns-CreateRequest'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/campaigns/35:
@@ -993,7 +993,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/campaigns/3:
@@ -1023,7 +1023,7 @@ paths:
         schema:
           $ref: '#/definitions/Campaigns-UpdateRequest'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/campaigns/38/activate:
@@ -1047,7 +1047,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/campaigns/14/desactivate:
@@ -1071,7 +1071,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/campaigns/66/duplicate:
@@ -1095,7 +1095,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/conciliation/accountcredits/file:
@@ -1126,7 +1126,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /conciliation/accountcredits:
@@ -1179,7 +1179,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/conciliation/accountcredits/analytics:
@@ -1210,7 +1210,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/conciliation/accountcredits/369:
@@ -1241,7 +1241,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/conciliation/accountcredits/225:
@@ -1272,7 +1272,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/conciliation/accountcredits/233:
@@ -1309,7 +1309,7 @@ paths:
         schema:
           $ref: '#/definitions/AccountCredits-UpdateRequest'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/conciliation/accountcredits/29/payments:
@@ -1333,7 +1333,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/conciliation/bankstatement/file:
@@ -1386,7 +1386,7 @@ paths:
         format: int32
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/conciliation/bankstatement/logs:
@@ -1417,7 +1417,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/conciliation/files:
@@ -1441,7 +1441,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/conciliation/files/1:
@@ -1465,7 +1465,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/conciliation/createFile:
@@ -1516,7 +1516,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/downloads:
@@ -1540,7 +1540,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/downloads/3:
@@ -1564,7 +1564,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
     delete:
@@ -1594,7 +1594,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/events:
@@ -1618,7 +1618,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/events/user_profile_updated:
@@ -1642,7 +1642,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/files:
@@ -1678,7 +1678,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/files/803:
@@ -1702,7 +1702,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/financial/balance:
@@ -1726,7 +1726,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /financial/transfers/6/2020:
@@ -1755,7 +1755,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/financial/transfers/17/6/2020:
@@ -1779,7 +1779,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/financial/withdraw:
@@ -1803,7 +1803,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/login:
@@ -1866,7 +1866,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/login/recovery:
@@ -1903,7 +1903,7 @@ paths:
         schema:
           $ref: '#/definitions/Login-RecoveryRequest'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/login/reset:
@@ -1940,7 +1940,7 @@ paths:
         schema:
           $ref: '#/definitions/Login-ResetRequest'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/logout:
@@ -1979,7 +1979,7 @@ paths:
           example: {}
           type: object
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /messages:
@@ -2030,7 +2030,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/messages:
@@ -2067,7 +2067,7 @@ paths:
         schema:
           $ref: '#/definitions/Messages-CreateRequest'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/messages/2:
@@ -2091,7 +2091,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
     delete:
@@ -2120,7 +2120,7 @@ paths:
         schema:
           $ref: '#/definitions/Messages-DeleteRequest'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/messages/181/cancel:
@@ -2150,7 +2150,7 @@ paths:
         schema:
           $ref: '#/definitions/Messages-CancelRequest'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/message_types:
@@ -2174,7 +2174,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
     post:
@@ -2210,7 +2210,7 @@ paths:
         schema:
           $ref: '#/definitions/MessageTypes-CreateRequest'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/message_types/41:
@@ -2241,7 +2241,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
     put:
@@ -2277,7 +2277,7 @@ paths:
         schema:
           $ref: '#/definitions/MessageTypes-UpdateRequest'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
     delete:
@@ -2307,7 +2307,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /payments:
@@ -2336,7 +2336,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /payments/4893/account-credits:
@@ -2382,7 +2382,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/payments/import:
@@ -2418,7 +2418,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
     get:
@@ -2436,7 +2436,7 @@ paths:
         default: Bearer {token}
         type: string
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/payments/import/logs:
@@ -2460,7 +2460,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/payments/2147:
@@ -2484,7 +2484,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /payments/4828/logs:
@@ -2518,7 +2518,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/payments/transaction/294031:
@@ -2542,7 +2542,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/payments/11715/status/paid:
@@ -2572,7 +2572,7 @@ paths:
         schema:
           $ref: '#/definitions/Payments-UpdateStatusRequest'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/payments/4643:
@@ -2596,7 +2596,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/payments/1088:
@@ -2626,7 +2626,7 @@ paths:
         schema:
           $ref: '#/definitions/Payments-UpdateRequest'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/payments/4928/cancel-receipt:
@@ -2656,7 +2656,7 @@ paths:
         schema:
           $ref: '#/definitions/Payments-UpdateCancelReceiptRequest'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/payments:
@@ -2688,7 +2688,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: OK
           schema:
             $ref: '#/definitions/Payments-Create'
@@ -2837,7 +2837,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/residual-payments:
@@ -2874,7 +2874,7 @@ paths:
         schema:
           $ref: '#/definitions/ResidualPaymentsRequest'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/settings/default_payment_values:
@@ -2898,7 +2898,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/settings/user_card_model_front:
@@ -2922,7 +2922,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/settings/description_text:
@@ -2959,7 +2959,7 @@ paths:
         schema:
           $ref: '#/definitions/Settings-UpdateRequest'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/settings:
@@ -2996,7 +2996,7 @@ paths:
         schema:
           $ref: '#/definitions/Settings-UpdateAllRequest'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/settings/test:
@@ -3020,7 +3020,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/crowdfundingpage/2/settings:
@@ -3049,7 +3049,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/crowdfundingpage/3/settings:
@@ -3091,7 +3091,7 @@ paths:
         schema:
           $ref: '#/definitions/Settings-UpdateRequest1'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/user_categories:
@@ -3115,7 +3115,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
     post:
@@ -3151,7 +3151,7 @@ paths:
         schema:
           $ref: '#/definitions/UserCategories-CreateRequest'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/user_categories/2:
@@ -3182,7 +3182,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/user_categories/3:
@@ -3219,7 +3219,7 @@ paths:
         schema:
           $ref: '#/definitions/UserCategories-UpdateRequest'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/user_categories/1:
@@ -3250,7 +3250,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /user_recurs:
@@ -3279,7 +3279,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
     post:
@@ -3320,7 +3320,7 @@ paths:
         schema:
           $ref: '#/definitions/UserRecurrences-CreatePhysicalRequest'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/user_recurs/user/02153512077:
@@ -3344,7 +3344,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/user_recurs/1:
@@ -3368,7 +3368,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/user_recurs/1/cancel:
@@ -3392,7 +3392,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/recurrences/7/payments:
@@ -3429,7 +3429,7 @@ paths:
         schema:
           $ref: '#/definitions/CreatePaymentRequest'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/recurrences/331/anticipate:
@@ -3466,7 +3466,7 @@ paths:
         schema:
           $ref: '#/definitions/CreateAnticipatePaymentRequest'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/webhooks:
@@ -3490,7 +3490,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
     post:
@@ -3526,7 +3526,7 @@ paths:
         schema:
           $ref: '#/definitions/Webhooks-CreateRequest'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/webhooks/external/4628:
@@ -3557,7 +3557,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/webhooks/2:
@@ -3588,7 +3588,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
     put:
@@ -3624,7 +3624,7 @@ paths:
         schema:
           $ref: '#/definitions/Webhooks-UpdateRequest'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
     delete:
@@ -3654,7 +3654,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /users:
@@ -3695,7 +3695,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /users/150/logs:
@@ -3735,7 +3735,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/users:
@@ -3766,7 +3766,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/users/128:
@@ -3790,7 +3790,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/users/get/01286800080:
@@ -3814,7 +3814,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/users/1:
@@ -3844,7 +3844,7 @@ paths:
         schema:
           $ref: '#/definitions/Users-UpdateRequest'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/users/import:
@@ -3875,7 +3875,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/users/18:
@@ -3899,7 +3899,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/debit_card/consult/genialpay/163:
@@ -3930,7 +3930,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/credit_card/process/:
@@ -3961,7 +3961,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/credit_card/cancel/cielo/4657:
@@ -3992,7 +3992,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/credit_card/cancelByTid/cielo/400737ad-45da-454c-99ee-303d326a2b16:
@@ -4023,7 +4023,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/credit_card/consultByTid/cielo/400737ad-45da-454c-99ee-303d326a2b16:
@@ -4054,7 +4054,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/boleto/process:
@@ -4091,7 +4091,7 @@ paths:
         schema:
           $ref: '#/definitions/DEPRECATED-Boleto-ProcessRequest'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /api/users/me:
@@ -4115,7 +4115,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/emails/payment.refused/4697:
@@ -4146,7 +4146,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/accountdebits/banks:
@@ -4178,7 +4178,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/accountdebits:
@@ -4210,7 +4210,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /report/payment:
@@ -4244,7 +4244,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/report/user:
@@ -4268,7 +4268,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/report/userpayment:
@@ -4292,7 +4292,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /cities:
@@ -4321,7 +4321,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/crowdfundingpage/3/carnets:
@@ -4350,7 +4350,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
     put:
@@ -4391,7 +4391,7 @@ paths:
         schema:
           $ref: '#/definitions/Carnets-UpdateRequest'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/carnets:
@@ -4428,7 +4428,7 @@ paths:
         schema:
           $ref: '#/definitions/Carnets-PostRequest'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
     get:
@@ -4458,7 +4458,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/carnet/contact:
@@ -4495,7 +4495,7 @@ paths:
         schema:
           $ref: '#/definitions/Carnets-PostContactRequest'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/carnets/5:
@@ -4526,7 +4526,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/carnets/2:
@@ -4563,7 +4563,7 @@ paths:
         schema:
           $ref: '#/definitions/Carnets-UpdateRequest1'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
     get:
@@ -4593,7 +4593,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/carnets/home:
@@ -4624,7 +4624,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/crowdfundingpage/:
@@ -4691,7 +4691,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/crowdfundingpage/4:
@@ -4727,7 +4727,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/crowdfundingpage/news:
@@ -4769,7 +4769,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/crowdfundingpage/reward:
@@ -4817,7 +4817,7 @@ paths:
         format: int32
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/crowdfundingpage/82c83d6640f9cae92f6e7c43171982d0e6ee1b062e2f842d/public-settings:
@@ -4841,7 +4841,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/crowdfundingpage/list_sp:
@@ -4865,7 +4865,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/actions:
@@ -4896,7 +4896,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/roles:
@@ -4927,7 +4927,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/webpush/subscription:
@@ -4964,7 +4964,7 @@ paths:
         schema:
           $ref: '#/definitions/Subscription-PostRequest'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
     delete:
@@ -5000,7 +5000,7 @@ paths:
         schema:
           $ref: '#/definitions/Subscription-DeleteRequest'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/webpush/key:
@@ -5031,7 +5031,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/webpush/teste:
@@ -5062,7 +5062,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/methods:
@@ -5093,7 +5093,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/lots:
@@ -5135,7 +5135,7 @@ paths:
         schema:
           $ref: '#/definitions/Lot-CreateRequest'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
     get:
@@ -5170,7 +5170,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/lots/10:
@@ -5206,7 +5206,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/lots/7:
@@ -5242,7 +5242,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/lots/26:
@@ -5284,7 +5284,7 @@ paths:
         schema:
           $ref: '#/definitions/Lot-UpdateRequest'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/lots/17/filters:
@@ -5320,7 +5320,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /lot-infos:
@@ -5368,7 +5368,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/lot-infos/24:
@@ -5404,7 +5404,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/lot-infos/32:
@@ -5446,7 +5446,7 @@ paths:
         schema:
           $ref: '#/definitions/LotInfo-UpdateRequest'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/lot-infos/29:
@@ -5482,7 +5482,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /userrecurlots:
@@ -5523,7 +5523,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/userrecurlots/56:
@@ -5565,7 +5565,7 @@ paths:
         schema:
           $ref: '#/definitions/UserRecurLot-UpdateRequest'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/userrecurlots/reprocess/241:
@@ -5601,7 +5601,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/userrecurlots/35:
@@ -5637,7 +5637,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/gifts:
@@ -5673,7 +5673,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/print/user/{id}/address:
@@ -5714,7 +5714,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/print/test:
@@ -5750,7 +5750,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/print/carnets:
@@ -5793,7 +5793,7 @@ paths:
           example: {}
           type: object
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
     get:
@@ -5828,7 +5828,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/products:
@@ -5870,7 +5870,7 @@ paths:
         schema:
           $ref: '#/definitions/Products-CreateRequest'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
     get:
@@ -5905,7 +5905,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/products/6:
@@ -5947,7 +5947,7 @@ paths:
         schema:
           $ref: '#/definitions/Products-UpdateRequest'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
     get:
@@ -5982,7 +5982,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/products/7:
@@ -6018,7 +6018,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/userproducts:
@@ -6060,7 +6060,7 @@ paths:
         schema:
           $ref: '#/definitions/UserProductsCreateRequest'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /:
@@ -6091,7 +6091,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/deliverygifts/2:
@@ -6128,7 +6128,7 @@ paths:
         schema:
           $ref: '#/definitions/DeliveryGifts-UpdateRequest'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /deliverygiftfiles:
@@ -6170,7 +6170,7 @@ paths:
         schema:
           $ref: '#/definitions/DeliveryGiftFIles-CreateRequest'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/deliverygiftfiles:
@@ -6201,7 +6201,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/report/billing:
@@ -6237,7 +6237,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /teleprompter/list:
@@ -6283,7 +6283,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /wallet/balance:
@@ -6329,7 +6329,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /wallet/foreseen-balance:
@@ -6380,7 +6380,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /wallet/bankstatement:
@@ -6426,7 +6426,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /wallet/foreseen-bankstatement:
@@ -6472,7 +6472,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /wallet/transfers:
@@ -6520,7 +6520,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /wallet/transfers/balance:
@@ -6556,7 +6556,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /wallet/taxes/transfer:
@@ -6592,7 +6592,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/payment_doc_generate:
@@ -6622,7 +6622,7 @@ paths:
         schema:
           $ref: '#/definitions/PaymentDocGenerateRequest'
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/accounts/code:pocketto:
@@ -6646,7 +6646,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/address/90130061:
@@ -6670,7 +6670,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /analytics/payments:
@@ -6709,7 +6709,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /accountnew/abencoador:
@@ -6738,7 +6738,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
   /vdash/contact/:
@@ -6790,7 +6790,7 @@ paths:
         type: string
         description: ''
       responses:
-        200:
+        '200':
           description: ''
           headers: {}
 definitions:

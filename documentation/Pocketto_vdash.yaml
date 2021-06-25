@@ -3756,7 +3756,7 @@ paths:
         '200':
           description: ''
           headers: {}
-  /vdash/users/get/01286800080:
+  /vdash/users/get/123132:
     get:
       summary: Users - View by CPF
       tags:

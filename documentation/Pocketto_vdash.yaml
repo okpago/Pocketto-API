@@ -4176,7 +4176,7 @@ paths:
         '200':
           description: ''
           headers: {}
-  /vdash/report/chartdata:
+  /vdash/report/chartdata/2021-07-05:
     get:
       summary: Report - Chart Data
       tags:

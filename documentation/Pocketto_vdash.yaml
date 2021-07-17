@@ -4081,7 +4081,7 @@ paths:
         '200':
           description: ''
           headers: {}
-  /vdash/emails/payment.refused/4697:
+  /vdash/emails/boleto.created/4758:
     get:
       summary: Email
       tags:

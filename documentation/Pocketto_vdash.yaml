@@ -2508,7 +2508,7 @@ paths:
         '200':
           description: ''
           headers: {}
-  /vdash/payments/11715/status/paid:
+  /vdash/payments/4760/status/pending:
     put:
       summary: Payments - Update Status
       tags:
@@ -2528,12 +2528,6 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Body
-        in: body
-        required: true
-        description: ''
-        schema:
-          $ref: '#/definitions/Payments-UpdateStatusRequest'
       responses:
         '200':
           description: ''
@@ -7289,22 +7283,6 @@ definitions:
     - name
     - color
     - status
-  Payments-UpdateStatusRequest:
-    title: Payments-UpdateStatusRequest
-    example:
-      amount: 60
-      amount_original: 60
-    type: object
-    properties:
-      amount:
-        type: integer
-        format: int32
-      amount_original:
-        type: integer
-        format: int32
-    required:
-    - amount
-    - amount_original
   Payments-UpdateRequest:
     title: Payments-UpdateRequest
     example:

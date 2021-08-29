@@ -2824,12 +2824,6 @@ paths:
         required: true
         type: string
         description: ''
-      - name: Body
-        in: body
-        required: true
-        description: ''
-        schema:
-          $ref: '#/definitions/ResidualPaymentsRequest'
       responses:
         '200':
           description: ''
@@ -7968,22 +7962,6 @@ definitions:
     - gateway
     - type
     - status
-  ResidualPaymentsRequest:
-    title: ResidualPaymentsRequest
-    example:
-      payment_id: 4704
-      amount: 8
-    type: object
-    properties:
-      payment_id:
-        type: integer
-        format: int32
-      amount:
-        type: number
-        format: double
-    required:
-    - payment_id
-    - amount
   Settings-UpdateRequest:
     title: Settings-UpdateRequest
     example:

@@ -1414,6 +1414,54 @@ paths:
         '200':
           description: ''
           headers: {}
+  /vdash/conciliation/ticket:
+    get:
+      summary: TicketConciliationFile - List
+      tags:
+      - Ticket
+      operationId: TicketConciliationFile-List
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: false
+        default: Bearer {token}
+        type: string
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+  /vdash/conciliation/ticket/file:
+    post:
+      summary: Upload File
+      tags:
+      - Ticket
+      operationId: PostUploadFile
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: false
+        default: Bearer {token}
+        type: string
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
   /vdash/conciliation/files:
     get:
       summary: Conciliation - List
@@ -6604,30 +6652,6 @@ paths:
         '200':
           description: ''
           headers: {}
-  /vdash/conciliation/ticket:
-    get:
-      summary: TicketConciliationFile - List
-      tags:
-      - TicketConciliationFile
-      operationId: TicketConciliationFile-List
-      deprecated: false
-      produces:
-      - application/json
-      parameters:
-      - name: Authorization
-        in: header
-        required: false
-        default: Bearer {token}
-        type: string
-      - name: Account
-        in: header
-        required: true
-        type: string
-        description: ''
-      responses:
-        '200':
-          description: ''
-          headers: {}
   /vdash/payment_doc_generate:
     post:
       summary: Payment Doc Generate
@@ -11025,6 +11049,7 @@ tags:
 - name: Campaigns
 - name: Account Credit
 - name: Bank Statement
+- name: Ticket
 - name: Conciliation
 - name: Downloads
 - name: Events
@@ -11066,6 +11091,5 @@ tags:
 - name: Teleprompter
 - name: Wallet
 - name: Billing
-- name: TicketConciliationFile
 - name: Misc
   description: ''

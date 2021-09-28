@@ -1414,7 +1414,7 @@ paths:
         '200':
           description: ''
           headers: {}
-  /vdash/conciliation/ticket:
+  /conciliation/ticket:
     get:
       summary: TicketConciliationFile - List
       tags:
@@ -1429,6 +1429,16 @@ paths:
         required: false
         default: Bearer {token}
         type: string
+      - name: filters
+        in: query
+        required: true
+        type: string
+        description: ''
+      - name: q
+        in: query
+        required: true
+        type: string
+        description: ''
       - name: Account
         in: header
         required: true

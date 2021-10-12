@@ -1418,7 +1418,7 @@ paths:
     get:
       summary: TicketConciliationFile - List
       tags:
-      - Ticket
+      - TicketConciliationFile
       operationId: TicketConciliationFile-List
       deprecated: false
       produces:
@@ -1452,7 +1452,7 @@ paths:
     post:
       summary: Upload File
       tags:
-      - Ticket
+      - TicketConciliationFile
       operationId: PostUploadFile
       deprecated: false
       produces:
@@ -2533,6 +2533,30 @@ paths:
         required: true
         type: string
         description: ''
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+  /vdash/payments/4802/fractions:
+    get:
+      summary: Payments - Fractions
+      tags:
+      - Payments
+      operationId: Payments-Fractions
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: false
+        default: Bearer {token}
+        type: string
       - name: Account
         in: header
         required: true
@@ -11059,7 +11083,7 @@ tags:
 - name: Campaigns
 - name: Account Credit
 - name: Bank Statement
-- name: Ticket
+- name: TicketConciliationFile
 - name: Conciliation
 - name: Downloads
 - name: Events

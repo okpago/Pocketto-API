@@ -4611,6 +4611,44 @@ paths:
         '200':
           description: ''
           headers: {}
+  /vdash/report/billing:
+    get:
+      summary: BillingReport
+      tags:
+      - Reports
+      operationId: BillingReport
+      deprecated: false
+      produces:
+      - application/json
+      consumes:
+      - application/json
+      parameters:
+      - name: Authorization
+        in: header
+        required: false
+        default: Bearer {token}
+        type: string
+      - name: Account
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Accept
+        in: header
+        required: true
+        type: string
+        description: ''
+      - name: Content-Type
+        in: header
+        required: false
+        enum:
+        - application/json
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
   /cities:
     get:
       summary: Cities
@@ -6638,44 +6676,6 @@ paths:
         default: Bearer {token}
         type: string
       - name: Account
-        in: header
-        required: true
-        type: string
-        description: ''
-      - name: Content-Type
-        in: header
-        required: false
-        enum:
-        - application/json
-        type: string
-        description: ''
-      responses:
-        '200':
-          description: ''
-          headers: {}
-  /vdash/report/billing:
-    get:
-      summary: BillingReport
-      tags:
-      - Report
-      operationId: BillingReport
-      deprecated: false
-      produces:
-      - application/json
-      consumes:
-      - application/json
-      parameters:
-      - name: Authorization
-        in: header
-        required: false
-        default: Bearer {token}
-        type: string
-      - name: Account
-        in: header
-        required: true
-        type: string
-        description: ''
-      - name: Accept
         in: header
         required: true
         type: string
@@ -9613,7 +9613,6 @@ tags:
 - name: User Products
 - name: DeliveryGifts
 - name: DeliveryGiftFiles
-- name: Report
 - name: Teleprompter
 - name: Wallet
 - name: Billing

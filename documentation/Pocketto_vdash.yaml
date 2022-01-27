@@ -9158,17 +9158,14 @@ definitions:
       user_id:
         type: integer
         format: int32
-      owner_id:
-        type: object
+      owner_id: {}
       method_id:
         type: integer
         format: int32
-      doc_file_id:
-        type: object
+      doc_file_id: {}
       doc_file_url:
         type: string
-      doc_file_vert_id:
-        type: object
+      doc_file_vert_id: {}
       doc_file_vert_url:
         type: string
       doc_file_horiz_id:
@@ -9246,14 +9243,12 @@ definitions:
         type: string
       extra_data_2:
         type: string
-      installments:
-        type: object
+      installments: {}
       origin:
         type: string
       destination:
         type: string
-      user_recur_id:
-        type: object
+      user_recur_id: {}
       bank_code_intention:
         type: string
       is_residual:
